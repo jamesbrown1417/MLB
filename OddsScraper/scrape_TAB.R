@@ -4,6 +4,27 @@ library(rvest)
 library(httr2)
 library(jsonlite)
 
+# Get Rosters
+MLB_2024_Active_Rosters <- readRDS("C:/Users/james/R_Projects/MLB-2024/Data/MLB_2024_Active_Rosters.rds")
+
+# Get Pitchers
+pitchers <-
+  MLB_2024_Active_Rosters |>
+  filter(position_name == "Pitcher") |> 
+  select(person_full_name, team_name) |> 
+  # separate full name into given names and last name
+  separate(person_full_name, c("given_name", "last_name"), sep = " ", remove = FALSE) |> 
+  mutate(join_name = paste(substr(given_name, 1, 1), last_name, sep = ". "))
+
+# Batters
+batters <-
+MLB_2024_Active_Rosters |>
+  filter(position_name != "Pitcher") |> 
+  select(person_full_name, team_name) |> 
+  # separate full name into given names and last name
+  separate(person_full_name, c("given_name", "last_name"), sep = " ", remove = FALSE) |> 
+  mutate(join_name = paste(substr(given_name, 1, 1), last_name, sep = ". "))
+
 # URL to get responses
 tab_url = "https://api.beta.tab.com.au/v1/tab-info-service/sports/Baseball/competitions/Major%20League%20Baseball?homeState=SA&jurisdiction=SA"
 
@@ -291,32 +312,30 @@ main_tab <- function() {
       player_name == "Xavier OHalloran" ~ "Xavier O'Halloran",
       .default = player_name
     )) |> 
-    left_join(player_names, by = c("player_name" = "player_full_name")) |> 
+    left_join(pitchers, by = c("player_name" = "join_name")) |> 
     rename(player_team = team_name) |> 
     mutate(opposition_team = ifelse(home_team == player_team, away_team, home_team)) |>
-    relocate(player_team, opposition_team, .after = player_name)
+    relocate(player_team, opposition_team, .after = player_name) |> 
+    mutate(player_name = person_full_name) |> 
+    select(-person_full_name, -given_name, -last_name)
   
   #===============================================================================
-  # Player Goals
+  # Player Home Runs
   #===============================================================================
   
-  # Filter to player goals markets
-  player_goals_markets <-
+  # Filter to player home runs markets
+  player_home_runs_markets <-
     all_tab_markets |> 
-    filter(str_detect(market_name, "Player Goals$"))
+    filter(str_detect(market_name, "Home Run$"))
   
-  # Alternate Player Goals
-  alternate_player_goals_markets <-
-    all_tab_markets |> 
-    filter(str_detect(market_name, "(\\d+\\+ Goals$)|(A Goal)")) |> 
-    filter(!str_detect(market_name, "Quarter|Qtr")) |>
-    filter(!str_detect(market_name, "Half")) |>
-    filter(!str_detect(market_name, "Disposals")) |>
-    mutate(market_name = if_else(str_detect(market_name, "A Goal"), "1+ Goals", market_name))
+  # Alternate Player Home Runs
+  alternate_player_home_runs_markets <-
+    player_home_runs_markets |> 
+    mutate(market_name = if_else(str_detect(market_name, "A Home Run"), "1+ Home Runs", market_name))
   
   # Extract player names
-  player_goals_markets <-
-    player_goals_markets |> 
+  player_home_runs_markets <-
+    player_home_runs_markets |> 
     filter(str_detect(prop_name, "Over|Under")) |>
     mutate(player_name = str_extract(prop_name, "^.*(?=\\s(\\d+))")) |> 
     mutate(player_name = str_remove_all(player_name, "( Over)|( Under)")) |> 
@@ -324,77 +343,83 @@ main_tab <- function() {
     mutate(line = as.numeric(line)) |>
     mutate(type = str_detect(prop_name, "Over|\\+")) |> 
     mutate(type = ifelse(type, "Over", "Under")) |> 
-    mutate(line = if_else(market_name == "Alternate Player Goals", line - 0.5, line))
+    mutate(line = if_else(market_name == "Alternate Player Home Runs", line - 0.5, line))
   
-  alternate_player_goals_markets <-
-    alternate_player_goals_markets |>
+  alternate_player_home_runs_markets <-
+    alternate_player_home_runs_markets |>
     mutate(player_name = str_remove(prop_name, " \\(.*\\)")) |>
     mutate(line = str_extract(market_name, "\\d+")) |> 
     mutate(line = as.numeric(line) - 0.5) |> 
-    transmute(match, market_name = "Player Goals", player_name, line, over_price = price, prop_id)
+    transmute(match, market_name = "Player Home Runs", player_name, line, over_price = price, prop_id)
   
   # Over lines
   over_lines <-
-    player_goals_markets |> 
+    player_home_runs_markets |> 
     filter(type == "Over") |> 
-    mutate(market_name = "Player Goals") |>
+    mutate(market_name = "Player Home Runs") |>
     select(match, market_name, player_name, line, over_price = price, prop_id) |> 
-    bind_rows(alternate_player_goals_markets)
+    bind_rows(alternate_player_home_runs_markets)
   
   # Under lines
   under_lines <-
-    player_goals_markets |> 
+    player_home_runs_markets |> 
     filter(type == "Under") |> 
-    mutate(market_name = "Player Goals") |>
+    mutate(market_name = "Player Home Runs") |>
     select(match, market_name, player_name, line, under_price = price, under_prop_id = prop_id)
   
   # Combine
-  tab_player_goals_markets <-
+  tab_player_home_runs_markets <-
     over_lines |>
     full_join(under_lines) |> 
     select(match, market_name, player_name, line, over_price, under_price, prop_id, under_prop_id) |> 
     mutate(agency = "TAB")
   
   # Fix team names
-  tab_player_goals_markets <-
-    tab_player_goals_markets |> 
+  tab_player_home_runs_markets <-
+    tab_player_home_runs_markets |> 
     separate(match, into = c("home_team", "away_team"), sep = " v ", remove = FALSE) |>
     mutate(home_team = fix_team_names(home_team)) |>
     mutate(away_team = fix_team_names(away_team)) |>
     mutate(match = paste(home_team, "v", away_team)) |> 
     mutate(player_name = case_when(
-      player_name == "Nasiah W-Milera" ~ "Nasiah Wanganeen-Milera",
-      player_name == "Matt Cottrell" ~ "Matthew Cottrell",
-      player_name == "Mark OConnor" ~ "Mark O'Connor",
-      player_name == "Massimo DAmbrosio" ~ "Massimo D'Ambrosio",
-      player_name == "Xavier OHalloran" ~ "Xavier O'Halloran",
+      player_name == "Tomas Nido" ~ "Tomás Nido",
+      player_name == "Luis Garcia" ~ "Luis García Jr.",
+      player_name == "Adolis Garcia" ~ "Adolis García",
+      player_name == "Jeremy Pena" ~ "Jeremy Peña",
+      player_name == "Mauricio Dubon" ~ "Mauricio Dubón",
+      player_name == "Eugenio Suarez" ~ "Eugenio Suárez",
+      player_name == "Elias Diaz" ~ "Elias Díaz",
+      player_name == "Javier Baez" ~ "Javier Báez",
+      player_name == "Wenceel Perez" ~ "Wenceel Pérez",
+      player_name == "Ryan OHearn" ~ "Ryan O'Hearn",
+      player_name == "Logan OHoppe" ~ "Logan O'Hoppe",
+      player_name == "Josh H. Smith" ~ "Josh Smith",
+      player_name == "Ivan Herrera" ~ "Iván Herrera",
       .default = player_name
     )) |> 
-    left_join(player_names, by = c("player_name" = "player_full_name")) |> 
+    left_join(batters, by = c("player_name" = "person_full_name")) |> 
     rename(player_team = team_name) |> 
     mutate(opposition_team = ifelse(home_team == player_team, away_team, home_team)) |>
-    relocate(player_team, opposition_team, .after = player_name)
+    relocate(player_team, opposition_team, .after = player_name) |> 
+    select(-join_name, -given_name, -last_name)
   
   #===============================================================================
-  # Player Marks
+  # Player Hits
   #===============================================================================
   
-  # Filter to player marks markets
-  player_marks_markets <-
+  # Filter to player home runs markets
+  player_hits_markets <-
     all_tab_markets |> 
-    filter(str_detect(market_name, "\\+ Marks$"))
+    filter(str_detect(market_name, "Hits$"))
   
-  # Alternate Player Marks
-  alternate_player_marks_markets <-
-    all_tab_markets |> 
-    filter(str_detect(market_name, "(\\d+\\+ Marks$)")) |> 
-    filter(!str_detect(market_name, "Quarter|Qtr")) |>
-    filter(!str_detect(market_name, "Half")) |>
-    filter(!str_detect(market_name, "Disposals"))
+  # Alternate Player Hits
+  alternate_player_hits_markets <-
+    player_hits_markets |> 
+    mutate(market_name = if_else(str_detect(market_name, "A Hit"), "1+ Hits", market_name))
   
   # Extract player names
-  player_marks_markets <-
-    player_marks_markets |> 
+  player_hits_markets <-
+    player_hits_markets |> 
     filter(str_detect(prop_name, "Over|Under")) |>
     mutate(player_name = str_extract(prop_name, "^.*(?=\\s(\\d+))")) |> 
     mutate(player_name = str_remove_all(player_name, "( Over)|( Under)")) |> 
@@ -402,143 +427,73 @@ main_tab <- function() {
     mutate(line = as.numeric(line)) |>
     mutate(type = str_detect(prop_name, "Over|\\+")) |> 
     mutate(type = ifelse(type, "Over", "Under")) |> 
-    mutate(line = if_else(market_name == "Alternate Player Marks", line - 0.5, line))
+    mutate(line = if_else(market_name == "Alternate Player Hits", line - 0.5, line))
   
-  alternate_player_marks_markets <-
-    alternate_player_marks_markets |>
+  alternate_player_hits_markets <-
+    alternate_player_hits_markets |>
     mutate(player_name = str_remove(prop_name, " \\(.*\\)")) |>
     mutate(line = str_extract(market_name, "\\d+")) |> 
     mutate(line = as.numeric(line) - 0.5) |> 
-    transmute(match, market_name = "Player Marks", player_name, line, over_price = price, prop_id)
+    transmute(match, market_name = "Player Hits", player_name, line, over_price = price, prop_id)
   
   # Over lines
   over_lines <-
-    player_marks_markets |> 
+    player_hits_markets |> 
     filter(type == "Over") |> 
-    mutate(market_name = "Player Marks") |>
+    mutate(market_name = "Player Hits") |>
     select(match, market_name, player_name, line, over_price = price, prop_id) |> 
-    bind_rows(alternate_player_marks_markets)
+    bind_rows(alternate_player_hits_markets)
   
   # Under lines
   under_lines <-
-    player_marks_markets |> 
+    player_hits_markets |> 
     filter(type == "Under") |> 
-    mutate(market_name = "Player Marks") |>
+    mutate(market_name = "Player Hits") |>
     select(match, market_name, player_name, line, under_price = price, under_prop_id = prop_id)
   
   # Combine
-  tab_player_marks_markets <-
+  tab_player_hits_markets <-
     over_lines |>
     full_join(under_lines) |> 
     select(match, market_name, player_name, line, over_price, under_price, prop_id, under_prop_id) |> 
     mutate(agency = "TAB")
   
   # Fix team names
-  tab_player_marks_markets <-
-    tab_player_marks_markets |> 
+  tab_player_hits_markets <-
+    tab_player_hits_markets |> 
     separate(match, into = c("home_team", "away_team"), sep = " v ", remove = FALSE) |>
     mutate(home_team = fix_team_names(home_team)) |>
     mutate(away_team = fix_team_names(away_team)) |>
     mutate(match = paste(home_team, "v", away_team)) |> 
     mutate(player_name = case_when(
-      player_name == "Nasiah W-Milera" ~ "Nasiah Wanganeen-Milera",
-      player_name == "Matt Cottrell" ~ "Matthew Cottrell",
-      player_name == "Mark OConnor" ~ "Mark O'Connor",
-      player_name == "Massimo DAmbrosio" ~ "Massimo D'Ambrosio",
-      player_name == "Xavier OHalloran" ~ "Xavier O'Halloran",
+      player_name == "Tomas Nido" ~ "Tomás Nido",
+      player_name == "Luis Garcia" ~ "Luis García Jr.",
+      player_name == "Adolis Garcia" ~ "Adolis García",
+      player_name == "Jeremy Pena" ~ "Jeremy Peña",
+      player_name == "Mauricio Dubon" ~ "Mauricio Dubón",
+      player_name == "Eugenio Suarez" ~ "Eugenio Suárez",
+      player_name == "Elias Diaz" ~ "Elias Díaz",
+      player_name == "Javier Baez" ~ "Javier Báez",
+      player_name == "Wenceel Perez" ~ "Wenceel Pérez",
+      player_name == "Ryan OHearn" ~ "Ryan O'Hearn",
+      player_name == "Logan OHoppe" ~ "Logan O'Hoppe",
+      player_name == "Josh H. Smith" ~ "Josh Smith",
+      player_name == "Ivan Herrera" ~ "Iván Herrera",
       .default = player_name
     )) |> 
-    left_join(player_names, by = c("player_name" = "player_full_name")) |> 
+    left_join(batters, by = c("player_name" = "person_full_name")) |> 
     rename(player_team = team_name) |> 
     mutate(opposition_team = ifelse(home_team == player_team, away_team, home_team)) |>
-    relocate(player_team, opposition_team, .after = player_name)
-  
-  #===============================================================================
-  # Player Tackles
-  #===============================================================================
-  
-  # Filter to player tackles markets
-  player_tackles_markets <-
-    all_tab_markets |> 
-    filter(str_detect(market_name, "\\+ Tackles$"))
-  
-  # Alternate Player Tackles
-  alternate_player_tackles_markets <-
-    all_tab_markets |> 
-    filter(str_detect(market_name, "(\\d+\\+ Tackles$)")) |> 
-    filter(!str_detect(market_name, "Quarter|Qtr")) |>
-    filter(!str_detect(market_name, "Half")) |>
-    filter(!str_detect(market_name, "Disposals"))
-  
-  # Extract player names
-  player_tackles_markets <-
-    player_tackles_markets |> 
-    filter(str_detect(prop_name, "Over|Under")) |>
-    mutate(player_name = str_extract(prop_name, "^.*(?=\\s(\\d+))")) |> 
-    mutate(player_name = str_remove_all(player_name, "( Over)|( Under)")) |> 
-    mutate(line = str_extract(prop_name, "[0-9\\.]{1,4}")) |> 
-    mutate(line = as.numeric(line)) |>
-    mutate(type = str_detect(prop_name, "Over|\\+")) |> 
-    mutate(type = ifelse(type, "Over", "Under")) |> 
-    mutate(line = if_else(market_name == "Alternate Player Tackles", line - 0.5, line))
-  
-  alternate_player_tackles_markets <-
-    alternate_player_tackles_markets |>
-    mutate(player_name = str_remove(prop_name, " \\(.*\\)")) |>
-    mutate(line = str_extract(market_name, "\\d+")) |> 
-    mutate(line = as.numeric(line) - 0.5) |> 
-    transmute(match, market_name = "Player Tackles", player_name, line, over_price = price, prop_id)
-  
-  # Over lines
-  over_lines <-
-    player_tackles_markets |> 
-    filter(type == "Over") |> 
-    mutate(market_name = "Player Tackles") |>
-    select(match, market_name, player_name, line, over_price = price, prop_id) |> 
-    bind_rows(alternate_player_tackles_markets)
-  
-  # Under lines
-  under_lines <-
-    player_tackles_markets |> 
-    filter(type == "Under") |> 
-    mutate(market_name = "Player Tackles") |>
-    select(match, market_name, player_name, line, under_price = price, under_prop_id = prop_id)
-  
-  # Combine
-  tab_player_tackles_markets <-
-    over_lines |>
-    full_join(under_lines) |> 
-    select(match, market_name, player_name, line, over_price, under_price, prop_id, under_prop_id) |> 
-    mutate(agency = "TAB")
-  
-  # Fix team names
-  tab_player_tackles_markets <-
-    tab_player_tackles_markets |> 
-    separate(match, into = c("home_team", "away_team"), sep = " v ", remove = FALSE) |>
-    mutate(home_team = fix_team_names(home_team)) |>
-    mutate(away_team = fix_team_names(away_team)) |>
-    mutate(match = paste(home_team, "v", away_team)) |> 
-    mutate(player_name = case_when(
-      player_name == "Nasiah W-Milera" ~ "Nasiah Wanganeen-Milera",
-      player_name == "Matt Cottrell" ~ "Matthew Cottrell",
-      player_name == "Mark OConnor" ~ "Mark O'Connor",
-      player_name == "Massimo DAmbrosio" ~ "Massimo D'Ambrosio",
-      player_name == "Xavier OHalloran" ~ "Xavier O'Halloran",
-      .default = player_name
-    )) |> 
-    left_join(player_names, by = c("player_name" = "player_full_name")) |> 
-    rename(player_team = team_name) |> 
-    mutate(opposition_team = ifelse(home_team == player_team, away_team, home_team)) |>
-    relocate(player_team, opposition_team, .after = player_name)
+    relocate(player_team, opposition_team, .after = player_name) |> 
+    select(-join_name, -given_name, -last_name)
   
   #===============================================================================
   # Write to CSV------------------------------------------------------------------
   #===============================================================================
   
-  tab_player_disposals_markets |> write_csv("Data/scraped_odds/tab_player_disposals.csv")
-  tab_player_goals_markets |> write_csv("Data/scraped_odds/tab_player_goals.csv")
-  tab_player_marks_markets |> write_csv("Data/scraped_odds/tab_player_marks.csv")
-  tab_player_tackles_markets |> write_csv("Data/scraped_odds/tab_player_tackles.csv")
+  tab_player_strikeouts_markets |> write_csv("Data/scraped_odds/tab_player_strikeouts.csv")
+  tab_player_home_runs_markets |> write_csv("Data/scraped_odds/tab_player_home_runs.csv")
+  tab_player_hits_markets |> write_csv("Data/scraped_odds/tab_player_hits.csv")
 }
 
 #===============================================================================
