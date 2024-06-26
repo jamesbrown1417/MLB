@@ -5,7 +5,7 @@ library(httr2)
 library(jsonlite)
 
 # Get Rosters
-MLB_2024_Active_Rosters <- readRDS("C:/Users/james/R_Projects/MLB-2024/Data/MLB_2024_Active_Rosters.rds")
+MLB_2024_Active_Rosters <- read_rds("Data/MLB_2024_Active_Rosters.rds")
 
 # Get Pitchers
 pitchers <-
@@ -128,7 +128,10 @@ main_tab <- function() {
            price = propositions_returnWin) |> 
     # Remove anything in brackets from the match column
     mutate(match = str_remove(match, "\\(.*\\)")) |> 
-    mutate(match = trimws(match))
+    mutate(match = trimws(match)) |> 
+    mutate(start_time =  with_tz(as_datetime(start_time), tzone = "Australia/Adelaide")) |> 
+    # Remove time zone but keep the time
+    mutate(start_time = as.character(start_time))
   
   #===============================================================================
   # Head to head markets
@@ -168,7 +171,7 @@ main_tab <- function() {
     mutate(home_team = fix_team_names(home_team)) |>
     mutate(away_team = fix_team_names(away_team)) |>
     mutate(match = paste(home_team, "v", away_team))
-  
+
   # Write to csv
   write_csv(tab_head_to_head_markets, "Data/scraped_odds/tab_h2h.csv")
   

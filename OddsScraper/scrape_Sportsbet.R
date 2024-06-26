@@ -9,7 +9,7 @@ library(glue)
 sportsbet_url = "https://www.sportsbet.com.au/betting/baseball/major-league-baseball"
 
 # Get Rosters
-MLB_2024_Active_Rosters <- readRDS("C:/Users/james/R_Projects/MLB-2024/Data/MLB_2024_Active_Rosters.rds")
+MLB_2024_Active_Rosters <- read_rds("Data/MLB_2024_Active_Rosters.rds")
 
 # Fix team names function
 source("Functions/fix_team_names.R")
@@ -117,11 +117,10 @@ main_markets_function <- function() {
            away_win) |>
     mutate(margin = round((1 / home_win + 1 / away_win), digits = 3)) |>
     mutate(agency = "Sportsbet") |>
-    mutate(start_time = str_extract(start_time, "\\,.*")) |> 
-    mutate(start_time = str_remove(start_time, "\\, ")) |>
-    mutate(start_time = str_remove(start_time, " \\d{2}\\:\\d{2}")) |> 
-    mutate(start_time = dmy(paste(start_time, "2023"))) |> 
-    mutate(start_time = if_else(month(start_time) < 9, start_time + years(1), start_time))
+    mutate(start_time = str_remove(start_time, ",")) |> 
+    mutate(start_time = parse_date_time(start_time, orders = "AdBHM")) |> 
+    # Reduce start time by 31 minutes
+    mutate(start_time = start_time - 31 * 60)
   
   # Write to csv
   write_csv(sportsbet_h2h, "Data/scraped_odds/sportsbet_h2h.csv")
@@ -504,7 +503,6 @@ player_props_function <- function() {
       player_id_unders = player_id
     )
   
-  
   # Combine
   pitcher_strikeouts_over_under <-
     pitcher_strikeouts_over |> 
@@ -514,188 +512,32 @@ player_props_function <- function() {
   # Write to CSV
   #===============================================================================
   
+  # # Points
+  # player_points_alternate |>
+  #   bind_rows(player_points_over_under) |>
+  #   select(
+  #     "match",
+  #     "home_team",
+  #     "away_team",
+  #     "market_name",
+  #     "player_name",
+  #     "player_team",
+  #     "line",
+  #     "over_price",
+  #     "under_price",
+  #     "agency",
+  #     "opposition_team",
+  #     "class_external_id",
+  #     "competition_external_id",
+  #     "event_external_id",
+  #     "market_id",
+  #     "player_id",
+  #     "player_id_unders"
+  #   ) |>
+  #   mutate(market_name = "Player Points") |>
+  #   mutate(agency = "Sportsbet") |> 
+  #   write_csv("Data/scraped_odds/sportsbet_player_points.csv")
   
-  # Points
-  player_points_alternate |>
-    bind_rows(player_points_over_under) |>
-    select(
-      "match",
-      "home_team",
-      "away_team",
-      "market_name",
-      "player_name",
-      "player_team",
-      "line",
-      "over_price",
-      "under_price",
-      "agency",
-      "opposition_team",
-      "class_external_id",
-      "competition_external_id",
-      "event_external_id",
-      "market_id",
-      "player_id",
-      "player_id_unders"
-    ) |>
-    mutate(market_name = "Player Points") |>
-    mutate(agency = "Sportsbet") |> 
-    write_csv("Data/scraped_odds/sportsbet_player_points.csv")
-  
-  # Rebounds
-  player_rebounds_alternate |>
-    bind_rows(player_rebounds_over_under) |>
-    select(
-      "match",
-      "home_team",
-      "away_team",
-      "market_name",
-      "player_name",
-      "player_team",
-      "line",
-      "over_price",
-      "under_price",
-      "agency",
-      "opposition_team",
-      "class_external_id",
-      "competition_external_id",
-      "event_external_id",
-      "market_id",
-      "player_id",
-      "player_id_unders"
-    ) |>
-    mutate(market_name = "Player Rebounds") |>
-    mutate(agency = "Sportsbet") |> 
-    write_csv("Data/scraped_odds/sportsbet_player_rebounds.csv")
-  
-  # Assists
-  player_assists_alternate |>
-    bind_rows(player_assists_over_under) |>
-    select(
-      "match",
-      "home_team",
-      "away_team",
-      "market_name",
-      "player_name",
-      "player_team",
-      "line",
-      "over_price",
-      "under_price",
-      "agency",
-      "opposition_team",
-      "class_external_id",
-      "competition_external_id",
-      "event_external_id",
-      "market_id",
-      "player_id",
-      "player_id_unders"
-    ) |>
-    mutate(market_name = "Player Assists") |>
-    mutate(agency = "Sportsbet") |> 
-    write_csv("Data/scraped_odds/sportsbet_player_assists.csv")
-  
-  # PRAs
-  player_pras_alternate |> 
-    bind_rows(player_pras_over_under) |>
-    select(
-      "match",
-      "home_team",
-      "away_team",
-      "market_name",
-      "player_name",
-      "player_team",
-      "line",
-      "over_price",
-      "under_price",
-      "agency",
-      "opposition_team",
-      "class_external_id",
-      "competition_external_id",
-      "event_external_id",
-      "market_id",
-      "player_id",
-      "player_id_unders"
-    ) |>
-    mutate(market_name = "Player PRAs") |>
-    mutate(agency = "Sportsbet") |>
-    write_csv("Data/scraped_odds/sportsbet_player_pras.csv")
-  
-  # Threes
-  player_threes_alternate |> 
-    bind_rows(player_threes_over_under) |>
-    select(
-      "match",
-      "home_team",
-      "away_team",
-      "market_name",
-      "player_name",
-      "player_team",
-      "line",
-      "over_price",
-      "under_price",
-      "agency",
-      "opposition_team",
-      "class_external_id",
-      "competition_external_id",
-      "event_external_id",
-      "market_id",
-      "player_id",
-      "player_id_unders"
-    ) |>
-    mutate(market_name = "Player Threes") |>
-    mutate(agency = "Sportsbet") |>
-    write_csv("Data/scraped_odds/sportsbet_player_threes.csv")
-  
-  # Blocks
-  player_blocks_alternate |> 
-    bind_rows(player_blocks_over_under) |>
-    select(
-      "match",
-      "home_team",
-      "away_team",
-      "market_name",
-      "player_name",
-      "player_team",
-      "line",
-      "over_price",
-      "under_price",
-      "agency",
-      "opposition_team",
-      "class_external_id",
-      "competition_external_id",
-      "event_external_id",
-      "market_id",
-      "player_id",
-      "player_id_unders"
-    ) |>
-    mutate(market_name = "Player Blocks") |>
-    mutate(agency = "Sportsbet") |>
-    write_csv("Data/scraped_odds/sportsbet_player_blocks.csv")
-  
-  # Steals
-  player_steals_alternate |> 
-    bind_rows(player_steals_over_under) |>
-    select(
-      "match",
-      "home_team",
-      "away_team",
-      "market_name",
-      "player_name",
-      "player_team",
-      "line",
-      "over_price",
-      "under_price",
-      "agency",
-      "opposition_team",
-      "class_external_id",
-      "competition_external_id",
-      "event_external_id",
-      "market_id",
-      "player_id",
-      "player_id_unders"
-    ) |>
-    mutate(market_name = "Player Steals") |>
-    mutate(agency = "Sportsbet") |>
-    write_csv("Data/scraped_odds/sportsbet_player_steals.csv")
 }
 
 ##%######################################################%##
