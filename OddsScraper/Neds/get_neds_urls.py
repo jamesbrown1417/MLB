@@ -2,7 +2,7 @@ from playwright.async_api import async_playwright
 import asyncio
 
 # The URL pattern we are interested in
-url_pattern = "https://api.neds.com.au/v2/sport/event-request?category_ids=%5B%223c34d075-dc14-436d-bfc4-9272a49c2b39%22%5D&include_any_team_vs_any_team_events=true"
+url_pattern = "https://api.neds.com.au/v2/sport/event-request?category_ids=%5B%2202721435-4671-4cd0-98f7-15d41ee4103e%22%5D&include_any_team_vs_any_team_events=true"
 
 async def close_browser(browser):
     """Close the browser."""
@@ -33,7 +33,7 @@ async def main():
         page.on('response', handle_response)
 
         # Navigate to the target page
-        await page.goto("https://www.neds.com.au/sports/basketball/usa/nba", wait_until="networkidle")
+        await page.goto("https://www.neds.com.au/sports/baseball/usa/mlb", wait_until="networkidle")
 
         # Keep the script running until the browser is closed
         while len(await browser.contexts()) > 0:

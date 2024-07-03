@@ -24,14 +24,14 @@ df <- data.frame(event_name, event_id, competition_name)
 # Filter the data frame to only include matches with ' vs ' in the event name
 df <- df |> filter(str_detect(event_name, ' vs '))
 
-# Only get NBA Games
-df <- df |> filter(str_detect(competition_name, 'NBA'))
+# Only get MLB Games
+df <- df |> filter(str_detect(competition_name, 'MLB'))
 
 df$url <-
-  paste0("https://www.neds.com.au/sports/basketball/usa/nba/",
+  paste0("https://www.neds.com.au/sports/baseball/usa/mlb/",
          tolower(gsub(" ", "-", df$event_name)),
          "/",
          df$event_id)
 
 # Write out as csv
-write_csv(df, "OddsScraper/Neds/neds_nba_match_urls.csv")
+write_csv(df, "OddsScraper/Neds/neds_mlb_match_urls.csv")

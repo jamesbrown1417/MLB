@@ -136,6 +136,12 @@ main_markets_function <- function() {
 
 player_props_function <- function() {
   
+  # Get data from main market page
+  matches <-
+    sportsbet_url |> 
+    read_html() |>
+    html_nodes(".White_fqa53j6")
+  
   # Function to get team names
   get_team_names <- function(match) {
     team_names <-
@@ -151,6 +157,55 @@ player_props_function <- function() {
     tibble(home_team, away_team)
   }
   
+  # Function to get odds
+  get_odds <- function(match) {
+    odds <-
+      match |>
+      html_nodes(".priceTextSize_frw9zm9") |>
+      html_text() |>
+      as.numeric()
+    
+    # Home team
+    home_win <- odds[2]
+    away_win <- odds[1]
+    
+    # Output
+    tibble(home_win, away_win)
+  }
+  
+  # Function to get start time
+  get_start_time <- function(match) {
+    start_time <-
+      match |>
+      html_nodes(".oneLine_f15ay66x") |>
+      html_text()
+    
+    # Output
+    tibble(start_time)
+  }
+  
+  # Map functions to each match and combine together
+  all_main_market_data <-
+    bind_cols(
+      map(matches, get_team_names) |> bind_rows(),
+      map(matches, get_odds) |> bind_rows(),
+      map(matches, get_start_time) |> bind_rows()
+    )
+  
+  # Function to get team names
+  get_team_names <- function(match) {
+    team_names <-
+      match |>
+      html_nodes(".participantText_fivg86r") |>
+      html_text()
+    
+    # Home team and Away Team
+    home_team <- team_names[2]
+    away_team <- team_names[1]
+    
+    # Output
+    tibble(home_team, away_team)
+  }
   
   # Get match links
   match_links <-
@@ -177,6 +232,24 @@ player_props_function <- function() {
     bind_cols("match_id" = match_ids) |> 
     mutate(home_team = fix_team_names(home_team)) |>
     mutate(away_team = fix_team_names(away_team))
+  
+  # Match Times
+  sportsbet_match_times <-
+    all_main_market_data |>
+    mutate(home_team = str_remove(home_team, " \\(.*\\)")) |>
+    mutate(away_team = str_remove(away_team, " \\(.*\\)")) |>
+    mutate(home_team = fix_team_names(home_team)) |>
+    mutate(away_team = fix_team_names(away_team)) |>
+    mutate(match = paste(home_team, "v", away_team)) |>
+    select(match,
+           start_time,
+           home_team,
+           away_team) |>
+    mutate(start_time = str_remove(start_time, ",")) |> 
+    mutate(start_time = parse_date_time(start_time, orders = "AdBHM")) |> 
+    # Reduce start time by 31 minutes
+    mutate(start_time = start_time - 31 * 60) |> 
+    mutate(match_id = match_ids)
   
   # Match info links
   match_info_links <- glue("https://www.sportsbet.com.au/apigw/sportsbook-sports/Sportsbook/Sports/Events/{match_ids}/SportCard?displayWinnersPriceMkt=true&includeLiveMarketGroupings=true&includeCollection=true")
@@ -285,6 +358,88 @@ player_props_function <- function() {
   
   # Safe version that just returns NULL if there is an error
   safe_read_prop_url <- safely(read_prop_url, otherwise = NULL)
+  
+  #=============================================================================
+  # Match Totals
+  #=============================================================================
+  
+  # Map function to totals urls
+  totals_data <-
+    map(totals_links, safe_read_prop_url)
+  
+  # Get just result part from output
+  totals_data <-
+    totals_data |>
+    map("result") |>
+    map_df(bind_rows)
+  
+  # Main Totals
+  main_totals <-
+    totals_data |>
+    filter(prop_market_name %in% c("Total Runs", "Total Runs in Match", "Alternate Total Runs")) |> 
+    mutate(market_name = "Total Runs") |> 
+    mutate(url = str_extract(as.character(url), "[0-9]{6,8}")) |> 
+    rename(match_id = url) |> 
+    mutate(match_id = as.numeric(match_id)) |> 
+    left_join(team_names, by = "match_id") |> 
+    mutate(match = paste(home_team, "v", away_team)) |> 
+    left_join(sportsbet_match_times |> select(-home_team, -away_team), by = c("match_id", "match"))
+  
+  # Overs
+  over_totals <-
+    main_totals |> 
+    filter(str_detect(selection_name_prop, "Over")) |>
+    mutate(line = str_extract(selection_name_prop, "[0-9]{1,2}\\.[0-9]{1,2}")) |> 
+    mutate(line = as.numeric(line)) |>
+    mutate(line = coalesce(line, handicap)) |> 
+    arrange(match_id, line, prop_market_price) |>
+    group_by(match_id, match, line) |>
+    slice_head(n = 1) |> 
+    ungroup() |> 
+    transmute(
+      match,
+      start_time,
+      home_team,
+      away_team,
+      market_name = "Total Runs Over/Under",
+      match_id,
+      line,
+      over_price = prop_market_price,
+      agency = "Sportsbet"
+    )
+  
+  # Unders
+  under_totals <-
+    main_totals |> 
+    filter(str_detect(selection_name_prop, "Under")) |>
+    mutate(line = str_extract(selection_name_prop, "[0-9]{1,2}\\.[0-9]{1,2}")) |> 
+    mutate(line = as.numeric(line)) |>
+    mutate(line = coalesce(line, handicap)) |> 
+    arrange(match_id, line, prop_market_price) |>
+    group_by(match_id, match, line) |>
+    slice_head(n = 1) |> 
+    ungroup() |> 
+    transmute(
+      match,
+      start_time,
+      home_team,
+      away_team,
+      market_name = "Total Runs Over/Under",
+      match_id,
+      line,
+      under_price = prop_market_price,
+      agency = "Sportsbet"
+    )
+  
+  # Combine
+  totals_all <-
+    over_totals |>
+    left_join(under_totals) |> 
+    select(-match_id) |> 
+    relocate(under_price, .after = over_price)
+  
+  # Write to csv
+  write_csv(totals_all, "Data/scraped_odds/sportsbet_total_runs.csv")
   
   #===============================================================================
   # Batter Hits
