@@ -18,7 +18,7 @@ all_teams <-
 get_team_roster <- function(team_id, team_name) {
   # Get the team roster
   team_roster <-
-    mlb_rosters(team_id, season = 2024, roster_type = "active") |> 
+    mlb_rosters(team_id, season = 2024, roster_type = "40man") |> 
     mutate(team_name = team_name) |> 
     relocate(team_name, .after = person_full_name)
   
@@ -31,7 +31,6 @@ all_teams |>
   select(team_id, team_name = team_full_name) |>
   pmap(get_team_roster, .progress = TRUE) |>
   bind_rows()
-
 
 #===============================================================================
 # Write out as RDS

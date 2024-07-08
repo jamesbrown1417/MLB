@@ -127,7 +127,6 @@ main_markets_function <- function() {
   
 }
 
-
 ##%######################################################%##
 #                                                          #
 ####                    Player Props                    ####
@@ -468,7 +467,7 @@ player_props_function <- function() {
     mutate(match = paste(home_team, "v", away_team)) |> 
     left_join(player_prop_metadata)
   
-  # Get player points alternate lines---------------------------------------------
+  # Get batter hits alternate lines---------------------------------------------
   batter_hits_alternate <-
     batter_hits_data |>
     mutate(prop_market_name = str_replace(prop_market_name, "A Hit", "1+ Hits")) |>
@@ -517,7 +516,7 @@ player_props_function <- function() {
   # Pitcher Strikeouts
   #===============================================================================
   
-  # Map function to player assists urls
+  # Map function to pitcher strikeouts urls
   pitcher_strikeouts_data <-
     map(pitcher_links, safe_read_prop_url)
   
@@ -539,8 +538,8 @@ player_props_function <- function() {
     mutate(match = paste(home_team, "v", away_team)) |> 
     left_join(player_prop_metadata)
   
-  # Get player assists alternate lines---------------------------------------------
-  
+  # Get pitcher strikeouts alternate lines---------------------------------------------
+
   pitcher_strikeouts_alternate <-
     pitcher_strikeouts_data |>
     filter(str_detect(prop_market_name, "Alt Strikeouts$")) |>
@@ -576,7 +575,7 @@ player_props_function <- function() {
       player_id
     )
   
-  # Get player assists over / under -----------------------------------------------
+  # Get pitcher strikeouts over / under -----------------------------------------------
   
   pitcher_strikeouts_over <-
     pitcher_strikeouts_data |> 
@@ -591,13 +590,12 @@ player_props_function <- function() {
     mutate(
       player_name =
         case_when(
-          player_name == "P.J Washington" ~ "P.J. Washington",
-          player_name == "Bruce Brown Jr" ~ "Bruce Brown",
-          player_name == "Wendell Carter" ~ "Wendell Carter Jr.",
-          player_name == "Jabari Smith" ~ "Jabari Smith Jr.",
+          player_name == "Reynaldo Lopez" ~ "Reynaldo López",
+          player_name == "Ranger Suarez" ~ "Ranger Suárez",
+          player_name == "Yilber Diaz" ~ "Yilber Díaz",
           .default = player_name)) |>
     rename(over_price = prop_market_price) |>
-    left_join(player_names[, c("player_full_name", "team_name")], by = c("player_name" = "player_full_name")) |>
+    left_join(pitchers, by = c("player_name" = "person_full_name")) |> 
     mutate(opposition_team = if_else(team_name == home_team, away_team, home_team)) |>
     relocate(match, .before = player_name) |>
     transmute(
@@ -631,13 +629,12 @@ player_props_function <- function() {
     mutate(
       player_name =
         case_when(
-          player_name == "P.J Washington" ~ "P.J. Washington",
-          player_name == "Bruce Brown Jr" ~ "Bruce Brown",
-          player_name == "Wendell Carter" ~ "Wendell Carter Jr.",
-          player_name == "Jabari Smith" ~ "Jabari Smith Jr.",
+          player_name == "Reynaldo Lopez" ~ "Reynaldo López",
+          player_name == "Ranger Suarez" ~ "Ranger Suárez",
+          player_name == "Yilber Diaz" ~ "Yilber Díaz",
           .default = player_name)) |>
     rename(under_price = prop_market_price) |>
-    left_join(player_names[, c("player_full_name", "team_name")], by = c("player_name" = "player_full_name")) |>
+    left_join(pitchers, by = c("player_name" = "person_full_name")) |> 
     mutate(opposition_team = if_else(team_name == home_team, away_team, home_team)) |>
     relocate(match, .before = player_name) |>
     transmute(
@@ -667,32 +664,55 @@ player_props_function <- function() {
   # Write to CSV
   #===============================================================================
   
-  # # Points
-  # player_points_alternate |>
-  #   bind_rows(player_points_over_under) |>
-  #   select(
-  #     "match",
-  #     "home_team",
-  #     "away_team",
-  #     "market_name",
-  #     "player_name",
-  #     "player_team",
-  #     "line",
-  #     "over_price",
-  #     "under_price",
-  #     "agency",
-  #     "opposition_team",
-  #     "class_external_id",
-  #     "competition_external_id",
-  #     "event_external_id",
-  #     "market_id",
-  #     "player_id",
-  #     "player_id_unders"
-  #   ) |>
-  #   mutate(market_name = "Player Points") |>
-  #   mutate(agency = "Sportsbet") |> 
-  #   write_csv("Data/scraped_odds/sportsbet_player_points.csv")
+  # Hits
+  batter_hits_alternate |>
+    # bind_rows(batter_hits_over_under) |>
+    select(
+      "match",
+      "home_team",
+      "away_team",
+      "market_name",
+      "player_name",
+      "player_team",
+      "line",
+      "over_price",
+      "agency",
+      "opposition_team",
+      "class_external_id",
+      "competition_external_id",
+      "event_external_id",
+      "market_id",
+      "player_id"
+    ) |>
+    mutate(market_name = "Batter Hits") |>
+    mutate(agency = "Sportsbet") |>
+    write_csv("Data/scraped_odds/sportsbet_batter_hits.csv")
   
+  # Strikeouts
+  pitcher_strikeouts_alternate |> 
+    bind_rows(pitcher_strikeouts_over_under) |>
+    select(
+      "match",
+      "home_team",
+      "away_team",
+      "market_name",
+      "player_name",
+      "player_team",
+      "line",
+      "over_price",
+      "under_price",
+      "agency",
+      "opposition_team",
+      "class_external_id",
+      "competition_external_id",
+      "event_external_id",
+      "market_id",
+      "player_id",
+      "player_id_unders"
+    ) |>
+    mutate(market_name = "Pitcher Strikeouts") |>
+    mutate(agency = "Sportsbet") |>
+    write_csv("Data/scraped_odds/sportsbet_pitcher_strikeouts.csv")
 }
 
 ##%######################################################%##

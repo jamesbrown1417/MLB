@@ -164,71 +164,55 @@ h2h_data <-
 
 ##%######################################################%##
 #                                                          #
-####                 Player Points Data                 ####
+####                   Total Runs Data                  ####
 #                                                          #
 ##%######################################################%##
-# 
-# # Filter to only include player points markets
-# player_points_data <-
-# market_df |> 
-#     filter(str_detect(market_name, "(Player Points O/U)|(To Score)"))
-# 
-# # Overs
-# points_overs <-
-#     player_points_data |>
-#     filter(str_detect(entrants, "Over") |
-#                str_detect(market_name, "To Score")) |>
-#     mutate(handicap_1 = as.numeric(str_extract(market_name, "\\d+")) - 0.5) |>
-#     mutate(handicap = coalesce(handicaps, handicap_1)) |>
-#     mutate(player_name_1 = str_extract(entrants, pattern <-
-#                                            ".*(?= \\()")) |>
-#     mutate(player_name_2 = str_extract(market_name, "(?<= \\- ).*")) |> 
-#     mutate(player_name = coalesce(player_name_1, player_name_2)) |>
-#     transmute(
-#         match = match_name,
-#         market_name = "Player Points",
-#         player_name,
-#         line = handicap,
-#         over_price = price,
-#         agency = "Neds"
-#     )
-# 
-# # Unders
-# points_unders <-
-#     player_points_data |>
-#     filter(str_detect(entrants, "Under")) |>
-#     mutate(handicap_1 = as.numeric(str_extract(market_name, "\\d+")) - 0.5) |>
-#     mutate(handicap = coalesce(handicaps, handicap_1)) |>
-#     mutate(player_name_1 = str_extract(entrants, pattern <-
-#                                            ".*(?= \\()")) |>
-#     mutate(player_name_2 = str_extract(market_name, "(?<= \\- ).*")) |>
-#     mutate(player_name = coalesce(player_name_1, player_name_2)) |>
-#     transmute(
-#         match = match_name,
-#         market_name = "Player Points",
-#         player_name,
-#         line = handicap,
-#         under_price = price,
-#         agency = "Neds"
-#     )
-# 
-# # Merge overs and unders
-# player_points_data <-
-#     points_overs |> 
-#     full_join(points_unders, by = c("match", "player_name", "line", "agency", "market_name")) |> 
-#     select(match, market_name, player_name, line, over_price, under_price, agency) |> 
-#     mutate(player_name = case_when(player_name == "PJ Washington" ~ "P.J. Washington",
-#                                    player_name == "Kelly Oubre" ~ "Kelly Oubre Jr.",
-#                                    player_name == "Derrick Jones" ~ "Derrick Jones Jr.",
-#                                    player_name == "Jabari Smith Jr" ~ "Jabari Smith Jr.",
-#                                    .default = player_name)) |> 
-#     left_join(player_names[, c("player_full_name", "team_name")], by = c("player_name" = "player_full_name")) |> 
-#     rename(player_team = team_name) |>
-#     mutate(match = str_replace(match, " vs ", " v ")) |>
-#     separate(match, into = c("home_team", "away_team"), sep = " v ", remove = FALSE) |> 
-#     mutate(opposition_team = case_when(player_team == home_team ~ away_team,
-#                                        player_team == away_team ~ home_team)) |>
-#     relocate(player_team, opposition_team, .after = player_name)
+
+# Filter to only include totals markets
+totals_data <-
+  market_df |> 
+  filter(str_detect(market_name, "^Total")) |> 
+  select(-market_name)
+
+# Overs
+totals_overs <-
+  totals_data |> 
+  filter(str_detect(entrants, "Over")) |> 
+  mutate(line = str_remove(entrants, "Over ")) |> 
+  mutate(line = str_remove(line, "\\(")) |> 
+  mutate(line = str_remove(line, "\\)")) |>
+  mutate(line = as.numeric(line)) |>
+  select(match = match_name, start_time, over_price = price, line)
+
+# Unders
+totals_unders <-
+  totals_data |> 
+  filter(str_detect(entrants, "Under")) |> 
+  mutate(line = str_remove(entrants, "Under ")) |> 
+  mutate(line = str_remove(line, "\\(")) |> 
+  mutate(line = str_remove(line, "\\)")) |>
+  mutate(line = as.numeric(line)) |>  select(match = match_name, start_time, under_price = price, line)
+
+# Merge overs and unders
+totals_all <-
+  totals_overs |> 
+  left_join(totals_unders, by = c("match", "start_time", "line")) |> 
+  mutate(margin = round(1 / over_price + 1 / under_price, digits = 2)) |>
+  separate(match, c("home_team", "away_team"), sep = " vs ", remove = FALSE) |> 
+  mutate(home_team = fix_team_names(home_team)) |>
+  mutate(away_team = fix_team_names(away_team)) |>
+  mutate(match = paste(home_team, "v", away_team)) |>
+  mutate(agency = "Neds") |>
+  mutate(market_name = "Total Runs Over/Under") |> 
+  select(match, start_time, market_name, line, over_price, under_price, agency)
+
+##%######################################################%##
+#                                                          #
+####                  Match Line Data                   ####
+#                                                          #
+##%######################################################%##
+
+
 
 ##%######################################################%##
 #                                                          #
@@ -237,4 +221,4 @@ h2h_data <-
 ##%######################################################%##
 
 h2h_data |> write_csv("Data/scraped_odds/neds_h2h.csv")
-# player_points_data |> write_csv("Data/scraped_odds/neds_player_points.csv")
+totals_all |> write_csv("Data/scraped_odds/neds_total_runs.csv")

@@ -104,3 +104,44 @@ best_totals <-
   mutate(margin = (1/over_price + 1/under_price)) |>
   mutate(margin = 100 - 100*margin) |> 
   arrange(desc(margin))
+
+#===============================================================================
+# Pitcher Strikeouts
+#===============================================================================
+
+# Read in the data
+all_pitcher_strikeouts_files <- list.files("Data/scraped_odds", "pitcher_strikeouts", full.names = TRUE)
+
+all_pitcher_strikeouts_data <-
+  all_pitcher_strikeouts_files |> 
+  map_dfr(read_csv)
+
+# Get the best over odds
+best_over_strikeouts_odds <-
+  all_pitcher_strikeouts_data |> 
+  group_by(match, home_team, away_team, line) |> 
+  arrange(match, home_team, away_team, player_name, line, desc(over_price)) |> 
+  slice_head(n = 1) |> 
+  select(-under_price) |>
+  select(-contains(("_id"))) |> 
+  rename(over_agency = agency) |> 
+  ungroup()
+
+# Get the best under odds
+best_under_strikeouts_odds <-
+  all_pitcher_strikeouts_data |> 
+  filter(!is.na(under_price)) |> 
+  group_by(match, home_team, away_team, line) |> 
+  arrange(match, home_team, away_team, player_name, line, desc(under_price)) |> 
+  slice_head(n = 1) |> 
+  select(-over_price) |>
+  select(-contains(("_id"))) |> 
+  rename(under_agency = agency) |> 
+  ungroup()
+
+# Get Arbs
+best_over_strikeouts_odds |> 
+  inner_join(best_under_strikeouts_odds) |> 
+  mutate(margin = (1/over_price + 1/under_price)) |>
+  mutate(margin = 100 - 100*margin) |>
+  arrange(desc(margin))

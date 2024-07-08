@@ -268,7 +268,8 @@ main_tab <- function() {
     tab_total_runs_markets |> 
     mutate(home_team = fix_team_names(home_team)) |>
     mutate(away_team = fix_team_names(away_team)) |>
-    mutate(match = paste(home_team, "v", away_team))
+    mutate(match = paste(home_team, "v", away_team)) |> 
+    select(-margin)
   
   # Write to csv
   write_csv(tab_total_runs_markets, "Data/scraped_odds/tab_total_runs.csv")
@@ -293,7 +294,7 @@ main_tab <- function() {
     mutate(player_name = str_remove(player_name, " \\d+\\+ SOs")) |>
     mutate(line = str_extract(prop_name, "\\d+")) |> 
     mutate(line = as.numeric(line) - 0.5) |> 
-    transmute(match, market_name = "Player strikeouts", player_name, line, over_price = price, prop_id)
+    transmute(match, market_name = "Pitcher Strikeouts", player_name, line, over_price = price, prop_id)
   
   # Combine
   tab_player_strikeouts_markets <-
@@ -309,10 +310,9 @@ main_tab <- function() {
     mutate(away_team = fix_team_names(away_team)) |>
     mutate(match = paste(home_team, "v", away_team)) |> 
     mutate(player_name = case_when(
-      player_name == "Nasiah W-Milera" ~ "Nasiah Wanganeen-Milera",
-      player_name == "Mark OConnor" ~ "Mark O'Connor",
-      player_name == "Massimo DAmbrosio" ~ "Massimo D'Ambrosio",
-      player_name == "Xavier OHalloran" ~ "Xavier O'Halloran",
+      player_name == "Reynaldo Lopez" ~ "Reynaldo López",
+      player_name == "Ranger Suarez" ~ "Ranger Suárez",
+      player_name == "Yilber Diaz" ~ "Yilber Díaz",
       .default = player_name
     )) |> 
     left_join(pitchers, by = c("player_name" = "join_name")) |> 
@@ -494,9 +494,9 @@ main_tab <- function() {
   # Write to CSV------------------------------------------------------------------
   #===============================================================================
   
-  tab_player_strikeouts_markets |> write_csv("Data/scraped_odds/tab_player_strikeouts.csv")
-  tab_player_home_runs_markets |> write_csv("Data/scraped_odds/tab_player_home_runs.csv")
-  tab_player_hits_markets |> write_csv("Data/scraped_odds/tab_player_hits.csv")
+  tab_player_strikeouts_markets |> write_csv("Data/scraped_odds/tab_pitcher_strikeouts.csv")
+  tab_player_home_runs_markets |> write_csv("Data/scraped_odds/tab_batter_home_runs.csv")
+  tab_player_hits_markets |> write_csv("Data/scraped_odds/tab_batter_hits.csv")
 }
 
 #===============================================================================
