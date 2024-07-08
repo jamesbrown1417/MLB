@@ -110,3 +110,31 @@ betright_head_to_head_markets <-
 
 # Write to csv
 write_csv(betright_head_to_head_markets, "Data/scraped_odds/betright_h2h.csv")
+
+#===============================================================================
+# Totals 
+#===============================================================================
+
+# Totals URL
+totals_url = "https://next-api.betright.com.au/Sports/MasterEvent?masterEventId=1217066&groupTypeCode=G26"
+
+#===============================================================================
+# Lines 
+#===============================================================================
+
+# Lines URL
+lines_url = "https://next-api.betright.com.au/Sports/MasterEvent?masterEventId=1217066&groupTypeCode=G27"
+
+#===============================================================================
+# Hits
+#===============================================================================
+
+# Hits URL
+hits_url = "https://next-api.betright.com.au/Sports/MasterEvent?masterEventId=1217066&groupTypeCode=G398"
+
+#===============================================================================
+# Pitcher
+#===============================================================================
+
+# Pitcher URL
+pitcher_url = "https://next-api.betright.com.au/Sports/MasterEvent?masterEventId=1217066&groupTypeCode=G570"

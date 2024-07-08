@@ -83,7 +83,7 @@ best_over_odds <-
   group_by(match, home_team, away_team, line) |> 
   arrange(desc(over_price)) |> 
   slice_head(n = 1) |> 
-  select(-under_price, -margin) |>
+  select(-under_price) |>
   rename(over_agency = agency) |> 
   ungroup()
 
@@ -93,7 +93,7 @@ best_under_odds <-
   group_by(match, home_team, away_team, line) |> 
   arrange(desc(under_price)) |> 
   slice_head(n = 1) |> 
-  select(-over_price, -margin) |>
+  select(-over_price) |>
   rename(under_agency = agency) |> 
   ungroup()
 
