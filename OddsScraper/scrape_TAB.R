@@ -294,12 +294,12 @@ main_tab <- function() {
     mutate(player_name = str_remove(player_name, " \\d+\\+ SOs")) |>
     mutate(line = str_extract(prop_name, "\\d+")) |> 
     mutate(line = as.numeric(line) - 0.5) |> 
-    transmute(match, market_name = "Pitcher Strikeouts", player_name, line, over_price = price, prop_id)
+    transmute(match, start_time, market_name = "Pitcher Strikeouts", player_name, line, over_price = price, prop_id)
   
   # Combine
   tab_player_strikeouts_markets <-
     alternate_player_strikeouts_markets |>
-    select(match, market_name, player_name, line, over_price, prop_id) |> 
+    select(match, start_time, market_name, player_name, line, over_price, prop_id) |> 
     mutate(agency = "TAB")
   
   # Fix team names
@@ -353,14 +353,14 @@ main_tab <- function() {
     mutate(player_name = str_remove(prop_name, " \\(.*\\)")) |>
     mutate(line = str_extract(market_name, "\\d+")) |> 
     mutate(line = as.numeric(line) - 0.5) |> 
-    transmute(match, market_name = "Player Home Runs", player_name, line, over_price = price, prop_id)
+    transmute(match, start_time, market_name = "Player Home Runs", player_name, line, over_price = price, prop_id)
   
   # Over lines
   over_lines <-
     player_home_runs_markets |> 
     filter(type == "Over") |> 
     mutate(market_name = "Player Home Runs") |>
-    select(match, market_name, player_name, line, over_price = price, prop_id) |> 
+    select(match, start_time, market_name, player_name, line, over_price = price, prop_id) |> 
     bind_rows(alternate_player_home_runs_markets)
   
   # Under lines
@@ -368,13 +368,13 @@ main_tab <- function() {
     player_home_runs_markets |> 
     filter(type == "Under") |> 
     mutate(market_name = "Player Home Runs") |>
-    select(match, market_name, player_name, line, under_price = price, under_prop_id = prop_id)
+    select(match, start_time, market_name, player_name, line, under_price = price, under_prop_id = prop_id)
   
   # Combine
   tab_player_home_runs_markets <-
     over_lines |>
     full_join(under_lines) |> 
-    select(match, market_name, player_name, line, over_price, under_price, prop_id, under_prop_id) |> 
+    select(match, start_time, market_name, player_name, line, over_price, under_price, prop_id, under_prop_id) |> 
     mutate(agency = "TAB")
   
   # Fix team names
@@ -437,14 +437,14 @@ main_tab <- function() {
     mutate(player_name = str_remove(prop_name, " \\(.*\\)")) |>
     mutate(line = str_extract(market_name, "\\d+")) |> 
     mutate(line = as.numeric(line) - 0.5) |> 
-    transmute(match, market_name = "Player Hits", player_name, line, over_price = price, prop_id)
+    transmute(match, start_time, market_name = "Player Hits", player_name, line, over_price = price, prop_id)
   
   # Over lines
   over_lines <-
     player_hits_markets |> 
     filter(type == "Over") |> 
     mutate(market_name = "Player Hits") |>
-    select(match, market_name, player_name, line, over_price = price, prop_id) |> 
+    select(match, start_time, market_name, player_name, line, over_price = price, prop_id) |> 
     bind_rows(alternate_player_hits_markets)
   
   # Under lines
@@ -452,13 +452,13 @@ main_tab <- function() {
     player_hits_markets |> 
     filter(type == "Under") |> 
     mutate(market_name = "Player Hits") |>
-    select(match, market_name, player_name, line, under_price = price, under_prop_id = prop_id)
+    select(match, start_time, market_name, player_name, line, under_price = price, under_prop_id = prop_id)
   
   # Combine
   tab_player_hits_markets <-
     over_lines |>
     full_join(under_lines) |> 
-    select(match, market_name, player_name, line, over_price, under_price, prop_id, under_prop_id) |> 
+    select(match, start_time, market_name, player_name, line, over_price, under_price, prop_id, under_prop_id) |> 
     mutate(agency = "TAB")
   
   # Fix team names
@@ -488,6 +488,7 @@ main_tab <- function() {
     rename(player_team = team_name) |> 
     mutate(opposition_team = ifelse(home_team == player_team, away_team, home_team)) |>
     relocate(player_team, opposition_team, .after = player_name) |> 
+    relocate(start_time, .after = match) |> 
     select(-join_name, -given_name, -last_name)
   
   #===============================================================================

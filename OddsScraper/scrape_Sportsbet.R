@@ -465,7 +465,8 @@ player_props_function <- function() {
     mutate(match_id = as.numeric(match_id)) |> 
     left_join(team_names, by = "match_id") |> 
     mutate(match = paste(home_team, "v", away_team)) |> 
-    left_join(player_prop_metadata)
+    left_join(player_prop_metadata) |> 
+    left_join(sportsbet_match_times |> select(-home_team, -away_team), by = c("match_id", "match"))
   
   # Get batter hits alternate lines---------------------------------------------
   batter_hits_alternate <-
@@ -496,6 +497,7 @@ player_props_function <- function() {
     relocate(match, .before = player_name) |>
     transmute(
       match,
+      start_time,
       home_team,
       away_team,
       market_name,
@@ -536,7 +538,8 @@ player_props_function <- function() {
     mutate(match_id = as.numeric(match_id)) |> 
     left_join(team_names, by = "match_id") |> 
     mutate(match = paste(home_team, "v", away_team)) |> 
-    left_join(player_prop_metadata)
+    left_join(player_prop_metadata) |> 
+    left_join(sportsbet_match_times |> select(-home_team, -away_team), by = c("match_id", "match"))
   
   # Get pitcher strikeouts alternate lines---------------------------------------------
 
@@ -559,6 +562,7 @@ player_props_function <- function() {
     relocate(match, .before = player_name) |>
     transmute(
       match,
+      start_time,
       home_team,
       away_team,
       market_name = "Pitcher Strikeouts",
@@ -600,6 +604,7 @@ player_props_function <- function() {
     relocate(match, .before = player_name) |>
     transmute(
       match,
+      start_time,
       home_team,
       away_team,
       market_name = "Pitcher Strikeouts",
@@ -639,6 +644,7 @@ player_props_function <- function() {
     relocate(match, .before = player_name) |>
     transmute(
       match,
+      start_time,
       home_team,
       away_team,
       market_name = "Pitcher Strikeouts",
@@ -669,6 +675,7 @@ player_props_function <- function() {
     # bind_rows(batter_hits_over_under) |>
     select(
       "match",
+      "start_time",
       "home_team",
       "away_team",
       "market_name",
@@ -693,6 +700,7 @@ player_props_function <- function() {
     bind_rows(pitcher_strikeouts_over_under) |>
     select(
       "match",
+      "start_time",
       "home_team",
       "away_team",
       "market_name",

@@ -4,12 +4,6 @@ library(rvest)
 library(httr2)
 library(jsonlite)
 
-# Libraries
-library(tidyverse)
-library(rvest)
-library(httr2)
-library(jsonlite)
-
 # Get Rosters
 MLB_2024_Active_Rosters <- read_rds("Data/MLB_2024_Active_Rosters.rds")
 
@@ -204,7 +198,7 @@ totals_all <-
   mutate(match = paste(home_team, "v", away_team)) |>
   mutate(agency = "Neds") |>
   mutate(market_name = "Total Runs Over/Under") |> 
-  select(match, start_time, market_name, line, over_price, under_price, agency)
+  select(match, start_time, market_name, home_team, away_team, line, over_price, under_price, agency)
 
 ##%######################################################%##
 #                                                          #
@@ -212,8 +206,108 @@ totals_all <-
 #                                                          #
 ##%######################################################%##
 
+# Filter to only include line markets
+line_data <-
+  market_df |> 
+  filter(str_detect(market_name, "^Line")) |> 
+  select(-market_name)
 
+# Home lines
+line_home <-
+  line_data |> 
+  separate(match_name, c("home_team", "away_team"), sep = " vs ", remove = FALSE) |>
+  mutate(home_team = fix_team_names(home_team)) |>
+  mutate(away_team = fix_team_names(away_team)) |>
+  mutate(match_name = paste(home_team, "v", away_team)) |>
+  mutate(line = str_extract(entrants, "\\(.*\\)")) |>
+  mutate(line = str_remove(line, "\\(")) |>
+  mutate(line = str_remove(line, "\\)")) |>
+  mutate(line = as.numeric(line)) |>
+  mutate(team = str_remove(entrants, " \\(.*\\)")) |>
+  mutate(team = fix_team_names(team)) |> 
+  filter(team == home_team) |>
+  select(match = match_name, start_time, home_team, line, home_price = price)
 
+# Away lines
+line_away <-
+  line_data |> 
+  separate(match_name, c("home_team", "away_team"), sep = " vs ", remove = FALSE) |>
+  mutate(home_team = fix_team_names(home_team)) |>
+  mutate(away_team = fix_team_names(away_team)) |>
+  mutate(match_name = paste(home_team, "v", away_team)) |>
+  mutate(line = str_extract(entrants, "\\(.*\\)")) |>
+  mutate(line = str_remove(line, "\\(")) |>
+  mutate(line = str_remove(line, "\\)")) |>
+  mutate(line = as.numeric(line)) |>
+  mutate(team = str_remove(entrants, " \\(.*\\)")) |>
+  mutate(team = fix_team_names(team)) |> 
+  filter(team == away_team) |>
+  select(match = match_name, start_time, away_team, line, away_price = price)
+
+# Merge home and away lines
+lines_all <-
+  line_home |> 
+  left_join(line_away) |> 
+  mutate(margin = round(1 / home_price + 1 / away_price, digits = 2)) |>
+  mutate(agency = "Neds") |>
+  mutate(market_name = "Line") |> 
+  select(match, start_time, market_name, home_team, away_team, line, home_price, away_price, margin, agency)
+
+##%######################################################%##
+#                                                          #
+####                 Pitcher Strikeouts                 ####
+#                                                          #
+##%######################################################%##
+
+# Filter to only include pitcher strikeouts markets
+pitcher_strikeouts <-
+  market_df |> 
+  filter(str_detect(market_name, "Strikeouts"))
+
+pitcher_strikeouts_alternate <-
+  pitcher_strikeouts |> 
+  filter(str_detect(entrants, "\\+")) |>
+  mutate(line = str_extract(entrants, "\\d+")) |>
+  mutate(line = as.numeric(line) - 0.5) |>
+  mutate(player_name = str_remove(entrants, " \\d+.*$")) |>
+  select(match = match_name, start_time, player_name, line, over_price = price)
+
+pitcher_strikeouts_over <- 
+  pitcher_strikeouts |> 
+  filter(str_detect(entrants, "Over")) |>
+  mutate(line = as.numeric(handicaps)) |> 
+  mutate(player_name = str_remove(market_name, "^Pitcher Strikeouts O/U - ")) |>
+  select(match = match_name, start_time, player_name, line, over_price = price)
+
+pitcher_strikeouts_under <-
+  pitcher_strikeouts |> 
+  filter(str_detect(entrants, "Under")) |>
+  mutate(line = as.numeric(handicaps)) |> 
+  mutate(player_name = str_remove(market_name, "^Pitcher Strikeouts O/U - ")) |>
+  select(match = match_name, start_time, player_name, line, under_price = price)
+
+pitcher_strikeouts_all <-
+  pitcher_strikeouts_alternate |> 
+  bind_rows(pitcher_strikeouts_over) |>
+  left_join(pitcher_strikeouts_under) |>
+  separate(match, c("home_team", "away_team"), sep = " vs ", remove = FALSE) |>
+  mutate(home_team = fix_team_names(home_team)) |>
+  mutate(away_team = fix_team_names(away_team)) |>
+  mutate(match = paste(home_team, "v", away_team)) |> 
+  mutate(player_name = case_when(
+    player_name == "Reynaldo Lopez" ~ "Reynaldo López",
+    player_name == "Ranger Suarez" ~ "Ranger Suárez",
+    player_name == "Yilber Diaz" ~ "Yilber Díaz",
+    .default = player_name
+  )) |> 
+  left_join(pitchers, by = c("player_name" = "person_full_name")) |> 
+  mutate(opposition_team = if_else(team_name == home_team, away_team, home_team)) |>
+  rename(player_team = team_name) |>
+  relocate(player_team, opposition_team, .after = player_name) |> 
+  select(-join_name, -given_name, -last_name) |>
+  mutate(market_name = "Pitcher Strikeouts") |> 
+  mutate(agency = "Neds")
+  
 ##%######################################################%##
 #                                                          #
 ####                  Write out as CSV                  ####
@@ -222,3 +316,5 @@ totals_all <-
 
 h2h_data |> write_csv("Data/scraped_odds/neds_h2h.csv")
 totals_all |> write_csv("Data/scraped_odds/neds_total_runs.csv")
+lines_all |> write_csv("Data/scraped_odds/neds_match_line.csv")
+pitcher_strikeouts_all |> write_csv("Data/scraped_odds/neds_pitcher_strikeouts.csv")
