@@ -24,7 +24,7 @@ async def main():
     os.makedirs(output_dir, exist_ok=True)
 
     async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=False) # You have headless=False, good for observation
+        browser = await p.chromium.launch(headless=True) # You have headless=False, good for observation
         page = await browser.new_page()
 
         # Counter to generate unique file names

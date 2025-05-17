@@ -19,7 +19,7 @@ rm OddsScraper/Neds/*.json
 Rscript OddsScraper/Bet365/scrape_bet365.R
 
 /Users/jamesbrown/.pyenv/versions/3.12.5/bin/python3 OddsScraper/Neds/get_neds_urls.py
-Rscript OddsScraper/Neds/get_neds__match_urls.R
+Rscript OddsScraper/Neds/get_neds_match_urls.R
 /Users/jamesbrown/.pyenv/versions/3.12.5/bin/python3 OddsScraper/Neds/get_match_json.py
 Rscript OddsScraper/Neds/scrape_neds.R
 

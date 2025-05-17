@@ -48,6 +48,36 @@ main_markets_function <- function() {
     sportsbet_html |> 
     html_nodes(".White_fqa53j6")
   
+  # Get which matches are live
+  index <- c()
+  status <- c()
+  
+  for (i in 1:length(matches)) {
+    # Get match status
+    match_status <-
+      matches[[i]] |>
+      html_nodes(".live_fst4f0d") |>
+      html_text()
+    
+    index <- c(index, i)
+    # If match is live, append to status
+    if (length(match_status) == 0) {
+      match_status <- "Not Live"
+    } else {
+      match_status <- "Live"
+    }
+    
+    status <- c(status, match_status)
+    
+  }
+  
+  non_live_indexes <-
+    tibble(index, status) |>
+    filter(status == "Not Live")
+  
+  # Remove live matches
+  matches <- matches[non_live_indexes$index]
+  
   # Function to get team names
   get_team_names <- function(match) {
     team_names <-
@@ -144,6 +174,36 @@ player_props_function <- function() {
     sportsbet_html |> 
     html_nodes(".White_fqa53j6")
   
+  # Get which matches are live
+  index <- c()
+  status <- c()
+  
+  for (i in 1:length(matches)) {
+    # Get match status
+    match_status <-
+      matches[[i]] |>
+      html_nodes(".live_fst4f0d") |>
+      html_text()
+    
+    index <- c(index, i)
+    # If match is live, append to status
+    if (length(match_status) == 0) {
+      match_status <- "Not Live"
+    } else {
+      match_status <- "Live"
+    }
+    
+    status <- c(status, match_status)
+    
+  }
+  
+  non_live_indexes <-
+    tibble(index, status) |>
+    filter(status == "Not Live")
+  
+  # Remove live matches
+  matches <- matches[non_live_indexes$index]
+  
   # Function to get team names
   get_team_names <- function(match) {
     team_names <-
@@ -215,16 +275,15 @@ player_props_function <- function() {
     html_nodes(".linkMultiMarket_fcmecz0") |> 
     html_attr("href")
   
+  # Filter to non-live matches
+  match_links <-
+    match_links[non_live_indexes$index]
+  
   # Get match IDs from links
   match_ids <-
     match_links |>
     str_extract("\\d{4,10}$") |>
     as.numeric()
-  
-  # Get data from main market page
-  matches <-
-    sportsbet_html |> 
-    html_nodes(".White_fqa53j6")
   
   # Get team names that correspond to each match link
   team_names <-
