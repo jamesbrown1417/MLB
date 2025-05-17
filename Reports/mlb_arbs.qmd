@@ -1,0 +1,238 @@
+---
+title: "MLB Arbs"
+execute:
+  echo: false
+  message: false
+  warning: false
+author: "James Brown"
+date: "`r Sys.Date()`"
+format:
+  html:
+    df-print: kable
+    theme: cosmo
+    self-contained: true
+    toc: true
+    toc-depth: 3
+    fig-width: 8
+    fig-height: 6
+editor: visual
+---
+
+```{r}
+# Get the current date and time
+current_time <- Sys.time()
+
+# Format the timestamp to be more aesthetic and human-readable
+formatted_time <- format(current_time, "%A, %d %B %Y at %I:%M %p")
+
+# Output the formatted timestamp
+cat("Generated on:", formatted_time)
+```
+
+```{ojs}
+viewof odds1 = Inputs.text({
+  label: "Odds 1:",
+  placeholder: "Enter odds...",
+  value: "2.4" // Default value for demonstration
+})
+
+viewof stake1 = Inputs.text({
+  label: "Stake 1:",
+  placeholder: "Enter stake...",
+  value: "100" // Default value for demonstration
+})
+
+viewof odds2 = Inputs.text({
+  label: "Odds 2:",
+  placeholder: "Enter odds...",
+  value: "1.8" // Default value for demonstration
+})
+
+// Format numbers to two decimal places
+formatNumber = (value) => parseFloat(value).toFixed(2)
+
+// Format stakes as dollars
+formatCurrency = (value) => `$${parseFloat(value).toFixed(2)}`
+
+// Calculate the required stake for arbitrage
+stake2 = {
+  const o1 = parseFloat(odds1);
+  const s1 = parseFloat(stake1);
+  const o2 = parseFloat(odds2);
+  if (!isNaN(o1) && !isNaN(s1) && !isNaN(o2)) {
+    return (s1 * o1) / o2;
+  } else {
+    return "Please enter valid numerical values.";
+  }
+}
+
+// Calculate arbitrage percentage (sum of reciprocals of odds minus 1)
+arbitragePercentage = {
+  const o1 = parseFloat(odds1);
+  const o2 = parseFloat(odds2);
+  if (!isNaN(o1) && !isNaN(o2)) {
+    const arb = (1 / o1) + (1 / o2);
+    return -100 * (1 - arb); // Percentage below 1
+  } else {
+    return "Please enter valid numerical values.";
+  }
+}
+
+// Calculate total profit (if arbitrage exists)
+totalProfit = {
+  const o1 = parseFloat(odds1);
+  const s1 = parseFloat(stake1);
+  const s2 = stake2;
+  if (!isNaN(o1) && !isNaN(s1) && typeof s2 === "number") {
+    // Profit if Bet 1 wins
+    const profit1 = (s1 * o1) - (s1 + s2);
+    return profit1; // Both bets yield the same profit
+  } else {
+    return "Please enter valid numerical values.";
+  }
+}
+
+// Output the results in an aesthetic format with left-justified columns
+html`
+  <div style="
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  ">
+    <div style="display: flex; justify-content: space-between; gap: 20px;">
+      <div style="flex: 1; text-align: left;">
+        <h3 style="color: #34495e; text-align: left;">Odds</h3>
+        <p><strong>Odds 1:</strong> ${formatNumber(odds1)}</p>
+        <p><strong>Odds 2:</strong> ${formatNumber(odds2)}</p>
+      </div>
+      <div style="flex: 1; text-align: left;">
+        <h3 style="color: #34495e; text-align: left;">Stakes</h3>
+        <p><strong>Stake 1:</strong> ${formatCurrency(stake1)}</p>
+        <p><strong>Stake 2:</strong> ${typeof stake2 === "number" ? formatCurrency(stake2) : stake2}</p>
+      </div>
+    </div>
+    <hr style="border: none; border-top: 1px solid #ddd;">
+    <h3 style="color: #3498db; text-align: center;">
+      Arbitrage Percentage: ${typeof arbitragePercentage === "number" ? formatNumber(-arbitragePercentage) + "%" : arbitragePercentage}
+    </h3>
+    <h3 style="color: #27ae60; text-align: center;">
+      Total Profit: ${typeof totalProfit === "number" ? formatCurrency(totalProfit) : totalProfit}
+    </h3>
+  </div>
+`
+```
+
+```{r}
+# Libraries
+library(tidyverse)
+
+# Read in files
+all_player_hits <-
+  read_rds("../Data/processed_odds/all_player_hits.rds")
+
+all_player_strikeouts <-
+  read_rds("../Data/processed_odds/all_player_strikeouts.rds")
+
+all_player_rbis <-
+  read_rds("../Data/processed_odds/all_player_rbis.rds")
+
+all_player_hrs <-
+  read_rds("../Data/processed_odds/all_player_hrs.rds")
+
+all_odds <-
+  bind_rows(all_player_hits,
+            all_player_strikeouts,
+            all_player_rbis,
+            all_player_hrs)
+
+all_arbs <- read_rds("../Data/processed_odds/all_player_arbs.rds")
+
+```
+
+```{r}
+# Source devig function
+source("../Scripts/devig_function.R")
+
+# Get cases where pinnacle is the overs and unders
+pinnacle_odds <-
+all_odds |> 
+  filter(agency == "Pinnacle")
+
+# Get devigged prices
+devigged_prices_pin <- 
+  de_vig_log(over_price = pinnacle_odds$over_price, under_price = pinnacle_odds$under_price)
+
+pinnacle_odds_devigged <-
+pinnacle_odds |> 
+  bind_cols(devigged_prices_pin) |> 
+  relocate(over_price_devigged, .after = over_price) |> 
+    relocate(under_price_devigged, .after = under_price)
+```
+
+::: panel-tabset
+## Arbs
+
+```{r}
+#| column: page
+
+all_arbs |> 
+  filter(margin > 0) |> 
+  mutate(margin = round(margin, 2)) |>
+  arrange(desc(margin))
+```
+
+## Top Down - Pinnacle
+
+```{r}
+# Get all individual datasets for Pinnacle
+pinnacle_overs <-
+  pinnacle_odds_devigged |> 
+  select(match, player_name, line, market_name, over_price_devigged)
+
+pinnacle_unders <-
+  pinnacle_odds_devigged |> 
+  select(match, player_name, line, market_name, under_price_devigged)
+
+all_other_unders <-
+  all_odds |> 
+  select(match, player_name, line, market_name, under_price, agency)
+
+all_other_overs <-
+  all_odds |> 
+  select(match, player_name, line, market_name, over_price, agency)
+
+# Pinnacle overs and other overs
+pinnacle_1 <-
+  pinnacle_overs |> 
+  left_join(all_other_overs) |> 
+  mutate(EV = 1/over_price_devigged - 1/over_price) |> 
+  mutate(EV = round(100*EV, 3)) |> 
+  arrange(desc(EV)) |> 
+  distinct() |> 
+  mutate(type = "Overs") |> 
+  select(match, player_name, line, market_name, pinnacle_devigged_price = over_price_devigged, price = over_price, type, agency, EV)
+
+# Pinnacle unders and other unders
+pinnacle_2 <-
+  pinnacle_unders |> 
+  left_join(all_other_unders) |> 
+  mutate(EV = 1/under_price_devigged - 1/under_price) |> 
+  mutate(EV = round(100*EV, 3)) |> 
+  arrange(desc(EV)) |> 
+  distinct() |> 
+  mutate(type = "Unders") |> 
+  select(match, player_name, line, market_name, pinnacle_devigged_price = under_price_devigged, price = under_price, type, agency, EV)
+
+# Combine and filter positive EV opportunities
+pinnacle_1 |> 
+  bind_rows(pinnacle_2) |> 
+  filter(EV > 0) |> 
+  arrange(desc(EV)) |> 
+  mutate(pinnacle_devigged_price = round(pinnacle_devigged_price, 2))
+```
+:::

@@ -11,14 +11,14 @@ library(tidyverse)
 
 # Get all team info
 all_teams <-
-  mlb_teams(season = 2024) |> 
+  mlb_teams(season = 2025) |> 
   filter(sport_name == "Major League Baseball")
 
 # Create function that takes team ID and team name and returns the roster
 get_team_roster <- function(team_id, team_name) {
   # Get the team roster
   team_roster <-
-    mlb_rosters(team_id, season = 2024, roster_type = "40man") |> 
+    mlb_rosters(team_id, season = 2025, roster_type = "40man") |> 
     mutate(team_name = team_name) |> 
     relocate(team_name, .after = person_full_name)
   
@@ -36,4 +36,4 @@ all_teams |>
 # Write out as RDS
 #===============================================================================
 
-write_rds(all_rosters, "Data/MLB_2024_Active_Rosters.rds")
+write_rds(all_rosters, "Data/MLB_2025_Active_Rosters.rds")

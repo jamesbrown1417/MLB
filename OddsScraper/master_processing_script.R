@@ -15,15 +15,13 @@ run_scraping <- function(script_name) {
 }
 
 # Run all odds scraping scripts
-run_scraping("OddsScraper/scrape_betr.R")
-run_scraping("OddsScraper/scrape_BetRight.R")
-run_scraping("OddsScraper/scrape_pointsbet.R")
-run_scraping("OddsScraper/scrape_sportsbet.R")
-run_scraping("OddsScraper/scrape_TAB.R")
-# run_scraping("OddsScraper/scrape_TopSport.R")
+# run_scraping("OddsScraper/scrape_betr.R")
+# run_scraping("OddsScraper/scrape_BetRight.R")
+# run_scraping("OddsScraper/scrape_pointsbet.R")
+# run_scraping("OddsScraper/scrape_sportsbet.R")
+# run_scraping("OddsScraper/scrape_TAB.R")
 # run_scraping("OddsScraper/scrape_bet365.R")
-# run_scraping("OddsScraper/scrape_bluebet.R")
-run_scraping("OddsScraper/Neds/scrape_neds.R")
+# run_scraping("OddsScraper/Neds/scrape_neds.R")
 # run_scraping("OddsScraper/scrape_unibet.R")
 # run_scraping("OddsScraper/scrape_dabble.R")
 
@@ -190,4 +188,96 @@ best_pitcher_strikeouts <-
   inner_join(best_under_strikeouts_odds) |> 
   mutate(margin = (1/over_price + 1/under_price)) |>
   mutate(margin = 100 - 100*margin) |> 
+  arrange(desc(margin))
+
+#===============================================================================
+# Batter Hits
+#===============================================================================
+
+# Read in the data
+all_batter_hits_files <- list.files("Data/scraped_odds", "hits", full.names = TRUE)
+
+all_batter_hits_data <-
+  all_batter_hits_files |>
+  map_dfr(read_csv) |>
+  arrange(match, home_team, away_team, player_name, line, desc(over_price)) |> 
+  mutate(market_name = "Batter Hits")
+
+# Get the best over odds
+best_over_batter_hits_odds <-
+  all_batter_hits_data |>
+  group_by(match, home_team, away_team, player_name, line) |>
+  arrange(match, home_team, away_team, player_name, line, desc(over_price)) |>
+  slice_head(n = 1) |>
+  select(-under_price) |>
+  select(-contains(("_id"))) |>
+  rename(over_agency = agency) |>
+  ungroup() |>
+  select(-start_time)
+
+# Get the best under odds
+best_under_batter_hits_odds <-
+  all_batter_hits_data |>
+  filter(!is.na(under_price)) |>
+  group_by(match, home_team, away_team, player_name, line) |>
+  arrange(match, home_team, away_team, player_name, line, desc(under_price)) |>
+  slice_head(n = 1) |>
+  select(-over_price) |>
+  select(-contains(("_id"))) |>
+  rename(under_agency = agency) |>
+  ungroup() |>
+  select(-start_time)
+
+# Merge the data
+best_batter_hits <-
+  best_over_batter_hits_odds |>
+  left_join(best_under_batter_hits_odds) |>
+  mutate(margin = (1/over_price + 1/under_price)) |>
+  mutate(margin = 100 - 100 * margin) |>
+  arrange(desc(margin))
+
+#===============================================================================
+# Batter RBIs
+#===============================================================================
+
+# Read in the data
+all_batter_rbis_files <- list.files("Data/scraped_odds", "rbis|runs_batted_in", full.names = TRUE)
+
+all_batter_rbis_data <-
+  all_batter_rbis_files |>
+  map_dfr(read_csv) |>
+  arrange(match, home_team, away_team, player_name, line, desc(over_price)) |> 
+  mutate(market_name = "Batter RBIs")
+
+# Get the best over odds
+best_over_batter_rbis_odds <-
+  all_batter_rbis_data |>
+  group_by(match, home_team, away_team, player_name, line) |>
+  arrange(match, home_team, away_team, player_name, line, desc(over_price)) |>
+  slice_head(n = 1) |>
+  select(-under_price) |>
+  select(-contains("_id")) |>
+  rename(over_agency = agency) |>
+  ungroup() |>
+  select(-start_time)
+
+# Get the best under odds
+best_under_batter_rbis_odds <-
+  all_batter_rbis_data |>
+  filter(!is.na(under_price)) |>
+  group_by(match, home_team, away_team, player_name, line) |>
+  arrange(match, home_team, away_team, player_name, line, desc(under_price)) |>
+  slice_head(n = 1) |>
+  select(-over_price) |>
+  select(-contains("_id")) |>
+  rename(under_agency = agency) |>
+  ungroup() |>
+  select(-start_time)
+
+# Merge the data
+best_batter_rbis <-
+  best_over_batter_rbis_odds |>
+  inner_join(best_under_batter_rbis_odds) |>
+  mutate(margin = (1/over_price + 1/under_price)) |>
+  mutate(margin = 100 - 100 * margin) |>
   arrange(desc(margin))

@@ -5,11 +5,11 @@ library(httr2)
 library(jsonlite)
 
 # Get Rosters
-MLB_2024_Active_Rosters <- read_rds("Data/MLB_2024_Active_Rosters.rds")
+MLB_2025_Active_Rosters <- read_rds("Data/MLB_2025_Active_Rosters.rds")
 
 # Get Pitchers
 pitchers <-
-  MLB_2024_Active_Rosters |>
+  MLB_2025_Active_Rosters |>
   filter(position_name == "Pitcher") |> 
   select(person_full_name, team_name) |> 
   # separate full name into given names and last name
@@ -18,7 +18,7 @@ pitchers <-
 
 # Batters
 batters <-
-MLB_2024_Active_Rosters |>
+MLB_2025_Active_Rosters |>
   filter(position_name != "Pitcher") |> 
   select(person_full_name, team_name) |> 
   # separate full name into given names and last name
@@ -490,6 +490,99 @@ main_tab <- function() {
     relocate(player_team, opposition_team, .after = player_name) |> 
     relocate(start_time, .after = match) |> 
     select(-join_name, -given_name, -last_name)
+
+  #===============================================================================
+  # Player RBIs (Runs Batted In)
+  #===============================================================================
+  
+  # Filter to player RBI markets - Adjust regex based on actual market names
+  # Common names might be "Player RBIs", "Player Runs Batted In", "To Record An RBI"
+  player_rbis_markets_all <-
+    all_tab_markets |> 
+    filter(str_detect(market_name, "RBI|Runs Batted In")) # Broad filter initially
+  
+  # Separate main Over/Under markets (e.g., "Player RBIs O/U 0.5")
+  player_rbis_markets_main <-
+    player_rbis_markets_all |> 
+    filter(str_detect(market_name, "(Player RBIs|Player Runs Batted In)$")) |> # Filter for standard O/U markets
+    filter(str_detect(prop_name, "Over|Under")) |>
+    mutate(player_name = str_extract(prop_name, "^.*(?=\\s(Over|Under))")) |> # Extract name before Over/Under
+    # mutate(player_name = str_remove_all(player_name, "( Over)|( Under)")) |> # Redundant if using the lookahead above
+    mutate(line = str_extract(prop_name, "[0-9\\.]{1,4}")) |> 
+    mutate(line = as.numeric(line)) |>
+    mutate(type = str_detect(prop_name, "Over|\\+")) |> 
+    mutate(type = ifelse(type, "Over", "Under"))
+  # No line adjustment needed here as these are standard lines (e.g., 0.5, 1.5)
+  
+  # Separate Alternate/Specific RBI markets (e.g., "Player To Record An RBI")
+  alternate_player_rbis_markets <-
+    player_rbis_markets_all |> 
+    filter(str_detect(market_name, "\\+ Runs Batted In")) |> # Filter for the specific "at least one" market
+    mutate(player_name = prop_name) |> # Assuming prop_name is just the player name here
+    mutate(line = str_extract(market_name, "\\d+")) |> # Extract the line from the market name
+    mutate(line = as.numeric(line) - 0.5) |>
+    transmute(match, start_time, market_name = "Player RBIs", player_name, line, over_price = price, prop_id)
+  
+  # Over lines
+  over_lines_rbis <-
+    player_rbis_markets_main |> 
+    filter(type == "Over") |> 
+    mutate(market_name = "Player RBIs") |> # Standardize market name
+    select(match, start_time, market_name, player_name, line, over_price = price, prop_id) |> 
+    bind_rows(alternate_player_rbis_markets) # Combine standard Over lines with the "To Record An RBI" lines
+  
+  # Under lines
+  under_lines_rbis <-
+    player_rbis_markets_main |> 
+    filter(type == "Under") |> 
+    mutate(market_name = "Player RBIs") |> # Standardize market name
+    select(match, start_time, market_name, player_name, line, under_price = price, under_prop_id = prop_id)
+  
+  # Combine Over and Under lines for RBIs
+  tab_player_rbis_markets <-
+    over_lines_rbis |>
+    full_join(under_lines_rbis, by = c("match", "start_time", "market_name", "player_name", "line")) |> # Join on all common identifiers
+    select(match, start_time, market_name, player_name, line, over_price, under_price, prop_id, under_prop_id) |> 
+    mutate(agency = "TAB")
+  
+  # Fix team names (assuming fix_team_names function exists)
+  tab_player_rbis_markets <-
+    tab_player_rbis_markets |> 
+    # Ensure 'match' column exists before attempting to separate
+    filter(!is.na(match)) |>
+    separate(match, into = c("home_team", "away_team"), sep = " v ", remove = FALSE, extra = "merge") |> # Handle potential extra " v "
+    mutate(home_team = fix_team_names(home_team)) |>
+    mutate(away_team = fix_team_names(away_team)) |>
+    # Reconstruct match carefully in case separation resulted in unexpected columns
+    mutate(match = paste(home_team, "v", away_team)) |>
+    # Fix player names (keep existing fixes, add more if needed for RBI data)
+    mutate(player_name = case_when(
+      player_name == "Tomas Nido" ~ "Tomás Nido",
+      player_name == "Luis Garcia" ~ "Luis García Jr.",
+      player_name == "Adolis Garcia" ~ "Adolis García",
+      player_name == "Jeremy Pena" ~ "Jeremy Peña",
+      player_name == "Mauricio Dubon" ~ "Mauricio Dubón",
+      player_name == "Eugenio Suarez" ~ "Eugenio Suárez",
+      player_name == "Elias Diaz" ~ "Elias Díaz",
+      player_name == "Javier Baez" ~ "Javier Báez",
+      player_name == "Wenceel Perez" ~ "Wenceel Pérez",
+      player_name == "Ryan OHearn" ~ "Ryan O'Hearn",
+      player_name == "Logan OHoppe" ~ "Logan O'Hoppe",
+      player_name == "Josh H. Smith" ~ "Josh Smith",
+      player_name == "Ivan Herrera" ~ "Iván Herrera",
+      # Add any other specific RBI player name corrections here
+      .default = player_name
+    )) |> 
+    # Join with batter/player info (assuming 'batters' df exists and has relevant columns)
+    left_join(batters, by = c("player_name" = "person_full_name")) |> 
+    rename(player_team = team_name) |> 
+    # Determine opposition team
+    mutate(opposition_team = ifelse(home_team == player_team, away_team, home_team)) |>
+    # Arrange columns for clarity
+    relocate(player_team, opposition_team, .after = player_name) |> 
+    relocate(start_time, .after = match) |> 
+    # Remove intermediate or potentially unnecessary columns from the join
+    select(-any_of(c("join_name", "given_name", "last_name"))) # Use any_of to avoid errors if columns don't exist
   
   #===============================================================================
   # Write to CSV------------------------------------------------------------------
@@ -498,6 +591,7 @@ main_tab <- function() {
   tab_player_strikeouts_markets |> write_csv("Data/scraped_odds/tab_pitcher_strikeouts.csv")
   tab_player_home_runs_markets |> write_csv("Data/scraped_odds/tab_batter_home_runs.csv")
   tab_player_hits_markets |> write_csv("Data/scraped_odds/tab_batter_hits.csv")
+  tab_player_rbis_markets |> write_csv("Data/scraped_odds/tab_batter_rbis.csv")
 }
 
 #===============================================================================

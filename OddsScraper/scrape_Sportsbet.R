@@ -9,14 +9,14 @@ library(glue)
 sportsbet_url = "https://www.sportsbet.com.au/betting/baseball/major-league-baseball"
 
 # Get Rosters
-MLB_2024_Active_Rosters <- read_rds("Data/MLB_2024_Active_Rosters.rds")
+MLB_2025_Active_Rosters <- read_rds("Data/MLB_2025_Active_Rosters.rds")
 
 # Fix team names function
 source("Functions/fix_team_names.R")
 
 # Get Pitchers
 pitchers <-
-  MLB_2024_Active_Rosters |>
+  MLB_2025_Active_Rosters |>
   filter(position_name == "Pitcher") |> 
   select(person_full_name, team_name) |> 
   # separate full name into given names and last name
@@ -25,12 +25,17 @@ pitchers <-
 
 # Batters
 batters <-
-  MLB_2024_Active_Rosters |>
+  MLB_2025_Active_Rosters |>
   filter(position_name != "Pitcher") |> 
   select(person_full_name, team_name) |> 
   # separate full name into given names and last name
   separate(person_full_name, c("given_name", "last_name"), sep = " ", remove = FALSE) |> 
   mutate(join_name = paste(substr(given_name, 1, 1), last_name, sep = ". "))
+
+# Get sportsbet HTML
+sportsbet_html <-
+sportsbet_url |> 
+  read_html_live()
 
 #===============================================================================
 # Use rvest to get main market information-------------------------------------#
@@ -40,8 +45,7 @@ main_markets_function <- function() {
   
   # Get data from main market page
   matches <-
-    sportsbet_url |> 
-    read_html() |>
+    sportsbet_html |> 
     html_nodes(".White_fqa53j6")
   
   # Function to get team names
@@ -137,8 +141,7 @@ player_props_function <- function() {
   
   # Get data from main market page
   matches <-
-    sportsbet_url |> 
-    read_html() |>
+    sportsbet_html |> 
     html_nodes(".White_fqa53j6")
   
   # Function to get team names
@@ -208,8 +211,7 @@ player_props_function <- function() {
   
   # Get match links
   match_links <-
-    sportsbet_url |> 
-    read_html() |>
+    sportsbet_html |>
     html_nodes(".linkMultiMarket_fcmecz0") |> 
     html_attr("href")
   
@@ -221,8 +223,7 @@ player_props_function <- function() {
   
   # Get data from main market page
   matches <-
-    sportsbet_url |> 
-    read_html() |>
+    sportsbet_html |> 
     html_nodes(".White_fqa53j6")
   
   # Get team names that correspond to each match link
@@ -268,6 +269,8 @@ player_props_function <- function() {
     # Make request and get response
     sb_response <-
       request(url) |>
+      req_user_agent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36") |> 
+      req_headers("Referer" = "https://www.sportsbet.com.au") |>
       req_perform() |> 
       resp_body_json()
     
@@ -311,6 +314,8 @@ player_props_function <- function() {
     # Make request and get response
     sb_response <-
       request(url) |>
+      req_user_agent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36") |> 
+      req_headers("Referer" = "https://www.sportsbet.com.au") |>
       req_perform() |> 
       resp_body_json()
     
@@ -445,19 +450,19 @@ player_props_function <- function() {
   #===============================================================================
   
   # Map function to batter hits urls
-  batter_hits_data <-
+  batter_markets <-
     map(batter_links, safe_read_prop_url)
   
   # Get just result part from output
-  batter_hits_data <-
-    batter_hits_data |>
+  batter_markets <-
+    batter_markets |>
     map("result") |>
     map_df(bind_rows)
   
   # Add market name
   batter_hits_data <-
-    batter_hits_data |>
-    filter(str_detect(prop_market_name, "Qtr", negate = TRUE)) |>
+    batter_markets |>
+    filter(str_detect(prop_market_name, "Home", negate = TRUE)) |>
     filter(str_detect(prop_market_name, "Hit")) |>
     mutate(market_name = "Player Hits") |> 
     mutate(url = str_extract(as.character(url), "[0-9]{6,8}")) |> 
@@ -507,6 +512,134 @@ player_props_function <- function() {
       line,
       over_price = prop_market_price,
       agency = "Sportsbet",
+      class_external_id,
+      competition_external_id,
+      event_external_id,
+      market_id,
+      player_id
+    )
+  
+  #===============================================================================
+  # Batter Runs
+  #===============================================================================
+  
+  # Add market name
+  batter_runs_data <-
+    batter_markets |>
+    filter(str_detect(prop_market_name, "Home", negate = TRUE)) |>
+    filter(str_detect(prop_market_name, "Run")) |>
+    mutate(market_name = "Player Runs") |> 
+    mutate(url = str_extract(as.character(url), "[0-9]{6,8}")) |> 
+    rename(match_id = url) |> 
+    mutate(match_id = as.numeric(match_id)) |> 
+    left_join(team_names, by = "match_id") |> 
+    mutate(match = paste(home_team, "v", away_team)) |> 
+    left_join(player_prop_metadata) |> 
+    left_join(sportsbet_match_times |> select(-home_team, -away_team), by = c("match_id", "match"))
+  
+  # Get batter runs alternate lines---------------------------------------------
+  batter_runs_alternate <-
+    batter_runs_data |>
+    mutate(prop_market_name = str_replace(prop_market_name, "a Run", "1+ Runs")) |>
+    filter(str_detect(prop_market_name, "Runs")) |>
+    mutate(line = str_extract(prop_market_name, "\\d{1,2}")) |>
+    mutate(line = as.numeric(line) - 0.5) |>
+    rename(player_name = selection_name_prop) |>
+    mutate(player_name = case_when(
+      player_name == "Tomas Nido"    ~ "Tomás Nido",
+      player_name == "Luis Garcia"   ~ "Luis García Jr.",
+      player_name == "Adolis Garcia" ~ "Adolis García",
+      player_name == "Jeremy Pena"   ~ "Jeremy Peña",
+      player_name == "Mauricio Dubon"~ "Mauricio Dubón",
+      player_name == "Eugenio Suarez"~ "Eugenio Suárez",
+      player_name == "Elias Diaz"    ~ "Elias Díaz",
+      player_name == "Javier Baez"   ~ "Javier Báez",
+      player_name == "Wenceel Perez" ~ "Wenceel Pérez",
+      player_name == "Ryan OHearn"    ~ "Ryan O'Hearn",
+      player_name == "Logan OHoppe"  ~ "Logan O'Hoppe",
+      player_name == "Josh H. Smith" ~ "Josh Smith",
+      player_name == "Ivan Herrera"  ~ "Iván Herrera",
+      .default = player_name
+    )) |> 
+    left_join(batters, by = c("player_name" = "person_full_name")) |> 
+    mutate(opposition_team = if_else(team_name == home_team, away_team, home_team)) |>
+    relocate(match, .before = player_name) |>
+    transmute(
+      match,
+      start_time,
+      home_team,
+      away_team,
+      market_name,
+      player_name,
+      player_team      = team_name,
+      opposition_team,
+      line,
+      over_price       = prop_market_price,
+      agency           = "Sportsbet",
+      class_external_id,
+      competition_external_id,
+      event_external_id,
+      market_id,
+      player_id
+    )
+  
+  #===============================================================================
+  # Batter RBIs
+  #===============================================================================
+  
+  # Add market name
+  batter_rbis_data <-
+    batter_markets |>
+    filter(str_detect(prop_market_name, "Qtr", negate = TRUE)) |>
+    filter(str_detect(prop_market_name, "RBI")) |>
+    mutate(market_name = "Player RBIs") |> 
+    mutate(url = str_extract(as.character(url), "[0-9]{6,8}")) |> 
+    rename(match_id = url) |> 
+    mutate(match_id = as.numeric(match_id)) |> 
+    left_join(team_names, by = "match_id") |> 
+    mutate(match = paste(home_team, "v", away_team)) |> 
+    left_join(player_prop_metadata) |> 
+    left_join(sportsbet_match_times |> select(-home_team, -away_team), by = c("match_id", "match"))
+  
+  # Get batter rbis alternate lines---------------------------------------------
+  batter_rbis_alternate <-
+    batter_rbis_data |>
+    mutate(prop_market_name = str_replace(prop_market_name, "an RBI", "1+ RBIs")) |>
+    filter(str_detect(prop_market_name, "RBIs")) |>
+    mutate(line = str_extract(prop_market_name, "\\d{1,2}")) |>
+    mutate(line = as.numeric(line) - 0.5) |>
+    rename(player_name = selection_name_prop) |>
+    mutate(player_name = case_when(
+      player_name == "Tomas Nido"    ~ "Tomás Nido",
+      player_name == "Luis Garcia"   ~ "Luis García Jr.",
+      player_name == "Adolis Garcia" ~ "Adolis García",
+      player_name == "Jeremy Pena"   ~ "Jeremy Peña",
+      player_name == "Mauricio Dubon"~ "Mauricio Dubón",
+      player_name == "Eugenio Suarez"~ "Eugenio Suárez",
+      player_name == "Elias Diaz"    ~ "Elias Díaz",
+      player_name == "Javier Baez"   ~ "Javier Báez",
+      player_name == "Wenceel Perez" ~ "Wenceel Pérez",
+      player_name == "Ryan OHearn"    ~ "Ryan O'Hearn",
+      player_name == "Logan OHoppe"  ~ "Logan O'Hoppe",
+      player_name == "Josh H. Smith" ~ "Josh Smith",
+      player_name == "Ivan Herrera"  ~ "Iván Herrera",
+      .default = player_name
+    )) |> 
+    left_join(batters, by = c("player_name" = "person_full_name")) |> 
+    mutate(opposition_team = if_else(team_name == home_team, away_team, home_team)) |>
+    relocate(match, .before = player_name) |>
+    transmute(
+      match,
+      start_time,
+      home_team,
+      away_team,
+      market_name,
+      player_name,
+      player_team      = team_name,
+      opposition_team,
+      line,
+      over_price       = prop_market_price,
+      agency           = "Sportsbet",
       class_external_id,
       competition_external_id,
       event_external_id,
@@ -721,6 +854,56 @@ player_props_function <- function() {
     mutate(market_name = "Pitcher Strikeouts") |>
     mutate(agency = "Sportsbet") |>
     write_csv("Data/scraped_odds/sportsbet_pitcher_strikeouts.csv")
+  
+  # Runs
+  batter_runs_alternate |>
+    # bind_rows(batter_runs_over_under) |>
+    select(
+      "match",
+      "start_time",
+      "home_team",
+      "away_team",
+      "market_name",
+      "player_name",
+      "player_team",
+      "line",
+      "over_price",
+      "agency",
+      "opposition_team",
+      "class_external_id",
+      "competition_external_id",
+      "event_external_id",
+      "market_id",
+      "player_id"
+    ) |>
+    mutate(market_name = "Batter Runs") |>
+    mutate(agency = "Sportsbet") |>
+    write_csv("Data/scraped_odds/sportsbet_batter_runs.csv")
+  
+  # RBIs
+  batter_rbis_alternate |>
+    # bind_rows(batter_rbis_over_under) |>
+    select(
+      "match",
+      "start_time",
+      "home_team",
+      "away_team",
+      "market_name",
+      "player_name",
+      "player_team",
+      "line",
+      "over_price",
+      "agency",
+      "opposition_team",
+      "class_external_id",
+      "competition_external_id",
+      "event_external_id",
+      "market_id",
+      "player_id"
+    ) |>
+    mutate(market_name = "Batter RBIs") |>
+    mutate(agency = "Sportsbet") |>
+    write_csv("Data/scraped_odds/sportsbet_batter_rbis.csv")
 }
 
 ##%######################################################%##
