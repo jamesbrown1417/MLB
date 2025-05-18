@@ -1,79 +1,79 @@
 {
     "entrants": {
-        "077beaea-a817-46a9-9eb4-971f50ad7840": {
-            "id": "077beaea-a817-46a9-9eb4-971f50ad7840",
-            "name": "Over (8)",
-            "visible": true,
-            "sort_order": 10,
-            "market_id": "bfc299f2-b224-4736-a37c-27bb40c7c34a"
-        },
-        "1aeb8a6f-1cad-4e89-af24-ff2a576c7b14": {
-            "id": "1aeb8a6f-1cad-4e89-af24-ff2a576c7b14",
-            "name": "Pittsburgh Pirates",
-            "home_away": "HOME",
-            "visible": true,
-            "sort_order": 10,
-            "market_id": "105e4eae-043f-44af-870a-f88e1d5c15df"
-        },
-        "59ff18f7-f549-4930-8ad0-fbb6aa2343c9": {
-            "id": "59ff18f7-f549-4930-8ad0-fbb6aa2343c9",
-            "name": "Under (8)",
+        "5a4755dc-e52b-472b-ab6a-e93491fe2080": {
+            "id": "5a4755dc-e52b-472b-ab6a-e93491fe2080",
+            "name": "Under (7.5)",
             "visible": true,
             "sort_order": 20,
-            "market_id": "bfc299f2-b224-4736-a37c-27bb40c7c34a"
+            "market_id": "13fc49cb-a125-4ad3-be5f-968a9721a906"
         },
-        "5ada689c-bc8c-4e7f-bf32-c6f830ecef39": {
-            "id": "5ada689c-bc8c-4e7f-bf32-c6f830ecef39",
-            "name": "Cincinnati Reds (-1.5)",
+        "b19d112c-1dba-4654-9b53-f4aedad29af4": {
+            "id": "b19d112c-1dba-4654-9b53-f4aedad29af4",
+            "name": "Over (7.5)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "13fc49cb-a125-4ad3-be5f-968a9721a906"
+        },
+        "e4736a25-3650-4133-ab40-0ecab4745439": {
+            "id": "e4736a25-3650-4133-ab40-0ecab4745439",
+            "name": "Cleveland Guardians (+1.5)",
             "home_away": "AWAY",
             "visible": true,
             "sort_order": 20,
-            "market_id": "f80d00b1-878f-43ce-bfbd-c6b5376f294c"
+            "market_id": "8eb6988d-22b0-433f-b0c4-64b02d52db24"
         },
-        "62beeac7-5601-438c-bd87-e2a605a8215d": {
-            "id": "62beeac7-5601-438c-bd87-e2a605a8215d",
-            "name": "Pittsburgh Pirates (+1.5)",
-            "home_away": "HOME",
-            "visible": true,
-            "sort_order": 10,
-            "market_id": "f80d00b1-878f-43ce-bfbd-c6b5376f294c"
-        },
-        "bf568178-f54a-440a-a320-87412d50d6f0": {
-            "id": "bf568178-f54a-440a-a320-87412d50d6f0",
-            "name": "Cincinnati Reds",
+        "f4b5d35e-cf43-441c-9e07-e89ef936a674": {
+            "id": "f4b5d35e-cf43-441c-9e07-e89ef936a674",
+            "name": "Cleveland Guardians",
             "home_away": "AWAY",
             "visible": true,
             "sort_order": 20,
-            "market_id": "105e4eae-043f-44af-870a-f88e1d5c15df"
+            "market_id": "4f04643a-63ce-4e44-aec7-b712376477a0"
+        },
+        "f8618b84-1c0e-4e63-b63a-da661e5290cb": {
+            "id": "f8618b84-1c0e-4e63-b63a-da661e5290cb",
+            "name": "Minnesota Twins",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "4f04643a-63ce-4e44-aec7-b712376477a0"
+        },
+        "fd9e800a-9cd1-4dec-a8b1-fa7af45f14f2": {
+            "id": "fd9e800a-9cd1-4dec-a8b1-fa7af45f14f2",
+            "name": "Minnesota Twins (-1.5)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "8eb6988d-22b0-433f-b0c4-64b02d52db24"
         }
     },
     "event_participants": {
-        "9cfa4099-3d62-4875-802f-4373c22e1a35": {
-            "id": "9cfa4099-3d62-4875-802f-4373c22e1a35",
-            "event_id": "d10cfda7-5c58-4f04-b6c0-bca1990f8c8c",
-            "name": "Cincinnati Reds",
+        "57063519-f62d-4d9d-940e-182560e14f8c": {
+            "id": "57063519-f62d-4d9d-940e-182560e14f8c",
+            "event_id": "54515dd3-fea6-4296-b016-def1e4533af6",
+            "name": "Cleveland Guardians",
             "home_away": "AWAY"
         },
-        "ca22521e-60e5-401e-b6e4-dce58422d9ba": {
-            "id": "ca22521e-60e5-401e-b6e4-dce58422d9ba",
-            "event_id": "d10cfda7-5c58-4f04-b6c0-bca1990f8c8c",
-            "name": "Pittsburgh Pirates",
+        "aa8071bf-9dab-477e-b3a7-e32fbd665b0a": {
+            "id": "aa8071bf-9dab-477e-b3a7-e32fbd665b0a",
+            "event_id": "54515dd3-fea6-4296-b016-def1e4533af6",
+            "name": "Minnesota Twins",
             "home_away": "HOME"
         }
     },
     "events": {
-        "d10cfda7-5c58-4f04-b6c0-bca1990f8c8c": {
-            "id": "d10cfda7-5c58-4f04-b6c0-bca1990f8c8c",
-            "name": "Pittsburgh Pirates vs Cincinnati Reds",
+        "54515dd3-fea6-4296-b016-def1e4533af6": {
+            "id": "54515dd3-fea6-4296-b016-def1e4533af6",
+            "name": "Minnesota Twins vs Cleveland Guardians",
             "event_type": {
                 "id": "6bfa0efc-05df-4ae1-9b1e-152365290cfd",
                 "name": "Match"
             },
             "match_status": "BettingOpen",
-            "advertised_start": "2025-05-19T22:40:00Z",
-            "actual_start": "2025-05-19T22:40:00Z",
+            "advertised_start": "2025-05-19T23:40:00Z",
+            "actual_start": "2025-05-19T23:40:00Z",
             "visible": true,
-            "slug": "pittsburgh-pirates-vs-cincinnati-reds",
+            "slug": "minnesota-twins-vs-cleveland-guardians",
             "competition": {
                 "id": "a5618779-2cb3-4c0a-b8cc-ce2517fbc8d4",
                 "name": "MLB",
@@ -89,31 +89,31 @@
                 {
                     "market_type_group_id": "95f7457f-bd84-4e9e-b714-c257b90c1031",
                     "market_ids": [
-                        "105e4eae-043f-44af-870a-f88e1d5c15df",
-                        "f80d00b1-878f-43ce-bfbd-c6b5376f294c",
-                        "bfc299f2-b224-4736-a37c-27bb40c7c34a"
+                        "4f04643a-63ce-4e44-aec7-b712376477a0",
+                        "8eb6988d-22b0-433f-b0c4-64b02d52db24",
+                        "13fc49cb-a125-4ad3-be5f-968a9721a906"
                     ]
                 },
                 {
                     "market_type_group_id": "f7331bb9-8791-4c1a-9b7b-cf2298c98757",
                     "market_ids": [
-                        "bfc299f2-b224-4736-a37c-27bb40c7c34a"
+                        "13fc49cb-a125-4ad3-be5f-968a9721a906"
                     ]
                 }
             ],
             "market_count": 3,
             "main_markets": [
-                "105e4eae-043f-44af-870a-f88e1d5c15df"
+                "4f04643a-63ce-4e44-aec7-b712376477a0"
             ],
             "market_ids": [
-                "105e4eae-043f-44af-870a-f88e1d5c15df",
-                "f80d00b1-878f-43ce-bfbd-c6b5376f294c",
-                "bfc299f2-b224-4736-a37c-27bb40c7c34a"
+                "4f04643a-63ce-4e44-aec7-b712376477a0",
+                "8eb6988d-22b0-433f-b0c4-64b02d52db24",
+                "13fc49cb-a125-4ad3-be5f-968a9721a906"
             ],
             "category_id": "02721435-4671-4cd0-98f7-15d41ee4103e",
             "participant_ids": [
-                "9cfa4099-3d62-4875-802f-4373c22e1a35",
-                "ca22521e-60e5-401e-b6e4-dce58422d9ba"
+                "57063519-f62d-4d9d-940e-182560e14f8c",
+                "aa8071bf-9dab-477e-b3a7-e32fbd665b0a"
             ]
         }
     },
@@ -134,108 +134,108 @@
         }
     },
     "markets": {
-        "105e4eae-043f-44af-870a-f88e1d5c15df": {
-            "id": "105e4eae-043f-44af-870a-f88e1d5c15df",
-            "event_id": "d10cfda7-5c58-4f04-b6c0-bca1990f8c8c",
+        "13fc49cb-a125-4ad3-be5f-968a9721a906": {
+            "id": "13fc49cb-a125-4ad3-be5f-968a9721a906",
+            "event_id": "54515dd3-fea6-4296-b016-def1e4533af6",
+            "market_type_id": "35fdd584-4bb9-47f7-a589-6291693d4d45",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Total (7.5)",
+            "advertised_start": {
+                "seconds": 1747698000
+            },
+            "actual_start": {
+                "seconds": 1747698000
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "b19d112c-1dba-4654-9b53-f4aedad29af4",
+                "5a4755dc-e52b-472b-ab6a-e93491fe2080"
+            ],
+            "num_winners": 1
+        },
+        "4f04643a-63ce-4e44-aec7-b712376477a0": {
+            "id": "4f04643a-63ce-4e44-aec7-b712376477a0",
+            "event_id": "54515dd3-fea6-4296-b016-def1e4533af6",
             "market_type_id": "7b77007b-7ec9-4cf6-a911-7cd1c9d30e74",
             "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
             "name": "Head To Head",
             "advertised_start": {
-                "seconds": 1747694400
+                "seconds": 1747698000
             },
             "actual_start": {
-                "seconds": 1747694400
+                "seconds": 1747698000
             },
             "is_primary": true,
             "same_game_multi_available": true,
             "visible": true,
             "entrant_ids": [
-                "1aeb8a6f-1cad-4e89-af24-ff2a576c7b14",
-                "bf568178-f54a-440a-a320-87412d50d6f0"
+                "f8618b84-1c0e-4e63-b63a-da661e5290cb",
+                "f4b5d35e-cf43-441c-9e07-e89ef936a674"
             ],
             "num_winners": 1
         },
-        "bfc299f2-b224-4736-a37c-27bb40c7c34a": {
-            "id": "bfc299f2-b224-4736-a37c-27bb40c7c34a",
-            "event_id": "d10cfda7-5c58-4f04-b6c0-bca1990f8c8c",
-            "market_type_id": "35fdd584-4bb9-47f7-a589-6291693d4d45",
-            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
-            "name": "Total (8)",
-            "advertised_start": {
-                "seconds": 1747694400
-            },
-            "actual_start": {
-                "seconds": 1747694400
-            },
-            "same_game_multi_available": true,
-            "visible": true,
-            "entrant_ids": [
-                "077beaea-a817-46a9-9eb4-971f50ad7840",
-                "59ff18f7-f549-4930-8ad0-fbb6aa2343c9"
-            ],
-            "num_winners": 1
-        },
-        "f80d00b1-878f-43ce-bfbd-c6b5376f294c": {
-            "id": "f80d00b1-878f-43ce-bfbd-c6b5376f294c",
-            "event_id": "d10cfda7-5c58-4f04-b6c0-bca1990f8c8c",
+        "8eb6988d-22b0-433f-b0c4-64b02d52db24": {
+            "id": "8eb6988d-22b0-433f-b0c4-64b02d52db24",
+            "event_id": "54515dd3-fea6-4296-b016-def1e4533af6",
             "market_type_id": "fefd3091-33c3-4df4-a213-848fdb1f0826",
             "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
-            "name": "Line (+1.5)",
+            "name": "Line (-1.5)",
             "advertised_start": {
-                "seconds": 1747694400
+                "seconds": 1747698000
             },
             "actual_start": {
-                "seconds": 1747694400
+                "seconds": 1747698000
             },
             "same_game_multi_available": true,
             "visible": true,
             "entrant_ids": [
-                "62beeac7-5601-438c-bd87-e2a605a8215d",
-                "5ada689c-bc8c-4e7f-bf32-c6f830ecef39"
+                "fd9e800a-9cd1-4dec-a8b1-fa7af45f14f2",
+                "e4736a25-3650-4133-ab40-0ecab4745439"
             ],
             "num_winners": 1
         }
     },
     "markets_allow_cashout": {
-        "105e4eae-043f-44af-870a-f88e1d5c15df": true,
-        "bfc299f2-b224-4736-a37c-27bb40c7c34a": false,
-        "f80d00b1-878f-43ce-bfbd-c6b5376f294c": false
+        "13fc49cb-a125-4ad3-be5f-968a9721a906": false,
+        "4f04643a-63ce-4e44-aec7-b712376477a0": true,
+        "8eb6988d-22b0-433f-b0c4-64b02d52db24": false
     },
     "prices": {
-        "077beaea-a817-46a9-9eb4-971f50ad7840:940b8704-e497-4a76-b390-00918ff7d282:": {
+        "5a4755dc-e52b-472b-ab6a-e93491fe2080:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
                 "numerator": 9,
                 "denominator": 10
             }
         },
-        "1aeb8a6f-1cad-4e89-af24-ff2a576c7b14:940b8704-e497-4a76-b390-00918ff7d282:": {
-            "odds": {
-                "numerator": 21,
-                "denominator": 20
-            }
-        },
-        "59ff18f7-f549-4930-8ad0-fbb6aa2343c9:940b8704-e497-4a76-b390-00918ff7d282:": {
+        "b19d112c-1dba-4654-9b53-f4aedad29af4:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
                 "numerator": 9,
                 "denominator": 10
             }
         },
-        "5ada689c-bc8c-4e7f-bf32-c6f830ecef39:940b8704-e497-4a76-b390-00918ff7d282:": {
+        "e4736a25-3650-4133-ab40-0ecab4745439:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 27,
-                "denominator": 20
+                "numerator": 53,
+                "denominator": 100
             }
         },
-        "62beeac7-5601-438c-bd87-e2a605a8215d:940b8704-e497-4a76-b390-00918ff7d282:": {
+        "f4b5d35e-cf43-441c-9e07-e89ef936a674:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 3,
+                "numerator": 6,
                 "denominator": 5
             }
         },
-        "bf568178-f54a-440a-a320-87412d50d6f0:940b8704-e497-4a76-b390-00918ff7d282:": {
+        "f8618b84-1c0e-4e63-b63a-da661e5290cb:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 39,
-                "denominator": 50
+                "numerator": 17,
+                "denominator": 25
+            }
+        },
+        "fd9e800a-9cd1-4dec-a8b1-fa7af45f14f2:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 3,
+                "denominator": 2
             }
         }
     }

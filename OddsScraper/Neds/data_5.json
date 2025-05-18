@@ -1,0 +1,242 @@
+{
+    "entrants": {
+        "1d7e43e5-60f8-4684-be7f-984af8462996": {
+            "id": "1d7e43e5-60f8-4684-be7f-984af8462996",
+            "name": "Baltimore Orioles",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "cdec4398-6765-497f-80b3-202df2a7e1a4"
+        },
+        "1e2ef25a-a378-48c0-adab-d1b5503a771e": {
+            "id": "1e2ef25a-a378-48c0-adab-d1b5503a771e",
+            "name": "Milwaukee Brewers",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "cdec4398-6765-497f-80b3-202df2a7e1a4"
+        },
+        "239b26db-e2e8-4d2a-b433-3bdd0d9d60c7": {
+            "id": "239b26db-e2e8-4d2a-b433-3bdd0d9d60c7",
+            "name": "Under (8.5)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "85873cc6-09e1-4e7f-b3cc-49c8694d9fa0"
+        },
+        "2eef4a05-5a62-4196-99c1-62130e561b0e": {
+            "id": "2eef4a05-5a62-4196-99c1-62130e561b0e",
+            "name": "Over (8.5)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "85873cc6-09e1-4e7f-b3cc-49c8694d9fa0"
+        },
+        "504bce63-ad9e-4c63-b4a0-13a0537d6eb4": {
+            "id": "504bce63-ad9e-4c63-b4a0-13a0537d6eb4",
+            "name": "Baltimore Orioles (-1.5)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "ef60a9b6-cdef-4965-b5d1-876cedad109c"
+        },
+        "f7b62d66-a895-4539-91d4-4132ee1d3cce": {
+            "id": "f7b62d66-a895-4539-91d4-4132ee1d3cce",
+            "name": "Milwaukee Brewers (+1.5)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "ef60a9b6-cdef-4965-b5d1-876cedad109c"
+        }
+    },
+    "event_participants": {
+        "4a419e5a-e88d-4e0f-a443-f56202434895": {
+            "id": "4a419e5a-e88d-4e0f-a443-f56202434895",
+            "event_id": "6c71e6c0-c917-473e-afa0-7b63f715e466",
+            "name": "Milwaukee Brewers",
+            "home_away": "HOME"
+        },
+        "4c583b36-f5d0-4e26-b5ad-f36736f0c334": {
+            "id": "4c583b36-f5d0-4e26-b5ad-f36736f0c334",
+            "event_id": "6c71e6c0-c917-473e-afa0-7b63f715e466",
+            "name": "Baltimore Orioles",
+            "home_away": "AWAY"
+        }
+    },
+    "events": {
+        "6c71e6c0-c917-473e-afa0-7b63f715e466": {
+            "id": "6c71e6c0-c917-473e-afa0-7b63f715e466",
+            "name": "Milwaukee Brewers vs Baltimore Orioles",
+            "event_type": {
+                "id": "6bfa0efc-05df-4ae1-9b1e-152365290cfd",
+                "name": "Match"
+            },
+            "match_status": "BettingOpen",
+            "advertised_start": "2025-05-19T23:40:00Z",
+            "actual_start": "2025-05-19T23:40:00Z",
+            "visible": true,
+            "slug": "milwaukee-brewers-vs-baltimore-orioles",
+            "competition": {
+                "id": "a5618779-2cb3-4c0a-b8cc-ce2517fbc8d4",
+                "name": "MLB",
+                "sort_order": 1,
+                "region": "USA"
+            },
+            "competition_id": "a5618779-2cb3-4c0a-b8cc-ce2517fbc8d4",
+            "market_type_group_ids": [
+                "95f7457f-bd84-4e9e-b714-c257b90c1031",
+                "f7331bb9-8791-4c1a-9b7b-cf2298c98757"
+            ],
+            "market_type_group_markets": [
+                {
+                    "market_type_group_id": "95f7457f-bd84-4e9e-b714-c257b90c1031",
+                    "market_ids": [
+                        "cdec4398-6765-497f-80b3-202df2a7e1a4",
+                        "ef60a9b6-cdef-4965-b5d1-876cedad109c",
+                        "85873cc6-09e1-4e7f-b3cc-49c8694d9fa0"
+                    ]
+                },
+                {
+                    "market_type_group_id": "f7331bb9-8791-4c1a-9b7b-cf2298c98757",
+                    "market_ids": [
+                        "85873cc6-09e1-4e7f-b3cc-49c8694d9fa0"
+                    ]
+                }
+            ],
+            "market_count": 3,
+            "main_markets": [
+                "cdec4398-6765-497f-80b3-202df2a7e1a4"
+            ],
+            "market_ids": [
+                "cdec4398-6765-497f-80b3-202df2a7e1a4",
+                "ef60a9b6-cdef-4965-b5d1-876cedad109c",
+                "85873cc6-09e1-4e7f-b3cc-49c8694d9fa0"
+            ],
+            "category_id": "02721435-4671-4cd0-98f7-15d41ee4103e",
+            "participant_ids": [
+                "4a419e5a-e88d-4e0f-a443-f56202434895",
+                "4c583b36-f5d0-4e26-b5ad-f36736f0c334"
+            ]
+        }
+    },
+    "market_type_groups": {
+        "95f7457f-bd84-4e9e-b714-c257b90c1031": {
+            "id": "95f7457f-bd84-4e9e-b714-c257b90c1031",
+            "category_id": "02721435-4671-4cd0-98f7-15d41ee4103e",
+            "name": "Top Markets",
+            "priority": 254,
+            "type": "MARKET_TYPE_GROUP_TYPE_EVENT"
+        },
+        "f7331bb9-8791-4c1a-9b7b-cf2298c98757": {
+            "id": "f7331bb9-8791-4c1a-9b7b-cf2298c98757",
+            "category_id": "02721435-4671-4cd0-98f7-15d41ee4103e",
+            "name": "Total Markets",
+            "priority": 210,
+            "type": "MARKET_TYPE_GROUP_TYPE_EVENT"
+        }
+    },
+    "markets": {
+        "85873cc6-09e1-4e7f-b3cc-49c8694d9fa0": {
+            "id": "85873cc6-09e1-4e7f-b3cc-49c8694d9fa0",
+            "event_id": "6c71e6c0-c917-473e-afa0-7b63f715e466",
+            "market_type_id": "35fdd584-4bb9-47f7-a589-6291693d4d45",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Total (8.5)",
+            "advertised_start": {
+                "seconds": 1747698000
+            },
+            "actual_start": {
+                "seconds": 1747698000
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "2eef4a05-5a62-4196-99c1-62130e561b0e",
+                "239b26db-e2e8-4d2a-b433-3bdd0d9d60c7"
+            ],
+            "num_winners": 1
+        },
+        "cdec4398-6765-497f-80b3-202df2a7e1a4": {
+            "id": "cdec4398-6765-497f-80b3-202df2a7e1a4",
+            "event_id": "6c71e6c0-c917-473e-afa0-7b63f715e466",
+            "market_type_id": "7b77007b-7ec9-4cf6-a911-7cd1c9d30e74",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Head To Head",
+            "advertised_start": {
+                "seconds": 1747698000
+            },
+            "actual_start": {
+                "seconds": 1747698000
+            },
+            "is_primary": true,
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "1e2ef25a-a378-48c0-adab-d1b5503a771e",
+                "1d7e43e5-60f8-4684-be7f-984af8462996"
+            ],
+            "num_winners": 1
+        },
+        "ef60a9b6-cdef-4965-b5d1-876cedad109c": {
+            "id": "ef60a9b6-cdef-4965-b5d1-876cedad109c",
+            "event_id": "6c71e6c0-c917-473e-afa0-7b63f715e466",
+            "market_type_id": "fefd3091-33c3-4df4-a213-848fdb1f0826",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Line (+1.5)",
+            "advertised_start": {
+                "seconds": 1747698000
+            },
+            "actual_start": {
+                "seconds": 1747698000
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "f7b62d66-a895-4539-91d4-4132ee1d3cce",
+                "504bce63-ad9e-4c63-b4a0-13a0537d6eb4"
+            ],
+            "num_winners": 1
+        }
+    },
+    "markets_allow_cashout": {
+        "85873cc6-09e1-4e7f-b3cc-49c8694d9fa0": false,
+        "cdec4398-6765-497f-80b3-202df2a7e1a4": true,
+        "ef60a9b6-cdef-4965-b5d1-876cedad109c": false
+    },
+    "prices": {
+        "1d7e43e5-60f8-4684-be7f-984af8462996:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 1,
+                "denominator": 1
+            }
+        },
+        "1e2ef25a-a378-48c0-adab-d1b5503a771e:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 41,
+                "denominator": 50
+            }
+        },
+        "239b26db-e2e8-4d2a-b433-3bdd0d9d60c7:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 9,
+                "denominator": 10
+            }
+        },
+        "2eef4a05-5a62-4196-99c1-62130e561b0e:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 9,
+                "denominator": 10
+            }
+        },
+        "504bce63-ad9e-4c63-b4a0-13a0537d6eb4:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 31,
+                "denominator": 20
+            }
+        },
+        "f7b62d66-a895-4539-91d4-4132ee1d3cce:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 1,
+                "denominator": 2
+            }
+        }
+    }
+}
