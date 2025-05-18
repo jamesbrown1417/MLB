@@ -348,13 +348,6 @@
             "sort_order": 20,
             "market_id": "d2190b92-9ebc-4e97-8c00-850a403d0b87"
         },
-        "23937b0c-a126-474a-9574-f3cb40f6fcc6": {
-            "id": "23937b0c-a126-474a-9574-f3cb40f6fcc6",
-            "name": "Under (4.5)",
-            "visible": true,
-            "sort_order": 20,
-            "market_id": "267f8750-897f-4cff-96c7-7bd93f6455d9"
-        },
         "24bc167c-7459-4dd1-a35c-13acbc752099": {
             "id": "24bc167c-7459-4dd1-a35c-13acbc752099",
             "name": "Gavin Sheets (San Diego Padres)",
@@ -1670,13 +1663,6 @@
             "visible": true,
             "sort_order": 120,
             "market_id": "e00ea393-a43c-4ee5-8124-c58bdc70c446"
-        },
-        "937bc28e-f654-4646-83fc-b4259ebb1cfa": {
-            "id": "937bc28e-f654-4646-83fc-b4259ebb1cfa",
-            "name": "Over (4.5)",
-            "visible": true,
-            "sort_order": 10,
-            "market_id": "267f8750-897f-4cff-96c7-7bd93f6455d9"
         },
         "960f595c-4b73-43dc-a134-f6dfe301956f": {
             "id": "960f595c-4b73-43dc-a134-f6dfe301956f",
@@ -3083,7 +3069,6 @@
                         "18da75b2-46ca-4162-818a-5bd0f6b67713",
                         "044e36ab-4e96-4cd0-93c9-6d1051c11251",
                         "644b8c31-46e1-4d0f-8424-b34e1854573c",
-                        "267f8750-897f-4cff-96c7-7bd93f6455d9",
                         "b91c4cda-f69e-4b47-a664-829a3b5bd0ef",
                         "dc903a54-20aa-4b82-81f5-310d05c7d6a8",
                         "7a133499-9f11-4f0c-99a1-eac28048dfd4",
@@ -3167,7 +3152,7 @@
                     ]
                 }
             ],
-            "market_count": 135,
+            "market_count": 134,
             "main_markets": [
                 "495ebed5-b001-4291-9a94-d04a85f6c5a7"
             ],
@@ -3246,7 +3231,6 @@
                 "18da75b2-46ca-4162-818a-5bd0f6b67713",
                 "044e36ab-4e96-4cd0-93c9-6d1051c11251",
                 "644b8c31-46e1-4d0f-8424-b34e1854573c",
-                "267f8750-897f-4cff-96c7-7bd93f6455d9",
                 "b91c4cda-f69e-4b47-a664-829a3b5bd0ef",
                 "dc903a54-20aa-4b82-81f5-310d05c7d6a8",
                 "7a133499-9f11-4f0c-99a1-eac28048dfd4",
@@ -3820,26 +3804,6 @@
             "entrant_ids": [
                 "ac107a04-7fd5-46a1-9465-af18f8cc6b9c",
                 "0e531017-8037-458d-9383-1b946fa1060e"
-            ],
-            "num_winners": 1
-        },
-        "267f8750-897f-4cff-96c7-7bd93f6455d9": {
-            "id": "267f8750-897f-4cff-96c7-7bd93f6455d9",
-            "event_id": "37bd6ba2-bb80-468a-bf26-b0b1c601cd85",
-            "market_type_id": "4c8754ff-bee0-4304-a2bb-5b760c2e275c",
-            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
-            "name": "1st 5 Innings Total (4.5)",
-            "advertised_start": {
-                "seconds": 1747528800
-            },
-            "actual_start": {
-                "seconds": 1747528800
-            },
-            "same_game_multi_available": true,
-            "visible": true,
-            "entrant_ids": [
-                "937bc28e-f654-4646-83fc-b4259ebb1cfa",
-                "23937b0c-a126-474a-9574-f3cb40f6fcc6"
             ],
             "num_winners": 1
         },
@@ -5403,7 +5367,7 @@
         "b91c4cda-f69e-4b47-a664-829a3b5bd0ef": {
             "id": "b91c4cda-f69e-4b47-a664-829a3b5bd0ef",
             "event_id": "37bd6ba2-bb80-468a-bf26-b0b1c601cd85",
-            "market_type_id": "9964fbd7-83e3-4ac0-bfbc-b97e43bcd7ca",
+            "market_type_id": "4c8754ff-bee0-4304-a2bb-5b760c2e275c",
             "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
             "name": "1st 5 Innings Total",
             "advertised_start": {
@@ -6225,7 +6189,6 @@
         "1c85fd84-c844-42b2-876b-93f178882cfb": true,
         "20634a99-97a6-4ebb-b19f-9349c744d5fb": true,
         "22cd37b5-3578-45b3-b03b-8990cb9b26a6": false,
-        "267f8750-897f-4cff-96c7-7bd93f6455d9": false,
         "29426f20-9e80-471c-bdd2-4105a42d1f93": false,
         "2e1dd89b-66c5-4955-8076-e63bac255dc5": false,
         "33ac1190-9b05-4716-a556-78198c9e1051": false,
@@ -6623,12 +6586,6 @@
             "odds": {
                 "numerator": 13,
                 "denominator": 5
-            }
-        },
-        "23937b0c-a126-474a-9574-f3cb40f6fcc6:940b8704-e497-4a76-b390-00918ff7d282:": {
-            "odds": {
-                "numerator": 83,
-                "denominator": 100
             }
         },
         "24bc167c-7459-4dd1-a35c-13acbc752099:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -7691,12 +7648,6 @@
             "odds": {
                 "numerator": 11,
                 "denominator": 5
-            }
-        },
-        "937bc28e-f654-4646-83fc-b4259ebb1cfa:940b8704-e497-4a76-b390-00918ff7d282:": {
-            "odds": {
-                "numerator": 87,
-                "denominator": 100
             }
         },
         "960f595c-4b73-43dc-a134-f6dfe301956f:940b8704-e497-4a76-b390-00918ff7d282:": {
