@@ -250,13 +250,6 @@
             "sort_order": 30,
             "market_id": "2fbc941c-ce8f-46dc-a796-a81e5947f33f"
         },
-        "17b765e6-0cf7-45e7-8a11-f7fafa77cdc9": {
-            "id": "17b765e6-0cf7-45e7-8a11-f7fafa77cdc9",
-            "name": "Under (2.5)",
-            "visible": true,
-            "sort_order": 20,
-            "market_id": "6cbb36f9-1812-46e4-8ddf-5f991f40a7dd"
-        },
         "1aa64acd-0f78-4fc0-bdd2-238e23e551e3": {
             "id": "1aa64acd-0f78-4fc0-bdd2-238e23e551e3",
             "name": "Under (2.5)",
@@ -363,6 +356,13 @@
             "visible": true,
             "sort_order": 10,
             "market_id": "e7f05c39-927a-48c6-a48e-930fb241324c"
+        },
+        "247d4f6d-402d-4508-a44a-770dbe69b0cf": {
+            "id": "247d4f6d-402d-4508-a44a-770dbe69b0cf",
+            "name": "Under (1.5)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "74acf864-f00d-418d-bfcf-156d07e72a83"
         },
         "24a4008a-2b90-48d9-ba9e-3702937a72d1": {
             "id": "24a4008a-2b90-48d9-ba9e-3702937a72d1",
@@ -1036,13 +1036,6 @@
             "sort_order": 40,
             "market_id": "23f47b2f-1513-4e95-9f0a-f92cb3e7f610"
         },
-        "65dff775-b9fe-431c-96cd-bcf241521b9d": {
-            "id": "65dff775-b9fe-431c-96cd-bcf241521b9d",
-            "name": "Over (2.5)",
-            "visible": true,
-            "sort_order": 10,
-            "market_id": "6cbb36f9-1812-46e4-8ddf-5f991f40a7dd"
-        },
         "684b9bc0-9c37-48cb-a8f2-c8df0bf942e7": {
             "id": "684b9bc0-9c37-48cb-a8f2-c8df0bf942e7",
             "name": "Detroit Tigers",
@@ -1312,6 +1305,13 @@
             "visible": true,
             "sort_order": 10,
             "market_id": "c7fb146e-244c-4992-a5f7-00ceba2f20f0"
+        },
+        "7fd081fd-8a21-453e-a7e5-5c709a01cc2a": {
+            "id": "7fd081fd-8a21-453e-a7e5-5c709a01cc2a",
+            "name": "Over (1.5)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "74acf864-f00d-418d-bfcf-156d07e72a83"
         },
         "80b23ecd-1e68-447a-96bb-e4b2da8129ee": {
             "id": "80b23ecd-1e68-447a-96bb-e4b2da8129ee",
@@ -2894,7 +2894,7 @@
                     "market_ids": [
                         "c3132125-62b2-4978-b70c-591c546ede78",
                         "23f47b2f-1513-4e95-9f0a-f92cb3e7f610",
-                        "6cbb36f9-1812-46e4-8ddf-5f991f40a7dd",
+                        "74acf864-f00d-418d-bfcf-156d07e72a83",
                         "d3deaa6a-aeea-4643-8cd2-e0e828e3d51f"
                     ]
                 },
@@ -3084,7 +3084,7 @@
                 "2981a5c2-e482-475f-a4c2-712521718933",
                 "16b49a5e-631d-4f51-90e7-22cb86979cf8",
                 "c3132125-62b2-4978-b70c-591c546ede78",
-                "6cbb36f9-1812-46e4-8ddf-5f991f40a7dd",
+                "74acf864-f00d-418d-bfcf-156d07e72a83",
                 "d3deaa6a-aeea-4643-8cd2-e0e828e3d51f",
                 "3031930b-7c4d-40b0-b214-4b8aa24007d2",
                 "d45bb3f1-ede9-4b56-86a0-27fbdaf16739",
@@ -4556,25 +4556,6 @@
             ],
             "num_winners": 1
         },
-        "6cbb36f9-1812-46e4-8ddf-5f991f40a7dd": {
-            "id": "6cbb36f9-1812-46e4-8ddf-5f991f40a7dd",
-            "event_id": "0681cb34-7a2c-4081-8ae1-991f80267497",
-            "market_type_id": "04064254-beb0-4a70-b091-20170a22abf4",
-            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
-            "name": "Player Pitcher Earned Runs O/U - Sonny Gray (2.5)",
-            "advertised_start": {
-                "seconds": 1747698300
-            },
-            "actual_start": {
-                "seconds": 1747698300
-            },
-            "visible": true,
-            "entrant_ids": [
-                "65dff775-b9fe-431c-96cd-bcf241521b9d",
-                "17b765e6-0cf7-45e7-8a11-f7fafa77cdc9"
-            ],
-            "num_winners": 1
-        },
         "6f3a99f2-d69e-4bb7-836f-1919763f78ad": {
             "id": "6f3a99f2-d69e-4bb7-836f-1919763f78ad",
             "event_id": "0681cb34-7a2c-4081-8ae1-991f80267497",
@@ -4592,6 +4573,25 @@
             "entrant_ids": [
                 "3fda44a8-0e02-43f1-89c4-69359296ef84",
                 "cde93ea9-253f-48a1-8621-c898a19aee3f"
+            ],
+            "num_winners": 1
+        },
+        "74acf864-f00d-418d-bfcf-156d07e72a83": {
+            "id": "74acf864-f00d-418d-bfcf-156d07e72a83",
+            "event_id": "0681cb34-7a2c-4081-8ae1-991f80267497",
+            "market_type_id": "04064254-beb0-4a70-b091-20170a22abf4",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Player Pitcher Earned Runs O/U - Sonny Gray (1.5)",
+            "advertised_start": {
+                "seconds": 1747698300
+            },
+            "actual_start": {
+                "seconds": 1747698300
+            },
+            "visible": true,
+            "entrant_ids": [
+                "7fd081fd-8a21-453e-a7e5-5c709a01cc2a",
+                "247d4f6d-402d-4508-a44a-770dbe69b0cf"
             ],
             "num_winners": 1
         },
@@ -6030,8 +6030,8 @@
         "63fd33ae-d9d5-42a8-ac9a-dc5cc439dd4d": true,
         "672063d3-8063-4fc9-a0fd-6e3cf8cd84ff": false,
         "69bc413d-d911-46ab-8e6a-101d3adc02a5": true,
-        "6cbb36f9-1812-46e4-8ddf-5f991f40a7dd": false,
         "6f3a99f2-d69e-4bb7-836f-1919763f78ad": false,
+        "74acf864-f00d-418d-bfcf-156d07e72a83": false,
         "7688df69-12e3-4ced-9aea-84b7a5cfe075": true,
         "796027c4-542c-48ca-92fc-c8ea58e2dafa": false,
         "79c300e9-076e-489c-a4e3-6623b4f72dec": true,
@@ -6306,12 +6306,6 @@
                 "denominator": 1
             }
         },
-        "17b765e6-0cf7-45e7-8a11-f7fafa77cdc9:940b8704-e497-4a76-b390-00918ff7d282:": {
-            "odds": {
-                "numerator": 57,
-                "denominator": 100
-            }
-        },
         "1aa64acd-0f78-4fc0-bdd2-238e23e551e3:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
                 "numerator": 9,
@@ -6394,6 +6388,12 @@
             "odds": {
                 "numerator": 3,
                 "denominator": 1
+            }
+        },
+        "247d4f6d-402d-4508-a44a-770dbe69b0cf:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 5,
+                "denominator": 4
             }
         },
         "24a4008a-2b90-48d9-ba9e-3702937a72d1:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -6936,12 +6936,6 @@
                 "denominator": 4
             }
         },
-        "65dff775-b9fe-431c-96cd-bcf241521b9d:940b8704-e497-4a76-b390-00918ff7d282:": {
-            "odds": {
-                "numerator": 5,
-                "denominator": 4
-            }
-        },
         "684b9bc0-9c37-48cb-a8f2-c8df0bf942e7:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
                 "numerator": 16,
@@ -7156,6 +7150,12 @@
             "odds": {
                 "numerator": 29,
                 "denominator": 50
+            }
+        },
+        "7fd081fd-8a21-453e-a7e5-5c709a01cc2a:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 57,
+                "denominator": 100
             }
         },
         "80b23ecd-1e68-447a-96bb-e4b2da8129ee:940b8704-e497-4a76-b390-00918ff7d282:": {
