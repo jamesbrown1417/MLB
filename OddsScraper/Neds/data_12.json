@@ -686,6 +686,13 @@
             "sort_order": 10,
             "market_id": "d46e8846-2830-4903-967a-7da53df5860c"
         },
+        "6aeb546f-dd99-41e3-8cfa-2878d511ec7b": {
+            "id": "6aeb546f-dd99-41e3-8cfa-2878d511ec7b",
+            "name": "Under (5.5)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "7fc7b97c-c491-4b78-b0fa-a38d16d7bcb4"
+        },
         "6c67f1ff-e71e-492a-9aa1-95cbeae780e3": {
             "id": "6c67f1ff-e71e-492a-9aa1-95cbeae780e3",
             "name": "Under (8.5)",
@@ -749,13 +756,6 @@
             "visible": true,
             "sort_order": 20,
             "market_id": "b0a2393a-f2fd-4f5a-a587-5322cf0477cf"
-        },
-        "701d47bf-2006-40e8-911d-a533d2e10748": {
-            "id": "701d47bf-2006-40e8-911d-a533d2e10748",
-            "name": "Over (4.5)",
-            "visible": true,
-            "sort_order": 10,
-            "market_id": "87034824-72fd-4380-9a44-7c6a2df1c21a"
         },
         "715fe847-1d91-4c25-8de6-aec77032faff": {
             "id": "715fe847-1d91-4c25-8de6-aec77032faff",
@@ -849,6 +849,13 @@
             "visible": true,
             "sort_order": 20,
             "market_id": "87ef87a7-ac64-4bca-8af5-8c887a448bee"
+        },
+        "7c260e01-f659-44bd-ad3f-77afb6854963": {
+            "id": "7c260e01-f659-44bd-ad3f-77afb6854963",
+            "name": "Over (5.5)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "7fc7b97c-c491-4b78-b0fa-a38d16d7bcb4"
         },
         "8026ee9a-2026-4d6c-b153-8e6533b20c14": {
             "id": "8026ee9a-2026-4d6c-b153-8e6533b20c14",
@@ -1632,13 +1639,6 @@
             "sort_order": 20,
             "market_id": "f2ddebe0-e260-4cd6-83c0-dc0df7b6bb21"
         },
-        "ceb618d0-c3e0-488e-9d29-32fba279d071": {
-            "id": "ceb618d0-c3e0-488e-9d29-32fba279d071",
-            "name": "Under (4.5)",
-            "visible": true,
-            "sort_order": 20,
-            "market_id": "87034824-72fd-4380-9a44-7c6a2df1c21a"
-        },
         "cf72b7db-ee96-4a5a-81dd-43cbe731daa1": {
             "id": "cf72b7db-ee96-4a5a-81dd-43cbe731daa1",
             "name": "Arizona Diamondbacks / Under 6.5",
@@ -2045,7 +2045,7 @@
                         "f693e70a-f686-45c3-8641-ab4e461165aa",
                         "ce451035-434f-43ad-8cff-151d11f0645b",
                         "c08816c8-14cb-472e-8dc9-9dec23b0cffb",
-                        "87034824-72fd-4380-9a44-7c6a2df1c21a",
+                        "7fc7b97c-c491-4b78-b0fa-a38d16d7bcb4",
                         "555f6907-dad8-4aac-9046-18fae2108e6a",
                         "0a9332e8-8664-476a-a4b7-ebb469c6b85e"
                     ]
@@ -2230,7 +2230,7 @@
                 "f693e70a-f686-45c3-8641-ab4e461165aa",
                 "ce451035-434f-43ad-8cff-151d11f0645b",
                 "c08816c8-14cb-472e-8dc9-9dec23b0cffb",
-                "87034824-72fd-4380-9a44-7c6a2df1c21a",
+                "7fc7b97c-c491-4b78-b0fa-a38d16d7bcb4",
                 "555f6907-dad8-4aac-9046-18fae2108e6a",
                 "0a9332e8-8664-476a-a4b7-ebb469c6b85e",
                 "d5888a4f-8b47-4bee-a5ea-37d66987e197",
@@ -3614,6 +3614,25 @@
             ],
             "num_winners": 1
         },
+        "7fc7b97c-c491-4b78-b0fa-a38d16d7bcb4": {
+            "id": "7fc7b97c-c491-4b78-b0fa-a38d16d7bcb4",
+            "event_id": "caf81b56-4a09-4446-a8ba-fde86254dc94",
+            "market_type_id": "d2615643-3346-4380-b887-88337e26d836",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Player Pitcher Hits Allowed O/U - Mike Burrows (5.5)",
+            "advertised_start": {
+                "seconds": 1748396400
+            },
+            "actual_start": {
+                "seconds": 1748396400
+            },
+            "visible": true,
+            "entrant_ids": [
+                "7c260e01-f659-44bd-ad3f-77afb6854963",
+                "6aeb546f-dd99-41e3-8cfa-2878d511ec7b"
+            ],
+            "num_winners": 1
+        },
         "815088ab-0a55-4056-aa53-d5cd978af757": {
             "id": "815088ab-0a55-4056-aa53-d5cd978af757",
             "event_id": "caf81b56-4a09-4446-a8ba-fde86254dc94",
@@ -3631,25 +3650,6 @@
             "entrant_ids": [
                 "a2c47a81-5ab7-4433-8ee2-584c7246970f",
                 "49ef9db0-89b0-45f0-9a56-d80e6d06c90a"
-            ],
-            "num_winners": 1
-        },
-        "87034824-72fd-4380-9a44-7c6a2df1c21a": {
-            "id": "87034824-72fd-4380-9a44-7c6a2df1c21a",
-            "event_id": "caf81b56-4a09-4446-a8ba-fde86254dc94",
-            "market_type_id": "d2615643-3346-4380-b887-88337e26d836",
-            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
-            "name": "Player Pitcher Hits Allowed O/U - Mike Burrows (4.5)",
-            "advertised_start": {
-                "seconds": 1748396400
-            },
-            "actual_start": {
-                "seconds": 1748396400
-            },
-            "visible": true,
-            "entrant_ids": [
-                "701d47bf-2006-40e8-911d-a533d2e10748",
-                "ceb618d0-c3e0-488e-9d29-32fba279d071"
             ],
             "num_winners": 1
         },
@@ -4961,8 +4961,8 @@
         "7b9c6d6e-4187-4725-b941-3861de812901": false,
         "7ddecc1a-d8f7-468a-97e5-05523b6d79e6": false,
         "7e3fbd28-6eb6-48a3-8c8e-32c4730b0de9": false,
+        "7fc7b97c-c491-4b78-b0fa-a38d16d7bcb4": false,
         "815088ab-0a55-4056-aa53-d5cd978af757": false,
-        "87034824-72fd-4380-9a44-7c6a2df1c21a": false,
         "87ef87a7-ac64-4bca-8af5-8c887a448bee": false,
         "89a423ef-b122-45ba-acfc-735a2caae6db": false,
         "8b978ed7-bcbc-49f9-8add-ee99a172238f": false,
@@ -5048,8 +5048,8 @@
         },
         "0745a0d2-5081-4dc0-8f72-ddd1d82a289d:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 21,
-                "denominator": 50
+                "numerator": 9,
+                "denominator": 20
             }
         },
         "07ea7eff-513b-4a76-aa7e-279fb7b11240:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -5592,6 +5592,12 @@
                 "denominator": 20
             }
         },
+        "6aeb546f-dd99-41e3-8cfa-2878d511ec7b:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 31,
+                "denominator": 50
+            }
+        },
         "6c67f1ff-e71e-492a-9aa1-95cbeae780e3:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
                 "numerator": 13,
@@ -5644,12 +5650,6 @@
             "odds": {
                 "numerator": 24,
                 "denominator": 25
-            }
-        },
-        "701d47bf-2006-40e8-911d-a533d2e10748:940b8704-e497-4a76-b390-00918ff7d282:": {
-            "odds": {
-                "numerator": 31,
-                "denominator": 50
             }
         },
         "715fe847-1d91-4c25-8de6-aec77032faff:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -5727,6 +5727,12 @@
         "7b5f3a52-4672-4d8b-b7cb-b34471460bce:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
                 "numerator": 26,
+                "denominator": 5
+            }
+        },
+        "7c260e01-f659-44bd-ad3f-77afb6854963:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 6,
                 "denominator": 5
             }
         },
@@ -5822,8 +5828,8 @@
         },
         "933c87f6-d6ee-4b3a-b9b8-37411daa2ca8:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 17,
-                "denominator": 25
+                "numerator": 3,
+                "denominator": 4
             }
         },
         "936d04a0-7bf3-4146-85d3-044581a107ad:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -5984,8 +5990,8 @@
         },
         "a234ea6c-6f7d-41a2-91f2-025d791269d3:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 49,
-                "denominator": 50
+                "numerator": 21,
+                "denominator": 20
             }
         },
         "a2c47a81-5ab7-4433-8ee2-584c7246970f:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -6050,8 +6056,8 @@
         },
         "a96911e1-3997-4dd4-85d1-5dd52ef20941:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 21,
-                "denominator": 20
+                "numerator": 24,
+                "denominator": 25
             }
         },
         "a999b749-3e5c-4861-9720-0574c79f4a32:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -6332,8 +6338,8 @@
         },
         "c7eafbce-8dd4-4a4b-9c35-7ec4a8ce0299:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 3,
-                "denominator": 4
+                "numerator": 17,
+                "denominator": 25
             }
         },
         "c9bd44a4-c2b0-435f-84a3-3ed23e800e49:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -6376,12 +6382,6 @@
             "odds": {
                 "numerator": 5,
                 "denominator": 2
-            }
-        },
-        "ceb618d0-c3e0-488e-9d29-32fba279d071:940b8704-e497-4a76-b390-00918ff7d282:": {
-            "odds": {
-                "numerator": 23,
-                "denominator": 20
             }
         },
         "cf72b7db-ee96-4a5a-81dd-43cbe731daa1:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -6584,7 +6584,7 @@
         },
         "f3f9451f-33f8-475b-9341-44e65680e7f1:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 33,
+                "numerator": 31,
                 "denominator": 20
             }
         },
