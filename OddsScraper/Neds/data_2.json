@@ -448,13 +448,6 @@
             "sort_order": 10,
             "market_id": "7c8b255a-b993-447e-9c99-2fb15358bd7e"
         },
-        "295c444f-1950-4aa4-89df-3e706b245373": {
-            "id": "295c444f-1950-4aa4-89df-3e706b245373",
-            "name": "Under (17.5)",
-            "visible": true,
-            "sort_order": 20,
-            "market_id": "b2bc1f8a-42ed-4861-833f-3731ca02f51d"
-        },
         "2a16de3c-4139-43e4-bdcd-243e4a924f5a": {
             "id": "2a16de3c-4139-43e4-bdcd-243e4a924f5a",
             "name": "Under (6.5)",
@@ -1979,13 +1972,6 @@
             "sort_order": 160,
             "market_id": "3476d178-22c1-4a34-969d-e6e323fee491"
         },
-        "a64b892d-55e9-4212-9865-2e9bf1eece99": {
-            "id": "a64b892d-55e9-4212-9865-2e9bf1eece99",
-            "name": "Over (17.5)",
-            "visible": true,
-            "sort_order": 10,
-            "market_id": "b2bc1f8a-42ed-4861-833f-3731ca02f51d"
-        },
         "a779d984-4a10-4c06-96e6-839f0c15335b": {
             "id": "a779d984-4a10-4c06-96e6-839f0c15335b",
             "name": "Cody Bellinger (New York Yankees)",
@@ -2270,6 +2256,13 @@
             "sort_order": 20,
             "market_id": "bc56c87a-6af2-49ec-966d-2656ade9cacb"
         },
+        "c05447b6-c859-4818-9616-481ff7403cee": {
+            "id": "c05447b6-c859-4818-9616-481ff7403cee",
+            "name": "Under (16.5)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "e1b85905-966c-4c8a-abe1-2b3a4a246cb7"
+        },
         "c08bf127-a56f-4de2-8017-66d208577d77": {
             "id": "c08bf127-a56f-4de2-8017-66d208577d77",
             "name": "Over (2.5)",
@@ -2524,6 +2517,13 @@
             "visible": true,
             "sort_order": 20,
             "market_id": "4f6c4e56-96a5-4112-bb2d-ecf479f00418"
+        },
+        "d7cadc86-f4cd-49e5-8b30-e021ae1d41d2": {
+            "id": "d7cadc86-f4cd-49e5-8b30-e021ae1d41d2",
+            "name": "Over (16.5)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "e1b85905-966c-4c8a-abe1-2b3a4a246cb7"
         },
         "da2bcb01-fe62-4e3f-a854-59013dca064c": {
             "id": "da2bcb01-fe62-4e3f-a854-59013dca064c",
@@ -3030,7 +3030,7 @@
                         "d85dd14b-ccbc-4c70-90c2-f8ec1f3110f6",
                         "febc405c-84b9-4dda-aaef-bd2eda722a8b",
                         "0575fd90-8750-4036-ad17-a74eee31b558",
-                        "b2bc1f8a-42ed-4861-833f-3731ca02f51d",
+                        "e1b85905-966c-4c8a-abe1-2b3a4a246cb7",
                         "745ccc2e-92bb-468b-a1a0-f96aa38f8119"
                     ]
                 },
@@ -3226,7 +3226,7 @@
                 "d85dd14b-ccbc-4c70-90c2-f8ec1f3110f6",
                 "febc405c-84b9-4dda-aaef-bd2eda722a8b",
                 "0575fd90-8750-4036-ad17-a74eee31b558",
-                "b2bc1f8a-42ed-4861-833f-3731ca02f51d",
+                "e1b85905-966c-4c8a-abe1-2b3a4a246cb7",
                 "745ccc2e-92bb-468b-a1a0-f96aa38f8119",
                 "5bf87045-0692-41cb-932f-6a877f8c5ae9",
                 "f753d65c-ae20-4816-a48f-6750f2ac6d5c",
@@ -5345,26 +5345,6 @@
             ],
             "num_winners": 1
         },
-        "b2bc1f8a-42ed-4861-833f-3731ca02f51d": {
-            "id": "b2bc1f8a-42ed-4861-833f-3731ca02f51d",
-            "event_id": "32229db8-d4f4-4f05-80fa-f7f95aa4fd20",
-            "market_type_id": "e55e53c1-a883-4be1-983f-63b2a24ff75d",
-            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
-            "name": "Player Pitcher Outs O/U - Clarke Schmidt (17.5)",
-            "advertised_start": {
-                "seconds": 1748482680
-            },
-            "actual_start": {
-                "seconds": 1748482680
-            },
-            "comments": "Pitcher Outs are all outs recorded while the player is pitching.",
-            "visible": true,
-            "entrant_ids": [
-                "a64b892d-55e9-4212-9865-2e9bf1eece99",
-                "295c444f-1950-4aa4-89df-3e706b245373"
-            ],
-            "num_winners": 1
-        },
         "b7e4647d-2000-452e-b102-7ab1cfae7576": {
             "id": "b7e4647d-2000-452e-b102-7ab1cfae7576",
             "event_id": "32229db8-d4f4-4f05-80fa-f7f95aa4fd20",
@@ -5837,6 +5817,26 @@
             "entrant_ids": [
                 "bda65da4-178a-428a-aa9d-45ef3daeccf9",
                 "423a28e1-648a-47f4-9129-3234a2fe8e54"
+            ],
+            "num_winners": 1
+        },
+        "e1b85905-966c-4c8a-abe1-2b3a4a246cb7": {
+            "id": "e1b85905-966c-4c8a-abe1-2b3a4a246cb7",
+            "event_id": "32229db8-d4f4-4f05-80fa-f7f95aa4fd20",
+            "market_type_id": "e55e53c1-a883-4be1-983f-63b2a24ff75d",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Player Pitcher Outs O/U - Clarke Schmidt (16.5)",
+            "advertised_start": {
+                "seconds": 1748482680
+            },
+            "actual_start": {
+                "seconds": 1748482680
+            },
+            "comments": "Pitcher Outs are all outs recorded while the player is pitching.",
+            "visible": true,
+            "entrant_ids": [
+                "d7cadc86-f4cd-49e5-8b30-e021ae1d41d2",
+                "c05447b6-c859-4818-9616-481ff7403cee"
             ],
             "num_winners": 1
         },
@@ -6331,7 +6331,6 @@
         "aa65e1a1-76d9-4424-87d5-5f8de0c0246f": false,
         "af74e3e3-558a-4fee-b5bf-0a5e616c4e7b": false,
         "b220e65e-2d2a-455f-a022-7bd978c06f2f": true,
-        "b2bc1f8a-42ed-4861-833f-3731ca02f51d": false,
         "b7e4647d-2000-452e-b102-7ab1cfae7576": true,
         "b8dddbf6-633a-4375-9727-17fe2f79d650": true,
         "b9410b32-288e-4cfd-93b8-8e2a1a518ad3": true,
@@ -6356,6 +6355,7 @@
         "ddfa2749-46ae-4bab-b950-fd4df0991976": false,
         "e09209bf-ab21-489e-af10-a0caf5b4ac14": false,
         "e1af09ff-1afd-43bb-ad9f-cc53e954e20e": false,
+        "e1b85905-966c-4c8a-abe1-2b3a4a246cb7": false,
         "e1ccadb8-d252-4374-acfd-38f0555cba4c": false,
         "e2d450c2-bd81-4d37-a87b-a3088e04ae78": false,
         "e57f2d60-e1d0-41b7-a29c-c3a76a98e6cf": false,
@@ -6626,8 +6626,8 @@
         },
         "1a927763-2a96-4983-b95b-bfbffe6972df:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 9,
-                "denominator": 10
+                "numerator": 23,
+                "denominator": 25
             }
         },
         "1b1aa562-0b2a-4a6e-83a4-6b588c87b43c:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -6744,12 +6744,6 @@
                 "denominator": 25
             }
         },
-        "295c444f-1950-4aa4-89df-3e706b245373:940b8704-e497-4a76-b390-00918ff7d282:": {
-            "odds": {
-                "numerator": 3,
-                "denominator": 4
-            }
-        },
         "2a16de3c-4139-43e4-bdcd-243e4a924f5a:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
                 "numerator": 9,
@@ -6788,8 +6782,8 @@
         },
         "30eddb12-ede0-4259-8780-06e497aa48b1:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 11,
-                "denominator": 10
+                "numerator": 23,
+                "denominator": 20
             }
         },
         "31a62c13-5ca6-40ab-a09e-406982fcf555:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -7628,8 +7622,8 @@
         },
         "7f89832b-ce05-4f41-8f7c-9d695f97a747:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 22,
-                "denominator": 25
+                "numerator": 17,
+                "denominator": 20
             }
         },
         "7ff2715d-1cd9-4a74-b4bb-40be5bc90d88:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -7980,12 +7974,6 @@
                 "denominator": 5
             }
         },
-        "a64b892d-55e9-4212-9865-2e9bf1eece99:940b8704-e497-4a76-b390-00918ff7d282:": {
-            "odds": {
-                "numerator": 24,
-                "denominator": 25
-            }
-        },
         "a779d984-4a10-4c06-96e6-839f0c15335b:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
                 "numerator": 40,
@@ -8132,8 +8120,8 @@
         },
         "b77b2273-b3fe-41c1-83a2-0b20840da233:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 41,
-                "denominator": 50
+                "numerator": 87,
+                "denominator": 100
             }
         },
         "b7f5883e-eb6a-43dc-8502-c95ddd1a66a9:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -8212,6 +8200,12 @@
             "odds": {
                 "numerator": 13,
                 "denominator": 50
+            }
+        },
+        "c05447b6-c859-4818-9616-481ff7403cee:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 24,
+                "denominator": 25
             }
         },
         "c08bf127-a56f-4de2-8017-66d208577d77:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -8390,8 +8384,8 @@
         },
         "d3cac66d-3c06-45dc-aa62-01c09d30f06d:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 13,
-                "denominator": 20
+                "numerator": 16,
+                "denominator": 25
             }
         },
         "d3e348f4-2137-45e2-bf98-8d1aaee4c566:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -8416,6 +8410,12 @@
             "odds": {
                 "numerator": 80,
                 "denominator": 1
+            }
+        },
+        "d7cadc86-f4cd-49e5-8b30-e021ae1d41d2:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 3,
+                "denominator": 4
             }
         },
         "da2bcb01-fe62-4e3f-a854-59013dca064c:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -8552,8 +8552,8 @@
         },
         "e69f0724-ed26-4369-8fca-fc2e79506e70:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 4,
-                "denominator": 5
+                "numerator": 39,
+                "denominator": 50
             }
         },
         "e8b769eb-98c8-4f6b-9038-edf464587a11:940b8704-e497-4a76-b390-00918ff7d282:": {
