@@ -4,6 +4,7 @@
 
 library(tidyverse)
 `%notin%` <- Negate(`%in%`)
+source("Functions/normalize_player_names.R") # Source the function
 
 # # Run all odds scraping scripts-----------------------------------------------
 run_scraping <- function(script_name) {
@@ -155,6 +156,7 @@ all_pitcher_strikeouts_files <- list.files("Data/scraped_odds", "pitcher_strikeo
 all_pitcher_strikeouts_data <-
   all_pitcher_strikeouts_files |> 
   map_dfr(read_csv) |> 
+  mutate(player_name = sapply(player_name, normalize_player_names, USE.NAMES = FALSE)) |>
   arrange(match, home_team, away_team, player_name, line, desc(over_price))
 
 # Get the best over odds
@@ -200,6 +202,7 @@ all_batter_hits_files <- list.files("Data/scraped_odds", "hits", full.names = TR
 all_batter_hits_data <-
   all_batter_hits_files |>
   map_dfr(read_csv) |>
+  mutate(player_name = sapply(player_name, normalize_player_names, USE.NAMES = FALSE)) |>
   arrange(match, home_team, away_team, player_name, line, desc(over_price)) |> 
   mutate(market_name = "Batter Hits")
 
@@ -246,6 +249,7 @@ all_batter_rbis_files <- list.files("Data/scraped_odds", "rbis|runs_batted_in", 
 all_batter_rbis_data <-
   all_batter_rbis_files |>
   map_dfr(read_csv) |>
+  mutate(player_name = sapply(player_name, normalize_player_names, USE.NAMES = FALSE)) |>
   arrange(match, home_team, away_team, player_name, line, desc(over_price)) |> 
   mutate(market_name = "Batter RBIs")
 

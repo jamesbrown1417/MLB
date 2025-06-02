@@ -8,29 +8,25 @@ library(glue)
 # URL of website
 sportsbet_url = "https://www.sportsbet.com.au/betting/baseball/major-league-baseball"
 
-# Get Rosters
-MLB_2025_Active_Rosters <- read_rds("Data/MLB_2025_Active_Rosters.rds")
-
-# Fix team names function
+# Source functions
 source("Functions/fix_team_names.R")
+source("Functions/normalize_player_names.R")
+
+# Get Rosters
+MLB_2025_Active_Rosters <- read_rds("Data/MLB_2025_Active_Rosters.rds") |>
+  mutate(normalized_name = sapply(person_full_name, normalize_player_names, USE.NAMES = FALSE))
 
 # Get Pitchers
 pitchers <-
   MLB_2025_Active_Rosters |>
   filter(position_name == "Pitcher") |> 
-  select(person_full_name, team_name) |> 
-  # separate full name into given names and last name
-  separate(person_full_name, c("given_name", "last_name"), sep = " ", remove = FALSE) |> 
-  mutate(join_name = paste(substr(given_name, 1, 1), last_name, sep = ". "))
+  select(person_full_name, normalized_name, team_name)
 
 # Batters
 batters <-
   MLB_2025_Active_Rosters |>
   filter(position_name != "Pitcher") |> 
-  select(person_full_name, team_name) |> 
-  # separate full name into given names and last name
-  separate(person_full_name, c("given_name", "last_name"), sep = " ", remove = FALSE) |> 
-  mutate(join_name = paste(substr(given_name, 1, 1), last_name, sep = ". "))
+  select(person_full_name, normalized_name, team_name)
 
 # Get sportsbet HTML
 sportsbet_html <-
@@ -540,23 +536,8 @@ player_props_function <- function() {
     mutate(line = str_extract(prop_market_name, "\\d{1,2}")) |>
     mutate(line = as.numeric(line) - 0.5) |>
     rename(player_name = selection_name_prop) |>
-    mutate(player_name = case_when(
-      player_name == "Tomas Nido" ~ "Tomás Nido",
-      player_name == "Luis Garcia" ~ "Luis García Jr.",
-      player_name == "Adolis Garcia" ~ "Adolis García",
-      player_name == "Jeremy Pena" ~ "Jeremy Peña",
-      player_name == "Mauricio Dubon" ~ "Mauricio Dubón",
-      player_name == "Eugenio Suarez" ~ "Eugenio Suárez",
-      player_name == "Elias Diaz" ~ "Elias Díaz",
-      player_name == "Javier Baez" ~ "Javier Báez",
-      player_name == "Wenceel Perez" ~ "Wenceel Pérez",
-      player_name == "Ryan OHearn" ~ "Ryan O'Hearn",
-      player_name == "Logan OHoppe" ~ "Logan O'Hoppe",
-      player_name == "Josh H. Smith" ~ "Josh Smith",
-      player_name == "Ivan Herrera" ~ "Iván Herrera",
-      .default = player_name
-    )) |> 
-    left_join(batters, by = c("player_name" = "person_full_name")) |> 
+    mutate(player_name = normalize_player_names(player_name)) |>
+    left_join(batters, by = c("player_name" = "normalized_name")) |>
     mutate(opposition_team = if_else(team_name == home_team, away_team, home_team)) |>
     relocate(match, .before = player_name) |>
     transmute(
@@ -565,8 +546,8 @@ player_props_function <- function() {
       home_team,
       away_team,
       market_name,
-      player_name,
-      player_team = team_name,
+      player_name, # This is the normalized name from Sportsbet
+      player_team = team_name, # This is from the roster join
       opposition_team,
       line,
       over_price = prop_market_price,
@@ -575,7 +556,8 @@ player_props_function <- function() {
       competition_external_id,
       event_external_id,
       market_id,
-      player_id
+      player_id,
+      original_roster_name = person_full_name # Keep original for reference if needed later
     )
   
   #===============================================================================
@@ -604,23 +586,8 @@ player_props_function <- function() {
     mutate(line = str_extract(prop_market_name, "\\d{1,2}")) |>
     mutate(line = as.numeric(line) - 0.5) |>
     rename(player_name = selection_name_prop) |>
-    mutate(player_name = case_when(
-      player_name == "Tomas Nido"    ~ "Tomás Nido",
-      player_name == "Luis Garcia"   ~ "Luis García Jr.",
-      player_name == "Adolis Garcia" ~ "Adolis García",
-      player_name == "Jeremy Pena"   ~ "Jeremy Peña",
-      player_name == "Mauricio Dubon"~ "Mauricio Dubón",
-      player_name == "Eugenio Suarez"~ "Eugenio Suárez",
-      player_name == "Elias Diaz"    ~ "Elias Díaz",
-      player_name == "Javier Baez"   ~ "Javier Báez",
-      player_name == "Wenceel Perez" ~ "Wenceel Pérez",
-      player_name == "Ryan OHearn"    ~ "Ryan O'Hearn",
-      player_name == "Logan OHoppe"  ~ "Logan O'Hoppe",
-      player_name == "Josh H. Smith" ~ "Josh Smith",
-      player_name == "Ivan Herrera"  ~ "Iván Herrera",
-      .default = player_name
-    )) |> 
-    left_join(batters, by = c("player_name" = "person_full_name")) |> 
+    mutate(player_name = normalize_player_names(player_name)) |>
+    left_join(batters, by = c("player_name" = "normalized_name")) |>
     mutate(opposition_team = if_else(team_name == home_team, away_team, home_team)) |>
     relocate(match, .before = player_name) |>
     transmute(
@@ -629,8 +596,8 @@ player_props_function <- function() {
       home_team,
       away_team,
       market_name,
-      player_name,
-      player_team      = team_name,
+      player_name, # This is the normalized name from Sportsbet
+      player_team = team_name, # This is from the roster join
       opposition_team,
       line,
       over_price       = prop_market_price,
@@ -639,7 +606,8 @@ player_props_function <- function() {
       competition_external_id,
       event_external_id,
       market_id,
-      player_id
+      player_id,
+      original_roster_name = person_full_name
     )
   
   #===============================================================================
@@ -668,23 +636,8 @@ player_props_function <- function() {
     mutate(line = str_extract(prop_market_name, "\\d{1,2}")) |>
     mutate(line = as.numeric(line) - 0.5) |>
     rename(player_name = selection_name_prop) |>
-    mutate(player_name = case_when(
-      player_name == "Tomas Nido"    ~ "Tomás Nido",
-      player_name == "Luis Garcia"   ~ "Luis García Jr.",
-      player_name == "Adolis Garcia" ~ "Adolis García",
-      player_name == "Jeremy Pena"   ~ "Jeremy Peña",
-      player_name == "Mauricio Dubon"~ "Mauricio Dubón",
-      player_name == "Eugenio Suarez"~ "Eugenio Suárez",
-      player_name == "Elias Diaz"    ~ "Elias Díaz",
-      player_name == "Javier Baez"   ~ "Javier Báez",
-      player_name == "Wenceel Perez" ~ "Wenceel Pérez",
-      player_name == "Ryan OHearn"    ~ "Ryan O'Hearn",
-      player_name == "Logan OHoppe"  ~ "Logan O'Hoppe",
-      player_name == "Josh H. Smith" ~ "Josh Smith",
-      player_name == "Ivan Herrera"  ~ "Iván Herrera",
-      .default = player_name
-    )) |> 
-    left_join(batters, by = c("player_name" = "person_full_name")) |> 
+    mutate(player_name = normalize_player_names(player_name)) |>
+    left_join(batters, by = c("player_name" = "normalized_name")) |>
     mutate(opposition_team = if_else(team_name == home_team, away_team, home_team)) |>
     relocate(match, .before = player_name) |>
     transmute(
@@ -693,8 +646,8 @@ player_props_function <- function() {
       home_team,
       away_team,
       market_name,
-      player_name,
-      player_team      = team_name,
+      player_name, # This is the normalized name from Sportsbet
+      player_team = team_name, # This is from the roster join
       opposition_team,
       line,
       over_price       = prop_market_price,
@@ -703,7 +656,8 @@ player_props_function <- function() {
       competition_external_id,
       event_external_id,
       market_id,
-      player_id
+      player_id,
+      original_roster_name = person_full_name
     )
   
   #===============================================================================
@@ -742,14 +696,9 @@ player_props_function <- function() {
     mutate(line = as.numeric(line) - 0.5) |>
     rename(player_name = selection_name_prop) |>
     mutate(player_name = str_remove_all(player_name, " \\d+\\+ Strikeouts$")) |>
-    mutate(
-      player_name =
-        case_when(
-          player_name == "Reynaldo Lopez" ~ "Reynaldo López",
-          player_name == "Ranger Suarez" ~ "Ranger Suárez",
-          .default = player_name)) |>
+    mutate(player_name = normalize_player_names(player_name)) |>
     rename(over_price = prop_market_price) |>
-    left_join(pitchers, by = c("player_name" = "person_full_name")) |> 
+    left_join(pitchers, by = c("player_name" = "normalized_name")) |>
     mutate(opposition_team = if_else(team_name == home_team, away_team, home_team)) |>
     relocate(match, .before = player_name) |>
     transmute(
@@ -758,8 +707,8 @@ player_props_function <- function() {
       home_team,
       away_team,
       market_name = "Pitcher Strikeouts",
-      player_name,
-      player_team = team_name,
+      player_name, # This is the normalized name from Sportsbet
+      player_team = team_name, # This is from the roster join
       opposition_team,
       line,
       over_price,
@@ -768,7 +717,8 @@ player_props_function <- function() {
       competition_external_id,
       event_external_id,
       market_id,
-      player_id
+      player_id,
+      original_roster_name = person_full_name
     )
   
   # Get pitcher strikeouts over / under -----------------------------------------------
@@ -783,15 +733,9 @@ player_props_function <- function() {
     mutate(player_name = str_remove(player_name, " Over")) |>
     mutate(player_name = str_remove(player_name, " \\d+\\.\\d+")) |>
     rename(line = handicap) |>  
-    mutate(
-      player_name =
-        case_when(
-          player_name == "Reynaldo Lopez" ~ "Reynaldo López",
-          player_name == "Ranger Suarez" ~ "Ranger Suárez",
-          player_name == "Yilber Diaz" ~ "Yilber Díaz",
-          .default = player_name)) |>
+    mutate(player_name = normalize_player_names(player_name)) |>
     rename(over_price = prop_market_price) |>
-    left_join(pitchers, by = c("player_name" = "person_full_name")) |> 
+    left_join(pitchers, by = c("player_name" = "normalized_name")) |>
     mutate(opposition_team = if_else(team_name == home_team, away_team, home_team)) |>
     relocate(match, .before = player_name) |>
     transmute(
@@ -800,8 +744,8 @@ player_props_function <- function() {
       home_team,
       away_team,
       market_name = "Pitcher Strikeouts",
-      player_name,
-      player_team = team_name,
+      player_name, # This is the normalized name from Sportsbet
+      player_team = team_name, # This is from the roster join
       opposition_team,
       line,
       over_price,
@@ -810,7 +754,8 @@ player_props_function <- function() {
       competition_external_id,
       event_external_id,
       market_id,
-      player_id
+      player_id,
+      original_roster_name = person_full_name
     )
   
   pitcher_strikeouts_under <-
@@ -823,15 +768,9 @@ player_props_function <- function() {
     mutate(player_name = str_remove(player_name, " Under")) |>
     mutate(player_name = str_remove(player_name, " \\d+\\.\\d+")) |>
     rename(line = handicap) |> 
-    mutate(
-      player_name =
-        case_when(
-          player_name == "Reynaldo Lopez" ~ "Reynaldo López",
-          player_name == "Ranger Suarez" ~ "Ranger Suárez",
-          player_name == "Yilber Diaz" ~ "Yilber Díaz",
-          .default = player_name)) |>
+    mutate(player_name = normalize_player_names(player_name)) |>
     rename(under_price = prop_market_price) |>
-    left_join(pitchers, by = c("player_name" = "person_full_name")) |> 
+    left_join(pitchers, by = c("player_name" = "normalized_name")) |>
     mutate(opposition_team = if_else(team_name == home_team, away_team, home_team)) |>
     relocate(match, .before = player_name) |>
     transmute(
@@ -840,8 +779,8 @@ player_props_function <- function() {
       home_team,
       away_team,
       market_name = "Pitcher Strikeouts",
-      player_name,
-      player_team = team_name,
+      player_name, # This is the normalized name from Sportsbet
+      player_team = team_name, # This is from the roster join
       opposition_team,
       line,
       under_price,
@@ -850,13 +789,15 @@ player_props_function <- function() {
       competition_external_id,
       event_external_id,
       market_id,
-      player_id_unders = player_id
+      player_id_unders = player_id,
+      original_roster_name = person_full_name
     )
   
   # Combine
   pitcher_strikeouts_over_under <-
     pitcher_strikeouts_over |> 
-    left_join(pitcher_strikeouts_under)
+    left_join(pitcher_strikeouts_under |> select(-original_roster_name, -player_team, -market_name, -agency, -start_time, -home_team, -away_team, -opposition_team, -class_external_id, -competition_external_id, -event_external_id),
+              by = c("match", "player_name", "line")) # Ensure join keys are precise
   
   #===============================================================================
   # Write to CSV
@@ -872,7 +813,7 @@ player_props_function <- function() {
       "away_team",
       "market_name",
       "player_name",
-      "player_team",
+      "player_team", # This is from roster
       "line",
       "over_price",
       "agency",
@@ -881,7 +822,8 @@ player_props_function <- function() {
       "competition_external_id",
       "event_external_id",
       "market_id",
-      "player_id"
+      "player_id", # This is sportsbet's ID for the player selection
+      "original_roster_name" # Added for reference
     ) |>
     mutate(market_name = "Batter Hits") |>
     mutate(agency = "Sportsbet") |>
@@ -897,7 +839,7 @@ player_props_function <- function() {
       "away_team",
       "market_name",
       "player_name",
-      "player_team",
+      "player_team", # This is from roster
       "line",
       "over_price",
       "under_price",
@@ -906,12 +848,18 @@ player_props_function <- function() {
       "class_external_id",
       "competition_external_id",
       "event_external_id",
-      "market_id",
-      "player_id",
-      "player_id_unders"
+      "market_id.x", # from over
+      "player_id", # from over
+      "market_id.y", # from under
+      "player_id_unders", # from under
+      "original_roster_name"
     ) |>
+    rename(market_id_over = market_id.x,
+           market_id_under = market_id.y) |>
     mutate(market_name = "Pitcher Strikeouts") |>
     mutate(agency = "Sportsbet") |>
+    # Ensure unique player_id if it's critical, or select one if they are the same
+    # For now, keeping both if market_ids are different for over/under selections
     write_csv("Data/scraped_odds/sportsbet_pitcher_strikeouts.csv")
   
   # Runs
@@ -924,7 +872,7 @@ player_props_function <- function() {
       "away_team",
       "market_name",
       "player_name",
-      "player_team",
+      "player_team", # This is from roster
       "line",
       "over_price",
       "agency",
@@ -933,7 +881,8 @@ player_props_function <- function() {
       "competition_external_id",
       "event_external_id",
       "market_id",
-      "player_id"
+      "player_id", # This is sportsbet's ID for the player selection
+      "original_roster_name" # Added for reference
     ) |>
     mutate(market_name = "Batter Runs") |>
     mutate(agency = "Sportsbet") |>
@@ -949,7 +898,7 @@ player_props_function <- function() {
       "away_team",
       "market_name",
       "player_name",
-      "player_team",
+      "player_team", # This is from roster
       "line",
       "over_price",
       "agency",
@@ -958,7 +907,8 @@ player_props_function <- function() {
       "competition_external_id",
       "event_external_id",
       "market_id",
-      "player_id"
+      "player_id", # This is sportsbet's ID for the player selection
+      "original_roster_name" # Added for reference
     ) |>
     mutate(market_name = "Batter RBIs") |>
     mutate(agency = "Sportsbet") |>

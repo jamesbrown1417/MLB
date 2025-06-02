@@ -5,6 +5,9 @@ library(httr2)
 library(jsonlite)
 library(glue)
 
+# Source the normalization function
+source("Functions/normalize_player_names.R")
+
 # Read in data
 all_pinnacle_raw_files <- list.files("OddsScraper/Pinnacle", "\\.csv", full.names = TRUE)
 
@@ -26,6 +29,7 @@ strikeouts_over <-
   strikeouts_markets |> 
   mutate(player_name = str_remove(selection, " \\(Strikeouts\\)")) |>
   mutate(player_name = str_remove(player_name, " \\(.*$")) |>
+  mutate(player_name = normalize_player_names(player_name)) |>
   filter(str_detect(name, "Over")) |>
   mutate(match = glue("{home_team} v {away_team}")) |> 
   mutate(agency = "Pinnacle") |>
@@ -45,6 +49,7 @@ strikeouts_under <-
   strikeouts_markets |> 
   mutate(player_name = str_remove(selection, " \\(Strikeouts\\)")) |>
   mutate(player_name = str_remove(player_name, " \\(.*$")) |>
+  mutate(player_name = normalize_player_names(player_name)) |>
   filter(str_detect(name, "Under")) |>
   mutate(match = glue("{home_team} v {away_team}")) |> 
   mutate(agency = "Pinnacle") |>
@@ -82,6 +87,7 @@ hits_over <-
   hits_markets |> 
   mutate(player_name = str_remove(selection, " \\(Hits\\)")) |>
   mutate(player_name = str_remove(player_name, " \\(.*$")) |>
+  mutate(player_name = normalize_player_names(player_name)) |>
   filter(str_detect(name, "Over")) |>
   mutate(match = glue("{home_team} v {away_team}")) |> 
   mutate(agency = "Pinnacle") |>
@@ -101,6 +107,7 @@ hits_under <-
   hits_markets |> 
   mutate(player_name = str_remove(selection, " \\(Hits\\)")) |>
   mutate(player_name = str_remove(player_name, " \\(.*$")) |>
+  mutate(player_name = normalize_player_names(player_name)) |>
   filter(str_detect(name, "Under")) |>
   mutate(match = glue("{home_team} v {away_team}")) |> 
   mutate(agency = "Pinnacle") |>
@@ -138,6 +145,7 @@ pitching_outs_over <-
   pitching_outs_markets |> 
   mutate(player_name = str_remove(selection, " \\(Pitching Outs\\)")) |>
   mutate(player_name = str_remove(player_name, " \\(.*$")) |>
+  mutate(player_name = normalize_player_names(player_name)) |>
   filter(str_detect(name, "Over")) |>
   mutate(match = glue("{home_team} v {away_team}")) |> 
   mutate(agency = "Pinnacle") |>
@@ -157,6 +165,7 @@ pitching_outs_under <-
   pitching_outs_markets |> 
   mutate(player_name = str_remove(selection, " \\(Pitching Outs\\)")) |>
   mutate(player_name = str_remove(player_name, " \\(.*$")) |>
+  mutate(player_name = normalize_player_names(player_name)) |>
   filter(str_detect(name, "Under")) |>
   mutate(match = glue("{home_team} v {away_team}")) |> 
   mutate(agency = "Pinnacle") |>
@@ -194,6 +203,7 @@ home_run_over <-
   home_run_markets |> 
   mutate(player_name = str_remove(selection, " \\(Home Run\\)")) |>
   mutate(player_name = str_remove(player_name, " \\(.*$")) |>
+  mutate(player_name = normalize_player_names(player_name)) |>
   filter(str_detect(name, "Over")) |>
   mutate(match = glue("{home_team} v {away_team}")) |> 
   mutate(agency = "Pinnacle") |>
@@ -214,6 +224,7 @@ home_run_under <-
   home_run_markets |> 
   mutate(player_name = str_remove(selection, " \\(Home Run\\)")) |>
   mutate(player_name = str_remove(player_name, " \\(.*$")) |>
+  mutate(player_name = normalize_player_names(player_name)) |>
   filter(str_detect(name, "Under")) |>
   mutate(match = glue("{home_team} v {away_team}")) |> 
   mutate(agency = "Pinnacle") |>
@@ -252,6 +263,7 @@ total_bases_over <-
   total_bases_markets |> 
   mutate(player_name = str_remove(selection, " \\(Total Bases\\)")) |>
   mutate(player_name = str_remove(player_name, " \\(.*$")) |>
+  mutate(player_name = normalize_player_names(player_name)) |>
   filter(str_detect(name, "Over")) |>
   mutate(match = glue("{home_team} v {away_team}")) |> 
   mutate(agency = "Pinnacle") |>
@@ -271,6 +283,7 @@ total_bases_under <-
   total_bases_markets |> 
   mutate(player_name = str_remove(selection, " \\(Total Bases\\)")) |>
   mutate(player_name = str_remove(player_name, " \\(.*$")) |>
+  mutate(player_name = normalize_player_names(player_name)) |>
   filter(str_detect(name, "Under")) |>
   mutate(match = glue("{home_team} v {away_team}")) |> 
   mutate(agency = "Pinnacle") |>

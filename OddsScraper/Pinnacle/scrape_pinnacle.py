@@ -2,6 +2,7 @@ import http.client
 import json
 import zlib
 import pandas as pd
+from OddsScraper.Shared.name_utils import normalize_player_name
 
 # API connection details
 conn = http.client.HTTPSConnection("pinnacle-odds.p.rapidapi.com")
@@ -36,11 +37,18 @@ def extract_market_data(json_data, market_filter, file_name):
 
     for event in json_data['specials']:
         if event['category'] == "Player Props" and market_filter in event.get('name', ''):
-            name = event['name']
+            name = event['name'] # Full market name like "Player Name - Hits"
             home_team = event['event']['home']
             away_team = event['event']['away']
+
+            # Extract player name part by splitting by " - " and taking the first part
+            # Default to the full name if " - " is not found, though this is less likely for player props
+            player_name_extracted = name.split(' - ')[0] if ' - ' in name else name
+            normalized_name = normalize_player_name(player_name_extracted)
+
             market_df = pd.DataFrame(event['lines']).T
-            market_df['selection'] = name
+            market_df['selection'] = name # Keep original full market name as 'selection'
+            market_df['player_name'] = normalized_name # Add normalized player name
             market_df['home_team'] = home_team
             market_df['away_team'] = away_team
             market_dfs.append(market_df)
