@@ -4,32 +4,28 @@ library(rvest)
 library(httr2)
 library(jsonlite)
 
+# Source functions
+source("Functions/fix_team_names.R")
+source("Functions/normalize_player_names.R")
+
 # Get Rosters
-MLB_2025_Active_Rosters <- read_rds("Data/MLB_2025_Active_Rosters.rds")
+MLB_2025_Active_Rosters <- read_rds("Data/MLB_2025_Active_Rosters.rds") |>
+  mutate(normalized_name = sapply(person_full_name, normalize_player_names, USE.NAMES = FALSE))
 
 # Get Pitchers
 pitchers <-
   MLB_2025_Active_Rosters |>
   filter(position_name == "Pitcher") |> 
-  select(person_full_name, team_name) |> 
-  # separate full name into given names and last name
-  separate(person_full_name, c("given_name", "last_name"), sep = " ", remove = FALSE) |> 
-  mutate(join_name = paste(substr(given_name, 1, 1), last_name, sep = ". "))
+  select(person_full_name, normalized_name, team_name)
 
 # Batters
 batters <-
-MLB_2025_Active_Rosters |>
+  MLB_2025_Active_Rosters |>
   filter(position_name != "Pitcher") |> 
-  select(person_full_name, team_name) |> 
-  # separate full name into given names and last name
-  separate(person_full_name, c("given_name", "last_name"), sep = " ", remove = FALSE) |> 
-  mutate(join_name = paste(substr(given_name, 1, 1), last_name, sep = ". "))
+  select(person_full_name, normalized_name, team_name)
 
 # URL to get responses
 tab_url = "https://api.beta.tab.com.au/v1/tab-info-service/sports/Baseball/competitions/Major%20League%20Baseball?homeState=SA&jurisdiction=SA"
-
-# Fix team names function
-source("Functions/fix_team_names.R")
 
 main_tab <- function() {
   
@@ -292,6 +288,7 @@ main_tab <- function() {
     alternate_player_strikeouts_markets |>
     mutate(player_name = str_remove(prop_name, " \\(.*\\)")) |>
     mutate(player_name = str_remove(player_name, " \\d+\\+ SOs")) |>
+    mutate(player_name = normalize_player_names(player_name)) |>
     mutate(line = str_extract(prop_name, "\\d+")) |> 
     mutate(line = as.numeric(line) - 0.5) |> 
     transmute(match, start_time, market_name = "Pitcher Strikeouts", player_name, line, over_price = price, prop_id)
@@ -299,28 +296,26 @@ main_tab <- function() {
   # Combine
   tab_player_strikeouts_markets <-
     alternate_player_strikeouts_markets |>
+    # Note: This section for TAB pitcher strikeouts only seems to process "alternate" lines (X+ SOs)
+    # and there's no explicit Over/Under for a standard line (e.g. Player X O/U 4.5 K)
+    # If standard O/U lines exist in `player_strikeouts_markets`, they are not processed here.
+    # The `player_strikeouts_markets` df is created but not fully used for O/U.
     select(match, start_time, market_name, player_name, line, over_price, prop_id) |> 
     mutate(agency = "TAB")
   
-  # Fix team names
+  # Fix team names and join with roster
   tab_player_strikeouts_markets <-
     tab_player_strikeouts_markets |> 
     separate(match, into = c("home_team", "away_team"), sep = " v ", remove = FALSE) |>
     mutate(home_team = fix_team_names(home_team)) |>
     mutate(away_team = fix_team_names(away_team)) |>
     mutate(match = paste(home_team, "v", away_team)) |> 
-    mutate(player_name = case_when(
-      player_name == "Reynaldo Lopez" ~ "Reynaldo López",
-      player_name == "Ranger Suarez" ~ "Ranger Suárez",
-      player_name == "Yilber Diaz" ~ "Yilber Díaz",
-      .default = player_name
-    )) |> 
-    left_join(pitchers, by = c("player_name" = "join_name")) |> 
+    left_join(pitchers, by = c("player_name" = "normalized_name")) |>
     rename(player_team = team_name) |> 
     mutate(opposition_team = ifelse(home_team == player_team, away_team, home_team)) |>
-    relocate(player_team, opposition_team, .after = player_name) |> 
-    mutate(player_name = person_full_name) |> 
-    select(-person_full_name, -given_name, -last_name)
+    relocate(player_team, opposition_team, .after = player_name) |>
+    mutate(original_roster_name = person_full_name) |> # Keep original name for reference
+    select(-person_full_name) # Remove to avoid confusion with normalized TAB name
   
   #===============================================================================
   # Player Home Runs
@@ -351,6 +346,7 @@ main_tab <- function() {
   alternate_player_home_runs_markets <-
     alternate_player_home_runs_markets |>
     mutate(player_name = str_remove(prop_name, " \\(.*\\)")) |>
+    mutate(player_name = normalize_player_names(player_name)) |>
     mutate(line = str_extract(market_name, "\\d+")) |> 
     mutate(line = as.numeric(line) - 0.5) |> 
     transmute(match, start_time, market_name = "Player Home Runs", player_name, line, over_price = price, prop_id)
@@ -360,51 +356,38 @@ main_tab <- function() {
     player_home_runs_markets |> 
     filter(type == "Over") |> 
     mutate(market_name = "Player Home Runs") |>
+    mutate(player_name = normalize_player_names(player_name)) |>
     select(match, start_time, market_name, player_name, line, over_price = price, prop_id) |> 
-    bind_rows(alternate_player_home_runs_markets)
+    bind_rows(alternate_player_home_runs_markets) # alternate names already normalized
   
   # Under lines
   under_lines <-
     player_home_runs_markets |> 
     filter(type == "Under") |> 
     mutate(market_name = "Player Home Runs") |>
+    mutate(player_name = normalize_player_names(player_name)) |>
     select(match, start_time, market_name, player_name, line, under_price = price, under_prop_id = prop_id)
   
   # Combine
   tab_player_home_runs_markets <-
     over_lines |>
-    full_join(under_lines) |> 
+    full_join(under_lines, by = c("match", "start_time", "market_name", "player_name", "line")) |>
     select(match, start_time, market_name, player_name, line, over_price, under_price, prop_id, under_prop_id) |> 
     mutate(agency = "TAB")
   
-  # Fix team names
+  # Fix team names and join with roster
   tab_player_home_runs_markets <-
     tab_player_home_runs_markets |> 
     separate(match, into = c("home_team", "away_team"), sep = " v ", remove = FALSE) |>
     mutate(home_team = fix_team_names(home_team)) |>
     mutate(away_team = fix_team_names(away_team)) |>
     mutate(match = paste(home_team, "v", away_team)) |> 
-    mutate(player_name = case_when(
-      player_name == "Tomas Nido" ~ "Tomás Nido",
-      player_name == "Luis Garcia" ~ "Luis García Jr.",
-      player_name == "Adolis Garcia" ~ "Adolis García",
-      player_name == "Jeremy Pena" ~ "Jeremy Peña",
-      player_name == "Mauricio Dubon" ~ "Mauricio Dubón",
-      player_name == "Eugenio Suarez" ~ "Eugenio Suárez",
-      player_name == "Elias Diaz" ~ "Elias Díaz",
-      player_name == "Javier Baez" ~ "Javier Báez",
-      player_name == "Wenceel Perez" ~ "Wenceel Pérez",
-      player_name == "Ryan OHearn" ~ "Ryan O'Hearn",
-      player_name == "Logan OHoppe" ~ "Logan O'Hoppe",
-      player_name == "Josh H. Smith" ~ "Josh Smith",
-      player_name == "Ivan Herrera" ~ "Iván Herrera",
-      .default = player_name
-    )) |> 
-    left_join(batters, by = c("player_name" = "person_full_name")) |> 
+    left_join(batters, by = c("player_name" = "normalized_name")) |>
     rename(player_team = team_name) |> 
     mutate(opposition_team = ifelse(home_team == player_team, away_team, home_team)) |>
-    relocate(player_team, opposition_team, .after = player_name) |> 
-    select(-join_name, -given_name, -last_name)
+    relocate(player_team, opposition_team, .after = player_name) |>
+    mutate(original_roster_name = person_full_name) |>
+    select(-person_full_name)
   
   #===============================================================================
   # Player Hits
@@ -435,6 +418,7 @@ main_tab <- function() {
   alternate_player_hits_markets <-
     alternate_player_hits_markets |>
     mutate(player_name = str_remove(prop_name, " \\(.*\\)")) |>
+    mutate(player_name = normalize_player_names(player_name)) |>
     mutate(line = str_extract(market_name, "\\d+")) |> 
     mutate(line = as.numeric(line) - 0.5) |> 
     transmute(match, start_time, market_name = "Player Hits", player_name, line, over_price = price, prop_id)
@@ -444,52 +428,39 @@ main_tab <- function() {
     player_hits_markets |> 
     filter(type == "Over") |> 
     mutate(market_name = "Player Hits") |>
+    mutate(player_name = normalize_player_names(player_name)) |>
     select(match, start_time, market_name, player_name, line, over_price = price, prop_id) |> 
-    bind_rows(alternate_player_hits_markets)
+    bind_rows(alternate_player_hits_markets) # alternate names already normalized
   
   # Under lines
   under_lines <-
     player_hits_markets |> 
     filter(type == "Under") |> 
     mutate(market_name = "Player Hits") |>
+    mutate(player_name = normalize_player_names(player_name)) |>
     select(match, start_time, market_name, player_name, line, under_price = price, under_prop_id = prop_id)
   
   # Combine
   tab_player_hits_markets <-
     over_lines |>
-    full_join(under_lines) |> 
+    full_join(under_lines, by = c("match", "start_time", "market_name", "player_name", "line")) |>
     select(match, start_time, market_name, player_name, line, over_price, under_price, prop_id, under_prop_id) |> 
     mutate(agency = "TAB")
   
-  # Fix team names
+  # Fix team names and join with roster
   tab_player_hits_markets <-
     tab_player_hits_markets |> 
     separate(match, into = c("home_team", "away_team"), sep = " v ", remove = FALSE) |>
     mutate(home_team = fix_team_names(home_team)) |>
     mutate(away_team = fix_team_names(away_team)) |>
     mutate(match = paste(home_team, "v", away_team)) |> 
-    mutate(player_name = case_when(
-      player_name == "Tomas Nido" ~ "Tomás Nido",
-      player_name == "Luis Garcia" ~ "Luis García Jr.",
-      player_name == "Adolis Garcia" ~ "Adolis García",
-      player_name == "Jeremy Pena" ~ "Jeremy Peña",
-      player_name == "Mauricio Dubon" ~ "Mauricio Dubón",
-      player_name == "Eugenio Suarez" ~ "Eugenio Suárez",
-      player_name == "Elias Diaz" ~ "Elias Díaz",
-      player_name == "Javier Baez" ~ "Javier Báez",
-      player_name == "Wenceel Perez" ~ "Wenceel Pérez",
-      player_name == "Ryan OHearn" ~ "Ryan O'Hearn",
-      player_name == "Logan OHoppe" ~ "Logan O'Hoppe",
-      player_name == "Josh H. Smith" ~ "Josh Smith",
-      player_name == "Ivan Herrera" ~ "Iván Herrera",
-      .default = player_name
-    )) |> 
-    left_join(batters, by = c("player_name" = "person_full_name")) |> 
+    left_join(batters, by = c("player_name" = "normalized_name")) |>
     rename(player_team = team_name) |> 
     mutate(opposition_team = ifelse(home_team == player_team, away_team, home_team)) |>
     relocate(player_team, opposition_team, .after = player_name) |> 
-    relocate(start_time, .after = match) |> 
-    select(-join_name, -given_name, -last_name)
+    relocate(start_time, .after = match) |>
+    mutate(original_roster_name = person_full_name) |>
+    select(-person_full_name)
 
   #===============================================================================
   # Player RBIs (Runs Batted In)
@@ -518,8 +489,9 @@ main_tab <- function() {
   alternate_player_rbis_markets <-
     player_rbis_markets_all |> 
     filter(str_detect(market_name, "\\+ Runs Batted In")) |> # Filter for the specific "at least one" market
-    mutate(player_name = prop_name) |> # Assuming prop_name is just the player name here
-    mutate(line = str_extract(market_name, "\\d+")) |> # Extract the line from the market name
+    mutate(player_name = prop_name) |>
+    mutate(player_name = normalize_player_names(player_name)) |>
+    mutate(line = str_extract(market_name, "\\d+")) |>
     mutate(line = as.numeric(line) - 0.5) |>
     transmute(match, start_time, market_name = "Player RBIs", player_name, line, over_price = price, prop_id)
   
@@ -527,62 +499,41 @@ main_tab <- function() {
   over_lines_rbis <-
     player_rbis_markets_main |> 
     filter(type == "Over") |> 
-    mutate(market_name = "Player RBIs") |> # Standardize market name
+    mutate(market_name = "Player RBIs") |>
+    mutate(player_name = normalize_player_names(player_name)) |>
     select(match, start_time, market_name, player_name, line, over_price = price, prop_id) |> 
-    bind_rows(alternate_player_rbis_markets) # Combine standard Over lines with the "To Record An RBI" lines
+    bind_rows(alternate_player_rbis_markets) # alternate names already normalized
   
   # Under lines
   under_lines_rbis <-
     player_rbis_markets_main |> 
     filter(type == "Under") |> 
-    mutate(market_name = "Player RBIs") |> # Standardize market name
+    mutate(market_name = "Player RBIs") |>
+    mutate(player_name = normalize_player_names(player_name)) |>
     select(match, start_time, market_name, player_name, line, under_price = price, under_prop_id = prop_id)
   
   # Combine Over and Under lines for RBIs
   tab_player_rbis_markets <-
     over_lines_rbis |>
-    full_join(under_lines_rbis, by = c("match", "start_time", "market_name", "player_name", "line")) |> # Join on all common identifiers
+    full_join(under_lines_rbis, by = c("match", "start_time", "market_name", "player_name", "line")) |>
     select(match, start_time, market_name, player_name, line, over_price, under_price, prop_id, under_prop_id) |> 
     mutate(agency = "TAB")
   
-  # Fix team names (assuming fix_team_names function exists)
+  # Fix team names and join with roster
   tab_player_rbis_markets <-
     tab_player_rbis_markets |> 
-    # Ensure 'match' column exists before attempting to separate
     filter(!is.na(match)) |>
-    separate(match, into = c("home_team", "away_team"), sep = " v ", remove = FALSE, extra = "merge") |> # Handle potential extra " v "
+    separate(match, into = c("home_team", "away_team"), sep = " v ", remove = FALSE, extra = "merge") |>
     mutate(home_team = fix_team_names(home_team)) |>
     mutate(away_team = fix_team_names(away_team)) |>
-    # Reconstruct match carefully in case separation resulted in unexpected columns
     mutate(match = paste(home_team, "v", away_team)) |>
-    # Fix player names (keep existing fixes, add more if needed for RBI data)
-    mutate(player_name = case_when(
-      player_name == "Tomas Nido" ~ "Tomás Nido",
-      player_name == "Luis Garcia" ~ "Luis García Jr.",
-      player_name == "Adolis Garcia" ~ "Adolis García",
-      player_name == "Jeremy Pena" ~ "Jeremy Peña",
-      player_name == "Mauricio Dubon" ~ "Mauricio Dubón",
-      player_name == "Eugenio Suarez" ~ "Eugenio Suárez",
-      player_name == "Elias Diaz" ~ "Elias Díaz",
-      player_name == "Javier Baez" ~ "Javier Báez",
-      player_name == "Wenceel Perez" ~ "Wenceel Pérez",
-      player_name == "Ryan OHearn" ~ "Ryan O'Hearn",
-      player_name == "Logan OHoppe" ~ "Logan O'Hoppe",
-      player_name == "Josh H. Smith" ~ "Josh Smith",
-      player_name == "Ivan Herrera" ~ "Iván Herrera",
-      # Add any other specific RBI player name corrections here
-      .default = player_name
-    )) |> 
-    # Join with batter/player info (assuming 'batters' df exists and has relevant columns)
-    left_join(batters, by = c("player_name" = "person_full_name")) |> 
+    left_join(batters, by = c("player_name" = "normalized_name")) |>
     rename(player_team = team_name) |> 
-    # Determine opposition team
     mutate(opposition_team = ifelse(home_team == player_team, away_team, home_team)) |>
-    # Arrange columns for clarity
     relocate(player_team, opposition_team, .after = player_name) |> 
-    relocate(start_time, .after = match) |> 
-    # Remove intermediate or potentially unnecessary columns from the join
-    select(-any_of(c("join_name", "given_name", "last_name"))) # Use any_of to avoid errors if columns don't exist
+    relocate(start_time, .after = match) |>
+    mutate(original_roster_name = person_full_name) |>
+    select(-person_full_name)
   
   #===============================================================================
   # Write to CSV------------------------------------------------------------------

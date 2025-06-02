@@ -5,29 +5,25 @@ library(httr2)
 library(jsonlite)
 library(tidyjson)
 
-# Fix team names function
+# Source functions
 source("Functions/fix_team_names.R")
+source("Functions/normalize_player_names.R")
 
 # Get Rosters
-MLB_2025_Active_Rosters <- read_rds("Data/MLB_2025_Active_Rosters.rds")
+MLB_2025_Active_Rosters <- read_rds("Data/MLB_2025_Active_Rosters.rds") |>
+  mutate(normalized_name = sapply(person_full_name, normalize_player_names, USE.NAMES = FALSE))
 
 # Get Pitchers
 pitchers <-
   MLB_2025_Active_Rosters |>
   filter(position_name == "Pitcher") |> 
-  select(person_full_name, team_name) |> 
-  # separate full name into given names and last name
-  separate(person_full_name, c("given_name", "last_name"), sep = " ", remove = FALSE) |> 
-  mutate(join_name = paste(substr(given_name, 1, 1), last_name, sep = ". "))
+  select(person_full_name, normalized_name, team_name)
 
 # Batters
 batters <-
   MLB_2025_Active_Rosters |>
   filter(position_name != "Pitcher") |> 
-  select(person_full_name, team_name) |> 
-  # separate full name into given names and last name
-  separate(person_full_name, c("given_name", "last_name"), sep = " ", remove = FALSE) |> 
-  mutate(join_name = paste(substr(given_name, 1, 1), last_name, sep = ". "))
+  select(person_full_name, normalized_name, team_name)
 
 pointsbet_main <- function() {
   # URL of website
@@ -234,14 +230,6 @@ pointsbet_main <- function() {
   # Map function to each URL
   pointsbet_data_player_props <- map_df(match_urls, get_player_props)
   
-  # Helper function to correct common player names
-  correct_player_names <- function(player_name) {
-    case_when(
-      player_name == "Yilber Diaz" ~ "Yilber Diaz",
-      .default = player_name
-    )
-  }
-  
   #===============================================================================
   # Batter Hits
   #===============================================================================
@@ -256,16 +244,16 @@ pointsbet_main <- function() {
     mutate(line = as.numeric(line) - 0.5) |>
     mutate(match = str_replace(match, "@", "v")) |>
     mutate(outcome = str_remove(outcome, " \\d+\\+$")) |>
+    mutate(player_name = normalize_player_names(outcome)) |> # Normalize full name
     separate(match, into = c("away_team", "home_team"), sep = " v ", remove = FALSE) |>
-    mutate(outcome = correct_player_names(outcome)) |>
-    left_join(batters[, c("person_full_name", "team_name")], by = c("outcome" = "person_full_name")) |>
+    left_join(batters, by = c("player_name" = "normalized_name")) |>
     mutate(opposition_team = if_else(home_team == team_name, away_team, home_team)) |>
     transmute(
       match,
       home_team,
       away_team,
       market_name = "Batter Hits",
-      player_name = outcome,
+      player_name, # Already normalized
       player_team = team_name,
       opposition_team,
       line,
@@ -273,17 +261,19 @@ pointsbet_main <- function() {
       agency = "Pointsbet",
       EventKey,
       MarketKey,
-      OutcomeKey
+      OutcomeKey,
+      original_roster_name = person_full_name
     )
   
   # Get initials from alternate hits
   player_hits_pb_names <-
     pointsbet_player_hits_lines |> 
-    select(player_name, player_team) |> 
-    separate(player_name, into = c("player_first_name", "player_last_name"), sep = "\\ ", remove = FALSE) |>
+    # player_name is already normalized here
+    select(player_name, player_team, original_roster_name) |>
+    separate(player_name, into = c("player_first_name", "player_last_name"), sep = "\\ ", remove = FALSE) |> #This might fail if name has more than 2 parts
     mutate(player_first_initial = substr(player_first_name, 1, 1)) |> 
-    mutate(player_join_name = paste(player_first_initial, player_last_name, sep = ". ")) |> 
-    distinct(player_join_name, player_name, player_team)
+    mutate(player_join_name = paste(player_first_initial, player_last_name, sep = ". ")) |> # This is the I. Lastname format
+    distinct(player_join_name, player_name, player_team, original_roster_name) # player_name is the full normalized name
     
   # Player hits over / under----------------------------------------------------
   
@@ -297,19 +287,19 @@ pointsbet_main <- function() {
     pointsbet_player_hits_over_under |>
     filter(str_detect(outcome, "Over")) |>
     mutate(outcome) |>
-    separate(outcome, into = c("player_name_full", "line"), sep = " Over ") |>
+    separate(outcome, into = c("player_name_full", "line"), sep = " Over ") |> # player_name_full is I. Lastname
     mutate(line = as.numeric(line)) |>
     mutate(match = str_replace(match, "@", "v")) |>
     separate(match, into = c("away_team", "home_team"), sep = " v ", remove = FALSE) |>
-    mutate(player_name_full = correct_player_names(player_name_full)) |>
-    left_join(player_hits_pb_names, by = c("player_name_full" = "player_join_name")) |>
+    # player_name_full (I. Lastname) is NOT normalized. It's a join key.
+    left_join(player_hits_pb_names, by = c("player_name_full" = "player_join_name")) |> # player_name from join is already normalized
     mutate(opposition_team = if_else(home_team == player_team, away_team, home_team)) |>
     transmute(
       match,
       home_team,
       away_team,
       market_name = "Player Hits",
-      player_name,
+      player_name, # This is the full normalized name from player_hits_pb_names
       player_team,
       opposition_team,
       line,
@@ -317,7 +307,8 @@ pointsbet_main <- function() {
       agency = "Pointsbet",
       EventKey,
       MarketKey,
-      OutcomeKey
+      OutcomeKey,
+      original_roster_name
     )
   
   # Get Unders
@@ -325,19 +316,19 @@ pointsbet_main <- function() {
     pointsbet_player_hits_over_under |>
     filter(str_detect(outcome, "Under")) |>
     mutate(outcome) |>
-    separate(outcome, into = c("player_name_full", "line"), sep = " Under ") |>
+    separate(outcome, into = c("player_name_full", "line"), sep = " Under ") |> # player_name_full is I. Lastname
     mutate(line = as.numeric(line)) |>
     mutate(match = str_replace(match, "@", "v")) |>
     separate(match, into = c("away_team", "home_team"), sep = " v ", remove = FALSE) |>
-    mutate(player_name_full = correct_player_names(player_name_full)) |>
-    left_join(player_hits_pb_names, by = c("player_name_full" = "player_join_name")) |>
+    # player_name_full (I. Lastname) is NOT normalized. It's a join key.
+    left_join(player_hits_pb_names, by = c("player_name_full" = "player_join_name")) |> # player_name from join is already normalized
     mutate(opposition_team = if_else(home_team == player_team, away_team, home_team)) |>
     transmute(
       match,
       home_team,
       away_team,
       market_name = "Player Hits",
-      player_name,
+      player_name, # This is the full normalized name from player_hits_pb_names
       player_team,
       opposition_team,
       line,
@@ -345,7 +336,8 @@ pointsbet_main <- function() {
       agency = "Pointsbet",
       EventKey,
       MarketKey,
-      OutcomeKey
+      OutcomeKey,
+      original_roster_name
     )
   
   # Combine overs and unders
@@ -381,16 +373,16 @@ pointsbet_main <- function() {
     mutate(line = as.numeric(line) - 0.5) |>
     mutate(match = str_replace(match, "@", "v")) |>
     mutate(outcome = str_remove(outcome, " \\d+\\+$")) |>
+    mutate(player_name = normalize_player_names(outcome)) |> # Normalize full name
     separate(match, into = c("away_team", "home_team"), sep = " v ", remove = FALSE) |>
-    mutate(outcome = correct_player_names(outcome)) |>
-    left_join(batters[, c("person_full_name", "team_name")], by = c("outcome" = "person_full_name")) |>
+    left_join(batters, by = c("player_name" = "normalized_name")) |>
     mutate(opposition_team = if_else(home_team == team_name, away_team, home_team)) |>
     transmute(
       match,
       home_team,
       away_team,
       market_name = "Batter RBIs",
-      player_name = outcome,
+      player_name, # Already normalized
       player_team = team_name,
       opposition_team,
       line,
@@ -398,17 +390,19 @@ pointsbet_main <- function() {
       agency = "Pointsbet",
       EventKey,
       MarketKey,
-      OutcomeKey
+      OutcomeKey,
+      original_roster_name = person_full_name
     )
   
   # Get initials from alternate RBIs
   player_rbis_pb_names <-
     pointsbet_player_rbis_lines |> 
-    select(player_name, player_team) |> 
+    # player_name is already normalized here
+    select(player_name, player_team, original_roster_name) |>
     separate(player_name, into = c("player_first_name", "player_last_name"), sep = "\\ ", remove = FALSE) |>
     mutate(player_first_initial = substr(player_first_name, 1, 1)) |> 
-    mutate(player_join_name = paste(player_first_initial, player_last_name, sep = ". ")) |> 
-    distinct(player_join_name, player_name, player_team)
+    mutate(player_join_name = paste(player_first_initial, player_last_name, sep = ". ")) |> # I. Lastname
+    distinct(player_join_name, player_name, player_team, original_roster_name) # player_name is full normalized
   
   # Player RBIs over / under----------------------------------------------------
   
@@ -422,19 +416,18 @@ pointsbet_main <- function() {
     pointsbet_player_rbis_over_under |>
     filter(str_detect(outcome, "Over")) |>
     mutate(outcome) |>
-    separate(outcome, into = c("player_name_full", "line"), sep = " Over ") |>
+    separate(outcome, into = c("player_name_full", "line"), sep = " Over ") |> # player_name_full is I. Lastname
     mutate(line = as.numeric(line)) |>
     mutate(match = str_replace(match, "@", "v")) |>
     separate(match, into = c("away_team", "home_team"), sep = " v ", remove = FALSE) |>
-    mutate(player_name_full = correct_player_names(player_name_full)) |>
-    left_join(player_rbis_pb_names, by = c("player_name_full" = "player_join_name")) |>
+    left_join(player_rbis_pb_names, by = c("player_name_full" = "player_join_name")) |> # player_name from join is already normalized
     mutate(opposition_team = if_else(home_team == player_team, away_team, home_team)) |>
     transmute(
       match,
       home_team,
       away_team,
       market_name = "Player RBIs",
-      player_name,
+      player_name, # This is the full normalized name
       player_team,
       opposition_team,
       line,
@@ -442,7 +435,8 @@ pointsbet_main <- function() {
       agency = "Pointsbet",
       EventKey,
       MarketKey,
-      OutcomeKey
+      OutcomeKey,
+      original_roster_name
     )
   
   # Get Unders
@@ -450,19 +444,18 @@ pointsbet_main <- function() {
     pointsbet_player_rbis_over_under |>
     filter(str_detect(outcome, "Under")) |>
     mutate(outcome) |>
-    separate(outcome, into = c("player_name_full", "line"), sep = " Under ") |>
+    separate(outcome, into = c("player_name_full", "line"), sep = " Under ") |> # player_name_full is I. Lastname
     mutate(line = as.numeric(line)) |>
     mutate(match = str_replace(match, "@", "v")) |>
     separate(match, into = c("away_team", "home_team"), sep = " v ", remove = FALSE) |>
-    mutate(player_name_full = correct_player_names(player_name_full)) |>
-    left_join(player_rbis_pb_names, by = c("player_name_full" = "player_join_name")) |>
+    left_join(player_rbis_pb_names, by = c("player_name_full" = "player_join_name")) |> # player_name from join is already normalized
     mutate(opposition_team = if_else(home_team == player_team, away_team, home_team)) |>
     transmute(
       match,
       home_team,
       away_team,
       market_name = "Player RBIs",
-      player_name,
+      player_name, # This is the full normalized name
       player_team,
       opposition_team,
       line,
@@ -470,7 +463,8 @@ pointsbet_main <- function() {
       agency = "Pointsbet",
       EventKey,
       MarketKey,
-      OutcomeKey
+      OutcomeKey,
+      original_roster_name
     )
   
   # Combine overs and unders
@@ -506,16 +500,16 @@ pointsbet_main <- function() {
     mutate(line = as.numeric(line) - 0.5) |>
     mutate(match = str_replace(match, "@", "v")) |>
     mutate(outcome = str_remove(outcome, " \\d+\\+$")) |>
+    mutate(player_name = normalize_player_names(outcome)) |> # Normalize full name
     separate(match, into = c("away_team", "home_team"), sep = " v ", remove = FALSE) |>
-    mutate(outcome = correct_player_names(outcome)) |>
-    left_join(pitchers[, c("person_full_name", "team_name")], by = c("outcome" = "person_full_name")) |>
+    left_join(pitchers, by = c("player_name" = "normalized_name")) |>
     mutate(opposition_team = if_else(home_team == team_name, away_team, home_team)) |>
     transmute(
       match,
       home_team,
       away_team,
       market_name = "Pitcher Strikeouts",
-      player_name = outcome,
+      player_name, # Already normalized
       player_team = team_name,
       opposition_team,
       line,
@@ -523,17 +517,19 @@ pointsbet_main <- function() {
       agency = "Pointsbet",
       EventKey,
       MarketKey,
-      OutcomeKey
+      OutcomeKey,
+      original_roster_name = person_full_name
     )
   
   # Get initials from alternate strikeouts
   pitcher_strikeouts_pb_names <-
     pointsbet_pitcher_strikeouts_lines |> 
-    select(player_name, player_team) |> 
+    # player_name is already normalized here
+    select(player_name, player_team, original_roster_name) |>
     separate(player_name, into = c("player_first_name", "player_last_name"), sep = "\\ ", remove = FALSE) |>
     mutate(player_first_initial = substr(player_first_name, 1, 1)) |> 
-    mutate(player_join_name = paste(player_first_initial, player_last_name, sep = ". ")) |> 
-    distinct(player_join_name, player_name, player_team)
+    mutate(player_join_name = paste(player_first_initial, player_last_name, sep = ". ")) |> # I. Lastname
+    distinct(player_join_name, player_name, player_team, original_roster_name) # player_name is full normalized
   
   # Pitcher strikeouts over / under----------------------------------------------------
   
@@ -547,19 +543,18 @@ pointsbet_main <- function() {
     pointsbet_pitcher_strikeouts_over_under |>
     filter(str_detect(outcome, "Over")) |>
     mutate(outcome) |>
-    separate(outcome, into = c("player_name_full", "line"), sep = " Over ") |>
+    separate(outcome, into = c("player_name_full", "line"), sep = " Over ") |> # player_name_full is I. Lastname
     mutate(line = as.numeric(line)) |>
     mutate(match = str_replace(match, "@", "v")) |>
     separate(match, into = c("away_team", "home_team"), sep = " v ", remove = FALSE) |>
-    mutate(player_name_full = correct_player_names(player_name_full)) |>
-    left_join(pitcher_strikeouts_pb_names, by = c("player_name_full" = "player_join_name")) |>
+    left_join(pitcher_strikeouts_pb_names, by = c("player_name_full" = "player_join_name")) |> # player_name from join is already normalized
     mutate(opposition_team = if_else(home_team == player_team, away_team, home_team)) |>
     transmute(
       match,
       home_team,
       away_team,
       market_name = "Pitcher Strikeouts",
-      player_name,
+      player_name, # This is the full normalized name
       player_team,
       opposition_team,
       line,
@@ -567,7 +562,8 @@ pointsbet_main <- function() {
       agency = "Pointsbet",
       EventKey,
       MarketKey,
-      OutcomeKey
+      OutcomeKey,
+      original_roster_name
     )
   
   # Get Unders
@@ -575,19 +571,18 @@ pointsbet_main <- function() {
     pointsbet_pitcher_strikeouts_over_under |>
     filter(str_detect(outcome, "Under")) |>
     mutate(outcome) |>
-    separate(outcome, into = c("player_name_full", "line"), sep = " Under ") |>
+    separate(outcome, into = c("player_name_full", "line"), sep = " Under ") |> # player_name_full is I. Lastname
     mutate(line = as.numeric(line)) |>
     mutate(match = str_replace(match, "@", "v")) |>
     separate(match, into = c("away_team", "home_team"), sep = " v ", remove = FALSE) |>
-    mutate(player_name_full = correct_player_names(player_name_full)) |>
-    left_join(pitcher_strikeouts_pb_names, by = c("player_name_full" = "player_join_name")) |>
+    left_join(pitcher_strikeouts_pb_names, by = c("player_name_full" = "player_join_name")) |> # player_name from join is already normalized
     mutate(opposition_team = if_else(home_team == player_team, away_team, home_team)) |>
     transmute(
       match,
       home_team,
       away_team,
       market_name = "Pitcher Strikeouts",
-      player_name,
+      player_name, # This is the full normalized name
       player_team,
       opposition_team,
       line,
@@ -595,7 +590,8 @@ pointsbet_main <- function() {
       agency = "Pointsbet",
       EventKey,
       MarketKey,
-      OutcomeKey
+      OutcomeKey,
+      original_roster_name
     )
   
   # Combine overs and unders
@@ -633,19 +629,18 @@ pointsbet_main <- function() {
     pointsbet_player_hr_over_under |>
     filter(str_detect(outcome, "Over")) |>
     mutate(outcome) |>
-    separate(outcome, into = c("player_name_full", "line"), sep = " Over ") |>
+    separate(outcome, into = c("player_name_full", "line"), sep = " Over ") |> # player_name_full is I. Lastname
     mutate(line = as.numeric(line)) |>
     mutate(match = str_replace(match, "@", "v")) |>
     separate(match, into = c("away_team", "home_team"), sep = " v ", remove = FALSE) |>
-    mutate(player_name_full = correct_player_names(player_name_full)) |>
-    left_join(player_hits_pb_names, by = c("player_name_full" = "player_join_name")) |>
+    left_join(player_hits_pb_names, by = c("player_name_full" = "player_join_name")) |> # Using player_hits_pb_names, assuming HR names are a subset or similar format
     mutate(opposition_team = if_else(home_team == player_team, away_team, home_team)) |>
     transmute(
       match,
       home_team,
       away_team,
       market_name = "Player Home Runs",
-      player_name,
+      player_name, # This is the full normalized name from player_hits_pb_names
       player_team,
       opposition_team,
       line,
@@ -653,7 +648,8 @@ pointsbet_main <- function() {
       agency = "Pointsbet",
       EventKey,
       MarketKey,
-      OutcomeKey
+      OutcomeKey,
+      original_roster_name
     )
   
   # Combine overs and unders
@@ -697,7 +693,12 @@ pointsbet_main <- function() {
       "EventKey",
       "MarketKey",
       "OutcomeKey",
+      "original_roster_name"
     ) |>
+    # Consolidate original_roster_name after bind_rows if necessary, or ensure it's handled correctly by the join.
+    # The left_join for over/under should bring original_roster_name.
+    # If pointsbet_player_hits_lines also has it, bind_rows might create list columns if types differ or names clash.
+    # Assuming original_roster_name is consistently named and typed.
     mutate(market_name = "Batter Hits") |>
     mutate(agency = "Pointsbet") |>
     write_csv("Data/scraped_odds/pointsbet_batter_hits.csv")
@@ -719,6 +720,7 @@ pointsbet_main <- function() {
       "EventKey",
       "MarketKey",
       "OutcomeKey",
+      "original_roster_name"
     ) |>
     mutate(market_name = "Batter Home Runs") |>
     mutate(agency = "Pointsbet") |>
@@ -743,6 +745,7 @@ pointsbet_main <- function() {
       "EventKey",
       "MarketKey",
       "OutcomeKey",
+      "original_roster_name"
     ) |>
     mutate(market_name = "Batter RBIs") |>
     mutate(agency = "Pointsbet") |>
@@ -767,6 +770,7 @@ pointsbet_main <- function() {
       "EventKey",
       "MarketKey",
       "OutcomeKey",
+      "original_roster_name"
     ) |>
     mutate(market_name = "Pitcher Strikeouts") |>
     mutate(agency = "Pointsbet") |>

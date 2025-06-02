@@ -4,29 +4,25 @@ library(rvest)
 library(httr2)
 library(jsonlite)
 
+# Source helper functions
+source("Functions/fix_team_names.R")
+source("Functions/normalize_player_names.R")
+
 # Get Rosters
-MLB_2025_Active_Rosters <- read_rds("Data/MLB_2025_Active_Rosters.rds")
+MLB_2025_Active_Rosters <- read_rds("Data/MLB_2025_Active_Rosters.rds") |>
+  mutate(normalized_name = sapply(person_full_name, normalize_player_names))
 
 # Get Pitchers
 pitchers <-
   MLB_2025_Active_Rosters |>
   filter(position_name == "Pitcher") |> 
-  select(person_full_name, team_name) |> 
-  # separate full name into given names and last name
-  separate(person_full_name, c("given_name", "last_name"), sep = " ", remove = FALSE) |> 
-  mutate(join_name = paste(substr(given_name, 1, 1), last_name, sep = ". "))
+  select(person_full_name, normalized_name, team_name)
 
 # Batters
 batters <-
   MLB_2025_Active_Rosters |>
   filter(position_name != "Pitcher") |> 
-  select(person_full_name, team_name) |> 
-  # separate full name into given names and last name
-  separate(person_full_name, c("given_name", "last_name"), sep = " ", remove = FALSE) |> 
-  mutate(join_name = paste(substr(given_name, 1, 1), last_name, sep = ". "))
-
-# Fix team names function
-source("Functions/fix_team_names.R")
+  select(person_full_name, normalized_name, team_name)
 
 #===============================================================================
 # Get JSON for each match
@@ -294,17 +290,12 @@ pitcher_strikeouts_all <-
   mutate(home_team = fix_team_names(home_team)) |>
   mutate(away_team = fix_team_names(away_team)) |>
   mutate(match = paste(home_team, "v", away_team)) |> 
-  mutate(player_name = case_when(
-    player_name == "Reynaldo Lopez" ~ "Reynaldo López",
-    player_name == "Ranger Suarez" ~ "Ranger Suárez",
-    player_name == "Yilber Diaz" ~ "Yilber Díaz",
-    .default = player_name
-  )) |> 
-  left_join(pitchers, by = c("player_name" = "person_full_name")) |> 
+  mutate(player_name = normalize_player_names(player_name)) |>
+  left_join(pitchers, by = c("player_name" = "normalized_name")) |>
   mutate(opposition_team = if_else(team_name == home_team, away_team, home_team)) |>
   rename(player_team = team_name) |>
   relocate(player_team, opposition_team, .after = player_name) |> 
-  select(-join_name, -given_name, -last_name) |>
+  select(-person_full_name) |> # person_full_name is from the join, keep the original player_name
   mutate(market_name = "Pitcher Strikeouts") |> 
   mutate(agency = "Neds")
 
@@ -342,17 +333,12 @@ pitcher_outs_all <-
   mutate(home_team = fix_team_names(home_team)) |>
   mutate(away_team = fix_team_names(away_team)) |>
   mutate(match = paste(home_team, "v", away_team)) |> 
-  mutate(player_name = case_when(
-    player_name == "Reynaldo Lopez" ~ "Reynaldo López",
-    player_name == "Ranger Suarez" ~ "Ranger Suárez",
-    player_name == "Yilber Diaz" ~ "Yilber Díaz",
-    .default = player_name
-  )) |> 
-  left_join(pitchers, by = c("player_name" = "person_full_name")) |> 
+  mutate(player_name = normalize_player_names(player_name)) |>
+  left_join(pitchers, by = c("player_name" = "normalized_name")) |>
   mutate(opposition_team = if_else(team_name == home_team, away_team, home_team)) |>
   rename(player_team = team_name) |>
   relocate(player_team, opposition_team, .after = player_name) |> 
-  select(-join_name, -given_name, -last_name) |>
+  select(-person_full_name) |>
   mutate(market_name = "Pitcher Outs") |> 
   mutate(agency = "Neds")
 
@@ -390,17 +376,12 @@ pitcher_hits_allowed_all <-
   mutate(home_team = fix_team_names(home_team)) |>
   mutate(away_team = fix_team_names(away_team)) |>
   mutate(match = paste(home_team, "v", away_team)) |> 
-  mutate(player_name = case_when(
-    player_name == "Reynaldo Lopez" ~ "Reynaldo López",
-    player_name == "Ranger Suarez" ~ "Ranger Suárez",
-    player_name == "Yilber Diaz" ~ "Yilber Díaz",
-    .default = player_name
-  )) |> 
-  left_join(pitchers, by = c("player_name" = "person_full_name")) |> 
+  mutate(player_name = normalize_player_names(player_name)) |>
+  left_join(pitchers, by = c("player_name" = "normalized_name")) |>
   mutate(opposition_team = if_else(team_name == home_team, away_team, home_team)) |>
   rename(player_team = team_name) |>
   relocate(player_team, opposition_team, .after = player_name) |> 
-  select(-join_name, -given_name, -last_name) |>
+  select(-person_full_name) |>
   mutate(market_name = "Pitcher Hits Allowed") |> 
   mutate(agency = "Neds")
 
@@ -420,20 +401,24 @@ batter_hits_alternate <-
   mutate(line_str = str_extract(market_name, "\\d+(?=\\s*\\+)")) |>
   filter(!is.na(line_str)) |>
   mutate(line = as.numeric(line_str) - 0.5) |>
-  mutate(player_name = str_trim(str_remove(entrants, " \\(.*\\)$"))) |>
+  mutate(player_name = normalize_player_names(str_trim(str_remove(entrants, " \\(.*\\)$")))) |>
   mutate(player_team = str_extract(entrants, "\\(([^)]+)\\)")) |>
   mutate(player_team = str_remove_all(player_team, "\\(|\\)")) |>
   select(match = match_name, start_time, player_name, player_team, line, over_price = price)
 
 batter_hits_all <-
   batter_hits_alternate |>
+  # Join with batters data to verify player and get official team (if needed for consistency)
+  # For now, we are trusting player_team from Neds if available
+  # left_join(batters, by = c("player_name" = "normalized_name")) |>
   separate(match, c("home_team", "away_team"), sep = " vs ", remove = FALSE, fill = "right") |>
   mutate(home_team = fix_team_names(home_team)) |>
   mutate(away_team = fix_team_names(away_team)) |>
   mutate(match = paste(home_team, "v", away_team)) |>
+  mutate(player_team = fix_team_names(player_team)) |> # Normalize team name from Neds
   mutate(opposition_team = if_else(player_team == home_team, away_team, home_team)) |>
   relocate(player_team, opposition_team, .after = player_name) |>
-  select(-any_of(c("join_name", "given_name", "last_name", "primary_position_name", "person_id"))) |>
+  # We don't have a join with batters by default here, so no batter specific columns like person_full_name to remove unless added
   mutate(market_name = "Batter Hits") |>
   mutate(agency = "Neds")
 
@@ -454,7 +439,7 @@ batter_hr_alternate <-
   mutate(line_str = str_extract(market_name, "\\d+(?=\\s*\\+)")) |>
   filter(!is.na(line_str)) |>
   mutate(line = as.numeric(line_str) - 0.5) |>
-  mutate(player_name = str_trim(str_remove(entrants, " \\(.*\\)$"))) |>
+  mutate(player_name = normalize_player_names(str_trim(str_remove(entrants, " \\(.*\\)$")))) |>
   mutate(player_team = str_extract(entrants, "\\(([^)]+)\\)")) |>
   mutate(player_team = str_remove_all(player_team, "\\(|\\)")) |>
   select(match = match_name, start_time, player_name, player_team, line, over_price = price)
@@ -465,9 +450,9 @@ batter_hr_all <-
   mutate(home_team = fix_team_names(home_team)) |>
   mutate(away_team = fix_team_names(away_team)) |>
   mutate(match = paste(home_team, "v", away_team)) |>
+  mutate(player_team = fix_team_names(player_team)) |>
   mutate(opposition_team = if_else(player_team == home_team, away_team, home_team)) |>
   relocate(player_team, opposition_team, .after = player_name) |>
-  select(-any_of(c("join_name", "given_name", "last_name", "primary_position_name", "person_id"))) |>
   mutate(market_name = "Batter Home Runs") |>
   mutate(agency = "Neds")
 
@@ -487,7 +472,7 @@ batter_rbi_alternate <-
   mutate(line_str = str_extract(market_name, "\\d+(?=\\s*\\+)")) |>
   filter(!is.na(line_str)) |>
   mutate(line = as.numeric(line_str) - 0.5) |>
-  mutate(player_name = str_trim(str_remove(entrants, " \\(.*\\)$"))) |>
+  mutate(player_name = normalize_player_names(str_trim(str_remove(entrants, " \\(.*\\)$")))) |>
   mutate(player_team = str_extract(entrants, "\\(([^)]+)\\)")) |>
   mutate(player_team = str_remove_all(player_team, "\\(|\\)")) |>
   select(match = match_name, start_time, player_name, player_team, line, over_price = price)
@@ -498,9 +483,9 @@ batter_rbi_all <-
   mutate(home_team = fix_team_names(home_team)) |>
   mutate(away_team = fix_team_names(away_team)) |>
   mutate(match = paste(home_team, "v", away_team)) |>
+  mutate(player_team = fix_team_names(player_team)) |>
   mutate(opposition_team = if_else(player_team == home_team, away_team, home_team)) |>
   relocate(player_team, opposition_team, .after = player_name) |>
-  select(-any_of(c("join_name", "given_name", "last_name", "primary_position_name", "person_id"))) |>
   mutate(market_name = "Batter RBIs") |>
   mutate(agency = "Neds")
 
@@ -520,7 +505,7 @@ batter_sb_alternate <-
   mutate(line_str = str_extract(market_name, "\\d+(?=\\s*\\+)")) |>
   filter(!is.na(line_str)) |>
   mutate(line = as.numeric(line_str) - 0.5) |>
-  mutate(player_name = str_trim(str_remove(entrants, " \\(.*\\)$"))) |>
+  mutate(player_name = normalize_player_names(str_trim(str_remove(entrants, " \\(.*\\)$")))) |>
   mutate(player_team = str_extract(entrants, "\\(([^)]+)\\)")) |>
   mutate(player_team = str_remove_all(player_team, "\\(|\\)")) |>
   select(match = match_name, start_time, player_name, player_team, line, over_price = price)
@@ -531,9 +516,9 @@ batter_sb_all <-
   mutate(home_team = fix_team_names(home_team)) |>
   mutate(away_team = fix_team_names(away_team)) |>
   mutate(match = paste(home_team, "v", away_team)) |>
+  mutate(player_team = fix_team_names(player_team)) |>
   mutate(opposition_team = if_else(player_team == home_team, away_team, home_team)) |>
   relocate(player_team, opposition_team, .after = player_name) |>
-  select(-any_of(c("join_name", "given_name", "last_name", "primary_position_name", "person_id"))) |>
   mutate(market_name = "Batter Stolen Bases") |>
   mutate(agency = "Neds")
   

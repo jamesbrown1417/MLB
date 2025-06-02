@@ -6,7 +6,9 @@ library(jsonlite)
 library(glue)
 
 # Fix team names function
-source("Scripts/fix_team_names.R")
+source("Functions/fix_team_names.R") # Corrected path
+# Source player name normalization function
+source("Functions/normalize_player_names.R")
 
 # Read scraped HTML from the BET365_HTML Folder
 scraped_files_player <- list.files("OddsScraper/Bet365/Data/", full.names = TRUE, pattern = "player")
@@ -43,7 +45,8 @@ get_player_props <- function(scraped_file) {
   strikeouts_players <-
     bet365_player_markets[[strikeouts_over_under_index]] |>
     html_elements(".srb-ParticipantLabelWithTeam_Name") |>
-    html_text()
+    html_text() |>
+    sapply(normalize_player_names)
   
   strikeouts_cols <-
     bet365_player_markets[[strikeouts_over_under_index]] |>
@@ -85,7 +88,8 @@ get_player_props <- function(scraped_file) {
   alternate_strikeouts_players <-
     bet365_player_markets[[alternate_strikeouts_index]] |>
     html_elements(".srb-ParticipantLabelWithTeam_Name") |>
-    html_text()
+    html_text() |>
+    sapply(normalize_player_names)
   
   alternate_strikeouts_cols <-
     bet365_player_markets[[alternate_strikeouts_index]] |>
@@ -135,7 +139,8 @@ get_player_props <- function(scraped_file) {
   total_bases_players <-
     bet365_player_markets[[total_bases_ou_index]] |>
     html_elements(".srb-ParticipantLabelWithTeam_Name") |>
-    html_text()
+    html_text() |>
+    sapply(normalize_player_names)
   
   total_bases_cols <-
     bet365_player_markets[[total_bases_ou_index]] |>
@@ -177,7 +182,8 @@ get_player_props <- function(scraped_file) {
   alternate_total_bases_players <-
     bet365_player_markets[[alternate_total_bases_index]] |>
     html_elements(".srb-ParticipantLabelWithTeam_Name") |>
-    html_text()
+    html_text() |>
+    sapply(normalize_player_names)
   
   alternate_total_bases_cols <-
     bet365_player_markets[[alternate_total_bases_index]] |>
@@ -218,7 +224,8 @@ get_player_props <- function(scraped_file) {
   hits_players <-
     bet365_player_markets[[hits_ou_index]] |>
     html_elements(".srb-ParticipantLabelWithTeam_Name") |>
-    html_text()
+    html_text() |>
+    sapply(normalize_player_names)
   
   hits_cols <-
     bet365_player_markets[[hits_ou_index]] |>
@@ -260,7 +267,8 @@ get_player_props <- function(scraped_file) {
   alternate_hits_players <-
     bet365_player_markets[[alternate_hits_index]] |>
     html_elements(".srb-ParticipantLabelWithTeam_Name") |>
-    html_text()
+    html_text() |>
+    sapply(normalize_player_names)
   
   alternate_hits_cols <-
     bet365_player_markets[[alternate_hits_index]] |>
@@ -301,7 +309,8 @@ get_player_props <- function(scraped_file) {
   runs_players <-
     bet365_player_markets[[runs_ou_index]] |>
     html_elements(".srb-ParticipantLabelWithTeam_Name") |>
-    html_text()
+    html_text() |>
+    sapply(normalize_player_names)
   
   runs_cols <-
     bet365_player_markets[[runs_ou_index]] |>
@@ -343,7 +352,8 @@ get_player_props <- function(scraped_file) {
   alternate_runs_players <-
     bet365_player_markets[[alternate_runs_index]] |>
     html_elements(".srb-ParticipantLabelWithTeam_Name") |>
-    html_text()
+    html_text() |>
+    sapply(normalize_player_names)
   
   alternate_runs_cols <-
     bet365_player_markets[[alternate_runs_index]] |>
@@ -384,7 +394,8 @@ get_player_props <- function(scraped_file) {
   rbi_players <-
     bet365_player_markets[[rbi_ou_index]] |>
     html_elements(".srb-ParticipantLabelWithTeam_Name") |>
-    html_text()
+    html_text() |>
+    sapply(normalize_player_names)
   
   rbi_cols <-
     bet365_player_markets[[rbi_ou_index]] |>
@@ -426,7 +437,8 @@ get_player_props <- function(scraped_file) {
   alternate_rbi_players <-
     bet365_player_markets[[alternate_rbi_index]] |>
     html_elements(".srb-ParticipantLabelWithTeam_Name") |>
-    html_text()
+    html_text() |>
+    sapply(normalize_player_names)
   
   alternate_rbi_cols <-
     bet365_player_markets[[alternate_rbi_index]] |>
