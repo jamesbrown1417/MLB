@@ -1,0 +1,242 @@
+{
+    "entrants": {
+        "073ae606-2dd2-44bc-92fa-444ee17c0abb": {
+            "id": "073ae606-2dd2-44bc-92fa-444ee17c0abb",
+            "name": "Chicago Cubs",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "075fd725-6872-47da-bb47-17a4142edb0a"
+        },
+        "462a4c69-ea08-4c14-855e-e74988349d64": {
+            "id": "462a4c69-ea08-4c14-855e-e74988349d64",
+            "name": "Over (9)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "d6e93bc5-fd02-487d-8228-395a41c463a4"
+        },
+        "569a8f1a-7c6d-4a77-ad91-6a2a31866214": {
+            "id": "569a8f1a-7c6d-4a77-ad91-6a2a31866214",
+            "name": "Washington Nationals (+1.5)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "37024422-e8aa-4a5e-96d0-a190883a8fa3"
+        },
+        "9945817d-90a4-4ad3-9087-63d0a6c95c88": {
+            "id": "9945817d-90a4-4ad3-9087-63d0a6c95c88",
+            "name": "Under (9)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "d6e93bc5-fd02-487d-8228-395a41c463a4"
+        },
+        "a79b23d1-45ff-4118-9426-b5a01b18d54b": {
+            "id": "a79b23d1-45ff-4118-9426-b5a01b18d54b",
+            "name": "Washington Nationals",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "075fd725-6872-47da-bb47-17a4142edb0a"
+        },
+        "b16c8465-c0b0-4aeb-a813-7d062f664a24": {
+            "id": "b16c8465-c0b0-4aeb-a813-7d062f664a24",
+            "name": "Chicago Cubs (-1.5)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "37024422-e8aa-4a5e-96d0-a190883a8fa3"
+        }
+    },
+    "event_participants": {
+        "69def012-3995-4bb5-a581-00871644af86": {
+            "id": "69def012-3995-4bb5-a581-00871644af86",
+            "event_id": "f634d3a4-42f1-4fa9-a6c3-0d5b29c0b651",
+            "name": "Chicago Cubs",
+            "home_away": "AWAY"
+        },
+        "91611fdd-bf0a-4d75-9367-fcb5cf453a8e": {
+            "id": "91611fdd-bf0a-4d75-9367-fcb5cf453a8e",
+            "event_id": "f634d3a4-42f1-4fa9-a6c3-0d5b29c0b651",
+            "name": "Washington Nationals",
+            "home_away": "HOME"
+        }
+    },
+    "events": {
+        "f634d3a4-42f1-4fa9-a6c3-0d5b29c0b651": {
+            "id": "f634d3a4-42f1-4fa9-a6c3-0d5b29c0b651",
+            "name": "Washington Nationals vs Chicago Cubs",
+            "event_type": {
+                "id": "6bfa0efc-05df-4ae1-9b1e-152365290cfd",
+                "name": "Match"
+            },
+            "match_status": "BettingOpen",
+            "advertised_start": "2025-06-03T22:45:00Z",
+            "actual_start": "2025-06-03T22:45:00Z",
+            "visible": true,
+            "slug": "washington-nationals-vs-chicago-cubs",
+            "competition": {
+                "id": "a5618779-2cb3-4c0a-b8cc-ce2517fbc8d4",
+                "name": "MLB",
+                "sort_order": 1,
+                "region": "USA"
+            },
+            "competition_id": "a5618779-2cb3-4c0a-b8cc-ce2517fbc8d4",
+            "market_type_group_ids": [
+                "95f7457f-bd84-4e9e-b714-c257b90c1031",
+                "f7331bb9-8791-4c1a-9b7b-cf2298c98757"
+            ],
+            "market_type_group_markets": [
+                {
+                    "market_type_group_id": "95f7457f-bd84-4e9e-b714-c257b90c1031",
+                    "market_ids": [
+                        "075fd725-6872-47da-bb47-17a4142edb0a",
+                        "37024422-e8aa-4a5e-96d0-a190883a8fa3",
+                        "d6e93bc5-fd02-487d-8228-395a41c463a4"
+                    ]
+                },
+                {
+                    "market_type_group_id": "f7331bb9-8791-4c1a-9b7b-cf2298c98757",
+                    "market_ids": [
+                        "d6e93bc5-fd02-487d-8228-395a41c463a4"
+                    ]
+                }
+            ],
+            "market_count": 3,
+            "main_markets": [
+                "075fd725-6872-47da-bb47-17a4142edb0a"
+            ],
+            "market_ids": [
+                "075fd725-6872-47da-bb47-17a4142edb0a",
+                "37024422-e8aa-4a5e-96d0-a190883a8fa3",
+                "d6e93bc5-fd02-487d-8228-395a41c463a4"
+            ],
+            "category_id": "02721435-4671-4cd0-98f7-15d41ee4103e",
+            "participant_ids": [
+                "69def012-3995-4bb5-a581-00871644af86",
+                "91611fdd-bf0a-4d75-9367-fcb5cf453a8e"
+            ]
+        }
+    },
+    "market_type_groups": {
+        "95f7457f-bd84-4e9e-b714-c257b90c1031": {
+            "id": "95f7457f-bd84-4e9e-b714-c257b90c1031",
+            "category_id": "02721435-4671-4cd0-98f7-15d41ee4103e",
+            "name": "Top Markets",
+            "priority": 254,
+            "type": "MARKET_TYPE_GROUP_TYPE_EVENT"
+        },
+        "f7331bb9-8791-4c1a-9b7b-cf2298c98757": {
+            "id": "f7331bb9-8791-4c1a-9b7b-cf2298c98757",
+            "category_id": "02721435-4671-4cd0-98f7-15d41ee4103e",
+            "name": "Total Markets",
+            "priority": 210,
+            "type": "MARKET_TYPE_GROUP_TYPE_EVENT"
+        }
+    },
+    "markets": {
+        "075fd725-6872-47da-bb47-17a4142edb0a": {
+            "id": "075fd725-6872-47da-bb47-17a4142edb0a",
+            "event_id": "f634d3a4-42f1-4fa9-a6c3-0d5b29c0b651",
+            "market_type_id": "7b77007b-7ec9-4cf6-a911-7cd1c9d30e74",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Head To Head",
+            "advertised_start": {
+                "seconds": 1748990700
+            },
+            "actual_start": {
+                "seconds": 1748990700
+            },
+            "is_primary": true,
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "a79b23d1-45ff-4118-9426-b5a01b18d54b",
+                "073ae606-2dd2-44bc-92fa-444ee17c0abb"
+            ],
+            "num_winners": 1
+        },
+        "37024422-e8aa-4a5e-96d0-a190883a8fa3": {
+            "id": "37024422-e8aa-4a5e-96d0-a190883a8fa3",
+            "event_id": "f634d3a4-42f1-4fa9-a6c3-0d5b29c0b651",
+            "market_type_id": "fefd3091-33c3-4df4-a213-848fdb1f0826",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Line (+1.5)",
+            "advertised_start": {
+                "seconds": 1748990700
+            },
+            "actual_start": {
+                "seconds": 1748990700
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "569a8f1a-7c6d-4a77-ad91-6a2a31866214",
+                "b16c8465-c0b0-4aeb-a813-7d062f664a24"
+            ],
+            "num_winners": 1
+        },
+        "d6e93bc5-fd02-487d-8228-395a41c463a4": {
+            "id": "d6e93bc5-fd02-487d-8228-395a41c463a4",
+            "event_id": "f634d3a4-42f1-4fa9-a6c3-0d5b29c0b651",
+            "market_type_id": "35fdd584-4bb9-47f7-a589-6291693d4d45",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Total (9)",
+            "advertised_start": {
+                "seconds": 1748990700
+            },
+            "actual_start": {
+                "seconds": 1748990700
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "462a4c69-ea08-4c14-855e-e74988349d64",
+                "9945817d-90a4-4ad3-9087-63d0a6c95c88"
+            ],
+            "num_winners": 1
+        }
+    },
+    "markets_allow_cashout": {
+        "075fd725-6872-47da-bb47-17a4142edb0a": true,
+        "37024422-e8aa-4a5e-96d0-a190883a8fa3": false,
+        "d6e93bc5-fd02-487d-8228-395a41c463a4": false
+    },
+    "prices": {
+        "073ae606-2dd2-44bc-92fa-444ee17c0abb:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 67,
+                "denominator": 100
+            }
+        },
+        "462a4c69-ea08-4c14-855e-e74988349d64:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 41,
+                "denominator": 50
+            }
+        },
+        "569a8f1a-7c6d-4a77-ad91-6a2a31866214:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 3,
+                "denominator": 4
+            }
+        },
+        "9945817d-90a4-4ad3-9087-63d0a6c95c88:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 49,
+                "denominator": 50
+            }
+        },
+        "a79b23d1-45ff-4118-9426-b5a01b18d54b:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 5,
+                "denominator": 4
+            }
+        },
+        "b16c8465-c0b0-4aeb-a813-7d062f664a24:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 21,
+                "denominator": 20
+            }
+        }
+    }
+}
