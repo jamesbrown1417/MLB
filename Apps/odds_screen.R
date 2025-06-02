@@ -21,8 +21,14 @@ ui <- fluidPage(
       textInput("player_filter", 
                 "Filter by Player", 
                 placeholder = "Enter player name..."),
-      checkboxInput("best_price_filter", 
-                    "Only Best Price", 
+      checkboxInput("show_both_sides_filter", 
+                    "Only Show Markets with Under Price", 
+                    value = FALSE),
+      checkboxInput("best_over_price_filter", 
+                    "Only Best Over Price", 
+                    value = FALSE),
+      checkboxInput("best_under_price_filter", 
+                    "Only Best Under Price", 
                     value = FALSE),
       br(),
       actionButton("reset_filters", 
@@ -157,19 +163,40 @@ server <- function(input, output, session) {
         })
     }
     
-    # Best price filter - find best price for each side
-    if (input$best_price_filter) {
-      if (all(c("over_price", "under_price") %in% names(data))) {
+    # Show markets with under price
+    if (input$show_both_sides_filter) {
+      if ("under_price" %in% names(data)) {
+        data <- data %>%
+          filter(!is.na(under_price))
+      }
+    }
+    
+    # Best over price filter
+    if (input$best_over_price_filter) {
+      if ("over_price" %in% names(data)) {
         grouping_vars <- c("match_name", "player_name", "market_name", "line")
         grouping_vars <- grouping_vars[grouping_vars %in% names(data)]
         
         if (length(grouping_vars) > 0) {
           data <- data %>%
             group_by(across(all_of(grouping_vars))) %>%
-            filter(
-              (is.na(over_price) | over_price == max(over_price, na.rm = TRUE)) &
-                (is.na(under_price) | under_price == max(under_price, na.rm = TRUE))
-            ) %>%
+            filter(is.na(over_price) | over_price == max(over_price, na.rm = TRUE)) %>%
+            slice_head(n = 1) %>%
+            ungroup()
+        }
+      }
+    }
+    
+    # Best under price filter
+    if (input$best_under_price_filter) {
+      if ("under_price" %in% names(data)) {
+        grouping_vars <- c("match_name", "player_name", "market_name", "line")
+        grouping_vars <- grouping_vars[grouping_vars %in% names(data)]
+        
+        if (length(grouping_vars) > 0) {
+          data <- data %>%
+            group_by(across(all_of(grouping_vars))) %>%
+            filter(is.na(under_price) | under_price == max(under_price, na.rm = TRUE)) %>%
             slice_head(n = 1) %>%
             ungroup()
         }
@@ -184,7 +211,9 @@ server <- function(input, output, session) {
     updateTextInput(session, "match_filter", value = "")
     updateTextInput(session, "market_filter", value = "")
     updateTextInput(session, "player_filter", value = "")
-    updateCheckboxInput(session, "best_price_filter", value = FALSE)
+    updateCheckboxInput(session, "show_both_sides_filter", value = FALSE)
+    updateCheckboxInput(session, "best_over_price_filter", value = FALSE)
+    updateCheckboxInput(session, "best_under_price_filter", value = FALSE)
   })
   
   # Summary statistics
@@ -243,10 +272,16 @@ server <- function(input, output, session) {
     # Select columns to display
     display_cols <- names(data)
     
+    # Columns to exclude from display
+    exclude_cols <- c("home_team", "away_team", "player_team", "opposition_team", 
+                      "EventKey", "MarketKey", "OutcomeKey", "original_roster_name")
+    
+    display_cols <- setdiff(display_cols, exclude_cols)
+    
     # Reorder columns for better display
     preferred_order <- c("match_name", "match", "market_name", "player_name", 
                          "line", "over_price", "under_price", "agency", "Market_Category",
-                         "start_time", "home_team", "away_team")
+                         "start_time")
     
     display_cols <- c(
       preferred_order[preferred_order %in% display_cols],

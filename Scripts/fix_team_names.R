@@ -32,7 +32,8 @@ fix_team_names <- function(team_vector) {
     str_detect(team_vector, "(Tampa Bay)|(Rays)") ~ "Tampa Bay Rays",
     str_detect(team_vector, "(Texas)|(Rangers)") ~ "Texas Rangers",
     str_detect(team_vector, "(Toronto)|(Blue Jays)") ~ "Toronto Blue Jays",
-    str_detect(team_vector, "(Washington)|(Nationals)|(Nats)") ~ "Washington Nationals"
+    str_detect(team_vector, "(Washington)|(Nationals)|(Nats)") ~ "Washington Nationals",
+    TRUE ~ ""  # Default case where the team name is not recognized
   )
   return(new_vector)
 }

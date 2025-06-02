@@ -201,7 +201,21 @@ all_batter_hits_files <- list.files("Data/scraped_odds", "hits", full.names = TR
 
 all_batter_hits_data <-
   all_batter_hits_files |>
-  map_dfr(read_csv) |>
+  map(read_csv) |>
+  map_dfr(~ .x |>
+            mutate(
+              across(
+                any_of(c("line", "over_price", "under_price")),
+                as.numeric
+              )
+            )) |> 
+  map_dfr(~ .x |>
+            mutate(
+              across(
+                any_of(c("start_time")),
+                as.datetime,
+              )
+            )) |>
   mutate(player_name = sapply(player_name, normalize_player_names, USE.NAMES = FALSE)) |>
   arrange(match, home_team, away_team, player_name, line, desc(over_price)) |> 
   mutate(market_name = "Batter Hits")

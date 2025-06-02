@@ -391,21 +391,26 @@ if (nrow(all_player_hrs) > 0) {
 #===============================================================================
 
 all_player_hits |>
+  filter(!is.na(player_name)) |> 
   write_rds("Data/processed_odds/all_player_hits.rds")
 
 all_player_strikeouts |>
+  filter(!is.na(player_name)) |> 
   write_rds("Data/processed_odds/all_player_strikeouts.rds")
 
 all_player_rbis |>
+  filter(!is.na(player_name)) |> 
   write_rds("Data/processed_odds/all_player_rbis.rds")
 
 all_player_hrs |>
+  filter(!is.na(player_name)) |> 
   write_rds("Data/processed_odds/all_player_hrs.rds")
 
 hits_arbs |>
   bind_rows(strikeouts_arbs) |>
   bind_rows(rbis_arbs) |> 
   bind_rows(hrs_arbs) |>
+  filter(!is.na(player_name)) |> 
   write_rds("Data/processed_odds/all_player_arbs.rds")
 
   

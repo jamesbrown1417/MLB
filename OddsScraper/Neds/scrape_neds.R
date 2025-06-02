@@ -310,6 +310,19 @@ pitcher_outs <-
   market_df |> 
   filter(str_detect(market_name, "Player Pitcher Outs O/U|Outs Recorded"))
 
+if (nrow(pitcher_outs) == 0) {
+  pitcher_outs <- tibble(
+    match_name = character(),
+    home_team = character(),
+    away_team = character(),
+    start_time = character(),
+    market_name = character(),
+    entrants = character(),
+    handicaps = numeric(),
+    price = numeric()
+  )
+}
+
 pitcher_outs_over <- 
   pitcher_outs |> 
   filter(str_detect(entrants, "Over")) |>
@@ -330,8 +343,6 @@ pitcher_outs_all <-
   pitcher_outs_over |>
   left_join(pitcher_outs_under) |>
   separate(match, c("home_team", "away_team"), sep = " vs ", remove = FALSE) |>
-  mutate(home_team = fix_team_names(home_team)) |>
-  mutate(away_team = fix_team_names(away_team)) |>
   mutate(match = paste(home_team, "v", away_team)) |> 
   mutate(player_name = normalize_player_names(player_name)) |>
   left_join(pitchers, by = c("player_name" = "normalized_name")) |>
@@ -341,6 +352,13 @@ pitcher_outs_all <-
   select(-person_full_name) |>
   mutate(market_name = "Pitcher Outs") |> 
   mutate(agency = "Neds")
+
+if (nrow(pitcher_outs_all) != 0) {
+  pitcher_outs_all <-
+    pitcher_outs_all |> 
+    mutate(home_team = fix_team_names(home_team)) |>
+    mutate(away_team = fix_team_names(away_team))
+}
 
 ##%######################################################%##
 #                                                          #
@@ -373,8 +391,6 @@ pitcher_hits_allowed_all <-
   pitcher_hits_allowed_over |>
   left_join(pitcher_hits_allowed_under) |>
   separate(match, c("home_team", "away_team"), sep = " vs ", remove = FALSE) |>
-  mutate(home_team = fix_team_names(home_team)) |>
-  mutate(away_team = fix_team_names(away_team)) |>
   mutate(match = paste(home_team, "v", away_team)) |> 
   mutate(player_name = normalize_player_names(player_name)) |>
   left_join(pitchers, by = c("player_name" = "normalized_name")) |>
@@ -384,6 +400,13 @@ pitcher_hits_allowed_all <-
   select(-person_full_name) |>
   mutate(market_name = "Pitcher Hits Allowed") |> 
   mutate(agency = "Neds")
+
+if (nrow(pitcher_hits_allowed_all) != 0) {
+  pitcher_hits_allowed_all <-
+    pitcher_hits_allowed_all |> 
+    mutate(home_team = fix_team_names(home_team)) |>
+    mutate(away_team = fix_team_names(away_team))
+}
 
 ##%######################################################%##
 #                                                         #
