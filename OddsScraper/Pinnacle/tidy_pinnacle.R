@@ -27,8 +27,8 @@ strikeouts_markets <-
 # Strikeouts - over
 strikeouts_over <-
   strikeouts_markets |> 
-  mutate(player_name = str_remove(selection, " \\(Strikeouts\\)")) |>
-  mutate(player_name = str_remove(player_name, " \\(.*$")) |>
+  mutate(player_name = str_remove(selection, " \\(.* Strikeouts\\).*")) |>
+  mutate(player_name = str_remove(player_name, " ?\\(.*$")) |>
   mutate(player_name = normalize_player_names(player_name)) |>
   filter(str_detect(name, "Over")) |>
   mutate(match = glue("{home_team} v {away_team}")) |> 
@@ -48,7 +48,7 @@ strikeouts_over <-
 strikeouts_under <-
   strikeouts_markets |> 
   mutate(player_name = str_remove(selection, " \\(Strikeouts\\)")) |>
-  mutate(player_name = str_remove(player_name, " \\(.*$")) |>
+  mutate(player_name = str_remove(player_name, " ?\\(.*$")) |>
   mutate(player_name = normalize_player_names(player_name)) |>
   filter(str_detect(name, "Under")) |>
   mutate(match = glue("{home_team} v {away_team}")) |> 
@@ -86,7 +86,7 @@ hits_markets <-
 hits_over <-
   hits_markets |> 
   mutate(player_name = str_remove(selection, " \\(Hits\\)")) |>
-  mutate(player_name = str_remove(player_name, " \\(.*$")) |>
+  mutate(player_name = str_remove(player_name, " ?\\(.*$")) |>
   mutate(player_name = normalize_player_names(player_name)) |>
   filter(str_detect(name, "Over")) |>
   mutate(match = glue("{home_team} v {away_team}")) |> 
@@ -106,7 +106,7 @@ hits_over <-
 hits_under <-
   hits_markets |> 
   mutate(player_name = str_remove(selection, " \\(Hits\\)")) |>
-  mutate(player_name = str_remove(player_name, " \\(.*$")) |>
+  mutate(player_name = str_remove(player_name, " ?\\(.*$")) |>
   mutate(player_name = normalize_player_names(player_name)) |>
   filter(str_detect(name, "Under")) |>
   mutate(match = glue("{home_team} v {away_team}")) |> 
@@ -144,7 +144,7 @@ pitching_outs_markets <-
 pitching_outs_over <-
   pitching_outs_markets |> 
   mutate(player_name = str_remove(selection, " \\(Pitching Outs\\)")) |>
-  mutate(player_name = str_remove(player_name, " \\(.*$")) |>
+  mutate(player_name = str_remove(player_name, " ?\\(.*$")) |>
   mutate(player_name = normalize_player_names(player_name)) |>
   filter(str_detect(name, "Over")) |>
   mutate(match = glue("{home_team} v {away_team}")) |> 
@@ -164,7 +164,7 @@ pitching_outs_over <-
 pitching_outs_under <-
   pitching_outs_markets |> 
   mutate(player_name = str_remove(selection, " \\(Pitching Outs\\)")) |>
-  mutate(player_name = str_remove(player_name, " \\(.*$")) |>
+  mutate(player_name = str_remove(player_name, " ?\\(.*$")) |>
   mutate(player_name = normalize_player_names(player_name)) |>
   filter(str_detect(name, "Under")) |>
   mutate(match = glue("{home_team} v {away_team}")) |> 
@@ -202,7 +202,7 @@ home_run_markets <-
 home_run_over <-
   home_run_markets |> 
   mutate(player_name = str_remove(selection, " \\(Home Run\\)")) |>
-  mutate(player_name = str_remove(player_name, " \\(.*$")) |>
+  mutate(player_name = str_remove(player_name, " ?\\(.*$")) |>
   mutate(player_name = normalize_player_names(player_name)) |>
   filter(str_detect(name, "Over")) |>
   mutate(match = glue("{home_team} v {away_team}")) |> 
@@ -223,7 +223,7 @@ home_run_over <-
 home_run_under <-
   home_run_markets |> 
   mutate(player_name = str_remove(selection, " \\(Home Run\\)")) |>
-  mutate(player_name = str_remove(player_name, " \\(.*$")) |>
+  mutate(player_name = str_remove(player_name, " ?\\(.*$")) |>
   mutate(player_name = normalize_player_names(player_name)) |>
   filter(str_detect(name, "Under")) |>
   mutate(match = glue("{home_team} v {away_team}")) |> 
@@ -262,7 +262,7 @@ total_bases_markets <-
 total_bases_over <-
   total_bases_markets |> 
   mutate(player_name = str_remove(selection, " \\(Total Bases\\)")) |>
-  mutate(player_name = str_remove(player_name, " \\(.*$")) |>
+  mutate(player_name = str_remove(player_name, " ?\\(.*$")) |>
   mutate(player_name = normalize_player_names(player_name)) |>
   filter(str_detect(name, "Over")) |>
   mutate(match = glue("{home_team} v {away_team}")) |> 
@@ -282,7 +282,7 @@ total_bases_over <-
 total_bases_under <-
   total_bases_markets |> 
   mutate(player_name = str_remove(selection, " \\(Total Bases\\)")) |>
-  mutate(player_name = str_remove(player_name, " \\(.*$")) |>
+  mutate(player_name = str_remove(player_name, " ?\\(.*$")) |>
   mutate(player_name = normalize_player_names(player_name)) |>
   filter(str_detect(name, "Under")) |>
   mutate(match = glue("{home_team} v {away_team}")) |> 

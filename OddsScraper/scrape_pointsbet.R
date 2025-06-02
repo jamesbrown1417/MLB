@@ -336,7 +336,7 @@ pointsbet_main <- function() {
       agency = "Pointsbet",
       EventKey,
       MarketKey,
-      OutcomeKey,
+      OutcomeKeyUnder = OutcomeKey,
       original_roster_name
     )
   
@@ -463,7 +463,7 @@ pointsbet_main <- function() {
       agency = "Pointsbet",
       EventKey,
       MarketKey,
-      OutcomeKey,
+      OutcomeKeyUnder = OutcomeKey,
       original_roster_name
     )
   
@@ -590,7 +590,7 @@ pointsbet_main <- function() {
       agency = "Pointsbet",
       EventKey,
       MarketKey,
-      OutcomeKey,
+      OutcomeKeyUnder = OutcomeKey,
       original_roster_name
     )
   
@@ -692,8 +692,7 @@ pointsbet_main <- function() {
       "opposition_team",
       "EventKey",
       "MarketKey",
-      "OutcomeKey",
-      "original_roster_name"
+      "OutcomeKey"
     ) |>
     # Consolidate original_roster_name after bind_rows if necessary, or ensure it's handled correctly by the join.
     # The left_join for over/under should bring original_roster_name.
@@ -719,8 +718,7 @@ pointsbet_main <- function() {
       "opposition_team",
       "EventKey",
       "MarketKey",
-      "OutcomeKey",
-      "original_roster_name"
+      "OutcomeKey"
     ) |>
     mutate(market_name = "Batter Home Runs") |>
     mutate(agency = "Pointsbet") |>
@@ -744,8 +742,7 @@ pointsbet_main <- function() {
       "opposition_team",
       "EventKey",
       "MarketKey",
-      "OutcomeKey",
-      "original_roster_name"
+      "OutcomeKey"
     ) |>
     mutate(market_name = "Batter RBIs") |>
     mutate(agency = "Pointsbet") |>
@@ -769,8 +766,7 @@ pointsbet_main <- function() {
       "opposition_team",
       "EventKey",
       "MarketKey",
-      "OutcomeKey",
-      "original_roster_name"
+      "OutcomeKey"
     ) |>
     mutate(market_name = "Pitcher Strikeouts") |>
     mutate(agency = "Pointsbet") |>
