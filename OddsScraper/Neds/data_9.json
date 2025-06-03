@@ -3090,6 +3090,7 @@
                         "3a028be3-2b11-45ef-b009-14befd0bfe29",
                         "8093d4bd-3fd0-4a20-a438-dffe681121d5",
                         "c4071819-b3da-4996-89c7-60806a3ee0fd",
+                        "cfafb457-87c4-4241-bdbe-a4dc74008319",
                         "66892370-9423-4477-8ec4-15dc0684a9c3",
                         "56fb3ab0-2d65-4023-a8a4-872c426805cc",
                         "e502c1a7-4b49-492f-bb94-9e3fff2dee54",
@@ -3097,7 +3098,6 @@
                         "2717d33d-d120-4b93-b5a6-fae7d3dfd41e",
                         "454c902c-3ba0-4521-a61c-99d0c1072352",
                         "d04e68c2-ffcf-45bd-b4c9-a5a2f80233be",
-                        "cfafb457-87c4-4241-bdbe-a4dc74008319",
                         "4bc2a02d-9e9e-459c-91c8-79c2cc6f991c",
                         "bce300c6-d80a-4b55-b396-b0cef39b61eb",
                         "16ef4ec7-aeb9-4f09-940b-1cfecb83bc6c"
@@ -3253,6 +3253,7 @@
                 "3a028be3-2b11-45ef-b009-14befd0bfe29",
                 "8093d4bd-3fd0-4a20-a438-dffe681121d5",
                 "c4071819-b3da-4996-89c7-60806a3ee0fd",
+                "cfafb457-87c4-4241-bdbe-a4dc74008319",
                 "66892370-9423-4477-8ec4-15dc0684a9c3",
                 "56fb3ab0-2d65-4023-a8a4-872c426805cc",
                 "e502c1a7-4b49-492f-bb94-9e3fff2dee54",
@@ -3260,7 +3261,6 @@
                 "2717d33d-d120-4b93-b5a6-fae7d3dfd41e",
                 "454c902c-3ba0-4521-a61c-99d0c1072352",
                 "d04e68c2-ffcf-45bd-b4c9-a5a2f80233be",
-                "cfafb457-87c4-4241-bdbe-a4dc74008319",
                 "4bc2a02d-9e9e-459c-91c8-79c2cc6f991c",
                 "bce300c6-d80a-4b55-b396-b0cef39b61eb",
                 "16ef4ec7-aeb9-4f09-940b-1cfecb83bc6c",
@@ -4488,7 +4488,7 @@
         "66892370-9423-4477-8ec4-15dc0684a9c3": {
             "id": "66892370-9423-4477-8ec4-15dc0684a9c3",
             "event_id": "b17892a5-224b-489f-ba28-fffbe47e12e4",
-            "market_type_id": "4c8754ff-bee0-4304-a2bb-5b760c2e275c",
+            "market_type_id": "9964fbd7-83e3-4ac0-bfbc-b97e43bcd7ca",
             "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
             "name": "1st 5 Innings Total",
             "advertised_start": {
@@ -4497,7 +4497,6 @@
             "actual_start": {
                 "seconds": 1748916300
             },
-            "same_game_multi_available": true,
             "visible": true,
             "entrant_ids": [
                 "f0f9477e-8274-454c-a6c9-a82c6c320e5f",
@@ -5588,7 +5587,7 @@
         "cfafb457-87c4-4241-bdbe-a4dc74008319": {
             "id": "cfafb457-87c4-4241-bdbe-a4dc74008319",
             "event_id": "b17892a5-224b-489f-ba28-fffbe47e12e4",
-            "market_type_id": "9964fbd7-83e3-4ac0-bfbc-b97e43bcd7ca",
+            "market_type_id": "4c8754ff-bee0-4304-a2bb-5b760c2e275c",
             "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
             "name": "1st 5 Innings Total (4.5)",
             "advertised_start": {
@@ -6384,8 +6383,8 @@
         },
         "03a3b7e3-f78c-48a5-9970-437a0eb99a9d:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 23,
-                "denominator": 5
+                "numerator": 5,
+                "denominator": 1
             }
         },
         "042e5b79-a380-419f-aa8a-62c97a8f9f03:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -6408,14 +6407,14 @@
         },
         "060733cc-053e-45ff-8cf7-795993d8aab6:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 6,
-                "denominator": 5
+                "numerator": 5,
+                "denominator": 4
             }
         },
         "061500a8-3f1f-44e3-bdfc-ba4c49cb5a3c:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 21,
-                "denominator": 20
+                "numerator": 11,
+                "denominator": 10
             }
         },
         "061ba2a8-163e-4e58-979c-7dd8cbae0892:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -6432,14 +6431,14 @@
         },
         "06d2f418-baa6-4218-9836-90af7a89e7fb:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 11,
-                "denominator": 100
+                "numerator": 1,
+                "denominator": 10
             }
         },
         "072c4782-f332-4c89-9024-7dacf12b7d8e:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 4,
-                "denominator": 25
+                "numerator": 17,
+                "denominator": 100
             }
         },
         "07d207bf-f8d3-4b51-a6ea-28da9907a470:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -6486,14 +6485,14 @@
         },
         "0cd4f8d2-5dbb-43cf-aced-902aaefe486b:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 7,
-                "denominator": 25
+                "numerator": 3,
+                "denominator": 10
             }
         },
         "0cf07ebe-b178-4e93-a489-b40772bd4e6d:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 18,
-                "denominator": 5
+                "numerator": 7,
+                "denominator": 2
             }
         },
         "0d0eaffc-3c71-4fbd-92c6-dc9bf24a3666:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -6516,14 +6515,14 @@
         },
         "0e34a683-1d49-4574-b14c-4efe9b853893:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 21,
-                "denominator": 2
+                "numerator": 13,
+                "denominator": 1
             }
         },
         "0fc39ff8-2e2a-4e62-8051-ec5535d5eac9:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 13,
-                "denominator": 4
+                "numerator": 18,
+                "denominator": 5
             }
         },
         "119f99d1-4cfe-46b0-b581-5fbeabca889e:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -6540,8 +6539,8 @@
         },
         "12897f2c-e74f-4f8c-9625-f9e9f341ee33:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 17,
-                "denominator": 20
+                "numerator": 83,
+                "denominator": 100
             }
         },
         "12f83e99-65e8-4f97-8e94-97e5fdca6972:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -6570,13 +6569,13 @@
         },
         "14385a20-3041-40a5-b227-2eac43b64ee7:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 11,
-                "denominator": 25
+                "numerator": 21,
+                "denominator": 50
             }
         },
         "143bdb6c-fafe-47c0-b2ce-61c81090b290:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 8,
+                "numerator": 9,
                 "denominator": 25
             }
         },
@@ -6600,20 +6599,20 @@
         },
         "16b9d0a4-72d6-4d15-aed0-bef8dd3e1faa:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 31,
-                "denominator": 10
+                "numerator": 3,
+                "denominator": 1
             }
         },
         "17a0b081-82db-4106-b536-2f07a527e404:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 11,
-                "denominator": 10
+                "numerator": 23,
+                "denominator": 20
             }
         },
         "17f82803-7278-4839-8bb9-37844ddc1d98:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 25,
-                "denominator": 4
+                "numerator": 29,
+                "denominator": 5
             }
         },
         "183efe6a-272a-4ff8-9557-890ac3b5122e:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -6624,8 +6623,8 @@
         },
         "18de6fe5-82ca-421e-99d0-6dace559e95d:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 6,
-                "denominator": 5
+                "numerator": 5,
+                "denominator": 4
             }
         },
         "1933bf7c-2738-48fa-9e84-913ad9840c0c:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -6642,8 +6641,8 @@
         },
         "1c5bb819-8e10-4c01-a54b-f7e4be457e4f:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 1,
-                "denominator": 5
+                "numerator": 6,
+                "denominator": 25
             }
         },
         "1cdeb17c-dd5c-40d2-ac2f-7f475174492c:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -6654,8 +6653,8 @@
         },
         "1e49c248-3950-46eb-bcea-fa8e31f6606b:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 4,
-                "denominator": 25
+                "numerator": 17,
+                "denominator": 100
             }
         },
         "1ec15413-044e-4d51-8dba-c69d5daa6073:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -6666,8 +6665,8 @@
         },
         "1fa0bbed-3070-40ab-ad96-dcf0c119d54b:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 4,
-                "denominator": 25
+                "numerator": 17,
+                "denominator": 100
             }
         },
         "1fcafc39-a3c6-450a-8f78-3400afe97d02:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -6696,8 +6695,8 @@
         },
         "21052b90-3833-4971-9504-5c3dda248298:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 23,
-                "denominator": 25
+                "numerator": 47,
+                "denominator": 50
             }
         },
         "214f87a8-a3f8-4966-a1dd-6ed27af22e6b:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -6708,20 +6707,20 @@
         },
         "22a24c0c-40c9-476e-bdff-579591d3aaba:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 29,
+                "numerator": 27,
                 "denominator": 20
             }
         },
         "22a28dae-415e-4a5d-859d-30a2532efba2:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 27,
+                "numerator": 29,
                 "denominator": 20
             }
         },
         "230b3073-edae-4768-8868-965be79b55c6:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 6,
-                "denominator": 25
+                "numerator": 11,
+                "denominator": 50
             }
         },
         "235ea744-c8bf-4038-93f8-4365d1433ca0:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -6732,8 +6731,8 @@
         },
         "23d385ea-c8c8-4b72-a2c7-d66cb7b68acb:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 3,
-                "denominator": 5
+                "numerator": 16,
+                "denominator": 25
             }
         },
         "23f46f4f-f97a-4b34-88e2-b87887372817:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -6744,8 +6743,8 @@
         },
         "24091aa4-9a32-4455-846b-c6ea10766747:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 27,
-                "denominator": 4
+                "numerator": 7,
+                "denominator": 1
             }
         },
         "24bf4672-df0a-4097-a86d-2280368402cc:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -6762,13 +6761,13 @@
         },
         "255d90e5-5d7a-4a35-b218-592d365fd6d3:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 8,
-                "denominator": 25
+                "numerator": 3,
+                "denominator": 10
             }
         },
         "25a0ed62-a726-4b52-a811-0b3f63c593d0:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 47,
+                "numerator": 49,
                 "denominator": 20
             }
         },
@@ -6786,8 +6785,8 @@
         },
         "2701b72f-2dca-471e-8f80-9ba1fa7da03a:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 43,
-                "denominator": 20
+                "numerator": 11,
+                "denominator": 5
             }
         },
         "27c8b862-bb13-4822-82fe-fcf6033aa798:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -6822,14 +6821,14 @@
         },
         "2b011427-cd06-4139-a9c2-465c95a01a18:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 8,
-                "denominator": 5
+                "numerator": 17,
+                "denominator": 10
             }
         },
         "2ba41420-ee1c-49bc-8e7b-8f5934995fba:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 3,
-                "denominator": 4
+                "numerator": 39,
+                "denominator": 50
             }
         },
         "2bb19176-6f35-45dd-ba3b-3e8a9be5e05c:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -6858,7 +6857,7 @@
         },
         "2c6ab321-875a-41bc-8b67-e05958931768:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 29,
+                "numerator": 31,
                 "denominator": 20
             }
         },
@@ -6888,8 +6887,8 @@
         },
         "2da9d114-3b99-4a23-9c4a-b2853314b497:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 23,
-                "denominator": 20
+                "numerator": 5,
+                "denominator": 4
             }
         },
         "2fc9a803-9824-4b91-bc46-641f58d1a64b:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -6906,7 +6905,7 @@
         },
         "32f91dcb-b0cc-4899-b4ab-fdda1365d827:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 17,
+                "numerator": 19,
                 "denominator": 100
             }
         },
@@ -6918,14 +6917,14 @@
         },
         "335b5326-5565-4067-ab0a-3adc6453b594:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 3,
-                "denominator": 1
+                "numerator": 27,
+                "denominator": 10
             }
         },
         "3367a25b-12eb-45d6-b5d6-6c9ddb70c7dc:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 7,
-                "denominator": 2
+                "numerator": 18,
+                "denominator": 5
             }
         },
         "344924c0-def5-4b73-92c7-a93cb4388ede:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -6936,14 +6935,14 @@
         },
         "363e6cb0-fdfa-4cf4-b74d-2b83f8d4770d:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 19,
-                "denominator": 2
+                "numerator": 9,
+                "denominator": 1
             }
         },
         "373976cd-1ba6-482e-95f7-73faf11e82a3:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 13,
-                "denominator": 10
+                "numerator": 7,
+                "denominator": 5
             }
         },
         "37fb4b91-962c-4212-84c4-0db1c8d538a3:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -6960,8 +6959,8 @@
         },
         "3b1d6e08-6a91-40f4-8188-f56c652fa44c:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 29,
-                "denominator": 10
+                "numerator": 3,
+                "denominator": 1
             }
         },
         "3d55266f-2be8-4eee-a94c-4a745c21c0ce:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -6984,14 +6983,14 @@
         },
         "3df14454-feb2-475d-9ae3-f4a8940338b9:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 3,
-                "denominator": 1
+                "numerator": 14,
+                "denominator": 5
             }
         },
         "3f27eaa7-548a-4664-b033-f9c321ad8704:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 27,
-                "denominator": 10
+                "numerator": 14,
+                "denominator": 5
             }
         },
         "42d821c2-e795-4e36-ae24-6403670c8fb8:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -7008,8 +7007,8 @@
         },
         "4430900d-df58-4ffd-a5d2-d03499f11b88:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 47,
-                "denominator": 20
+                "numerator": 5,
+                "denominator": 2
             }
         },
         "44f5f59b-d3ea-457c-9812-956ded85b9f6:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -7020,14 +7019,14 @@
         },
         "464fa6f7-9286-4bbf-a5b0-a82b3f85bf3d:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 5,
-                "denominator": 4
+                "numerator": 13,
+                "denominator": 10
             }
         },
         "468c59ba-661b-4cde-8e74-475386aa0bc5:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 33,
-                "denominator": 100
+                "numerator": 7,
+                "denominator": 20
             }
         },
         "4831977c-9fad-4cf7-9628-10e88aed7e06:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -7068,8 +7067,8 @@
         },
         "4d4bf85d-bf38-4e19-b3dd-b240cc7ca11b:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 19,
-                "denominator": 4
+                "numerator": 5,
+                "denominator": 1
             }
         },
         "4dda14e8-b7c8-49a4-a093-695926459440:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -7086,8 +7085,8 @@
         },
         "4f4d8ebf-d803-4078-9609-e6b2cbfd3730:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 21,
-                "denominator": 2
+                "numerator": 10,
+                "denominator": 1
             }
         },
         "4f4f40b6-dce4-4375-bd7d-bed682048901:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -7098,8 +7097,8 @@
         },
         "50ab8e64-b251-4fe2-961c-a62d61d2305c:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 39,
-                "denominator": 50
+                "numerator": 77,
+                "denominator": 100
             }
         },
         "50adf4bd-9466-4312-a192-4533a4229693:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -7110,8 +7109,8 @@
         },
         "50c24542-ff7b-42f3-a7df-ecfa537f8909:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 1,
-                "denominator": 2
+                "numerator": 23,
+                "denominator": 50
             }
         },
         "51e1f393-4928-470c-8bea-2b26875c8554:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -7146,8 +7145,8 @@
         },
         "55dd8d53-9db8-4ae7-a201-3173a023669b:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 9,
-                "denominator": 50
+                "numerator": 4,
+                "denominator": 25
             }
         },
         "564e13de-d0b1-42ec-83d1-09c5eae4b3c1:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -7194,8 +7193,8 @@
         },
         "59dc1a68-e17b-4282-b85f-b7c49bf6b5e5:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 4,
-                "denominator": 1
+                "numerator": 15,
+                "denominator": 4
             }
         },
         "5a6d8dd8-3ae4-450f-913f-fcda5a8b8079:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -7248,8 +7247,8 @@
         },
         "6089948b-e112-4f74-be3b-c583d31fc35c:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 6,
-                "denominator": 5
+                "numerator": 23,
+                "denominator": 20
             }
         },
         "60c2181e-13c7-45ca-95bd-68fc0ecc92bc:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -7260,8 +7259,8 @@
         },
         "61cabb0f-27ed-4c02-a47a-7e91061919e6:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 73,
-                "denominator": 100
+                "numerator": 39,
+                "denominator": 50
             }
         },
         "62928c22-04f5-4307-86da-076162694c97:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -7278,8 +7277,8 @@
         },
         "63b0afb1-0556-43fb-8cf4-5e5a5f2d02ed:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 13,
-                "denominator": 4
+                "numerator": 31,
+                "denominator": 10
             }
         },
         "640a75e6-2e20-47c1-a03f-bb73abb23a07:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -7302,8 +7301,8 @@
         },
         "664f55d6-ab1f-4a97-abcf-fb25bf6fe9bb:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 9,
-                "denominator": 4
+                "numerator": 47,
+                "denominator": 20
             }
         },
         "670bccb2-4d2b-4852-9963-7c79035d6017:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -7314,8 +7313,8 @@
         },
         "6730d5ea-72c6-4d43-aa69-6a8a68f82992:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 8,
-                "denominator": 1
+                "numerator": 31,
+                "denominator": 4
             }
         },
         "67589b4a-2cba-4879-a1ac-f5325e5e8e25:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -7338,7 +7337,7 @@
         },
         "68795287-c39e-48a6-8e93-d7574b645af5:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 18,
+                "numerator": 17,
                 "denominator": 5
             }
         },
@@ -7350,8 +7349,8 @@
         },
         "6b27b377-3fdf-4a19-9725-1f89add85f2b:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 17,
-                "denominator": 10
+                "numerator": 33,
+                "denominator": 20
             }
         },
         "6b2a0e84-2f0c-45f1-a5e5-d993533df010:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -7362,14 +7361,14 @@
         },
         "6b6c4b85-6c00-451e-ab93-c379b4dabf67:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 3,
-                "denominator": 5
+                "numerator": 57,
+                "denominator": 100
             }
         },
         "6bb8d8db-0490-43a1-9e1e-0f2188effdef:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 5,
-                "denominator": 1
+                "numerator": 24,
+                "denominator": 5
             }
         },
         "6c1f6edc-6fd9-40a0-b496-265c84a054c2:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -7386,8 +7385,8 @@
         },
         "6dbf2a0f-6497-4ee3-8ac9-04f793b4a65d:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 16,
-                "denominator": 25
+                "numerator": 31,
+                "denominator": 50
             }
         },
         "70afbad0-cb8f-4e56-9717-296745d73715:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -7398,7 +7397,7 @@
         },
         "71051ed6-5971-4c3f-ba39-3ab1ed7cbe01:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 21,
+                "numerator": 19,
                 "denominator": 10
             }
         },
@@ -7422,8 +7421,8 @@
         },
         "727c2082-d1f5-4cae-82bf-71716d9c58ed:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 22,
-                "denominator": 25
+                "numerator": 83,
+                "denominator": 100
             }
         },
         "73467d3e-d98f-438f-ba82-38b215d1fa35:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -7446,8 +7445,8 @@
         },
         "74915ee4-2ac8-4acd-aeaf-5cad474cd814:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 3,
-                "denominator": 100
+                "numerator": 1,
+                "denominator": 25
             }
         },
         "74dd7bfc-dbad-4209-a9b5-a1bb4271e511:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -7458,8 +7457,8 @@
         },
         "76b19e87-f519-4f2f-af5e-e066efb2bf2e:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 39,
-                "denominator": 50
+                "numerator": 73,
+                "denominator": 100
             }
         },
         "7721db99-a987-4246-97fd-de43bcc602d3:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -7476,14 +7475,14 @@
         },
         "7a6540a2-1e97-45bb-bf11-0a9f16d46b5d:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 3,
-                "denominator": 1
+                "numerator": 31,
+                "denominator": 10
             }
         },
         "7e5cb3cb-88f0-45b7-9a8e-4575f8b508b9:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 7,
-                "denominator": 1
+                "numerator": 13,
+                "denominator": 2
             }
         },
         "7eec115e-801a-42c2-a799-ef7d90982616:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -7494,8 +7493,8 @@
         },
         "7feefba4-2c5c-4bfb-821d-a6288faa71a6:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 7,
-                "denominator": 10
+                "numerator": 73,
+                "denominator": 100
             }
         },
         "8030f1f0-c94a-4ef5-85ca-d9b6cb037713:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -7506,14 +7505,14 @@
         },
         "80cccea2-0d95-4655-8a48-a53f6a958d16:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 11,
-                "denominator": 10
+                "numerator": 21,
+                "denominator": 20
             }
         },
         "80d23c91-0c86-44f6-a3cf-1a7b838e54df:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 1,
-                "denominator": 1
+                "numerator": 47,
+                "denominator": 50
             }
         },
         "819166e5-fb88-4f71-ae52-9626b9dbf7a8:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -7536,8 +7535,8 @@
         },
         "848cbf65-0fd2-403c-afbf-6911badfaf45:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 17,
-                "denominator": 100
+                "numerator": 4,
+                "denominator": 25
             }
         },
         "8536a64e-cde3-44e2-bedf-0936d24c0577:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -7566,20 +7565,20 @@
         },
         "8918c7b5-cff7-4f6b-9a0e-3a8cc0128661:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 29,
-                "denominator": 50
+                "numerator": 3,
+                "denominator": 5
             }
         },
         "899ba9ef-16e2-4898-a522-47f68c163a94:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 27,
-                "denominator": 10
+                "numerator": 11,
+                "denominator": 4
             }
         },
         "89c62d64-d992-4cac-92f4-d91a5a319edf:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 57,
-                "denominator": 100
+                "numerator": 31,
+                "denominator": 50
             }
         },
         "8ab0a805-c902-4975-aa82-93603938e551:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -7596,8 +7595,8 @@
         },
         "8ae758ac-06d9-45fc-be7c-063bf6babd1c:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 37,
-                "denominator": 20
+                "numerator": 7,
+                "denominator": 4
             }
         },
         "8b4e9214-e327-44c9-a384-d7bf87afddf3:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -7608,8 +7607,8 @@
         },
         "8c24e383-ccbb-4b11-874c-33044d36cf42:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 47,
-                "denominator": 50
+                "numerator": 19,
+                "denominator": 20
             }
         },
         "8c3878cd-7b46-4959-851c-30cbc2cfab83:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -7620,8 +7619,8 @@
         },
         "8d351127-46da-47eb-bb32-3d6a1b327977:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 16,
-                "denominator": 5
+                "numerator": 13,
+                "denominator": 4
             }
         },
         "8d87aa5c-e5d4-46b7-988e-570a8ef16f92:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -7638,13 +7637,13 @@
         },
         "8ee85849-cbcf-4594-a8da-5b372095cd79:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 5,
-                "denominator": 2
+                "numerator": 13,
+                "denominator": 5
             }
         },
         "8f0335d0-881a-414d-b94c-1d4f16fb9dd2:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 17,
+                "numerator": 18,
                 "denominator": 5
             }
         },
@@ -7668,13 +7667,13 @@
         },
         "90a3fb6a-ee99-4ade-bec1-26d55649a577:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 37,
-                "denominator": 20
+                "numerator": 19,
+                "denominator": 10
             }
         },
         "90abb231-1ec0-4834-a2ea-4a85adc275a7:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 31,
+                "numerator": 33,
                 "denominator": 20
             }
         },
@@ -7698,26 +7697,26 @@
         },
         "933beba6-d8c3-4beb-b8d5-966414f73d12:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 11,
-                "denominator": 20
+                "numerator": 13,
+                "denominator": 25
             }
         },
         "934226d9-a72a-4cc1-94ae-2a2943748800:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 7,
-                "denominator": 2
+                "numerator": 13,
+                "denominator": 4
             }
         },
         "93b5a782-265f-430f-bbc7-8928a549b803:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 31,
-                "denominator": 50
+                "numerator": 57,
+                "denominator": 100
             }
         },
         "93fcd56c-ef06-4fea-9242-7b931e5a0988:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 29,
-                "denominator": 4
+                "numerator": 15,
+                "denominator": 2
             }
         },
         "950d8031-fb6d-4ac0-b64c-67dcbfd72206:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -7734,8 +7733,8 @@
         },
         "95bcc067-f504-4919-9319-cfec108e3a41:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 43,
-                "denominator": 20
+                "numerator": 11,
+                "denominator": 5
             }
         },
         "95dadd9d-199d-49ad-9441-3463bb9c6fb7:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -7752,8 +7751,8 @@
         },
         "969764d2-90b0-430d-8d9c-61a7a384b7e0:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 11,
-                "denominator": 50
+                "numerator": 1,
+                "denominator": 5
             }
         },
         "969a5d45-2d8e-4f43-8b45-6cc313951af3:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -7770,7 +7769,7 @@
         },
         "97862c0f-e376-464b-89d0-a53211bcfce2:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 31,
+                "numerator": 29,
                 "denominator": 4
             }
         },
@@ -7788,8 +7787,8 @@
         },
         "98ec9359-f384-4a2c-affd-5c9c0bcb1455:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 9,
-                "denominator": 10
+                "numerator": 17,
+                "denominator": 20
             }
         },
         "990d4717-fb56-4c8d-84da-feb927fb1abd:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -7806,8 +7805,8 @@
         },
         "9aa25158-32fc-4703-9dd5-c14b1b5a4a70:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 39,
-                "denominator": 50
+                "numerator": 77,
+                "denominator": 100
             }
         },
         "9b4459f6-8a41-42db-b9c9-8bb6e63557c3:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -7824,14 +7823,14 @@
         },
         "9d704e53-7be1-4c64-a7c2-b59c0afab311:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 41,
-                "denominator": 50
+                "numerator": 3,
+                "denominator": 4
             }
         },
         "9e424ac9-65b3-43de-9743-f834c17c3556:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 6,
-                "denominator": 25
+                "numerator": 13,
+                "denominator": 50
             }
         },
         "9e72895e-8e43-4cd1-b782-edb0b1955a97:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -7860,7 +7859,7 @@
         },
         "a22d3e89-e9fd-471c-ba0e-b01e3191cd15:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 21,
+                "numerator": 22,
                 "denominator": 5
             }
         },
@@ -7884,8 +7883,8 @@
         },
         "a3566242-dfc5-4844-b20f-7bedd9ae7700:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 1,
-                "denominator": 20
+                "numerator": 3,
+                "denominator": 50
             }
         },
         "a3872a52-c82e-4749-953c-b3dfc7a1c907:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -7914,14 +7913,14 @@
         },
         "a4b36d2f-a222-43ab-bc30-be7f53133e86:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 7,
-                "denominator": 10
+                "numerator": 3,
+                "denominator": 4
             }
         },
         "a536d14b-9106-4fc6-8766-177bc7e52bc9:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 13,
-                "denominator": 20
+                "numerator": 31,
+                "denominator": 50
             }
         },
         "a5652fae-416a-4d8b-9143-35fe72a09178:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -7938,20 +7937,20 @@
         },
         "a6301736-3fe0-4ce5-a320-7ba9f9d6eb54:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 29,
-                "denominator": 10
+                "numerator": 14,
+                "denominator": 5
             }
         },
         "a6384816-4178-474f-b0f2-ad75a2df362c:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 37,
-                "denominator": 20
+                "numerator": 21,
+                "denominator": 10
             }
         },
         "a63ae91a-e232-4b4f-b5c5-84a34d23089f:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 21,
-                "denominator": 20
+                "numerator": 49,
+                "denominator": 50
             }
         },
         "a8e747f5-0310-43e8-92fc-78e2ba35a8f3:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -7974,8 +7973,8 @@
         },
         "aac4a2be-5cac-4374-86e7-3e2239d41e1d:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 3,
-                "denominator": 5
+                "numerator": 29,
+                "denominator": 50
             }
         },
         "ac217a12-0554-4f79-9e26-f82953aebc6f:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -7998,14 +7997,14 @@
         },
         "ad32fbd9-7122-42c3-b41b-a96df75d0562:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 17,
-                "denominator": 4
+                "numerator": 4,
+                "denominator": 1
             }
         },
         "b0f2676a-1694-41f6-88b8-b209e51a6029:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 4,
-                "denominator": 5
+                "numerator": 3,
+                "denominator": 4
             }
         },
         "b10051d2-2c56-4131-90c5-143119bb87fd:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -8016,8 +8015,8 @@
         },
         "b2759189-ed3a-4f8c-8eb9-ed97c84809ca:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 11,
-                "denominator": 1
+                "numerator": 21,
+                "denominator": 2
             }
         },
         "b28570de-7368-424a-920e-e8dc1a310c2f:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -8046,8 +8045,8 @@
         },
         "b7fa1194-1b16-42c1-86d9-ebbe2756bdca:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 18,
-                "denominator": 25
+                "numerator": 3,
+                "denominator": 4
             }
         },
         "b851ecd9-db7f-460c-91dc-d338dbad2e4f:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -8058,8 +8057,8 @@
         },
         "b939aac8-34c1-41df-97fd-92e9e8010089:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 5,
-                "denominator": 4
+                "numerator": 23,
+                "denominator": 20
             }
         },
         "b9d649ff-c588-422f-8ec3-3629ead313f6:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -8070,8 +8069,8 @@
         },
         "ba5efdd9-95da-43cf-9c72-eb2cab00b9e0:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 13,
-                "denominator": 25
+                "numerator": 1,
+                "denominator": 2
             }
         },
         "bb36b739-ae6e-4680-aa94-047e79ac6713:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -8082,14 +8081,14 @@
         },
         "bc152fa3-a47f-4b1b-810f-fbecdf40cdc8:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 41,
-                "denominator": 50
+                "numerator": 3,
+                "denominator": 4
             }
         },
         "bc5bb0e2-8fd2-4a2b-90fc-fa66195b7743:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 21,
-                "denominator": 10
+                "numerator": 9,
+                "denominator": 4
             }
         },
         "bcbcdf7f-c10b-445c-b631-df1626cbe680:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -8130,8 +8129,8 @@
         },
         "bf801343-05d9-4828-b88b-15c8465329a4:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 77,
-                "denominator": 100
+                "numerator": 18,
+                "denominator": 25
             }
         },
         "c0191529-90fc-4387-95d1-50b9b0dd7ccc:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -8172,8 +8171,8 @@
         },
         "c38e598b-e336-402c-a516-b8dd34a488a6:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 7,
-                "denominator": 25
+                "numerator": 13,
+                "denominator": 50
             }
         },
         "c41fc5a9-6311-46aa-809c-cecb17cf240d:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -8184,8 +8183,8 @@
         },
         "c453b7a9-5444-4710-beae-75da4abbc84d:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 9,
-                "denominator": 20
+                "numerator": 12,
+                "denominator": 25
             }
         },
         "c4b84947-3c8a-4e95-8884-b5a359b51e96:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -8202,14 +8201,14 @@
         },
         "c71618c8-6c3e-40df-af55-b5053ea5db2d:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 13,
-                "denominator": 100
+                "numerator": 3,
+                "denominator": 25
             }
         },
         "c8d606fe-a5ae-4354-a04e-31e5ae0fa96d:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 19,
-                "denominator": 50
+                "numerator": 2,
+                "denominator": 5
             }
         },
         "c8ea96b9-8366-4b3a-bb8f-81ee361b3e0d:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -8226,8 +8225,8 @@
         },
         "c93e4959-1ffe-41b4-af50-0ac8b3898b63:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 29,
-                "denominator": 10
+                "numerator": 3,
+                "denominator": 1
             }
         },
         "c98cbbdc-07a2-47e0-89c2-e3102d40ab6b:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -8238,8 +8237,8 @@
         },
         "ca343a91-d337-49e1-8e44-f0cfae205463:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 8,
-                "denominator": 25
+                "numerator": 3,
+                "denominator": 10
             }
         },
         "cafafd72-2844-407d-931b-79d28efb7f8e:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -8250,26 +8249,26 @@
         },
         "cd48e1ed-0d9b-4478-b16b-dd54925d1a71:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 7,
-                "denominator": 5
+                "numerator": 29,
+                "denominator": 20
             }
         },
         "cdd9c967-f4ab-4e38-b6fe-a20798335f09:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 13,
-                "denominator": 5
+                "numerator": 49,
+                "denominator": 20
             }
         },
         "cf0dc04b-df9a-4f04-87b8-4c513b8e5288:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 37,
+                "numerator": 39,
                 "denominator": 20
             }
         },
         "cf437101-49b1-48d3-ae0d-7e831de834f9:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 21,
-                "denominator": 20
+                "numerator": 1,
+                "denominator": 1
             }
         },
         "d07241e1-f88d-4105-914b-39f06319cc6f:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -8298,8 +8297,8 @@
         },
         "d49b3c81-c415-4f56-b053-b9244e5786bb:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 19,
-                "denominator": 2
+                "numerator": 10,
+                "denominator": 1
             }
         },
         "d5879950-5755-47e7-b93c-dbcbe6b2f0f5:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -8322,20 +8321,20 @@
         },
         "d6496d81-20e2-45c3-b291-4ca23fb60303:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 19,
-                "denominator": 50
+                "numerator": 8,
+                "denominator": 25
             }
         },
         "d6901038-9b75-4517-b1da-f3a30e5b6447:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 11,
-                "denominator": 100
+                "numerator": 1,
+                "denominator": 10
             }
         },
         "d6c7bc70-81fd-42ff-ae67-7f56f4a767d6:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 6,
-                "denominator": 25
+                "numerator": 11,
+                "denominator": 50
             }
         },
         "d6df964c-7e82-43aa-9094-a9143a1ef92a:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -8358,8 +8357,8 @@
         },
         "d8061edc-90b2-42bf-ba6e-f115b1c9c110:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 7,
-                "denominator": 5
+                "numerator": 3,
+                "denominator": 2
             }
         },
         "d8725747-8b6a-450c-9b2b-d2fffe9749d5:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -8394,8 +8393,8 @@
         },
         "e095de90-6666-42c5-b552-ac9aafaaf610:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 5,
-                "denominator": 4
+                "numerator": 6,
+                "denominator": 5
             }
         },
         "e127fb68-c309-4661-aed2-eff88f4cf234:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -8406,8 +8405,8 @@
         },
         "e1d583b6-2146-4523-8375-d5068c529bf1:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 3,
-                "denominator": 5
+                "numerator": 31,
+                "denominator": 50
             }
         },
         "e2476c02-efc1-4731-ae5a-ef1eb9eceae4:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -8436,8 +8435,8 @@
         },
         "e59f9e88-042c-4a6b-be21-59dcf8b53b05:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 9,
-                "denominator": 10
+                "numerator": 24,
+                "denominator": 25
             }
         },
         "e6ae55de-fb57-4aa7-a9b8-9e3f3b6d1826:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -8454,7 +8453,7 @@
         },
         "e8236383-710f-49fa-a94b-b43b64061079:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 12,
+                "numerator": 13,
                 "denominator": 25
             }
         },
@@ -8466,14 +8465,14 @@
         },
         "ea44ad69-dd67-44c8-b027-50da503a8841:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 31,
-                "denominator": 50
+                "numerator": 16,
+                "denominator": 25
             }
         },
         "ea60637a-7f0b-48bb-ab90-2ccd62d5c8d0:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 1,
-                "denominator": 2
+                "numerator": 12,
+                "denominator": 25
             }
         },
         "eb0646c9-6cbb-4e55-b19d-496714e98c5d:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -8496,14 +8495,14 @@
         },
         "ed07445d-7474-4bda-8d7e-e2b5745c8fff:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 8,
-                "denominator": 5
+                "numerator": 3,
+                "denominator": 2
             }
         },
         "f02cc630-0882-4850-be3a-a3850effa72a:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 47,
-                "denominator": 50
+                "numerator": 1,
+                "denominator": 1
             }
         },
         "f07ee322-4db9-4152-a6ba-6475e10acf18:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -8514,20 +8513,20 @@
         },
         "f0a290bb-9a0e-4e88-9eea-3a03dce99dee:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 17,
-                "denominator": 100
+                "numerator": 9,
+                "denominator": 50
             }
         },
         "f0f9477e-8274-454c-a6c9-a82c6c320e5f:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 22,
-                "denominator": 25
+                "numerator": 49,
+                "denominator": 50
             }
         },
         "f2bdd5b1-a47d-4b61-87f1-72bf70d1ee27:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 27,
-                "denominator": 4
+                "numerator": 13,
+                "denominator": 2
             }
         },
         "f30142c7-5182-4cac-8baa-2d66d9ec2a9d:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -8544,7 +8543,7 @@
         },
         "f3d0b618-071c-4709-9b5d-868b2afac58f:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 13,
+                "numerator": 12,
                 "denominator": 25
             }
         },
@@ -8562,8 +8561,8 @@
         },
         "f4a06da9-6ca4-4840-95ff-8f32238c91b6:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 47,
-                "denominator": 50
+                "numerator": 24,
+                "denominator": 25
             }
         },
         "f55f6f0e-402e-4b78-b6a5-477b036d918a:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -8586,26 +8585,26 @@
         },
         "f71bd844-06e0-444a-8a34-d82999a2d67d:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 23,
-                "denominator": 50
+                "numerator": 12,
+                "denominator": 25
             }
         },
         "f76a0425-c271-4794-be07-de01cee59ff1:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 29,
+                "numerator": 31,
                 "denominator": 4
             }
         },
         "f80eb77a-e5fc-4478-a7ae-0cdfa149745c:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 1,
-                "denominator": 25
+                "numerator": 3,
+                "denominator": 100
             }
         },
         "f819e8c1-1a59-4cca-9326-71eeb1c923c4:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 13,
-                "denominator": 25
+                "numerator": 1,
+                "denominator": 2
             }
         },
         "f91dceee-5646-457b-a037-bcd7417abcdb:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -8622,14 +8621,14 @@
         },
         "fa9d740e-e8dc-4309-b6d6-8e0eb05ca091:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 19,
-                "denominator": 50
+                "numerator": 7,
+                "denominator": 20
             }
         },
         "fb091b50-00c3-45ef-b564-fbc16f6056c0:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 19,
-                "denominator": 100
+                "numerator": 9,
+                "denominator": 50
             }
         },
         "fb3f0fd9-8abb-452b-8166-2529bb3ad20f:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -8646,14 +8645,14 @@
         },
         "fb4dfab1-af46-4c65-9fb7-1a2b9d4ea84d:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 29,
-                "denominator": 10
+                "numerator": 3,
+                "denominator": 1
             }
         },
         "fbd7522d-dc3f-4dbb-9904-150cbf0c53b1:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 27,
-                "denominator": 20
+                "numerator": 13,
+                "denominator": 10
             }
         },
         "fc305de0-b62b-4b04-b546-57af984d0002:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -8664,8 +8663,8 @@
         },
         "fcb6a7ea-bc81-45ac-9d23-382f38bddb3f:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 41,
-                "denominator": 50
+                "numerator": 87,
+                "denominator": 100
             }
         },
         "fdb588e4-9b1a-4242-a881-94a3749bae28:940b8704-e497-4a76-b390-00918ff7d282:": {
