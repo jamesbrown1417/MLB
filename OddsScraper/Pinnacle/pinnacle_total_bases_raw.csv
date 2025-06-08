@@ -59,8 +59,8 @@ id,name,rot_num,line_id,price,handicap,selection,player_name,home_team,away_team
 1610677435,Under,979,5039368540,2.24,0.5,Alejandro Osuna (Total Bases)(must start),Alejandro Osuna (Total Bases)(must start),Washington Nationals,Texas Rangers
 1610677437,Over,964,5039526683,2.27,1.5,Paul Goldschmidt (Total Bases)(must start),Paul Goldschmidt (Total Bases)(must start),New York Yankees,Boston Red Sox
 1610677438,Under,965,5039526684,1.591,1.5,Paul Goldschmidt (Total Bases)(must start),Paul Goldschmidt (Total Bases)(must start),New York Yankees,Boston Red Sox
-1610677443,Over,964,5039561567,1.909,1.5,Aaron Judge (Total Bases)(must start),Aaron Judge (Total Bases)(must start),New York Yankees,Boston Red Sox
-1610677444,Under,965,5039561568,1.826,1.5,Aaron Judge (Total Bases)(must start),Aaron Judge (Total Bases)(must start),New York Yankees,Boston Red Sox
+1610677443,Over,964,5039608532,1.862,1.5,Aaron Judge (Total Bases)(must start),Aaron Judge (Total Bases)(must start),New York Yankees,Boston Red Sox
+1610677444,Under,965,5039608533,1.877,1.5,Aaron Judge (Total Bases)(must start),Aaron Judge (Total Bases)(must start),New York Yankees,Boston Red Sox
 1610677458,Over,964,5039561191,2.21,1.5,Cody Bellinger (Total Bases)(must start),Cody Bellinger (Total Bases)(must start),New York Yankees,Boston Red Sox
 1610677459,Under,965,5039561192,1.617,1.5,Cody Bellinger (Total Bases)(must start),Cody Bellinger (Total Bases)(must start),New York Yankees,Boston Red Sox
 1610677464,Over,964,5039561199,1.781,0.5,Trent Grisham (Total Bases)(must start),Trent Grisham (Total Bases)(must start),New York Yankees,Boston Red Sox
@@ -215,21 +215,39 @@ id,name,rot_num,line_id,price,handicap,selection,player_name,home_team,away_team
 1610688991,Under,965,5039561194,2.03,0.5,J.C. Escarra (Total Bases)(must start),J.C. Escarra (Total Bases)(must start),New York Yankees,Boston Red Sox
 1610688996,Over,964,5039583957,2.07,1.5,Ben Rice (Total Bases)(must start),Ben Rice (Total Bases)(must start),New York Yankees,Boston Red Sox
 1610688997,Under,965,5039583958,1.704,1.5,Ben Rice (Total Bases)(must start),Ben Rice (Total Bases)(must start),New York Yankees,Boston Red Sox
-1610689045,Over,904,5039591567,1.746,0.5,Carson Kelly (Total Bases)(must start),Carson Kelly (Total Bases)(must start),Philadelphia Phillies,Chicago Cubs
-1610689046,Under,905,5039591568,2.01,0.5,Carson Kelly (Total Bases)(must start),Carson Kelly (Total Bases)(must start),Philadelphia Phillies,Chicago Cubs
-1610689048,Over,904,5039591569,1.657,0.5,Dansby Swanson (Total Bases)(must start),Dansby Swanson (Total Bases)(must start),Philadelphia Phillies,Chicago Cubs
-1610689049,Under,905,5039591570,2.14,0.5,Dansby Swanson (Total Bases)(must start),Dansby Swanson (Total Bases)(must start),Philadelphia Phillies,Chicago Cubs
-1610689051,Over,904,5039591571,1.531,0.5,Nico Hoerner (Total Bases)(must start),Nico Hoerner (Total Bases)(must start),Philadelphia Phillies,Chicago Cubs
-1610689052,Under,905,5039591572,2.4,0.5,Nico Hoerner (Total Bases)(must start),Nico Hoerner (Total Bases)(must start),Philadelphia Phillies,Chicago Cubs
-1610689057,Over,904,5039591575,1.523,0.5,Kyle Tucker (Total Bases)(must start),Kyle Tucker (Total Bases)(must start),Philadelphia Phillies,Chicago Cubs
-1610689058,Under,905,5039591576,2.42,0.5,Kyle Tucker (Total Bases)(must start),Kyle Tucker (Total Bases)(must start),Philadelphia Phillies,Chicago Cubs
-1610689063,Over,904,5039591577,1.617,0.5,Ian Happ (Total Bases)(must start),Ian Happ (Total Bases)(must start),Philadelphia Phillies,Chicago Cubs
-1610689064,Under,905,5039591578,2.21,0.5,Ian Happ (Total Bases)(must start),Ian Happ (Total Bases)(must start),Philadelphia Phillies,Chicago Cubs
-1610689069,Over,904,5039591581,1.518,0.5,Seiya Suzuki (Total Bases)(must start),Seiya Suzuki (Total Bases)(must start),Philadelphia Phillies,Chicago Cubs
-1610689070,Under,905,5039591582,2.43,0.5,Seiya Suzuki (Total Bases)(must start),Seiya Suzuki (Total Bases)(must start),Philadelphia Phillies,Chicago Cubs
-1610689075,Over,904,5039591585,1.653,0.5,Michael Busch (Total Bases)(must start),Michael Busch (Total Bases)(must start),Philadelphia Phillies,Chicago Cubs
-1610689076,Under,905,5039591586,2.15,0.5,Michael Busch (Total Bases)(must start),Michael Busch (Total Bases)(must start),Philadelphia Phillies,Chicago Cubs
-1610689081,Over,904,5039591589,1.591,0.5,Pete Crow-Armstrong (Total Bases)(must start),Pete Crow-Armstrong (Total Bases)(must start),Philadelphia Phillies,Chicago Cubs
-1610689082,Under,905,5039591590,2.26,0.5,Pete Crow-Armstrong (Total Bases)(must start),Pete Crow-Armstrong (Total Bases)(must start),Philadelphia Phillies,Chicago Cubs
-1610689084,Over,904,5039591591,1.763,0.5,Matt Shaw (Total Bases)(must start),Matt Shaw (Total Bases)(must start),Philadelphia Phillies,Chicago Cubs
-1610689085,Under,905,5039591592,1.99,0.5,Matt Shaw (Total Bases)(must start),Matt Shaw (Total Bases)(must start),Philadelphia Phillies,Chicago Cubs
+1610689045,Over,904,5039598241,1.714,0.5,Carson Kelly (Total Bases)(must start),Carson Kelly (Total Bases)(must start),Philadelphia Phillies,Chicago Cubs
+1610689046,Under,905,5039598242,2.06,0.5,Carson Kelly (Total Bases)(must start),Carson Kelly (Total Bases)(must start),Philadelphia Phillies,Chicago Cubs
+1610689048,Over,904,5039622817,1.641,0.5,Dansby Swanson (Total Bases)(must start),Dansby Swanson (Total Bases)(must start),Philadelphia Phillies,Chicago Cubs
+1610689049,Under,905,5039622818,2.17,0.5,Dansby Swanson (Total Bases)(must start),Dansby Swanson (Total Bases)(must start),Philadelphia Phillies,Chicago Cubs
+1610689051,Over,904,5039622819,1.543,0.5,Nico Hoerner (Total Bases)(must start),Nico Hoerner (Total Bases)(must start),Philadelphia Phillies,Chicago Cubs
+1610689052,Under,905,5039622820,2.37,0.5,Nico Hoerner (Total Bases)(must start),Nico Hoerner (Total Bases)(must start),Philadelphia Phillies,Chicago Cubs
+1610689057,Over,904,5039600357,2.45,1.5,Kyle Tucker (Total Bases)(must start),Kyle Tucker (Total Bases)(must start),Philadelphia Phillies,Chicago Cubs
+1610689058,Under,905,5039600358,1.51,1.5,Kyle Tucker (Total Bases)(must start),Kyle Tucker (Total Bases)(must start),Philadelphia Phillies,Chicago Cubs
+1610689063,Over,904,5039622823,1.628,0.5,Ian Happ (Total Bases)(must start),Ian Happ (Total Bases)(must start),Philadelphia Phillies,Chicago Cubs
+1610689064,Under,905,5039622824,2.19,0.5,Ian Happ (Total Bases)(must start),Ian Happ (Total Bases)(must start),Philadelphia Phillies,Chicago Cubs
+1610689069,Over,904,5039600361,1.52,0.5,Seiya Suzuki (Total Bases)(must start),Seiya Suzuki (Total Bases)(must start),Philadelphia Phillies,Chicago Cubs
+1610689070,Under,905,5039600362,2.42,0.5,Seiya Suzuki (Total Bases)(must start),Seiya Suzuki (Total Bases)(must start),Philadelphia Phillies,Chicago Cubs
+1610689075,Over,904,5039622827,1.653,0.5,Michael Busch (Total Bases)(must start),Michael Busch (Total Bases)(must start),Philadelphia Phillies,Chicago Cubs
+1610689076,Under,905,5039622828,2.15,0.5,Michael Busch (Total Bases)(must start),Michael Busch (Total Bases)(must start),Philadelphia Phillies,Chicago Cubs
+1610689081,Over,904,5039600363,1.598,0.5,Pete Crow-Armstrong (Total Bases)(must start),Pete Crow-Armstrong (Total Bases)(must start),Philadelphia Phillies,Chicago Cubs
+1610689082,Under,905,5039600364,2.25,0.5,Pete Crow-Armstrong (Total Bases)(must start),Pete Crow-Armstrong (Total Bases)(must start),Philadelphia Phillies,Chicago Cubs
+1610689084,Over,904,5039600365,1.757,0.5,Matt Shaw (Total Bases)(must start),Matt Shaw (Total Bases)(must start),Philadelphia Phillies,Chicago Cubs
+1610689085,Under,905,5039600366,1.99,0.5,Matt Shaw (Total Bases)(must start),Matt Shaw (Total Bases)(must start),Philadelphia Phillies,Chicago Cubs
+1610691959,Over,906,5039599112,1.529,0.5,Marcell Ozuna (Total Bases)(must start),Marcell Ozuna (Total Bases)(must start),Milwaukee Brewers,Atlanta Braves
+1610691960,Under,907,5039599113,2.4,0.5,Marcell Ozuna (Total Bases)(must start),Marcell Ozuna (Total Bases)(must start),Milwaukee Brewers,Atlanta Braves
+1610691965,Over,906,5039599124,2.18,1.5,Matt Olson (Total Bases)(must start),Matt Olson (Total Bases)(must start),Milwaukee Brewers,Atlanta Braves
+1610691966,Under,907,5039599125,1.636,1.5,Matt Olson (Total Bases)(must start),Matt Olson (Total Bases)(must start),Milwaukee Brewers,Atlanta Braves
+1610691971,Over,906,5039599142,1.552,0.5,Ozzie Albies (Total Bases)(must start),Ozzie Albies (Total Bases)(must start),Milwaukee Brewers,Atlanta Braves
+1610691972,Under,907,5039599143,2.35,0.5,Ozzie Albies (Total Bases)(must start),Ozzie Albies (Total Bases)(must start),Milwaukee Brewers,Atlanta Braves
+1610691974,Over,906,5039599148,1.675,0.5,Alex Verdugo (Total Bases)(must start),Alex Verdugo (Total Bases)(must start),Milwaukee Brewers,Atlanta Braves
+1610691975,Under,907,5039599149,2.11,0.5,Alex Verdugo (Total Bases)(must start),Alex Verdugo (Total Bases)(must start),Milwaukee Brewers,Atlanta Braves
+1610691980,Over,906,5039599160,1.98,1.5,Ronald Acuña Jr. (Total Bases)(must start),Ronald Acuña Jr. (Total Bases)(must start),Milwaukee Brewers,Atlanta Braves
+1610691981,Under,907,5039599161,1.769,1.5,Ronald Acuña Jr. (Total Bases)(must start),Ronald Acuña Jr. (Total Bases)(must start),Milwaukee Brewers,Atlanta Braves
+1610691986,Over,906,5039599172,1.99,1.5,Austin Riley (Total Bases)(must start),Austin Riley (Total Bases)(must start),Milwaukee Brewers,Atlanta Braves
+1610691987,Under,907,5039599173,1.763,1.5,Austin Riley (Total Bases)(must start),Austin Riley (Total Bases)(must start),Milwaukee Brewers,Atlanta Braves
+1610691989,Over,906,5039599178,1.751,0.5,Nick Allen (Total Bases)(must start),Nick Allen (Total Bases)(must start),Milwaukee Brewers,Atlanta Braves
+1610691990,Under,907,5039599179,2.01,0.5,Nick Allen (Total Bases)(must start),Nick Allen (Total Bases)(must start),Milwaukee Brewers,Atlanta Braves
+1610691992,Over,906,5039599184,1.497,0.5,Michael Harris II (Total Bases)(must start),Michael Harris II (Total Bases)(must start),Milwaukee Brewers,Atlanta Braves
+1610691993,Under,907,5039599185,2.49,0.5,Michael Harris II (Total Bases)(must start),Michael Harris II (Total Bases)(must start),Milwaukee Brewers,Atlanta Braves
+1610691998,Over,906,5039599196,2.31,1.5,Drake Baldwin (Total Bases)(must start),Drake Baldwin (Total Bases)(must start),Milwaukee Brewers,Atlanta Braves
+1610691999,Under,907,5039599197,1.571,1.5,Drake Baldwin (Total Bases)(must start),Drake Baldwin (Total Bases)(must start),Milwaukee Brewers,Atlanta Braves

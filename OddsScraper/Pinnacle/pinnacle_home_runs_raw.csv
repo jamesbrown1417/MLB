@@ -15,10 +15,10 @@ id,name,rot_num,line_id,price,handicap,selection,player_name,home_team,away_team
 1610677414,Under,979,5039351704,1.169,0.5,Jake Burger (Home Runs)(must start),Jake Burger (Home Runs)(must start),Washington Nationals,Texas Rangers
 1610677422,Over,978,5039368529,6.99,0.5,Josh Jung (Home Runs)(must start),Josh Jung (Home Runs)(must start),Washington Nationals,Texas Rangers
 1610677423,Under,979,5039368530,1.079,0.5,Josh Jung (Home Runs)(must start),Josh Jung (Home Runs)(must start),Washington Nationals,Texas Rangers
-1610677440,Over,964,5039591916,3.84,0.5,Aaron Judge (Home Runs)(must start),Aaron Judge (Home Runs)(must start),New York Yankees,Boston Red Sox
-1610677441,Under,965,5039591917,1.203,0.5,Aaron Judge (Home Runs)(must start),Aaron Judge (Home Runs)(must start),New York Yankees,Boston Red Sox
-1610677455,Over,964,5039561189,6.06,0.5,Cody Bellinger (Home Runs)(must start),Cody Bellinger (Home Runs)(must start),New York Yankees,Boston Red Sox
-1610677456,Under,965,5039561190,1.105,0.5,Cody Bellinger (Home Runs)(must start),Cody Bellinger (Home Runs)(must start),New York Yankees,Boston Red Sox
+1610677440,Over,964,5039608049,3.38,0.5,Aaron Judge (Home Runs)(must start),Aaron Judge (Home Runs)(must start),New York Yankees,Boston Red Sox
+1610677441,Under,965,5039608050,1.263,0.5,Aaron Judge (Home Runs)(must start),Aaron Judge (Home Runs)(must start),New York Yankees,Boston Red Sox
+1610677455,Over,964,5039603955,5.99,0.5,Cody Bellinger (Home Runs)(must start),Cody Bellinger (Home Runs)(must start),New York Yankees,Boston Red Sox
+1610677456,Under,965,5039603956,1.074,0.5,Cody Bellinger (Home Runs)(must start),Cody Bellinger (Home Runs)(must start),New York Yankees,Boston Red Sox
 1610677461,Over,964,5039561197,6.42,0.5,Trent Grisham (Home Runs)(must start),Trent Grisham (Home Runs)(must start),New York Yankees,Boston Red Sox
 1610677462,Under,965,5039561198,1.093,0.5,Trent Grisham (Home Runs)(must start),Trent Grisham (Home Runs)(must start),New York Yankees,Boston Red Sox
 1610677467,Over,964,5039568314,6.5,0.5,Jazz Chisholm Jr. (Home Runs)(must start),Jazz Chisholm Jr. (Home Runs)(must start),New York Yankees,Boston Red Sox
@@ -89,13 +89,25 @@ id,name,rot_num,line_id,price,handicap,selection,player_name,home_team,away_team
 1610687321,Under,973,5039398987,1.076,0.5,Ramón Urías (Home Runs)(must start),Ramón Urías (Home Runs)(must start),Athletics,Baltimore Orioles
 1610688993,Over,964,5039497114,4.58,0.5,Ben Rice (Home Runs)(must start),Ben Rice (Home Runs)(must start),New York Yankees,Boston Red Sox
 1610688994,Under,965,5039497115,1.174,0.5,Ben Rice (Home Runs)(must start),Ben Rice (Home Runs)(must start),New York Yankees,Boston Red Sox
-1610689054,Over,904,5039591573,6.06,0.5,Kyle Tucker (Home Runs)(must start),Kyle Tucker (Home Runs)(must start),Philadelphia Phillies,Chicago Cubs
-1610689055,Under,905,5039591574,1.105,0.5,Kyle Tucker (Home Runs)(must start),Kyle Tucker (Home Runs)(must start),Philadelphia Phillies,Chicago Cubs
-1610689060,Over,904,5039591061,6.87,0.5,Ian Happ (Home Runs)(must start),Ian Happ (Home Runs)(must start),Philadelphia Phillies,Chicago Cubs
-1610689061,Under,905,5039591062,1.081,0.5,Ian Happ (Home Runs)(must start),Ian Happ (Home Runs)(must start),Philadelphia Phillies,Chicago Cubs
-1610689066,Over,904,5039591579,6.17,0.5,Seiya Suzuki (Home Runs)(must start),Seiya Suzuki (Home Runs)(must start),Philadelphia Phillies,Chicago Cubs
-1610689067,Under,905,5039591580,1.101,0.5,Seiya Suzuki (Home Runs)(must start),Seiya Suzuki (Home Runs)(must start),Philadelphia Phillies,Chicago Cubs
-1610689072,Over,904,5039591583,6.41,0.5,Michael Busch (Home Runs)(must start),Michael Busch (Home Runs)(must start),Philadelphia Phillies,Chicago Cubs
-1610689073,Under,905,5039591584,1.094,0.5,Michael Busch (Home Runs)(must start),Michael Busch (Home Runs)(must start),Philadelphia Phillies,Chicago Cubs
-1610689078,Over,904,5039591587,6.46,0.5,Pete Crow-Armstrong (Home Runs)(must start),Pete Crow-Armstrong (Home Runs)(must start),Philadelphia Phillies,Chicago Cubs
-1610689079,Under,905,5039591588,1.092,0.5,Pete Crow-Armstrong (Home Runs)(must start),Pete Crow-Armstrong (Home Runs)(must start),Philadelphia Phillies,Chicago Cubs
+1610689054,Over,904,5039600355,6.14,0.5,Kyle Tucker (Home Runs)(must start),Kyle Tucker (Home Runs)(must start),Philadelphia Phillies,Chicago Cubs
+1610689055,Under,905,5039600356,1.102,0.5,Kyle Tucker (Home Runs)(must start),Kyle Tucker (Home Runs)(must start),Philadelphia Phillies,Chicago Cubs
+1610689060,Over,904,5039622821,6.86,0.5,Ian Happ (Home Runs)(must start),Ian Happ (Home Runs)(must start),Philadelphia Phillies,Chicago Cubs
+1610689061,Under,905,5039622822,1.082,0.5,Ian Happ (Home Runs)(must start),Ian Happ (Home Runs)(must start),Philadelphia Phillies,Chicago Cubs
+1610689066,Over,904,5039600359,6.47,0.5,Seiya Suzuki (Home Runs)(must start),Seiya Suzuki (Home Runs)(must start),Philadelphia Phillies,Chicago Cubs
+1610689067,Under,905,5039600360,1.092,0.5,Seiya Suzuki (Home Runs)(must start),Seiya Suzuki (Home Runs)(must start),Philadelphia Phillies,Chicago Cubs
+1610689072,Over,904,5039622825,6.56,0.5,Michael Busch (Home Runs)(must start),Michael Busch (Home Runs)(must start),Philadelphia Phillies,Chicago Cubs
+1610689073,Under,905,5039622826,1.09,0.5,Michael Busch (Home Runs)(must start),Michael Busch (Home Runs)(must start),Philadelphia Phillies,Chicago Cubs
+1610689078,Over,904,5039622829,6.53,0.5,Pete Crow-Armstrong (Home Runs)(must start),Pete Crow-Armstrong (Home Runs)(must start),Philadelphia Phillies,Chicago Cubs
+1610689079,Under,905,5039622830,1.09,0.5,Pete Crow-Armstrong (Home Runs)(must start),Pete Crow-Armstrong (Home Runs)(must start),Philadelphia Phillies,Chicago Cubs
+1610691956,Over,906,5039599106,6.02,0.5,Marcell Ozuna (Home Runs)(must start),Marcell Ozuna (Home Runs)(must start),Milwaukee Brewers,Atlanta Braves
+1610691957,Under,907,5039599107,1.106,0.5,Marcell Ozuna (Home Runs)(must start),Marcell Ozuna (Home Runs)(must start),Milwaukee Brewers,Atlanta Braves
+1610691962,Over,906,5039599118,3.62,0.5,Matt Olson (Home Runs)(must start),Matt Olson (Home Runs)(must start),Milwaukee Brewers,Atlanta Braves
+1610691963,Under,907,5039599119,1.259,0.5,Matt Olson (Home Runs)(must start),Matt Olson (Home Runs)(must start),Milwaukee Brewers,Atlanta Braves
+1610691968,Over,906,5039599130,7.04,0.5,Ozzie Albies (Home Runs)(must start),Ozzie Albies (Home Runs)(must start),Milwaukee Brewers,Atlanta Braves
+1610691969,Under,907,5039599131,1.077,0.5,Ozzie Albies (Home Runs)(must start),Ozzie Albies (Home Runs)(must start),Milwaukee Brewers,Atlanta Braves
+1610691977,Over,906,5039599154,4.83,0.5,Ronald Acuña Jr. (Home Runs)(must start),Ronald Acuña Jr. (Home Runs)(must start),Milwaukee Brewers,Atlanta Braves
+1610691978,Under,907,5039599155,1.159,0.5,Ronald Acuña Jr. (Home Runs)(must start),Ronald Acuña Jr. (Home Runs)(must start),Milwaukee Brewers,Atlanta Braves
+1610691983,Over,906,5039599166,4.34,0.5,Austin Riley (Home Runs)(must start),Austin Riley (Home Runs)(must start),Milwaukee Brewers,Atlanta Braves
+1610691984,Under,907,5039599167,1.191,0.5,Austin Riley (Home Runs)(must start),Austin Riley (Home Runs)(must start),Milwaukee Brewers,Atlanta Braves
+1610691995,Over,906,5039599190,6.82,0.5,Drake Baldwin (Home Runs)(must start),Drake Baldwin (Home Runs)(must start),Milwaukee Brewers,Atlanta Braves
+1610691996,Under,907,5039599191,1.083,0.5,Drake Baldwin (Home Runs)(must start),Drake Baldwin (Home Runs)(must start),Milwaukee Brewers,Atlanta Braves
