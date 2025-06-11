@@ -379,13 +379,6 @@
             "sort_order": 20,
             "market_id": "afd6fa0a-78ef-4d35-8efb-e9845a85359a"
         },
-        "2a673abf-bfa5-4002-8d93-35e53696cfbf": {
-            "id": "2a673abf-bfa5-4002-8d93-35e53696cfbf",
-            "name": "Under (15.5)",
-            "visible": true,
-            "sort_order": 20,
-            "market_id": "550c2200-7c9d-4b08-883f-ef1f51a3f4ed"
-        },
         "2ad6f123-eb60-4d27-b969-c12222af6883": {
             "id": "2ad6f123-eb60-4d27-b969-c12222af6883",
             "name": "Adam Frazier (Pittsburgh Pirates)",
@@ -468,6 +461,13 @@
             "visible": true,
             "sort_order": 10,
             "market_id": "d37d82bf-a5e1-4c37-a052-7d99881ad608"
+        },
+        "2f4e22ff-adf1-481c-80be-67124df97600": {
+            "id": "2f4e22ff-adf1-481c-80be-67124df97600",
+            "name": "Under (14.5)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "5667baba-1b44-428f-ba84-dcba8548f216"
         },
         "2f57e993-2d42-4cdb-bf3d-1ec90b932da2": {
             "id": "2f57e993-2d42-4cdb-bf3d-1ec90b932da2",
@@ -1648,13 +1648,6 @@
             "sort_order": 110,
             "market_id": "127a9d3b-a549-4993-bf06-cbda52f7d318"
         },
-        "9e27fc2c-e056-49e2-b07d-f731e75ea75f": {
-            "id": "9e27fc2c-e056-49e2-b07d-f731e75ea75f",
-            "name": "Over (15.5)",
-            "visible": true,
-            "sort_order": 10,
-            "market_id": "550c2200-7c9d-4b08-883f-ef1f51a3f4ed"
-        },
         "9e29b373-28c6-437a-bb6a-3dcbd24938e9": {
             "id": "9e29b373-28c6-437a-bb6a-3dcbd24938e9",
             "name": "Yes",
@@ -1799,6 +1792,13 @@
             "visible": true,
             "sort_order": 10,
             "market_id": "fcacf1d7-ad7d-47f5-a4af-c13f8bb41264"
+        },
+        "a8233557-a92a-441f-94ff-149742125985": {
+            "id": "a8233557-a92a-441f-94ff-149742125985",
+            "name": "Over (14.5)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "5667baba-1b44-428f-ba84-dcba8548f216"
         },
         "a898b956-236c-4ba1-a2d0-a15f6ae1c56e": {
             "id": "a898b956-236c-4ba1-a2d0-a15f6ae1c56e",
@@ -2985,7 +2985,7 @@
                         "2a8d5838-8461-423f-bf9e-b7979b5f0b31",
                         "21cac73a-74c0-4c15-838e-f34fdd4e0c79",
                         "d37d82bf-a5e1-4c37-a052-7d99881ad608",
-                        "550c2200-7c9d-4b08-883f-ef1f51a3f4ed"
+                        "5667baba-1b44-428f-ba84-dcba8548f216"
                     ]
                 },
                 {
@@ -3181,7 +3181,7 @@
                 "2a8d5838-8461-423f-bf9e-b7979b5f0b31",
                 "21cac73a-74c0-4c15-838e-f34fdd4e0c79",
                 "d37d82bf-a5e1-4c37-a052-7d99881ad608",
-                "550c2200-7c9d-4b08-883f-ef1f51a3f4ed",
+                "5667baba-1b44-428f-ba84-dcba8548f216",
                 "8b452f54-b9c8-45f8-b4fa-d65b8dad5e29",
                 "34d4871c-c41a-4168-9e36-649db58ec046",
                 "09bc9cd2-db0a-4588-b0e4-c26f7de8e3dc",
@@ -4354,26 +4354,6 @@
             ],
             "num_winners": 1
         },
-        "550c2200-7c9d-4b08-883f-ef1f51a3f4ed": {
-            "id": "550c2200-7c9d-4b08-883f-ef1f51a3f4ed",
-            "event_id": "618e928b-25f8-45b7-b5f5-1060ef154016",
-            "market_type_id": "e55e53c1-a883-4be1-983f-63b2a24ff75d",
-            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
-            "name": "Player Pitcher Outs O/U - Cal Quantrill (15.5)",
-            "advertised_start": {
-                "seconds": 1749659700
-            },
-            "actual_start": {
-                "seconds": 1749659700
-            },
-            "comments": "Pitcher Outs are all outs recorded while the player is pitching.",
-            "visible": true,
-            "entrant_ids": [
-                "9e27fc2c-e056-49e2-b07d-f731e75ea75f",
-                "2a673abf-bfa5-4002-8d93-35e53696cfbf"
-            ],
-            "num_winners": 1
-        },
         "55183811-a7cd-4082-b4aa-61dc07250213": {
             "id": "55183811-a7cd-4082-b4aa-61dc07250213",
             "event_id": "618e928b-25f8-45b7-b5f5-1060ef154016",
@@ -4390,6 +4370,26 @@
             "entrant_ids": [
                 "15b40264-1a11-4dd7-834d-edf0df6f7241",
                 "f4149033-bf4a-404b-bc43-84d462fcba6b"
+            ],
+            "num_winners": 1
+        },
+        "5667baba-1b44-428f-ba84-dcba8548f216": {
+            "id": "5667baba-1b44-428f-ba84-dcba8548f216",
+            "event_id": "618e928b-25f8-45b7-b5f5-1060ef154016",
+            "market_type_id": "e55e53c1-a883-4be1-983f-63b2a24ff75d",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Player Pitcher Outs O/U - Cal Quantrill (14.5)",
+            "advertised_start": {
+                "seconds": 1749659700
+            },
+            "actual_start": {
+                "seconds": 1749659700
+            },
+            "comments": "Pitcher Outs are all outs recorded while the player is pitching.",
+            "visible": true,
+            "entrant_ids": [
+                "a8233557-a92a-441f-94ff-149742125985",
+                "2f4e22ff-adf1-481c-80be-67124df97600"
             ],
             "num_winners": 1
         },
@@ -6235,8 +6235,8 @@
         "53cd8a87-5829-411a-bd0e-0c242f0f1c71": true,
         "53ffbcf3-2b74-4740-91e9-14200c6c9a34": false,
         "54a2b84d-245c-4945-8a07-6029a9478b85": false,
-        "550c2200-7c9d-4b08-883f-ef1f51a3f4ed": false,
         "55183811-a7cd-4082-b4aa-61dc07250213": false,
+        "5667baba-1b44-428f-ba84-dcba8548f216": false,
         "56efe609-a76c-4a29-8e25-6b14b37b733d": true,
         "5ac0edf6-3814-4c07-b503-fbba642b762d": false,
         "64c1f888-979f-4f1a-b42a-d524162b07f2": false,
@@ -6424,8 +6424,8 @@
         },
         "11af6f7d-189c-41a9-b066-9596790962da:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 83,
-                "denominator": 100
+                "numerator": 41,
+                "denominator": 50
             }
         },
         "124c9403-7971-41a5-8018-f589c5073cc4:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -6632,12 +6632,6 @@
                 "denominator": 50
             }
         },
-        "2a673abf-bfa5-4002-8d93-35e53696cfbf:940b8704-e497-4a76-b390-00918ff7d282:": {
-            "odds": {
-                "numerator": 13,
-                "denominator": 25
-            }
-        },
         "2ad6f123-eb60-4d27-b969-c12222af6883:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
                 "numerator": 3,
@@ -6702,6 +6696,12 @@
             "odds": {
                 "numerator": 3,
                 "denominator": 4
+            }
+        },
+        "2f4e22ff-adf1-481c-80be-67124df97600:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 7,
+                "denominator": 5
             }
         },
         "2f57e993-2d42-4cdb-bf3d-1ec90b932da2:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -7120,8 +7120,8 @@
         },
         "5d52c53b-1085-45c9-a4c5-90fcd768e220:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 87,
-                "denominator": 100
+                "numerator": 22,
+                "denominator": 25
             }
         },
         "5e329abb-2d12-403f-bd53-5071a50f5caf:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -7658,12 +7658,6 @@
                 "denominator": 50
             }
         },
-        "9e27fc2c-e056-49e2-b07d-f731e75ea75f:940b8704-e497-4a76-b390-00918ff7d282:": {
-            "odds": {
-                "numerator": 7,
-                "denominator": 5
-            }
-        },
         "9e29b373-28c6-437a-bb6a-3dcbd24938e9:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
                 "numerator": 31,
@@ -7776,6 +7770,12 @@
             "odds": {
                 "numerator": 77,
                 "denominator": 100
+            }
+        },
+        "a8233557-a92a-441f-94ff-149742125985:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 13,
+                "denominator": 25
             }
         },
         "a898b956-236c-4ba1-a2d0-a15f6ae1c56e:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -8200,8 +8200,8 @@
         },
         "d0ee2b75-a640-49c2-b9da-0bb87843347f:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 7,
-                "denominator": 5
+                "numerator": 5,
+                "denominator": 4
             }
         },
         "d222bff2-d9a4-4e0a-8e85-e58939b58e1b:940b8704-e497-4a76-b390-00918ff7d282:": {
@@ -8566,8 +8566,8 @@
         },
         "f6c54da4-a62f-48b5-aed0-ff993fb25b51:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 57,
-                "denominator": 100
+                "numerator": 16,
+                "denominator": 25
             }
         },
         "f6e00f8a-df34-4c5a-956c-81581ddc8528:940b8704-e497-4a76-b390-00918ff7d282:": {
