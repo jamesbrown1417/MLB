@@ -1,79 +1,993 @@
 {
     "entrants": {
-        "1656a2c8-6819-4031-8e66-4fd4255993ba": {
-            "id": "1656a2c8-6819-4031-8e66-4fd4255993ba",
-            "name": "Under (8.5)",
+        "01f59ccd-da27-4be0-a22c-51da19606469": {
+            "id": "01f59ccd-da27-4be0-a22c-51da19606469",
+            "name": "Mookie Betts (Los Angeles Dodgers)",
+            "home_away": "HOME",
             "visible": true,
-            "sort_order": 20,
-            "market_id": "1093a526-91a9-40c9-98c2-08ef2cfb032b"
+            "sort_order": 60,
+            "market_id": "b27ff8d6-5623-4217-bd34-f89ddd66c12f"
         },
-        "242bb302-1b15-4aac-918e-d457860325eb": {
-            "id": "242bb302-1b15-4aac-918e-d457860325eb",
-            "name": "Pittsburgh Pirates (+1.5)",
+        "03754024-8a42-4fbe-b824-07df8707125c": {
+            "id": "03754024-8a42-4fbe-b824-07df8707125c",
+            "name": "Mookie Betts (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 30,
+            "market_id": "39593c18-942d-4ef7-a495-1cc41ac4bafa"
+        },
+        "039aa557-2cb9-48f9-a89d-ab0df3bb7a95": {
+            "id": "039aa557-2cb9-48f9-a89d-ab0df3bb7a95",
+            "name": "Max Muncy (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 60,
+            "market_id": "a112a6e2-6d26-420a-b882-ee5bdefddd97"
+        },
+        "0579b448-28b1-451c-950e-dd4655cb3589": {
+            "id": "0579b448-28b1-451c-950e-dd4655cb3589",
+            "name": "Will Smith (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 70,
+            "market_id": "39593c18-942d-4ef7-a495-1cc41ac4bafa"
+        },
+        "05b1ba3a-a204-42c0-91a7-d24d8c4da604": {
+            "id": "05b1ba3a-a204-42c0-91a7-d24d8c4da604",
+            "name": "Max Muncy (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 60,
+            "market_id": "ac8280ed-95f7-4179-9d5f-7c39aa6382e9"
+        },
+        "0a328e16-35d2-4c8a-a2cf-b380382dd922": {
+            "id": "0a328e16-35d2-4c8a-a2cf-b380382dd922",
+            "name": "Martin Maldonado (San Diego Padres)",
             "home_away": "AWAY",
             "visible": true,
-            "sort_order": 20,
-            "market_id": "d64972fc-9f7d-45fb-9206-e2c3430d879a"
+            "sort_order": 180,
+            "market_id": "39593c18-942d-4ef7-a495-1cc41ac4bafa"
         },
-        "55056a22-eafd-40ec-b2df-0be9b49e228e": {
-            "id": "55056a22-eafd-40ec-b2df-0be9b49e228e",
-            "name": "Over (8.5)",
+        "0f1d140c-a764-4812-86b3-1a099a2020e5": {
+            "id": "0f1d140c-a764-4812-86b3-1a099a2020e5",
+            "name": "Freddie Freeman (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 110,
+            "market_id": "b27ff8d6-5623-4217-bd34-f89ddd66c12f"
+        },
+        "1107ffcb-3725-47a1-8703-f7202e877490": {
+            "id": "1107ffcb-3725-47a1-8703-f7202e877490",
+            "name": "Fernando Tatis (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 40,
+            "market_id": "b27ff8d6-5623-4217-bd34-f89ddd66c12f"
+        },
+        "11198bdb-1301-4a1e-a0eb-96b914d9dae1": {
+            "id": "11198bdb-1301-4a1e-a0eb-96b914d9dae1",
+            "name": "Michael Conforto (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 90,
+            "market_id": "b27ff8d6-5623-4217-bd34-f89ddd66c12f"
+        },
+        "1385d452-b1d4-4e13-80d8-17ed78721cf4": {
+            "id": "1385d452-b1d4-4e13-80d8-17ed78721cf4",
+            "name": "Fernando Tatis (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 30,
+            "market_id": "ac8280ed-95f7-4179-9d5f-7c39aa6382e9"
+        },
+        "174ef8c4-4534-422b-add6-d0f2d76f9254": {
+            "id": "174ef8c4-4534-422b-add6-d0f2d76f9254",
+            "name": "Luis Campusano (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 150,
+            "market_id": "b27ff8d6-5623-4217-bd34-f89ddd66c12f"
+        },
+        "17b3663b-a32e-4d70-b9d9-0f99384cb857": {
+            "id": "17b3663b-a32e-4d70-b9d9-0f99384cb857",
+            "name": "Fernando Tatis (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 90,
+            "market_id": "2b1d7405-8da1-477d-b4c7-34e2599dfe78"
+        },
+        "190ce551-c67c-4a01-ad1b-a831b1cb1d80": {
+            "id": "190ce551-c67c-4a01-ad1b-a831b1cb1d80",
+            "name": "Andy Pages (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 80,
+            "market_id": "39593c18-942d-4ef7-a495-1cc41ac4bafa"
+        },
+        "19b9ca50-5af2-4990-98ba-238e1bc5d72d": {
+            "id": "19b9ca50-5af2-4990-98ba-238e1bc5d72d",
+            "name": "Luis Arraez (San Diego Padres)",
+            "home_away": "AWAY",
             "visible": true,
             "sort_order": 10,
-            "market_id": "1093a526-91a9-40c9-98c2-08ef2cfb032b"
+            "market_id": "ac8280ed-95f7-4179-9d5f-7c39aa6382e9"
         },
-        "73f16be8-882a-4f06-b614-90f0f4e6fe0a": {
-            "id": "73f16be8-882a-4f06-b614-90f0f4e6fe0a",
-            "name": "Pittsburgh Pirates",
-            "home_away": "AWAY",
+        "1ad30ba4-300c-4c1c-a7e0-7b0d2e0aae04": {
+            "id": "1ad30ba4-300c-4c1c-a7e0-7b0d2e0aae04",
+            "name": "Tommy Edman (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 120,
+            "market_id": "ac8280ed-95f7-4179-9d5f-7c39aa6382e9"
+        },
+        "2426a2e9-6475-46f0-a2e6-ca67521c0db7": {
+            "id": "2426a2e9-6475-46f0-a2e6-ca67521c0db7",
+            "name": "Under",
             "visible": true,
             "sort_order": 20,
-            "market_id": "2a01a64b-e949-4b06-94b9-0045cc518ca6"
+            "market_id": "ac8a90af-3ad5-4d47-9321-55136fad8693"
         },
-        "74c6b4c6-a5c2-435c-a590-5535089c0436": {
-            "id": "74c6b4c6-a5c2-435c-a590-5535089c0436",
-            "name": "Detroit Tigers",
+        "27040693-4907-4dff-bbde-53932b8e9963": {
+            "id": "27040693-4907-4dff-bbde-53932b8e9963",
+            "name": "Michael Conforto (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 130,
+            "market_id": "39593c18-942d-4ef7-a495-1cc41ac4bafa"
+        },
+        "28456c81-e3ab-4d30-a37d-4741da3825bb": {
+            "id": "28456c81-e3ab-4d30-a37d-4741da3825bb",
+            "name": "Michael Conforto (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 90,
+            "market_id": "67f4c1ea-261d-4f6a-b704-10345b193a49"
+        },
+        "289e1ea4-7b6e-4e3b-8802-38f5538d50d4": {
+            "id": "289e1ea4-7b6e-4e3b-8802-38f5538d50d4",
+            "name": "Xander Bogaerts (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 140,
+            "market_id": "39593c18-942d-4ef7-a495-1cc41ac4bafa"
+        },
+        "2a75626c-d305-46a8-8b0c-cb693a959166": {
+            "id": "2a75626c-d305-46a8-8b0c-cb693a959166",
+            "name": "Randy Vasquez 2+ Strikeouts",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "fd08d180-4fe0-4457-a14b-12e64e180c24"
+        },
+        "2a7a6a1d-8a23-497a-b3bb-8fb11d83e6a0": {
+            "id": "2a7a6a1d-8a23-497a-b3bb-8fb11d83e6a0",
+            "name": "Luis Campusano (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 170,
+            "market_id": "ac8280ed-95f7-4179-9d5f-7c39aa6382e9"
+        },
+        "2b0d8703-d49d-46f5-a41a-f8b943cbb00d": {
+            "id": "2b0d8703-d49d-46f5-a41a-f8b943cbb00d",
+            "name": "Teoscar Hernandez (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 30,
+            "market_id": "67f4c1ea-261d-4f6a-b704-10345b193a49"
+        },
+        "2fdbf44e-31e0-4810-94c6-5bf6bc4e9c98": {
+            "id": "2fdbf44e-31e0-4810-94c6-5bf6bc4e9c98",
+            "name": "Luis Campusano (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 140,
+            "market_id": "2b1d7405-8da1-477d-b4c7-34e2599dfe78"
+        },
+        "3406ba1a-bbce-461e-8a09-76b413f89906": {
+            "id": "3406ba1a-bbce-461e-8a09-76b413f89906",
+            "name": "Teoscar Hernandez (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 120,
+            "market_id": "39593c18-942d-4ef7-a495-1cc41ac4bafa"
+        },
+        "3442f4d5-48fb-40a5-be2e-85e3a2b84e22": {
+            "id": "3442f4d5-48fb-40a5-be2e-85e3a2b84e22",
+            "name": "Andy Pages (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 80,
+            "market_id": "67f4c1ea-261d-4f6a-b704-10345b193a49"
+        },
+        "36266315-44c3-499f-8522-ed710bfcd588": {
+            "id": "36266315-44c3-499f-8522-ed710bfcd588",
+            "name": "Andy Pages (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 90,
+            "market_id": "866713a1-05f9-4272-90ef-dc4ff0ff81c9"
+        },
+        "367644c1-df2c-4c10-93f6-bb3e0f451181": {
+            "id": "367644c1-df2c-4c10-93f6-bb3e0f451181",
+            "name": "Gavin Sheets (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 130,
+            "market_id": "b27ff8d6-5623-4217-bd34-f89ddd66c12f"
+        },
+        "371b90d5-234d-4c1e-8d30-da7323e2d320": {
+            "id": "371b90d5-234d-4c1e-8d30-da7323e2d320",
+            "name": "Brandon Lockridge (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 160,
+            "market_id": "ac8280ed-95f7-4179-9d5f-7c39aa6382e9"
+        },
+        "3aa82eb0-02bd-4d41-b335-e7918af92d60": {
+            "id": "3aa82eb0-02bd-4d41-b335-e7918af92d60",
+            "name": "Will Smith (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 100,
+            "market_id": "b27ff8d6-5623-4217-bd34-f89ddd66c12f"
+        },
+        "3b01044d-3443-4036-9182-c46fea6cfb05": {
+            "id": "3b01044d-3443-4036-9182-c46fea6cfb05",
+            "name": "Luis Arraez (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "866713a1-05f9-4272-90ef-dc4ff0ff81c9"
+        },
+        "3dc4f032-5b96-4c91-a2f2-e2d6ed5eb4c7": {
+            "id": "3dc4f032-5b96-4c91-a2f2-e2d6ed5eb4c7",
+            "name": "Max Muncy (Los Angeles Dodgers)",
             "home_away": "HOME",
             "visible": true,
             "sort_order": 10,
-            "market_id": "2a01a64b-e949-4b06-94b9-0045cc518ca6"
+            "market_id": "2b1d7405-8da1-477d-b4c7-34e2599dfe78"
         },
-        "b23f9360-2877-4e78-ab70-a6d5ad50d8de": {
-            "id": "b23f9360-2877-4e78-ab70-a6d5ad50d8de",
-            "name": "Detroit Tigers (-1.5)",
+        "3eeb327d-2c99-439e-93d5-21e2099d4daa": {
+            "id": "3eeb327d-2c99-439e-93d5-21e2099d4daa",
+            "name": "Mookie Betts (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 50,
+            "market_id": "2b1d7405-8da1-477d-b4c7-34e2599dfe78"
+        },
+        "3f77e3d0-8ff8-4b90-90ff-46749fde5ed4": {
+            "id": "3f77e3d0-8ff8-4b90-90ff-46749fde5ed4",
+            "name": "Gavin Sheets (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 170,
+            "market_id": "39593c18-942d-4ef7-a495-1cc41ac4bafa"
+        },
+        "4061bfc9-5ffa-419e-af6f-4fbd762fec58": {
+            "id": "4061bfc9-5ffa-419e-af6f-4fbd762fec58",
+            "name": "Michael Conforto (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 150,
+            "market_id": "866713a1-05f9-4272-90ef-dc4ff0ff81c9"
+        },
+        "408f09c7-2be2-4a7b-8076-95711ffc947f": {
+            "id": "408f09c7-2be2-4a7b-8076-95711ffc947f",
+            "name": "Teoscar Hernandez (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 100,
+            "market_id": "a112a6e2-6d26-420a-b882-ee5bdefddd97"
+        },
+        "44f63082-b4f7-4d65-ac0b-98740aa6c610": {
+            "id": "44f63082-b4f7-4d65-ac0b-98740aa6c610",
+            "name": "Over (9.5)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "53c61914-ceb2-4d2e-8007-0798696fcb08"
+        },
+        "4512aad7-0db6-424f-aba4-6737baaed0b4": {
+            "id": "4512aad7-0db6-424f-aba4-6737baaed0b4",
+            "name": "Xander Bogaerts (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 130,
+            "market_id": "866713a1-05f9-4272-90ef-dc4ff0ff81c9"
+        },
+        "45fc73f3-814b-4746-b6a5-6edc6bee2e4c": {
+            "id": "45fc73f3-814b-4746-b6a5-6edc6bee2e4c",
+            "name": "Andy Pages (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 90,
+            "market_id": "ac8280ed-95f7-4179-9d5f-7c39aa6382e9"
+        },
+        "477fff35-8176-4fa6-ac71-1910dcf1d08e": {
+            "id": "477fff35-8176-4fa6-ac71-1910dcf1d08e",
+            "name": "Andy Pages (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 80,
+            "market_id": "a112a6e2-6d26-420a-b882-ee5bdefddd97"
+        },
+        "4c970bdc-b584-40cb-bce1-08cb26bd99d1": {
+            "id": "4c970bdc-b584-40cb-bce1-08cb26bd99d1",
+            "name": "Fernando Tatis (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "39593c18-942d-4ef7-a495-1cc41ac4bafa"
+        },
+        "4e036c1f-633a-47f3-a716-1475959c6d91": {
+            "id": "4e036c1f-633a-47f3-a716-1475959c6d91",
+            "name": "Shohei Ohtani (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "ac8280ed-95f7-4179-9d5f-7c39aa6382e9"
+        },
+        "4f3e64ea-d34a-4ccf-9806-2ca24081da34": {
+            "id": "4f3e64ea-d34a-4ccf-9806-2ca24081da34",
+            "name": "Mookie Betts (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 60,
+            "market_id": "67f4c1ea-261d-4f6a-b704-10345b193a49"
+        },
+        "4f788d8c-24f5-4a28-b62e-4ec38b1f5124": {
+            "id": "4f788d8c-24f5-4a28-b62e-4ec38b1f5124",
+            "name": "Gavin Sheets (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 110,
+            "market_id": "ac8280ed-95f7-4179-9d5f-7c39aa6382e9"
+        },
+        "50dd9b12-7585-4914-93fd-883d732308ee": {
+            "id": "50dd9b12-7585-4914-93fd-883d732308ee",
+            "name": "Will Smith (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 60,
+            "market_id": "2b1d7405-8da1-477d-b4c7-34e2599dfe78"
+        },
+        "58f5d4b9-1a16-4f8f-be0e-db3a9f2c4fbe": {
+            "id": "58f5d4b9-1a16-4f8f-be0e-db3a9f2c4fbe",
+            "name": "Andy Pages (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 30,
+            "market_id": "2b1d7405-8da1-477d-b4c7-34e2599dfe78"
+        },
+        "5ba302b9-8ecc-4329-a237-79537dfce8ed": {
+            "id": "5ba302b9-8ecc-4329-a237-79537dfce8ed",
+            "name": "Teoscar Hernandez (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 40,
+            "market_id": "2b1d7405-8da1-477d-b4c7-34e2599dfe78"
+        },
+        "5d30f7cb-2af4-424f-8357-f4e9d2d0c250": {
+            "id": "5d30f7cb-2af4-424f-8357-f4e9d2d0c250",
+            "name": "Over",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "ac8a90af-3ad5-4d47-9321-55136fad8693"
+        },
+        "62ee2846-8f50-408b-8fdd-7079716b9cba": {
+            "id": "62ee2846-8f50-408b-8fdd-7079716b9cba",
+            "name": "Manny Machado (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "2b1d7405-8da1-477d-b4c7-34e2599dfe78"
+        },
+        "63d2dc50-a41a-46ce-bbb7-78b741e78bde": {
+            "id": "63d2dc50-a41a-46ce-bbb7-78b741e78bde",
+            "name": "Xander Bogaerts (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 160,
+            "market_id": "2b1d7405-8da1-477d-b4c7-34e2599dfe78"
+        },
+        "67637ca0-a6f0-4c97-b42b-797b4d65c3fc": {
+            "id": "67637ca0-a6f0-4c97-b42b-797b4d65c3fc",
+            "name": "Will Smith (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 100,
+            "market_id": "67f4c1ea-261d-4f6a-b704-10345b193a49"
+        },
+        "681c8d50-f1e6-43bb-947d-0d06416b5638": {
+            "id": "681c8d50-f1e6-43bb-947d-0d06416b5638",
+            "name": "Freddie Freeman (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 40,
+            "market_id": "866713a1-05f9-4272-90ef-dc4ff0ff81c9"
+        },
+        "6a569d02-2287-4ee7-b3d8-f48866e7eeee": {
+            "id": "6a569d02-2287-4ee7-b3d8-f48866e7eeee",
+            "name": "Jake Cronenworth (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 110,
+            "market_id": "2b1d7405-8da1-477d-b4c7-34e2599dfe78"
+        },
+        "6ad6f972-686a-441b-92c1-98900e6fb076": {
+            "id": "6ad6f972-686a-441b-92c1-98900e6fb076",
+            "name": "Shohei Ohtani (Los Angeles Dodgers)",
             "home_away": "HOME",
             "visible": true,
             "sort_order": 10,
-            "market_id": "d64972fc-9f7d-45fb-9206-e2c3430d879a"
+            "market_id": "b27ff8d6-5623-4217-bd34-f89ddd66c12f"
+        },
+        "6d7ad29c-37fa-4dce-8c40-54277570606f": {
+            "id": "6d7ad29c-37fa-4dce-8c40-54277570606f",
+            "name": "Mookie Betts (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 60,
+            "market_id": "866713a1-05f9-4272-90ef-dc4ff0ff81c9"
+        },
+        "6e72a105-aa59-4f32-b113-2fc50f107c99": {
+            "id": "6e72a105-aa59-4f32-b113-2fc50f107c99",
+            "name": "Mookie Betts (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 70,
+            "market_id": "ac8280ed-95f7-4179-9d5f-7c39aa6382e9"
+        },
+        "72eb7556-f334-4e3c-a9b8-0bc0b731ba76": {
+            "id": "72eb7556-f334-4e3c-a9b8-0bc0b731ba76",
+            "name": "Manny Machado (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 60,
+            "market_id": "39593c18-942d-4ef7-a495-1cc41ac4bafa"
+        },
+        "74364af4-c05f-45a3-bfab-3ff78d90ad61": {
+            "id": "74364af4-c05f-45a3-bfab-3ff78d90ad61",
+            "name": "Fernando Tatis (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 30,
+            "market_id": "866713a1-05f9-4272-90ef-dc4ff0ff81c9"
+        },
+        "74c7b639-ce92-438c-b86b-82c867b31c5e": {
+            "id": "74c7b639-ce92-438c-b86b-82c867b31c5e",
+            "name": "Teoscar Hernandez (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 30,
+            "market_id": "b27ff8d6-5623-4217-bd34-f89ddd66c12f"
+        },
+        "79e09c67-e8f8-42c9-ad2f-61fcf6bf1a2d": {
+            "id": "79e09c67-e8f8-42c9-ad2f-61fcf6bf1a2d",
+            "name": "Los Angeles Dodgers",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "c8d33f40-8551-4a64-a9c5-1068553bfda0"
+        },
+        "7b09e692-13d2-4a01-b821-7914096e6fbd": {
+            "id": "7b09e692-13d2-4a01-b821-7914096e6fbd",
+            "name": "Xander Bogaerts (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 40,
+            "market_id": "a112a6e2-6d26-420a-b882-ee5bdefddd97"
+        },
+        "7b24d820-f16a-4676-b87d-b13dc24471fc": {
+            "id": "7b24d820-f16a-4676-b87d-b13dc24471fc",
+            "name": "Gavin Sheets (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 130,
+            "market_id": "2b1d7405-8da1-477d-b4c7-34e2599dfe78"
+        },
+        "811128be-3c42-44f0-84b3-af815a648a9f": {
+            "id": "811128be-3c42-44f0-84b3-af815a648a9f",
+            "name": "Fernando Tatis (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 40,
+            "market_id": "67f4c1ea-261d-4f6a-b704-10345b193a49"
+        },
+        "81deaa88-fa98-4d48-b502-511bfe62b5d0": {
+            "id": "81deaa88-fa98-4d48-b502-511bfe62b5d0",
+            "name": "Tommy Edman (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 80,
+            "market_id": "2b1d7405-8da1-477d-b4c7-34e2599dfe78"
+        },
+        "8383f2c8-ebb0-4aba-a3ee-2e0e722e322a": {
+            "id": "8383f2c8-ebb0-4aba-a3ee-2e0e722e322a",
+            "name": "Martin Maldonado (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 120,
+            "market_id": "b27ff8d6-5623-4217-bd34-f89ddd66c12f"
+        },
+        "84800ee1-215d-47dc-8ede-3eeb0cfb6ca5": {
+            "id": "84800ee1-215d-47dc-8ede-3eeb0cfb6ca5",
+            "name": "Under (9.5)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "53c61914-ceb2-4d2e-8007-0798696fcb08"
+        },
+        "8496109c-a5c4-4609-99e7-2c65b0431181": {
+            "id": "8496109c-a5c4-4609-99e7-2c65b0431181",
+            "name": "Shohei Ohtani (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "67f4c1ea-261d-4f6a-b704-10345b193a49"
+        },
+        "85bae06f-cde3-40e2-bb5f-89f7c020196b": {
+            "id": "85bae06f-cde3-40e2-bb5f-89f7c020196b",
+            "name": "Jake Cronenworth (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 140,
+            "market_id": "ac8280ed-95f7-4179-9d5f-7c39aa6382e9"
+        },
+        "86655c52-9ef0-4c48-bc70-ba585b1f3955": {
+            "id": "86655c52-9ef0-4c48-bc70-ba585b1f3955",
+            "name": "Michael Conforto (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 120,
+            "market_id": "2b1d7405-8da1-477d-b4c7-34e2599dfe78"
+        },
+        "874fb80a-f8b6-44f7-b94c-ba9291a003d8": {
+            "id": "874fb80a-f8b6-44f7-b94c-ba9291a003d8",
+            "name": "Shohei Ohtani (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 100,
+            "market_id": "2b1d7405-8da1-477d-b4c7-34e2599dfe78"
+        },
+        "8e04abce-53a5-4f02-8771-2ed5d183d935": {
+            "id": "8e04abce-53a5-4f02-8771-2ed5d183d935",
+            "name": "Shohei Ohtani (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "866713a1-05f9-4272-90ef-dc4ff0ff81c9"
+        },
+        "933ba1c8-dc93-496c-942b-d39d528c0084": {
+            "id": "933ba1c8-dc93-496c-942b-d39d528c0084",
+            "name": "Will Smith (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 100,
+            "market_id": "ac8280ed-95f7-4179-9d5f-7c39aa6382e9"
+        },
+        "94dba5f7-688f-4ef3-97dd-072eb916fc25": {
+            "id": "94dba5f7-688f-4ef3-97dd-072eb916fc25",
+            "name": "Shohei Ohtani (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 30,
+            "market_id": "a112a6e2-6d26-420a-b882-ee5bdefddd97"
+        },
+        "9763827d-90ac-425b-a212-08a7157e5076": {
+            "id": "9763827d-90ac-425b-a212-08a7157e5076",
+            "name": "San Diego Padres",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "c8d33f40-8551-4a64-a9c5-1068553bfda0"
+        },
+        "97e14b26-d4e5-46df-8586-e6030fdca7f7": {
+            "id": "97e14b26-d4e5-46df-8586-e6030fdca7f7",
+            "name": "Michael Conforto (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 150,
+            "market_id": "ac8280ed-95f7-4179-9d5f-7c39aa6382e9"
+        },
+        "9a1408a4-9428-48d7-9ee2-806c3af64c1d": {
+            "id": "9a1408a4-9428-48d7-9ee2-806c3af64c1d",
+            "name": "Freddie Freeman (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 40,
+            "market_id": "ac8280ed-95f7-4179-9d5f-7c39aa6382e9"
+        },
+        "9d5459d0-4164-4cc3-ab05-02dd56c744d3": {
+            "id": "9d5459d0-4164-4cc3-ab05-02dd56c744d3",
+            "name": "Will Smith (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 100,
+            "market_id": "866713a1-05f9-4272-90ef-dc4ff0ff81c9"
+        },
+        "9f9da23d-5024-4e2d-bc1e-d281b7fa9e84": {
+            "id": "9f9da23d-5024-4e2d-bc1e-d281b7fa9e84",
+            "name": "Brandon Lockridge (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "a112a6e2-6d26-420a-b882-ee5bdefddd97"
+        },
+        "9fd79caf-e8a0-4aae-a295-7393216e1290": {
+            "id": "9fd79caf-e8a0-4aae-a295-7393216e1290",
+            "name": "Max Muncy (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 70,
+            "market_id": "866713a1-05f9-4272-90ef-dc4ff0ff81c9"
+        },
+        "a42866e9-026c-45cb-8f13-585c47dc2daf": {
+            "id": "a42866e9-026c-45cb-8f13-585c47dc2daf",
+            "name": "Randy Vasquez 5+ Strikeouts",
+            "visible": true,
+            "sort_order": 40,
+            "market_id": "fd08d180-4fe0-4457-a14b-12e64e180c24"
+        },
+        "a6922149-5232-452f-8b82-054357389c9f": {
+            "id": "a6922149-5232-452f-8b82-054357389c9f",
+            "name": "Xander Bogaerts (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 160,
+            "market_id": "b27ff8d6-5623-4217-bd34-f89ddd66c12f"
+        },
+        "aa6e521a-62b6-4929-9a99-db4d6a41bd85": {
+            "id": "aa6e521a-62b6-4929-9a99-db4d6a41bd85",
+            "name": "Tommy Edman (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 110,
+            "market_id": "866713a1-05f9-4272-90ef-dc4ff0ff81c9"
+        },
+        "ab40fe67-72f5-43d4-a4e0-5ba5229eb83d": {
+            "id": "ab40fe67-72f5-43d4-a4e0-5ba5229eb83d",
+            "name": "Los Angeles Dodgers (-1.5)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "5eac777f-3958-4ebc-ab94-412d8a9926be"
+        },
+        "ae29e490-5c9f-47a1-ac8f-a25def2b9cdb": {
+            "id": "ae29e490-5c9f-47a1-ac8f-a25def2b9cdb",
+            "name": "Brandon Lockridge (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 150,
+            "market_id": "39593c18-942d-4ef7-a495-1cc41ac4bafa"
+        },
+        "aecafa9a-888a-4888-bcce-c557ac25ec29": {
+            "id": "aecafa9a-888a-4888-bcce-c557ac25ec29",
+            "name": "Teoscar Hernandez (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 80,
+            "market_id": "ac8280ed-95f7-4179-9d5f-7c39aa6382e9"
+        },
+        "b164db64-6c70-40d0-bcfe-3dcdb2b741c9": {
+            "id": "b164db64-6c70-40d0-bcfe-3dcdb2b741c9",
+            "name": "Luis Campusano (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 170,
+            "market_id": "866713a1-05f9-4272-90ef-dc4ff0ff81c9"
+        },
+        "b1fe788d-a8a3-409a-a903-d94674dced39": {
+            "id": "b1fe788d-a8a3-409a-a903-d94674dced39",
+            "name": "Tommy Edman (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 70,
+            "market_id": "67f4c1ea-261d-4f6a-b704-10345b193a49"
+        },
+        "b329e1dd-ead0-4c59-b55c-7f489ade985e": {
+            "id": "b329e1dd-ead0-4c59-b55c-7f489ade985e",
+            "name": "Brandon Lockridge (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 160,
+            "market_id": "866713a1-05f9-4272-90ef-dc4ff0ff81c9"
+        },
+        "b44c8163-dd7b-4acd-a8f9-93d29f806432": {
+            "id": "b44c8163-dd7b-4acd-a8f9-93d29f806432",
+            "name": "Andy Pages (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 80,
+            "market_id": "b27ff8d6-5623-4217-bd34-f89ddd66c12f"
+        },
+        "b4fcb17d-59d2-4e37-914a-7ff1ecc773f7": {
+            "id": "b4fcb17d-59d2-4e37-914a-7ff1ecc773f7",
+            "name": "Tommy Edman (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 70,
+            "market_id": "b27ff8d6-5623-4217-bd34-f89ddd66c12f"
+        },
+        "b629167d-80c3-4145-af55-4cbd7464e84a": {
+            "id": "b629167d-80c3-4145-af55-4cbd7464e84a",
+            "name": "Manny Machado (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 50,
+            "market_id": "b27ff8d6-5623-4217-bd34-f89ddd66c12f"
+        },
+        "b864eafe-5da6-4fa5-b33a-2abea6545e3e": {
+            "id": "b864eafe-5da6-4fa5-b33a-2abea6545e3e",
+            "name": "Max Muncy (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "b27ff8d6-5623-4217-bd34-f89ddd66c12f"
+        },
+        "be72dc75-dca9-4c7e-aa26-9087210bdcb6": {
+            "id": "be72dc75-dca9-4c7e-aa26-9087210bdcb6",
+            "name": "Tommy Edman (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 90,
+            "market_id": "39593c18-942d-4ef7-a495-1cc41ac4bafa"
+        },
+        "c409f8d0-5ab0-41e0-90bd-386c93fe4f27": {
+            "id": "c409f8d0-5ab0-41e0-90bd-386c93fe4f27",
+            "name": "Jake Cronenworth (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 140,
+            "market_id": "866713a1-05f9-4272-90ef-dc4ff0ff81c9"
+        },
+        "c4bf5d64-ae20-4cfd-b51c-b100db15d43e": {
+            "id": "c4bf5d64-ae20-4cfd-b51c-b100db15d43e",
+            "name": "Freddie Freeman (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 70,
+            "market_id": "2b1d7405-8da1-477d-b4c7-34e2599dfe78"
+        },
+        "cc0f1e95-173c-4a97-8a83-5d66a936a24d": {
+            "id": "cc0f1e95-173c-4a97-8a83-5d66a936a24d",
+            "name": "Martin Maldonado (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 180,
+            "market_id": "ac8280ed-95f7-4179-9d5f-7c39aa6382e9"
+        },
+        "cd0f6916-8e27-447f-a076-4e32afcc12a1": {
+            "id": "cd0f6916-8e27-447f-a076-4e32afcc12a1",
+            "name": "Randy Vasquez 4+ Strikeouts",
+            "visible": true,
+            "sort_order": 30,
+            "market_id": "fd08d180-4fe0-4457-a14b-12e64e180c24"
+        },
+        "d6840939-cff2-4239-87e8-da0ca47950e0": {
+            "id": "d6840939-cff2-4239-87e8-da0ca47950e0",
+            "name": "Jake Cronenworth (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 140,
+            "market_id": "b27ff8d6-5623-4217-bd34-f89ddd66c12f"
+        },
+        "daade919-4086-4c91-b1e6-45828682322f": {
+            "id": "daade919-4086-4c91-b1e6-45828682322f",
+            "name": "Freddie Freeman (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 90,
+            "market_id": "a112a6e2-6d26-420a-b882-ee5bdefddd97"
+        },
+        "dc86314a-89a7-460f-9eec-b82e29434fce": {
+            "id": "dc86314a-89a7-460f-9eec-b82e29434fce",
+            "name": "Luis Arraez (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 150,
+            "market_id": "2b1d7405-8da1-477d-b4c7-34e2599dfe78"
+        },
+        "dcd7a415-d14d-4583-aa58-6b745db8e738": {
+            "id": "dcd7a415-d14d-4583-aa58-6b745db8e738",
+            "name": "Shohei Ohtani (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "39593c18-942d-4ef7-a495-1cc41ac4bafa"
+        },
+        "de0af56d-6eca-4b7b-9f57-2dc7829f6a6d": {
+            "id": "de0af56d-6eca-4b7b-9f57-2dc7829f6a6d",
+            "name": "Luis Arraez (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 40,
+            "market_id": "39593c18-942d-4ef7-a495-1cc41ac4bafa"
+        },
+        "df103702-7a52-448c-9f75-48c295376c63": {
+            "id": "df103702-7a52-448c-9f75-48c295376c63",
+            "name": "Manny Machado (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 110,
+            "market_id": "a112a6e2-6d26-420a-b882-ee5bdefddd97"
+        },
+        "dfe86df8-6c1c-45b5-8208-d4f90132db0c": {
+            "id": "dfe86df8-6c1c-45b5-8208-d4f90132db0c",
+            "name": "Luis Campusano (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 160,
+            "market_id": "39593c18-942d-4ef7-a495-1cc41ac4bafa"
+        },
+        "e18ffb00-953a-4068-91be-e2c4c11c07bd": {
+            "id": "e18ffb00-953a-4068-91be-e2c4c11c07bd",
+            "name": "Randy Vasquez 3+ Strikeouts",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "fd08d180-4fe0-4457-a14b-12e64e180c24"
+        },
+        "e4253e79-1ac0-46dc-8778-d9b73a70edf7": {
+            "id": "e4253e79-1ac0-46dc-8778-d9b73a70edf7",
+            "name": "Freddie Freeman (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 50,
+            "market_id": "39593c18-942d-4ef7-a495-1cc41ac4bafa"
+        },
+        "e4431daf-3671-4ec3-9b27-a3a02bb58de6": {
+            "id": "e4431daf-3671-4ec3-9b27-a3a02bb58de6",
+            "name": "Mookie Betts (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 70,
+            "market_id": "a112a6e2-6d26-420a-b882-ee5bdefddd97"
+        },
+        "e73b1c32-828f-47a7-a886-d9144fd08bd0": {
+            "id": "e73b1c32-828f-47a7-a886-d9144fd08bd0",
+            "name": "Manny Machado (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 50,
+            "market_id": "67f4c1ea-261d-4f6a-b704-10345b193a49"
+        },
+        "e83dfa46-1d6d-4ab2-bf1c-5c35e0d285f7": {
+            "id": "e83dfa46-1d6d-4ab2-bf1c-5c35e0d285f7",
+            "name": "Max Muncy (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "67f4c1ea-261d-4f6a-b704-10345b193a49"
+        },
+        "e86cc909-c0b9-4d9d-b248-de66b1c9cf27": {
+            "id": "e86cc909-c0b9-4d9d-b248-de66b1c9cf27",
+            "name": "Tommy Edman (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 50,
+            "market_id": "a112a6e2-6d26-420a-b882-ee5bdefddd97"
+        },
+        "ea304dea-fe58-405e-bfa0-d27e7e2ac57c": {
+            "id": "ea304dea-fe58-405e-bfa0-d27e7e2ac57c",
+            "name": "Manny Machado (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 50,
+            "market_id": "ac8280ed-95f7-4179-9d5f-7c39aa6382e9"
+        },
+        "ee651e45-afd8-4fb5-866f-780738aaa5b4": {
+            "id": "ee651e45-afd8-4fb5-866f-780738aaa5b4",
+            "name": "San Diego Padres (+1.5)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "5eac777f-3958-4ebc-ab94-412d8a9926be"
+        },
+        "f0918c20-8e4c-445a-ac0b-c49e777b4738": {
+            "id": "f0918c20-8e4c-445a-ac0b-c49e777b4738",
+            "name": "Jake Cronenworth (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 100,
+            "market_id": "39593c18-942d-4ef7-a495-1cc41ac4bafa"
+        },
+        "f1e0a6b5-be62-4a78-85a2-19585a939c72": {
+            "id": "f1e0a6b5-be62-4a78-85a2-19585a939c72",
+            "name": "Xander Bogaerts (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 130,
+            "market_id": "ac8280ed-95f7-4179-9d5f-7c39aa6382e9"
+        },
+        "f35a12b0-9b50-4d8c-bccc-a95fdb5cb1f7": {
+            "id": "f35a12b0-9b50-4d8c-bccc-a95fdb5cb1f7",
+            "name": "Gavin Sheets (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 120,
+            "market_id": "866713a1-05f9-4272-90ef-dc4ff0ff81c9"
+        },
+        "f373c532-0db4-4a22-9526-fef9014323d2": {
+            "id": "f373c532-0db4-4a22-9526-fef9014323d2",
+            "name": "Teoscar Hernandez (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 80,
+            "market_id": "866713a1-05f9-4272-90ef-dc4ff0ff81c9"
+        },
+        "f621854b-32bc-4668-a936-70adfcf50df4": {
+            "id": "f621854b-32bc-4668-a936-70adfcf50df4",
+            "name": "Manny Machado (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 50,
+            "market_id": "866713a1-05f9-4272-90ef-dc4ff0ff81c9"
+        },
+        "f79b3b3d-1933-4b9e-b410-1b120a6bd9e5": {
+            "id": "f79b3b3d-1933-4b9e-b410-1b120a6bd9e5",
+            "name": "Luis Arraez (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 120,
+            "market_id": "a112a6e2-6d26-420a-b882-ee5bdefddd97"
+        },
+        "f88c7e7e-273e-487f-b88a-b55e17593931": {
+            "id": "f88c7e7e-273e-487f-b88a-b55e17593931",
+            "name": "Max Muncy (Los Angeles Dodgers)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 110,
+            "market_id": "39593c18-942d-4ef7-a495-1cc41ac4bafa"
+        },
+        "f8b601ac-9f17-4741-b2b4-505aaf41b6ce": {
+            "id": "f8b601ac-9f17-4741-b2b4-505aaf41b6ce",
+            "name": "Martin Maldonado (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 180,
+            "market_id": "866713a1-05f9-4272-90ef-dc4ff0ff81c9"
+        },
+        "fb809afb-5eb0-465d-852a-b4cefa54c568": {
+            "id": "fb809afb-5eb0-465d-852a-b4cefa54c568",
+            "name": "Martin Maldonado (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 170,
+            "market_id": "2b1d7405-8da1-477d-b4c7-34e2599dfe78"
+        },
+        "fbc203de-9144-4209-9b13-718768619d9d": {
+            "id": "fbc203de-9144-4209-9b13-718768619d9d",
+            "name": "Fernando Tatis (San Diego Padres)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "a112a6e2-6d26-420a-b882-ee5bdefddd97"
         }
     },
     "event_participants": {
-        "a159cf1f-a69a-4e6d-98b0-bd56ff6d7399": {
-            "id": "a159cf1f-a69a-4e6d-98b0-bd56ff6d7399",
-            "event_id": "9e73ac22-d6e3-4cc7-976a-3b01dbb54203",
-            "name": "Detroit Tigers",
+        "4442e6ca-230d-43a4-9f4c-9f7586b8d798": {
+            "id": "4442e6ca-230d-43a4-9f4c-9f7586b8d798",
+            "event_id": "9ee097e2-8b4b-425a-9b20-f9fbf43f3842",
+            "name": "Los Angeles Dodgers",
             "home_away": "HOME"
         },
-        "cd786620-bbb0-40e9-9c8a-5dcc3e586599": {
-            "id": "cd786620-bbb0-40e9-9c8a-5dcc3e586599",
-            "event_id": "9e73ac22-d6e3-4cc7-976a-3b01dbb54203",
-            "name": "Pittsburgh Pirates",
+        "bfe730dc-8838-49ca-b532-85405f0a81c8": {
+            "id": "bfe730dc-8838-49ca-b532-85405f0a81c8",
+            "event_id": "9ee097e2-8b4b-425a-9b20-f9fbf43f3842",
+            "name": "San Diego Padres",
             "home_away": "AWAY"
         }
     },
     "events": {
-        "9e73ac22-d6e3-4cc7-976a-3b01dbb54203": {
-            "id": "9e73ac22-d6e3-4cc7-976a-3b01dbb54203",
-            "name": "Detroit Tigers vs Pittsburgh Pirates",
+        "9ee097e2-8b4b-425a-9b20-f9fbf43f3842": {
+            "id": "9ee097e2-8b4b-425a-9b20-f9fbf43f3842",
+            "name": "Los Angeles Dodgers vs San Diego Padres",
             "event_type": {
                 "id": "6bfa0efc-05df-4ae1-9b1e-152365290cfd",
                 "name": "Match"
             },
             "match_status": "BettingOpen",
-            "advertised_start": "2025-06-17T22:40:00Z",
-            "actual_start": "2025-06-17T22:40:00Z",
+            "advertised_start": "2025-06-18T02:10:00Z",
+            "actual_start": "2025-06-18T02:10:00Z",
             "visible": true,
-            "slug": "detroit-tigers-vs-pittsburgh-pirates",
+            "slug": "los-angeles-dodgers-vs-san-diego-padres",
             "competition": {
                 "id": "a5618779-2cb3-4c0a-b8cc-ce2517fbc8d4",
                 "name": "MLB",
@@ -83,46 +997,94 @@
             "competition_id": "a5618779-2cb3-4c0a-b8cc-ce2517fbc8d4",
             "market_type_group_ids": [
                 "95f7457f-bd84-4e9e-b714-c257b90c1031",
+                "07095973-1284-4ba3-bf32-043833800c91",
+                "b88506e2-ec27-4593-a751-61592ecce94a",
                 "f7331bb9-8791-4c1a-9b7b-cf2298c98757"
             ],
             "market_type_group_markets": [
                 {
                     "market_type_group_id": "95f7457f-bd84-4e9e-b714-c257b90c1031",
                     "market_ids": [
-                        "2a01a64b-e949-4b06-94b9-0045cc518ca6",
-                        "d64972fc-9f7d-45fb-9206-e2c3430d879a",
-                        "1093a526-91a9-40c9-98c2-08ef2cfb032b"
+                        "c8d33f40-8551-4a64-a9c5-1068553bfda0",
+                        "5eac777f-3958-4ebc-ab94-412d8a9926be",
+                        "53c61914-ceb2-4d2e-8007-0798696fcb08",
+                        "fd08d180-4fe0-4457-a14b-12e64e180c24",
+                        "b27ff8d6-5623-4217-bd34-f89ddd66c12f",
+                        "ac8280ed-95f7-4179-9d5f-7c39aa6382e9",
+                        "866713a1-05f9-4272-90ef-dc4ff0ff81c9"
+                    ]
+                },
+                {
+                    "market_type_group_id": "07095973-1284-4ba3-bf32-043833800c91",
+                    "market_ids": [
+                        "ac8280ed-95f7-4179-9d5f-7c39aa6382e9",
+                        "866713a1-05f9-4272-90ef-dc4ff0ff81c9",
+                        "b27ff8d6-5623-4217-bd34-f89ddd66c12f",
+                        "67f4c1ea-261d-4f6a-b704-10345b193a49",
+                        "2b1d7405-8da1-477d-b4c7-34e2599dfe78",
+                        "39593c18-942d-4ef7-a495-1cc41ac4bafa",
+                        "a112a6e2-6d26-420a-b882-ee5bdefddd97"
+                    ]
+                },
+                {
+                    "market_type_group_id": "b88506e2-ec27-4593-a751-61592ecce94a",
+                    "market_ids": [
+                        "ac8a90af-3ad5-4d47-9321-55136fad8693",
+                        "fd08d180-4fe0-4457-a14b-12e64e180c24"
                     ]
                 },
                 {
                     "market_type_group_id": "f7331bb9-8791-4c1a-9b7b-cf2298c98757",
                     "market_ids": [
-                        "1093a526-91a9-40c9-98c2-08ef2cfb032b"
+                        "53c61914-ceb2-4d2e-8007-0798696fcb08"
                     ]
                 }
             ],
-            "market_count": 3,
+            "market_count": 12,
             "main_markets": [
-                "2a01a64b-e949-4b06-94b9-0045cc518ca6"
+                "c8d33f40-8551-4a64-a9c5-1068553bfda0"
             ],
             "market_ids": [
-                "2a01a64b-e949-4b06-94b9-0045cc518ca6",
-                "d64972fc-9f7d-45fb-9206-e2c3430d879a",
-                "1093a526-91a9-40c9-98c2-08ef2cfb032b"
+                "c8d33f40-8551-4a64-a9c5-1068553bfda0",
+                "5eac777f-3958-4ebc-ab94-412d8a9926be",
+                "53c61914-ceb2-4d2e-8007-0798696fcb08",
+                "fd08d180-4fe0-4457-a14b-12e64e180c24",
+                "b27ff8d6-5623-4217-bd34-f89ddd66c12f",
+                "ac8280ed-95f7-4179-9d5f-7c39aa6382e9",
+                "866713a1-05f9-4272-90ef-dc4ff0ff81c9",
+                "67f4c1ea-261d-4f6a-b704-10345b193a49",
+                "2b1d7405-8da1-477d-b4c7-34e2599dfe78",
+                "39593c18-942d-4ef7-a495-1cc41ac4bafa",
+                "a112a6e2-6d26-420a-b882-ee5bdefddd97",
+                "ac8a90af-3ad5-4d47-9321-55136fad8693"
             ],
             "category_id": "02721435-4671-4cd0-98f7-15d41ee4103e",
             "participant_ids": [
-                "a159cf1f-a69a-4e6d-98b0-bd56ff6d7399",
-                "cd786620-bbb0-40e9-9c8a-5dcc3e586599"
+                "4442e6ca-230d-43a4-9f4c-9f7586b8d798",
+                "bfe730dc-8838-49ca-b532-85405f0a81c8"
             ]
         }
     },
     "market_type_groups": {
+        "07095973-1284-4ba3-bf32-043833800c91": {
+            "id": "07095973-1284-4ba3-bf32-043833800c91",
+            "category_id": "02721435-4671-4cd0-98f7-15d41ee4103e",
+            "name": "Hitter Markets",
+            "priority": 240,
+            "type": "MARKET_TYPE_GROUP_TYPE_EVENT"
+        },
         "95f7457f-bd84-4e9e-b714-c257b90c1031": {
             "id": "95f7457f-bd84-4e9e-b714-c257b90c1031",
             "category_id": "02721435-4671-4cd0-98f7-15d41ee4103e",
             "name": "Top Markets",
             "priority": 254,
+            "type": "MARKET_TYPE_GROUP_TYPE_EVENT"
+        },
+        "b88506e2-ec27-4593-a751-61592ecce94a": {
+            "id": "b88506e2-ec27-4593-a751-61592ecce94a",
+            "category_id": "02721435-4671-4cd0-98f7-15d41ee4103e",
+            "name": "Pitcher Markets",
+            "priority": 230,
             "type": "MARKET_TYPE_GROUP_TYPE_EVENT"
         },
         "f7331bb9-8791-4c1a-9b7b-cf2298c98757": {
@@ -134,108 +1096,1096 @@
         }
     },
     "markets": {
-        "1093a526-91a9-40c9-98c2-08ef2cfb032b": {
-            "id": "1093a526-91a9-40c9-98c2-08ef2cfb032b",
-            "event_id": "9e73ac22-d6e3-4cc7-976a-3b01dbb54203",
-            "market_type_id": "35fdd584-4bb9-47f7-a589-6291693d4d45",
+        "2b1d7405-8da1-477d-b4c7-34e2599dfe78": {
+            "id": "2b1d7405-8da1-477d-b4c7-34e2599dfe78",
+            "event_id": "9ee097e2-8b4b-425a-9b20-f9fbf43f3842",
+            "market_type_id": "0d78dc48-eed1-4d69-a1bf-950d5861bed4",
             "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
-            "name": "Total (8.5)",
+            "name": "To Have 1+ Runs Batted In",
             "advertised_start": {
-                "seconds": 1750200000
+                "seconds": 1750212600
             },
             "actual_start": {
-                "seconds": 1750200000
+                "seconds": 1750212600
+            },
+            "same_game_multi_available": true,
+            "is_multiple_outcome_market": true,
+            "visible": true,
+            "entrant_ids": [
+                "3dc4f032-5b96-4c91-a2f2-e2d6ed5eb4c7",
+                "62ee2846-8f50-408b-8fdd-7079716b9cba",
+                "58f5d4b9-1a16-4f8f-be0e-db3a9f2c4fbe",
+                "5ba302b9-8ecc-4329-a237-79537dfce8ed",
+                "3eeb327d-2c99-439e-93d5-21e2099d4daa",
+                "50dd9b12-7585-4914-93fd-883d732308ee",
+                "c4bf5d64-ae20-4cfd-b51c-b100db15d43e",
+                "81deaa88-fa98-4d48-b502-511bfe62b5d0",
+                "17b3663b-a32e-4d70-b9d9-0f99384cb857",
+                "874fb80a-f8b6-44f7-b94c-ba9291a003d8",
+                "6a569d02-2287-4ee7-b3d8-f48866e7eeee",
+                "86655c52-9ef0-4c48-bc70-ba585b1f3955",
+                "7b24d820-f16a-4676-b87d-b13dc24471fc",
+                "2fdbf44e-31e0-4810-94c6-5bf6bc4e9c98",
+                "dc86314a-89a7-460f-9eec-b82e29434fce",
+                "63d2dc50-a41a-46ce-bbb7-78b741e78bde",
+                "fb809afb-5eb0-465d-852a-b4cefa54c568"
+            ],
+            "num_winners": 17
+        },
+        "39593c18-942d-4ef7-a495-1cc41ac4bafa": {
+            "id": "39593c18-942d-4ef7-a495-1cc41ac4bafa",
+            "event_id": "9ee097e2-8b4b-425a-9b20-f9fbf43f3842",
+            "market_type_id": "c35a8142-ac06-4bfe-847b-3103d66ff347",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "To Score 1+ Runs",
+            "advertised_start": {
+                "seconds": 1750212600
+            },
+            "actual_start": {
+                "seconds": 1750212600
+            },
+            "same_game_multi_available": true,
+            "is_multiple_outcome_market": true,
+            "visible": true,
+            "entrant_ids": [
+                "4c970bdc-b584-40cb-bce1-08cb26bd99d1",
+                "dcd7a415-d14d-4583-aa58-6b745db8e738",
+                "03754024-8a42-4fbe-b824-07df8707125c",
+                "de0af56d-6eca-4b7b-9f57-2dc7829f6a6d",
+                "e4253e79-1ac0-46dc-8778-d9b73a70edf7",
+                "72eb7556-f334-4e3c-a9b8-0bc0b731ba76",
+                "0579b448-28b1-451c-950e-dd4655cb3589",
+                "190ce551-c67c-4a01-ad1b-a831b1cb1d80",
+                "be72dc75-dca9-4c7e-aa26-9087210bdcb6",
+                "f0918c20-8e4c-445a-ac0b-c49e777b4738",
+                "f88c7e7e-273e-487f-b88a-b55e17593931",
+                "3406ba1a-bbce-461e-8a09-76b413f89906",
+                "27040693-4907-4dff-bbde-53932b8e9963",
+                "289e1ea4-7b6e-4e3b-8802-38f5538d50d4",
+                "ae29e490-5c9f-47a1-ac8f-a25def2b9cdb",
+                "dfe86df8-6c1c-45b5-8208-d4f90132db0c",
+                "3f77e3d0-8ff8-4b90-90ff-46749fde5ed4",
+                "0a328e16-35d2-4c8a-a2cf-b380382dd922"
+            ],
+            "num_winners": 18
+        },
+        "53c61914-ceb2-4d2e-8007-0798696fcb08": {
+            "id": "53c61914-ceb2-4d2e-8007-0798696fcb08",
+            "event_id": "9ee097e2-8b4b-425a-9b20-f9fbf43f3842",
+            "market_type_id": "35fdd584-4bb9-47f7-a589-6291693d4d45",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Total (9.5)",
+            "advertised_start": {
+                "seconds": 1750212600
+            },
+            "actual_start": {
+                "seconds": 1750212600
             },
             "same_game_multi_available": true,
             "visible": true,
             "entrant_ids": [
-                "55056a22-eafd-40ec-b2df-0be9b49e228e",
-                "1656a2c8-6819-4031-8e66-4fd4255993ba"
+                "44f63082-b4f7-4d65-ac0b-98740aa6c610",
+                "84800ee1-215d-47dc-8ede-3eeb0cfb6ca5"
             ],
             "num_winners": 1
         },
-        "2a01a64b-e949-4b06-94b9-0045cc518ca6": {
-            "id": "2a01a64b-e949-4b06-94b9-0045cc518ca6",
-            "event_id": "9e73ac22-d6e3-4cc7-976a-3b01dbb54203",
+        "5eac777f-3958-4ebc-ab94-412d8a9926be": {
+            "id": "5eac777f-3958-4ebc-ab94-412d8a9926be",
+            "event_id": "9ee097e2-8b4b-425a-9b20-f9fbf43f3842",
+            "market_type_id": "fefd3091-33c3-4df4-a213-848fdb1f0826",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Line (-1.5)",
+            "advertised_start": {
+                "seconds": 1750212600
+            },
+            "actual_start": {
+                "seconds": 1750212600
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "ab40fe67-72f5-43d4-a4e0-5ba5229eb83d",
+                "ee651e45-afd8-4fb5-866f-780738aaa5b4"
+            ],
+            "num_winners": 1
+        },
+        "67f4c1ea-261d-4f6a-b704-10345b193a49": {
+            "id": "67f4c1ea-261d-4f6a-b704-10345b193a49",
+            "event_id": "9ee097e2-8b4b-425a-9b20-f9fbf43f3842",
+            "market_type_id": "ac257864-8883-4b27-9482-0f61b1041df0",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "To Hit 2+ Home Runs",
+            "advertised_start": {
+                "seconds": 1750212600
+            },
+            "actual_start": {
+                "seconds": 1750212600
+            },
+            "same_game_multi_available": true,
+            "is_multiple_outcome_market": true,
+            "visible": true,
+            "entrant_ids": [
+                "8496109c-a5c4-4609-99e7-2c65b0431181",
+                "e83dfa46-1d6d-4ab2-bf1c-5c35e0d285f7",
+                "2b0d8703-d49d-46f5-a41a-f8b943cbb00d",
+                "811128be-3c42-44f0-84b3-af815a648a9f",
+                "e73b1c32-828f-47a7-a886-d9144fd08bd0",
+                "4f3e64ea-d34a-4ccf-9806-2ca24081da34",
+                "b1fe788d-a8a3-409a-a903-d94674dced39",
+                "3442f4d5-48fb-40a5-be2e-85e3a2b84e22",
+                "28456c81-e3ab-4d30-a37d-4741da3825bb",
+                "67637ca0-a6f0-4c97-b42b-797b4d65c3fc"
+            ],
+            "num_winners": 10
+        },
+        "866713a1-05f9-4272-90ef-dc4ff0ff81c9": {
+            "id": "866713a1-05f9-4272-90ef-dc4ff0ff81c9",
+            "event_id": "9ee097e2-8b4b-425a-9b20-f9fbf43f3842",
+            "market_type_id": "7d5f04c5-ebbf-4e30-89fa-7e005ca80f80",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "To Have 2+ Hits",
+            "advertised_start": {
+                "seconds": 1750212600
+            },
+            "actual_start": {
+                "seconds": 1750212600
+            },
+            "same_game_multi_available": true,
+            "is_multiple_outcome_market": true,
+            "visible": true,
+            "entrant_ids": [
+                "3b01044d-3443-4036-9182-c46fea6cfb05",
+                "8e04abce-53a5-4f02-8771-2ed5d183d935",
+                "74364af4-c05f-45a3-bfab-3ff78d90ad61",
+                "681c8d50-f1e6-43bb-947d-0d06416b5638",
+                "f621854b-32bc-4668-a936-70adfcf50df4",
+                "6d7ad29c-37fa-4dce-8c40-54277570606f",
+                "9fd79caf-e8a0-4aae-a295-7393216e1290",
+                "f373c532-0db4-4a22-9526-fef9014323d2",
+                "36266315-44c3-499f-8522-ed710bfcd588",
+                "9d5459d0-4164-4cc3-ab05-02dd56c744d3",
+                "aa6e521a-62b6-4929-9a99-db4d6a41bd85",
+                "f35a12b0-9b50-4d8c-bccc-a95fdb5cb1f7",
+                "4512aad7-0db6-424f-aba4-6737baaed0b4",
+                "c409f8d0-5ab0-41e0-90bd-386c93fe4f27",
+                "4061bfc9-5ffa-419e-af6f-4fbd762fec58",
+                "b329e1dd-ead0-4c59-b55c-7f489ade985e",
+                "b164db64-6c70-40d0-bcfe-3dcdb2b741c9",
+                "f8b601ac-9f17-4741-b2b4-505aaf41b6ce"
+            ],
+            "num_winners": 18
+        },
+        "a112a6e2-6d26-420a-b882-ee5bdefddd97": {
+            "id": "a112a6e2-6d26-420a-b882-ee5bdefddd97",
+            "event_id": "9ee097e2-8b4b-425a-9b20-f9fbf43f3842",
+            "market_type_id": "c9d7e871-42c2-491a-8b52-c099cbf7a060",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "To Steal 1+ Base",
+            "advertised_start": {
+                "seconds": 1750212600
+            },
+            "actual_start": {
+                "seconds": 1750212600
+            },
+            "same_game_multi_available": true,
+            "is_multiple_outcome_market": true,
+            "visible": true,
+            "entrant_ids": [
+                "9f9da23d-5024-4e2d-bc1e-d281b7fa9e84",
+                "fbc203de-9144-4209-9b13-718768619d9d",
+                "94dba5f7-688f-4ef3-97dd-072eb916fc25",
+                "7b09e692-13d2-4a01-b821-7914096e6fbd",
+                "e86cc909-c0b9-4d9d-b248-de66b1c9cf27",
+                "039aa557-2cb9-48f9-a89d-ab0df3bb7a95",
+                "e4431daf-3671-4ec3-9b27-a3a02bb58de6",
+                "477fff35-8176-4fa6-ac71-1910dcf1d08e",
+                "daade919-4086-4c91-b1e6-45828682322f",
+                "408f09c7-2be2-4a7b-8076-95711ffc947f",
+                "df103702-7a52-448c-9f75-48c295376c63",
+                "f79b3b3d-1933-4b9e-b410-1b120a6bd9e5"
+            ],
+            "num_winners": 12
+        },
+        "ac8280ed-95f7-4179-9d5f-7c39aa6382e9": {
+            "id": "ac8280ed-95f7-4179-9d5f-7c39aa6382e9",
+            "event_id": "9ee097e2-8b4b-425a-9b20-f9fbf43f3842",
+            "market_type_id": "9d21ac50-b0c4-4a54-a7b8-ed87ade778cf",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "To Have 1+ Hits",
+            "advertised_start": {
+                "seconds": 1750212600
+            },
+            "actual_start": {
+                "seconds": 1750212600
+            },
+            "same_game_multi_available": true,
+            "is_multiple_outcome_market": true,
+            "visible": true,
+            "entrant_ids": [
+                "19b9ca50-5af2-4990-98ba-238e1bc5d72d",
+                "4e036c1f-633a-47f3-a716-1475959c6d91",
+                "1385d452-b1d4-4e13-80d8-17ed78721cf4",
+                "9a1408a4-9428-48d7-9ee2-806c3af64c1d",
+                "ea304dea-fe58-405e-bfa0-d27e7e2ac57c",
+                "05b1ba3a-a204-42c0-91a7-d24d8c4da604",
+                "6e72a105-aa59-4f32-b113-2fc50f107c99",
+                "aecafa9a-888a-4888-bcce-c557ac25ec29",
+                "45fc73f3-814b-4746-b6a5-6edc6bee2e4c",
+                "933ba1c8-dc93-496c-942b-d39d528c0084",
+                "4f788d8c-24f5-4a28-b62e-4ec38b1f5124",
+                "1ad30ba4-300c-4c1c-a7e0-7b0d2e0aae04",
+                "f1e0a6b5-be62-4a78-85a2-19585a939c72",
+                "85bae06f-cde3-40e2-bb5f-89f7c020196b",
+                "97e14b26-d4e5-46df-8586-e6030fdca7f7",
+                "371b90d5-234d-4c1e-8d30-da7323e2d320",
+                "2a7a6a1d-8a23-497a-b3bb-8fb11d83e6a0",
+                "cc0f1e95-173c-4a97-8a83-5d66a936a24d"
+            ],
+            "num_winners": 18
+        },
+        "ac8a90af-3ad5-4d47-9321-55136fad8693": {
+            "id": "ac8a90af-3ad5-4d47-9321-55136fad8693",
+            "event_id": "9ee097e2-8b4b-425a-9b20-f9fbf43f3842",
+            "market_type_id": "b4889cc8-1c82-4428-951a-435cb71a95c9",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Pitcher Strikeouts O/U - Randy Vasquez",
+            "advertised_start": {
+                "seconds": 1750212600
+            },
+            "actual_start": {
+                "seconds": 1750212600
+            },
+            "handicap": 3.5,
+            "same_game_multi_available": true,
+            "is_multiple_outcome_market": true,
+            "comments": "Bets void if listed pitcher does not start the game.",
+            "visible": true,
+            "entrant_ids": [
+                "5d30f7cb-2af4-424f-8357-f4e9d2d0c250",
+                "2426a2e9-6475-46f0-a2e6-ca67521c0db7"
+            ],
+            "num_winners": 2
+        },
+        "b27ff8d6-5623-4217-bd34-f89ddd66c12f": {
+            "id": "b27ff8d6-5623-4217-bd34-f89ddd66c12f",
+            "event_id": "9ee097e2-8b4b-425a-9b20-f9fbf43f3842",
+            "market_type_id": "7cf3dbb1-1c5a-473c-b4a5-4e5764748e57",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "To Hit a Home Run",
+            "advertised_start": {
+                "seconds": 1750212600
+            },
+            "actual_start": {
+                "seconds": 1750212600
+            },
+            "same_game_multi_available": true,
+            "is_multiple_outcome_market": true,
+            "visible": true,
+            "entrant_ids": [
+                "6ad6f972-686a-441b-92c1-98900e6fb076",
+                "b864eafe-5da6-4fa5-b33a-2abea6545e3e",
+                "74c7b639-ce92-438c-b86b-82c867b31c5e",
+                "1107ffcb-3725-47a1-8703-f7202e877490",
+                "b629167d-80c3-4145-af55-4cbd7464e84a",
+                "01f59ccd-da27-4be0-a22c-51da19606469",
+                "b4fcb17d-59d2-4e37-914a-7ff1ecc773f7",
+                "b44c8163-dd7b-4acd-a8f9-93d29f806432",
+                "11198bdb-1301-4a1e-a0eb-96b914d9dae1",
+                "3aa82eb0-02bd-4d41-b335-e7918af92d60",
+                "0f1d140c-a764-4812-86b3-1a099a2020e5",
+                "8383f2c8-ebb0-4aba-a3ee-2e0e722e322a",
+                "367644c1-df2c-4c10-93f6-bb3e0f451181",
+                "d6840939-cff2-4239-87e8-da0ca47950e0",
+                "174ef8c4-4534-422b-add6-d0f2d76f9254",
+                "a6922149-5232-452f-8b82-054357389c9f"
+            ],
+            "num_winners": 16
+        },
+        "c8d33f40-8551-4a64-a9c5-1068553bfda0": {
+            "id": "c8d33f40-8551-4a64-a9c5-1068553bfda0",
+            "event_id": "9ee097e2-8b4b-425a-9b20-f9fbf43f3842",
             "market_type_id": "7b77007b-7ec9-4cf6-a911-7cd1c9d30e74",
             "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
             "name": "Head To Head",
             "advertised_start": {
-                "seconds": 1750200000
+                "seconds": 1750212600
             },
             "actual_start": {
-                "seconds": 1750200000
+                "seconds": 1750212600
             },
             "is_primary": true,
             "same_game_multi_available": true,
             "visible": true,
             "entrant_ids": [
-                "74c6b4c6-a5c2-435c-a590-5535089c0436",
-                "73f16be8-882a-4f06-b614-90f0f4e6fe0a"
+                "79e09c67-e8f8-42c9-ad2f-61fcf6bf1a2d",
+                "9763827d-90ac-425b-a212-08a7157e5076"
             ],
             "num_winners": 1
         },
-        "d64972fc-9f7d-45fb-9206-e2c3430d879a": {
-            "id": "d64972fc-9f7d-45fb-9206-e2c3430d879a",
-            "event_id": "9e73ac22-d6e3-4cc7-976a-3b01dbb54203",
-            "market_type_id": "fefd3091-33c3-4df4-a213-848fdb1f0826",
+        "fd08d180-4fe0-4457-a14b-12e64e180c24": {
+            "id": "fd08d180-4fe0-4457-a14b-12e64e180c24",
+            "event_id": "9ee097e2-8b4b-425a-9b20-f9fbf43f3842",
+            "market_type_id": "3c4c68aa-80bc-439c-9518-2e183a7ec5ba",
             "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
-            "name": "Line (-1.5)",
+            "name": "Pitcher Strikeouts - Randy Vasquez",
             "advertised_start": {
-                "seconds": 1750200000
+                "seconds": 1750212600
             },
             "actual_start": {
-                "seconds": 1750200000
+                "seconds": 1750212600
             },
             "same_game_multi_available": true,
+            "is_multiple_outcome_market": true,
+            "comments": "Bets void if listed pitcher does not start the game.",
             "visible": true,
             "entrant_ids": [
-                "b23f9360-2877-4e78-ab70-a6d5ad50d8de",
-                "242bb302-1b15-4aac-918e-d457860325eb"
+                "2a75626c-d305-46a8-8b0c-cb693a959166",
+                "e18ffb00-953a-4068-91be-e2c4c11c07bd",
+                "cd0f6916-8e27-447f-a076-4e32afcc12a1",
+                "a42866e9-026c-45cb-8f13-585c47dc2daf"
             ],
-            "num_winners": 1
+            "num_winners": 4
         }
     },
     "markets_allow_cashout": {
-        "1093a526-91a9-40c9-98c2-08ef2cfb032b": false,
-        "2a01a64b-e949-4b06-94b9-0045cc518ca6": true,
-        "d64972fc-9f7d-45fb-9206-e2c3430d879a": false
+        "2b1d7405-8da1-477d-b4c7-34e2599dfe78": true,
+        "39593c18-942d-4ef7-a495-1cc41ac4bafa": true,
+        "53c61914-ceb2-4d2e-8007-0798696fcb08": false,
+        "5eac777f-3958-4ebc-ab94-412d8a9926be": false,
+        "67f4c1ea-261d-4f6a-b704-10345b193a49": true,
+        "866713a1-05f9-4272-90ef-dc4ff0ff81c9": true,
+        "a112a6e2-6d26-420a-b882-ee5bdefddd97": true,
+        "ac8280ed-95f7-4179-9d5f-7c39aa6382e9": true,
+        "ac8a90af-3ad5-4d47-9321-55136fad8693": false,
+        "b27ff8d6-5623-4217-bd34-f89ddd66c12f": true,
+        "c8d33f40-8551-4a64-a9c5-1068553bfda0": true,
+        "fd08d180-4fe0-4457-a14b-12e64e180c24": true
     },
     "prices": {
-        "1656a2c8-6819-4031-8e66-4fd4255993ba:940b8704-e497-4a76-b390-00918ff7d282:": {
+        "01f59ccd-da27-4be0-a22c-51da19606469:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 16,
+                "denominator": 5
+            }
+        },
+        "03754024-8a42-4fbe-b824-07df8707125c:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
                 "numerator": 17,
-                "denominator": 20
+                "denominator": 25
             }
         },
-        "242bb302-1b15-4aac-918e-d457860325eb:940b8704-e497-4a76-b390-00918ff7d282:": {
+        "039aa557-2cb9-48f9-a89d-ab0df3bb7a95:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 13,
+                "denominator": 2
+            }
+        },
+        "0579b448-28b1-451c-950e-dd4655cb3589:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 23,
+                "denominator": 25
+            }
+        },
+        "05b1ba3a-a204-42c0-91a7-d24d8c4da604:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 3,
+                "denominator": 10
+            }
+        },
+        "0a328e16-35d2-4c8a-a2cf-b380382dd922:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
                 "numerator": 39,
-                "denominator": 50
-            }
-        },
-        "55056a22-eafd-40ec-b2df-0be9b49e228e:940b8704-e497-4a76-b390-00918ff7d282:": {
-            "odds": {
-                "numerator": 47,
-                "denominator": 50
-            }
-        },
-        "73f16be8-882a-4f06-b614-90f0f4e6fe0a:940b8704-e497-4a76-b390-00918ff7d282:": {
-            "odds": {
-                "numerator": 33,
                 "denominator": 20
             }
         },
-        "74c6b4c6-a5c2-435c-a590-5535089c0436:940b8704-e497-4a76-b390-00918ff7d282:": {
+        "0f1d140c-a764-4812-86b3-1a099a2020e5:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 22,
+                "denominator": 5
+            }
+        },
+        "1107ffcb-3725-47a1-8703-f7202e877490:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 29,
+                "denominator": 10
+            }
+        },
+        "11198bdb-1301-4a1e-a0eb-96b914d9dae1:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 19,
+                "denominator": 5
+            }
+        },
+        "1385d452-b1d4-4e13-80d8-17ed78721cf4:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 13,
+                "denominator": 50
+            }
+        },
+        "174ef8c4-4534-422b-add6-d0f2d76f9254:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 13,
+                "denominator": 2
+            }
+        },
+        "17b3663b-a32e-4d70-b9d9-0f99384cb857:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 29,
+                "denominator": 20
+            }
+        },
+        "190ce551-c67c-4a01-ad1b-a831b1cb1d80:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 24,
+                "denominator": 25
+            }
+        },
+        "19b9ca50-5af2-4990-98ba-238e1bc5d72d:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 9,
+                "denominator": 50
+            }
+        },
+        "1ad30ba4-300c-4c1c-a7e0-7b0d2e0aae04:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 19,
+                "denominator": 50
+            }
+        },
+        "2426a2e9-6475-46f0-a2e6-ca67521c0db7:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 9,
+                "denominator": 20
+            }
+        },
+        "27040693-4907-4dff-bbde-53932b8e9963:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 23,
+                "denominator": 20
+            }
+        },
+        "28456c81-e3ab-4d30-a37d-4741da3825bb:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 50,
+                "denominator": 1
+            }
+        },
+        "289e1ea4-7b6e-4e3b-8802-38f5538d50d4:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 23,
+                "denominator": 20
+            }
+        },
+        "2a75626c-d305-46a8-8b0c-cb693a959166:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 1,
+                "denominator": 10
+            }
+        },
+        "2a7a6a1d-8a23-497a-b3bb-8fb11d83e6a0:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 57,
+                "denominator": 100
+            }
+        },
+        "2b0d8703-d49d-46f5-a41a-f8b943cbb00d:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 28,
+                "denominator": 1
+            }
+        },
+        "2fdbf44e-31e0-4810-94c6-5bf6bc4e9c98:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 8,
+                "denominator": 5
+            }
+        },
+        "3406ba1a-bbce-461e-8a09-76b413f89906:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 21,
+                "denominator": 20
+            }
+        },
+        "3442f4d5-48fb-40a5-be2e-85e3a2b84e22:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 40,
+                "denominator": 1
+            }
+        },
+        "36266315-44c3-499f-8522-ed710bfcd588:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 31,
+                "denominator": 20
+            }
+        },
+        "367644c1-df2c-4c10-93f6-bb3e0f451181:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 24,
+                "denominator": 5
+            }
+        },
+        "371b90d5-234d-4c1e-8d30-da7323e2d320:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 53,
+                "denominator": 100
+            }
+        },
+        "3aa82eb0-02bd-4d41-b335-e7918af92d60:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 19,
+                "denominator": 5
+            }
+        },
+        "3b01044d-3443-4036-9182-c46fea6cfb05:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 49,
+                "denominator": 50
+            }
+        },
+        "3dc4f032-5b96-4c91-a2f2-e2d6ed5eb4c7:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 23,
+                "denominator": 25
+            }
+        },
+        "3eeb327d-2c99-439e-93d5-21e2099d4daa:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 6,
+                "denominator": 5
+            }
+        },
+        "3f77e3d0-8ff8-4b90-90ff-46749fde5ed4:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 8,
+                "denominator": 5
+            }
+        },
+        "4061bfc9-5ffa-419e-af6f-4fbd762fec58:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 2,
+                "denominator": 1
+            }
+        },
+        "408f09c7-2be2-4a7b-8076-95711ffc947f:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 10,
+                "denominator": 1
+            }
+        },
+        "44f63082-b4f7-4d65-ac0b-98740aa6c610:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 41,
+                "denominator": 50
+            }
+        },
+        "4512aad7-0db6-424f-aba4-6737baaed0b4:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 37,
+                "denominator": 20
+            }
+        },
+        "45fc73f3-814b-4746-b6a5-6edc6bee2e4c:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 8,
+                "denominator": 25
+            }
+        },
+        "477fff35-8176-4fa6-ac71-1910dcf1d08e:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 8,
+                "denominator": 1
+            }
+        },
+        "4c970bdc-b584-40cb-bce1-08cb26bd99d1:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
                 "numerator": 1,
                 "denominator": 2
             }
         },
-        "b23f9360-2877-4e78-ab70-a6d5ad50d8de:940b8704-e497-4a76-b390-00918ff7d282:": {
+        "4e036c1f-633a-47f3-a716-1475959c6d91:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 19,
+                "denominator": 100
+            }
+        },
+        "4f3e64ea-d34a-4ccf-9806-2ca24081da34:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 33,
+                "denominator": 1
+            }
+        },
+        "4f788d8c-24f5-4a28-b62e-4ec38b1f5124:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 19,
+                "denominator": 50
+            }
+        },
+        "50dd9b12-7585-4914-93fd-883d732308ee:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 6,
+                "denominator": 5
+            }
+        },
+        "58f5d4b9-1a16-4f8f-be0e-db3a9f2c4fbe:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 23,
+                "denominator": 20
+            }
+        },
+        "5ba302b9-8ecc-4329-a237-79537dfce8ed:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 23,
+                "denominator": 20
+            }
+        },
+        "5d30f7cb-2af4-424f-8357-f4e9d2d0c250:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 11,
+                "denominator": 10
+            }
+        },
+        "62ee2846-8f50-408b-8fdd-7079716b9cba:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
                 "numerator": 51,
                 "denominator": 50
+            }
+        },
+        "63d2dc50-a41a-46ce-bbb7-78b741e78bde:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 2,
+                "denominator": 1
+            }
+        },
+        "67637ca0-a6f0-4c97-b42b-797b4d65c3fc:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 50,
+                "denominator": 1
+            }
+        },
+        "681c8d50-f1e6-43bb-947d-0d06416b5638:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 7,
+                "denominator": 5
+            }
+        },
+        "6a569d02-2287-4ee7-b3d8-f48866e7eeee:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 3,
+                "denominator": 2
+            }
+        },
+        "6ad6f972-686a-441b-92c1-98900e6fb076:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 21,
+                "denominator": 10
+            }
+        },
+        "6d7ad29c-37fa-4dce-8c40-54277570606f:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 29,
+                "denominator": 20
+            }
+        },
+        "6e72a105-aa59-4f32-b113-2fc50f107c99:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 3,
+                "denominator": 10
+            }
+        },
+        "72eb7556-f334-4e3c-a9b8-0bc0b731ba76:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 9,
+                "denominator": 10
+            }
+        },
+        "74364af4-c05f-45a3-bfab-3ff78d90ad61:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 27,
+                "denominator": 20
+            }
+        },
+        "74c7b639-ce92-438c-b86b-82c867b31c5e:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 14,
+                "denominator": 5
+            }
+        },
+        "79e09c67-e8f8-42c9-ad2f-61fcf6bf1a2d:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 9,
+                "denominator": 20
+            }
+        },
+        "7b09e692-13d2-4a01-b821-7914096e6fbd:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 28,
+                "denominator": 5
+            }
+        },
+        "7b24d820-f16a-4676-b87d-b13dc24471fc:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 8,
+                "denominator": 5
+            }
+        },
+        "811128be-3c42-44f0-84b3-af815a648a9f:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 30,
+                "denominator": 1
+            }
+        },
+        "81deaa88-fa98-4d48-b502-511bfe62b5d0:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 7,
+                "denominator": 5
+            }
+        },
+        "8383f2c8-ebb0-4aba-a3ee-2e0e722e322a:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 9,
+                "denominator": 2
+            }
+        },
+        "84800ee1-215d-47dc-8ede-3eeb0cfb6ca5:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 49,
+                "denominator": 50
+            }
+        },
+        "8496109c-a5c4-4609-99e7-2c65b0431181:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 18,
+                "denominator": 1
+            }
+        },
+        "85bae06f-cde3-40e2-bb5f-89f7c020196b:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 21,
+                "denominator": 50
+            }
+        },
+        "86655c52-9ef0-4c48-bc70-ba585b1f3955:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 3,
+                "denominator": 2
+            }
+        },
+        "874fb80a-f8b6-44f7-b94c-ba9291a003d8:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 29,
+                "denominator": 20
+            }
+        },
+        "8e04abce-53a5-4f02-8771-2ed5d183d935:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 49,
+                "denominator": 50
+            }
+        },
+        "933ba1c8-dc93-496c-942b-d39d528c0084:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 33,
+                "denominator": 100
+            }
+        },
+        "94dba5f7-688f-4ef3-97dd-072eb916fc25:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 13,
+                "denominator": 5
+            }
+        },
+        "9763827d-90ac-425b-a212-08a7157e5076:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 9,
+                "denominator": 5
+            }
+        },
+        "97e14b26-d4e5-46df-8586-e6030fdca7f7:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 21,
+                "denominator": 50
+            }
+        },
+        "9a1408a4-9428-48d7-9ee2-806c3af64c1d:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 7,
+                "denominator": 25
+            }
+        },
+        "9d5459d0-4164-4cc3-ab05-02dd56c744d3:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 8,
+                "denominator": 5
+            }
+        },
+        "9f9da23d-5024-4e2d-bc1e-d281b7fa9e84:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 33,
+                "denominator": 20
+            }
+        },
+        "9fd79caf-e8a0-4aae-a295-7393216e1290:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 3,
+                "denominator": 2
+            }
+        },
+        "a42866e9-026c-45cb-8f13-585c47dc2daf:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 12,
+                "denominator": 5
+            }
+        },
+        "a6922149-5232-452f-8b82-054357389c9f:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 31,
+                "denominator": 4
+            }
+        },
+        "aa6e521a-62b6-4929-9a99-db4d6a41bd85:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 9,
+                "denominator": 5
+            }
+        },
+        "ab40fe67-72f5-43d4-a4e0-5ba5229eb83d:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 9,
+                "denominator": 10
+            }
+        },
+        "ae29e490-5c9f-47a1-ac8f-a25def2b9cdb:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 13,
+                "denominator": 10
+            }
+        },
+        "aecafa9a-888a-4888-bcce-c557ac25ec29:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 3,
+                "denominator": 10
+            }
+        },
+        "b164db64-6c70-40d0-bcfe-3dcdb2b741c9:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 11,
+                "denominator": 4
+            }
+        },
+        "b1fe788d-a8a3-409a-a903-d94674dced39:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 33,
+                "denominator": 1
+            }
+        },
+        "b329e1dd-ead0-4c59-b55c-7f489ade985e:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 13,
+                "denominator": 5
+            }
+        },
+        "b44c8163-dd7b-4acd-a8f9-93d29f806432:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 18,
+                "denominator": 5
+            }
+        },
+        "b4fcb17d-59d2-4e37-914a-7ff1ecc773f7:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 13,
+                "denominator": 4
+            }
+        },
+        "b629167d-80c3-4145-af55-4cbd7464e84a:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 3,
+                "denominator": 1
+            }
+        },
+        "b864eafe-5da6-4fa5-b33a-2abea6545e3e:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 27,
+                "denominator": 10
+            }
+        },
+        "be72dc75-dca9-4c7e-aa26-9087210bdcb6:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 1,
+                "denominator": 1
+            }
+        },
+        "c409f8d0-5ab0-41e0-90bd-386c93fe4f27:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 2,
+                "denominator": 1
+            }
+        },
+        "c4bf5d64-ae20-4cfd-b51c-b100db15d43e:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 5,
+                "denominator": 4
+            }
+        },
+        "cc0f1e95-173c-4a97-8a83-5d66a936a24d:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 4,
+                "denominator": 5
+            }
+        },
+        "cd0f6916-8e27-447f-a076-4e32afcc12a1:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 11,
+                "denominator": 10
+            }
+        },
+        "d6840939-cff2-4239-87e8-da0ca47950e0:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 27,
+                "denominator": 5
+            }
+        },
+        "daade919-4086-4c91-b1e6-45828682322f:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 35,
+                "denominator": 4
+            }
+        },
+        "dc86314a-89a7-460f-9eec-b82e29434fce:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 2,
+                "denominator": 1
+            }
+        },
+        "dcd7a415-d14d-4583-aa58-6b745db8e738:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 13,
+                "denominator": 25
+            }
+        },
+        "de0af56d-6eca-4b7b-9f57-2dc7829f6a6d:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 17,
+                "denominator": 20
+            }
+        },
+        "df103702-7a52-448c-9f75-48c295376c63:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 21,
+                "denominator": 2
+            }
+        },
+        "dfe86df8-6c1c-45b5-8208-d4f90132db0c:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 13,
+                "denominator": 10
+            }
+        },
+        "e18ffb00-953a-4068-91be-e2c4c11c07bd:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 11,
+                "denominator": 25
+            }
+        },
+        "e4253e79-1ac0-46dc-8778-d9b73a70edf7:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 87,
+                "denominator": 100
+            }
+        },
+        "e4431daf-3671-4ec3-9b27-a3a02bb58de6:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 27,
+                "denominator": 4
+            }
+        },
+        "e73b1c32-828f-47a7-a886-d9144fd08bd0:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 30,
+                "denominator": 1
+            }
+        },
+        "e83dfa46-1d6d-4ab2-bf1c-5c35e0d285f7:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 25,
+                "denominator": 1
+            }
+        },
+        "e86cc909-c0b9-4d9d-b248-de66b1c9cf27:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 25,
+                "denominator": 4
+            }
+        },
+        "ea304dea-fe58-405e-bfa0-d27e7e2ac57c:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 7,
+                "denominator": 25
+            }
+        },
+        "ee651e45-afd8-4fb5-866f-780738aaa5b4:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 9,
+                "denominator": 10
+            }
+        },
+        "f0918c20-8e4c-445a-ac0b-c49e777b4738:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 21,
+                "denominator": 20
+            }
+        },
+        "f1e0a6b5-be62-4a78-85a2-19585a939c72:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 19,
+                "denominator": 50
+            }
+        },
+        "f35a12b0-9b50-4d8c-bccc-a95fdb5cb1f7:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 37,
+                "denominator": 20
+            }
+        },
+        "f373c532-0db4-4a22-9526-fef9014323d2:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 3,
+                "denominator": 2
+            }
+        },
+        "f621854b-32bc-4668-a936-70adfcf50df4:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 7,
+                "denominator": 5
+            }
+        },
+        "f79b3b3d-1933-4b9e-b410-1b120a6bd9e5:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 12,
+                "denominator": 1
+            }
+        },
+        "f88c7e7e-273e-487f-b88a-b55e17593931:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 21,
+                "denominator": 20
+            }
+        },
+        "f8b601ac-9f17-4741-b2b4-505aaf41b6ce:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 21,
+                "denominator": 5
+            }
+        },
+        "fb809afb-5eb0-465d-852a-b4cefa54c568:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 23,
+                "denominator": 10
+            }
+        },
+        "fbc203de-9144-4209-9b13-718768619d9d:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 12,
+                "denominator": 5
             }
         }
     }
