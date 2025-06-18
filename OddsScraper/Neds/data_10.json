@@ -1,79 +1,49 @@
 {
     "entrants": {
-        "0fe5c8ec-22bc-41d7-a5eb-0721d5d109db": {
-            "id": "0fe5c8ec-22bc-41d7-a5eb-0721d5d109db",
-            "name": "San Francisco Giants",
-            "home_away": "HOME",
-            "visible": true,
-            "sort_order": 10,
-            "market_id": "2e89915f-6988-496e-88ef-a611d7bf8f64"
-        },
-        "453e2268-afa3-4f2a-b15c-0dd0f6f61430": {
-            "id": "453e2268-afa3-4f2a-b15c-0dd0f6f61430",
-            "name": "Cleveland Guardians (+1.5)",
+        "60a24d38-5536-4660-a333-c2fcec281aa0": {
+            "id": "60a24d38-5536-4660-a333-c2fcec281aa0",
+            "name": "Milwaukee Brewers",
             "home_away": "AWAY",
             "visible": true,
             "sort_order": 20,
-            "market_id": "fd5a1a67-b148-49c9-b9ce-755fc46ee306"
+            "market_id": "a6a62ac4-b51b-43ca-b200-52ae85fce73a"
         },
-        "764d2c94-3468-4d5c-a55f-bad29ee4191b": {
-            "id": "764d2c94-3468-4d5c-a55f-bad29ee4191b",
-            "name": "San Francisco Giants (-1.5)",
+        "9fbcb20e-bd91-4f8f-bb75-8cf06e1401fc": {
+            "id": "9fbcb20e-bd91-4f8f-bb75-8cf06e1401fc",
+            "name": "Chicago Cubs",
             "home_away": "HOME",
             "visible": true,
             "sort_order": 10,
-            "market_id": "fd5a1a67-b148-49c9-b9ce-755fc46ee306"
-        },
-        "8c67b83b-c87b-47d1-8707-0f2586dcfd62": {
-            "id": "8c67b83b-c87b-47d1-8707-0f2586dcfd62",
-            "name": "Under (7.5)",
-            "visible": true,
-            "sort_order": 20,
-            "market_id": "79751528-4872-4a2e-afc7-4791c1b45248"
-        },
-        "c37ec319-4921-4c17-8533-bc29c13d6f70": {
-            "id": "c37ec319-4921-4c17-8533-bc29c13d6f70",
-            "name": "Cleveland Guardians",
-            "home_away": "AWAY",
-            "visible": true,
-            "sort_order": 20,
-            "market_id": "2e89915f-6988-496e-88ef-a611d7bf8f64"
-        },
-        "f0ba3796-dadb-4ee1-9f22-2f534a6e5479": {
-            "id": "f0ba3796-dadb-4ee1-9f22-2f534a6e5479",
-            "name": "Over (7.5)",
-            "visible": true,
-            "sort_order": 10,
-            "market_id": "79751528-4872-4a2e-afc7-4791c1b45248"
+            "market_id": "a6a62ac4-b51b-43ca-b200-52ae85fce73a"
         }
     },
     "event_participants": {
-        "01720679-7c99-4f27-b794-8f7f73ea864c": {
-            "id": "01720679-7c99-4f27-b794-8f7f73ea864c",
-            "event_id": "9b4d1ea4-a190-4891-a848-484f0f570378",
-            "name": "Cleveland Guardians",
+        "32d35e87-0960-4741-808d-71e672441bf1": {
+            "id": "32d35e87-0960-4741-808d-71e672441bf1",
+            "event_id": "910e0268-54aa-4f3f-a3d9-8718542486fa",
+            "name": "Milwaukee Brewers",
             "home_away": "AWAY"
         },
-        "b8f76fe3-c04f-42aa-8db4-71c394c7d606": {
-            "id": "b8f76fe3-c04f-42aa-8db4-71c394c7d606",
-            "event_id": "9b4d1ea4-a190-4891-a848-484f0f570378",
-            "name": "San Francisco Giants",
+        "72725264-ff30-482a-a1b2-5117d76c4c4e": {
+            "id": "72725264-ff30-482a-a1b2-5117d76c4c4e",
+            "event_id": "910e0268-54aa-4f3f-a3d9-8718542486fa",
+            "name": "Chicago Cubs",
             "home_away": "HOME"
         }
     },
     "events": {
-        "9b4d1ea4-a190-4891-a848-484f0f570378": {
-            "id": "9b4d1ea4-a190-4891-a848-484f0f570378",
-            "name": "San Francisco Giants vs Cleveland Guardians",
+        "910e0268-54aa-4f3f-a3d9-8718542486fa": {
+            "id": "910e0268-54aa-4f3f-a3d9-8718542486fa",
+            "name": "Chicago Cubs vs Milwaukee Brewers",
             "event_type": {
                 "id": "6bfa0efc-05df-4ae1-9b1e-152365290cfd",
                 "name": "Match"
             },
             "match_status": "BettingOpen",
-            "advertised_start": "2025-06-19T01:45:00Z",
-            "actual_start": "2025-06-19T01:45:00Z",
+            "advertised_start": "2025-06-19T00:05:00Z",
+            "actual_start": "2025-06-19T00:05:00Z",
             "visible": true,
-            "slug": "san-francisco-giants-vs-cleveland-guardians",
+            "slug": "chicago-cubs-vs-milwaukee-brewers",
             "competition": {
                 "id": "a5618779-2cb3-4c0a-b8cc-ce2517fbc8d4",
                 "name": "MLB",
@@ -82,38 +52,27 @@
             },
             "competition_id": "a5618779-2cb3-4c0a-b8cc-ce2517fbc8d4",
             "market_type_group_ids": [
-                "95f7457f-bd84-4e9e-b714-c257b90c1031",
-                "f7331bb9-8791-4c1a-9b7b-cf2298c98757"
+                "95f7457f-bd84-4e9e-b714-c257b90c1031"
             ],
             "market_type_group_markets": [
                 {
                     "market_type_group_id": "95f7457f-bd84-4e9e-b714-c257b90c1031",
                     "market_ids": [
-                        "2e89915f-6988-496e-88ef-a611d7bf8f64",
-                        "fd5a1a67-b148-49c9-b9ce-755fc46ee306",
-                        "79751528-4872-4a2e-afc7-4791c1b45248"
-                    ]
-                },
-                {
-                    "market_type_group_id": "f7331bb9-8791-4c1a-9b7b-cf2298c98757",
-                    "market_ids": [
-                        "79751528-4872-4a2e-afc7-4791c1b45248"
+                        "a6a62ac4-b51b-43ca-b200-52ae85fce73a"
                     ]
                 }
             ],
-            "market_count": 3,
+            "market_count": 1,
             "main_markets": [
-                "2e89915f-6988-496e-88ef-a611d7bf8f64"
+                "a6a62ac4-b51b-43ca-b200-52ae85fce73a"
             ],
             "market_ids": [
-                "2e89915f-6988-496e-88ef-a611d7bf8f64",
-                "fd5a1a67-b148-49c9-b9ce-755fc46ee306",
-                "79751528-4872-4a2e-afc7-4791c1b45248"
+                "a6a62ac4-b51b-43ca-b200-52ae85fce73a"
             ],
             "category_id": "02721435-4671-4cd0-98f7-15d41ee4103e",
             "participant_ids": [
-                "01720679-7c99-4f27-b794-8f7f73ea864c",
-                "b8f76fe3-c04f-42aa-8db4-71c394c7d606"
+                "32d35e87-0960-4741-808d-71e672441bf1",
+                "72725264-ff30-482a-a1b2-5117d76c4c4e"
             ]
         }
     },
@@ -124,118 +83,45 @@
             "name": "Top Markets",
             "priority": 254,
             "type": "MARKET_TYPE_GROUP_TYPE_EVENT"
-        },
-        "f7331bb9-8791-4c1a-9b7b-cf2298c98757": {
-            "id": "f7331bb9-8791-4c1a-9b7b-cf2298c98757",
-            "category_id": "02721435-4671-4cd0-98f7-15d41ee4103e",
-            "name": "Total Markets",
-            "priority": 210,
-            "type": "MARKET_TYPE_GROUP_TYPE_EVENT"
         }
     },
     "markets": {
-        "2e89915f-6988-496e-88ef-a611d7bf8f64": {
-            "id": "2e89915f-6988-496e-88ef-a611d7bf8f64",
-            "event_id": "9b4d1ea4-a190-4891-a848-484f0f570378",
+        "a6a62ac4-b51b-43ca-b200-52ae85fce73a": {
+            "id": "a6a62ac4-b51b-43ca-b200-52ae85fce73a",
+            "event_id": "910e0268-54aa-4f3f-a3d9-8718542486fa",
             "market_type_id": "7b77007b-7ec9-4cf6-a911-7cd1c9d30e74",
             "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
             "name": "Head To Head",
             "advertised_start": {
-                "seconds": 1750297500
+                "seconds": 1750291500
             },
             "actual_start": {
-                "seconds": 1750297500
+                "seconds": 1750291500
             },
             "is_primary": true,
             "same_game_multi_available": true,
             "visible": true,
             "entrant_ids": [
-                "0fe5c8ec-22bc-41d7-a5eb-0721d5d109db",
-                "c37ec319-4921-4c17-8533-bc29c13d6f70"
-            ],
-            "num_winners": 1
-        },
-        "79751528-4872-4a2e-afc7-4791c1b45248": {
-            "id": "79751528-4872-4a2e-afc7-4791c1b45248",
-            "event_id": "9b4d1ea4-a190-4891-a848-484f0f570378",
-            "market_type_id": "35fdd584-4bb9-47f7-a589-6291693d4d45",
-            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
-            "name": "Total (7.5)",
-            "advertised_start": {
-                "seconds": 1750297500
-            },
-            "actual_start": {
-                "seconds": 1750297500
-            },
-            "same_game_multi_available": true,
-            "visible": true,
-            "entrant_ids": [
-                "f0ba3796-dadb-4ee1-9f22-2f534a6e5479",
-                "8c67b83b-c87b-47d1-8707-0f2586dcfd62"
-            ],
-            "num_winners": 1
-        },
-        "fd5a1a67-b148-49c9-b9ce-755fc46ee306": {
-            "id": "fd5a1a67-b148-49c9-b9ce-755fc46ee306",
-            "event_id": "9b4d1ea4-a190-4891-a848-484f0f570378",
-            "market_type_id": "fefd3091-33c3-4df4-a213-848fdb1f0826",
-            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
-            "name": "Line (-1.5)",
-            "advertised_start": {
-                "seconds": 1750297500
-            },
-            "actual_start": {
-                "seconds": 1750297500
-            },
-            "same_game_multi_available": true,
-            "visible": true,
-            "entrant_ids": [
-                "764d2c94-3468-4d5c-a55f-bad29ee4191b",
-                "453e2268-afa3-4f2a-b15c-0dd0f6f61430"
+                "9fbcb20e-bd91-4f8f-bb75-8cf06e1401fc",
+                "60a24d38-5536-4660-a333-c2fcec281aa0"
             ],
             "num_winners": 1
         }
     },
     "markets_allow_cashout": {
-        "2e89915f-6988-496e-88ef-a611d7bf8f64": true,
-        "79751528-4872-4a2e-afc7-4791c1b45248": false,
-        "fd5a1a67-b148-49c9-b9ce-755fc46ee306": false
+        "a6a62ac4-b51b-43ca-b200-52ae85fce73a": true
     },
     "prices": {
-        "0fe5c8ec-22bc-41d7-a5eb-0721d5d109db:940b8704-e497-4a76-b390-00918ff7d282:": {
-            "odds": {
-                "numerator": 13,
-                "denominator": 20
-            }
-        },
-        "453e2268-afa3-4f2a-b15c-0dd0f6f61430:940b8704-e497-4a76-b390-00918ff7d282:": {
-            "odds": {
-                "numerator": 11,
-                "denominator": 20
-            }
-        },
-        "764d2c94-3468-4d5c-a55f-bad29ee4191b:940b8704-e497-4a76-b390-00918ff7d282:": {
-            "odds": {
-                "numerator": 29,
-                "denominator": 20
-            }
-        },
-        "8c67b83b-c87b-47d1-8707-0f2586dcfd62:940b8704-e497-4a76-b390-00918ff7d282:": {
-            "odds": {
-                "numerator": 49,
-                "denominator": 50
-            }
-        },
-        "c37ec319-4921-4c17-8533-bc29c13d6f70:940b8704-e497-4a76-b390-00918ff7d282:": {
+        "60a24d38-5536-4660-a333-c2fcec281aa0:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
                 "numerator": 5,
                 "denominator": 4
             }
         },
-        "f0ba3796-dadb-4ee1-9f22-2f534a6e5479:940b8704-e497-4a76-b390-00918ff7d282:": {
+        "9fbcb20e-bd91-4f8f-bb75-8cf06e1401fc:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 41,
-                "denominator": 50
+                "numerator": 67,
+                "denominator": 100
             }
         }
     }
