@@ -1,79 +1,1345 @@
 {
     "entrants": {
-        "3abca840-2dd5-4836-b2de-f631d4696341": {
-            "id": "3abca840-2dd5-4836-b2de-f631d4696341",
-            "name": "Detroit Tigers (-1.5)",
+        "00321840-a3d6-417a-82c3-fe54a4126933": {
+            "id": "00321840-a3d6-417a-82c3-fe54a4126933",
+            "name": "Under (4.5)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "2ea8d297-b689-4e5b-988a-85f743babc3b"
+        },
+        "00e8320d-40ef-4f57-a3b5-c42893fd2785": {
+            "id": "00e8320d-40ef-4f57-a3b5-c42893fd2785",
+            "name": "Under (3.5)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "98ac1fcb-0d53-4d66-ac70-1dd660c539c6"
+        },
+        "0128da0d-9d7c-400f-b948-ba316d3e703a": {
+            "id": "0128da0d-9d7c-400f-b948-ba316d3e703a",
+            "name": "Over (3.5)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "d8fba019-210e-4d23-b244-e02909ce8ef8"
+        },
+        "02814001-4e0d-4e82-8c33-2baafc5416de": {
+            "id": "02814001-4e0d-4e82-8c33-2baafc5416de",
+            "name": "Over (2)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "9ff79be3-312e-44cd-bcf7-98c2f63b955b"
+        },
+        "0401e7d9-a1d0-4b3f-8787-9ebd57334999": {
+            "id": "0401e7d9-a1d0-4b3f-8787-9ebd57334999",
+            "name": "Yes",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "6766f83a-a5e1-4349-bc23-844a4c2e416a"
+        },
+        "043b340c-0098-4cad-8c03-6cfd3a261994": {
+            "id": "043b340c-0098-4cad-8c03-6cfd3a261994",
+            "name": "Yes",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "406b23bb-34cc-45c4-9168-6e19b33eb116"
+        },
+        "0449b0b6-8a93-47c5-aff3-d0c7114fdb89": {
+            "id": "0449b0b6-8a93-47c5-aff3-d0c7114fdb89",
+            "name": "Arizona Diamondbacks (-2.5)",
             "home_away": "HOME",
             "visible": true,
             "sort_order": 10,
-            "market_id": "add0a552-50a6-4461-92e1-bd4cc36a82e4"
+            "market_id": "0f36f0d1-fb43-44f9-af99-061da85bb016"
         },
-        "3bcbb435-818e-4b37-8615-c886ddba98d5": {
-            "id": "3bcbb435-818e-4b37-8615-c886ddba98d5",
+        "044fff6e-6b2a-4f5c-bb59-92b4d223a807": {
+            "id": "044fff6e-6b2a-4f5c-bb59-92b4d223a807",
+            "name": "Yes",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "9ad47c48-db4a-41d2-b678-c27b954536ae"
+        },
+        "049cf0a8-e157-4e1c-91dd-312d9c2cb702": {
+            "id": "049cf0a8-e157-4e1c-91dd-312d9c2cb702",
+            "name": "Under (5)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "617f509f-dbb7-4ab4-8991-f0c41e3b22fd"
+        },
+        "054428aa-62a2-484f-848b-0dd388ca555d": {
+            "id": "054428aa-62a2-484f-848b-0dd388ca555d",
+            "name": "Under (9.5)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "5728a34f-7b3a-4898-a27e-7381e87899b5"
+        },
+        "095e89aa-3342-4584-b6d0-c98fad2607e9": {
+            "id": "095e89aa-3342-4584-b6d0-c98fad2607e9",
+            "name": "Under (5.5)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "c3fd4b01-4474-40e4-af73-2ecf3d62e735"
+        },
+        "09b32254-12b5-4b70-afd8-2e9abbd7e495": {
+            "id": "09b32254-12b5-4b70-afd8-2e9abbd7e495",
+            "name": "No",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "e6ab7718-454b-47b3-852e-38130acb6716"
+        },
+        "0a848d04-1314-4ea2-a43e-9b9325f8e784": {
+            "id": "0a848d04-1314-4ea2-a43e-9b9325f8e784",
+            "name": "Under (1.5)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "917e6ba7-2d6e-4244-86f2-c0788a258a2b"
+        },
+        "0aa9204b-84f5-4c56-bdca-4d2900a2e5aa": {
+            "id": "0aa9204b-84f5-4c56-bdca-4d2900a2e5aa",
+            "name": "Under (13.5)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "0f7e8c6b-cec4-41c4-a05f-d15a5bcc8c03"
+        },
+        "0b790aa7-bdd0-4c6f-88fa-c90133681cb2": {
+            "id": "0b790aa7-bdd0-4c6f-88fa-c90133681cb2",
+            "name": "Arizona Diamondbacks (-0.5)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "2079f253-ac23-40f3-b98c-79514af4c8aa"
+        },
+        "0c29a47d-b316-4733-9cdb-0eb6ece6e24b": {
+            "id": "0c29a47d-b316-4733-9cdb-0eb6ece6e24b",
+            "name": "Under (11)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "37fc0abe-591e-4338-a3a0-a6a8d4a7cfd6"
+        },
+        "0dbaac1c-9f31-43f0-aa44-332e1c006501": {
+            "id": "0dbaac1c-9f31-43f0-aa44-332e1c006501",
+            "name": "Over (10)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "5a069504-17ae-41c5-bd0c-856c212f71ea"
+        },
+        "110e7c92-bb27-4b84-b85d-75036041769e": {
+            "id": "110e7c92-bb27-4b84-b85d-75036041769e",
+            "name": "Over (6.5)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "eb61814f-39b0-417e-9b16-6232f8239fc0"
+        },
+        "12c2490c-f35b-4812-97c1-a6f42973509e": {
+            "id": "12c2490c-f35b-4812-97c1-a6f42973509e",
+            "name": "Over (4.5)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "2b441095-b1e5-4a40-b5c8-3364e5e54e75"
+        },
+        "12d6f3a3-e00c-4800-a7f5-a66788df4248": {
+            "id": "12d6f3a3-e00c-4800-a7f5-a66788df4248",
+            "name": "Over (9.5)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "3cf940ed-5dc7-4c54-b6f4-9af27babb4d1"
+        },
+        "1827eb5c-c3c9-4d46-8f16-ea26fde9dbef": {
+            "id": "1827eb5c-c3c9-4d46-8f16-ea26fde9dbef",
+            "name": "Over (6.5)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "39553661-51f6-41f9-b7b5-b29f2b30d9c1"
+        },
+        "1ac078f1-3d91-44f7-b94f-7a1f6bfd0c19": {
+            "id": "1ac078f1-3d91-44f7-b94f-7a1f6bfd0c19",
+            "name": "Under (6)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "fe6ddcd0-1673-447b-b678-39b88f1e35d3"
+        },
+        "1c5be24a-a219-4ed5-9eab-7564030b6f3f": {
+            "id": "1c5be24a-a219-4ed5-9eab-7564030b6f3f",
+            "name": "Over (7.5)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "e8f89060-b1a2-4d24-87d6-6261cce973e9"
+        },
+        "1cc84f1b-69eb-4c26-abcc-b8db6650ce3d": {
+            "id": "1cc84f1b-69eb-4c26-abcc-b8db6650ce3d",
+            "name": "No",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "9ad47c48-db4a-41d2-b678-c27b954536ae"
+        },
+        "1d0be144-ea4c-47ba-9a08-0fb842e6dd9f": {
+            "id": "1d0be144-ea4c-47ba-9a08-0fb842e6dd9f",
+            "name": "Under (9.5)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "50b99a80-d97f-47d6-9457-dafefe9f97f7"
+        },
+        "1dc0cb0c-875d-4261-b1a4-d075c34a9bd2": {
+            "id": "1dc0cb0c-875d-4261-b1a4-d075c34a9bd2",
+            "name": "Under (4)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "90bb0471-9053-4376-acd4-d50dc7b2a0d1"
+        },
+        "1ed08e90-3656-4731-bf04-7256e0072123": {
+            "id": "1ed08e90-3656-4731-bf04-7256e0072123",
+            "name": "No",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "93bf86b5-a27e-4ef0-ac44-93edf5df1c25"
+        },
+        "209dffff-44ee-44ad-ae0a-970e7cc3e5d3": {
+            "id": "209dffff-44ee-44ad-ae0a-970e7cc3e5d3",
+            "name": "No",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "df46cccc-5100-45ca-895a-e7f3a04d11ee"
+        },
+        "2177a861-35a6-45ac-ac8e-3950387de74a": {
+            "id": "2177a861-35a6-45ac-ac8e-3950387de74a",
+            "name": "Under (10)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "5a069504-17ae-41c5-bd0c-856c212f71ea"
+        },
+        "22857b90-1961-4c16-b8c6-4ce9c94c86e8": {
+            "id": "22857b90-1961-4c16-b8c6-4ce9c94c86e8",
+            "name": "Yes",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "e7946129-dcaa-4a25-a0ac-5a76135e65c9"
+        },
+        "235e405a-b7f2-4e75-bf80-7cc93fa99ce8": {
+            "id": "235e405a-b7f2-4e75-bf80-7cc93fa99ce8",
+            "name": "Over (14)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "8e19ccda-70ec-4155-97cf-bb93148819c0"
+        },
+        "241466cd-9329-4da4-b470-f89c4bb0303d": {
+            "id": "241466cd-9329-4da4-b470-f89c4bb0303d",
+            "name": "Over (11)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "37fc0abe-591e-4338-a3a0-a6a8d4a7cfd6"
+        },
+        "2420a995-e1a9-4a98-aa74-8bc121824932": {
+            "id": "2420a995-e1a9-4a98-aa74-8bc121824932",
+            "name": "Arizona Diamondbacks By 1 Run",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "5824d0b7-cad8-45c6-8e87-ccceddfa6dff"
+        },
+        "250aad2d-b5ad-4cf1-9803-462fe76a4db7": {
+            "id": "250aad2d-b5ad-4cf1-9803-462fe76a4db7",
+            "name": "Over (13.5)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "0f7e8c6b-cec4-41c4-a05f-d15a5bcc8c03"
+        },
+        "2539e219-e896-4a6b-a33d-4253c3aa620f": {
+            "id": "2539e219-e896-4a6b-a33d-4253c3aa620f",
+            "name": "Arizona Diamondbacks (+1.5)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "930b2a8e-5e04-4e07-ab81-a0496e3f375a"
+        },
+        "253c0625-4fb2-4e63-845f-9a3b7b8ba8db": {
+            "id": "253c0625-4fb2-4e63-845f-9a3b7b8ba8db",
+            "name": "Arizona Diamondbacks",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "283de48d-5bfb-45dc-82dd-09cc86a3f9b1"
+        },
+        "258305c8-4a5f-431b-b6f3-54729a14af89": {
+            "id": "258305c8-4a5f-431b-b6f3-54729a14af89",
+            "name": "No",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "d0f67d55-23ab-456d-aa45-754beb20810a"
+        },
+        "262f9597-370c-4f75-927e-6be261f597cc": {
+            "id": "262f9597-370c-4f75-927e-6be261f597cc",
             "name": "Under (8.5)",
             "visible": true,
             "sort_order": 20,
-            "market_id": "ea4167fa-af9f-49b0-9b8c-f10aa3238fdf"
+            "market_id": "f56cfe55-919c-45fe-8d91-12cad98865f0"
         },
-        "453dc421-eeff-412b-8b24-0bc2dd29213f": {
-            "id": "453dc421-eeff-412b-8b24-0bc2dd29213f",
-            "name": "Detroit Tigers",
+        "2652aaed-d66b-4565-b61a-aec08eb5ddaf": {
+            "id": "2652aaed-d66b-4565-b61a-aec08eb5ddaf",
+            "name": "Miami Marlins (-2.5)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "94f61ae0-4bd9-4016-86da-45c375f927bb"
+        },
+        "2a8a3a85-e4a2-4f4a-9a4c-a270a4cff4a9": {
+            "id": "2a8a3a85-e4a2-4f4a-9a4c-a270a4cff4a9",
+            "name": "No run",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "5872bb20-247a-4292-b417-af23c282cbaf"
+        },
+        "2b51cac0-d3ba-4dec-b514-644167f53046": {
+            "id": "2b51cac0-d3ba-4dec-b514-644167f53046",
+            "name": "Over (10.5)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "e8367c3f-cc44-4a9a-8fbc-fd311a60585a"
+        },
+        "2e4dd256-4219-4333-a017-350745d8d30d": {
+            "id": "2e4dd256-4219-4333-a017-350745d8d30d",
+            "name": "Under (7.5)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "133a4118-657d-4982-a890-5dc108d81923"
+        },
+        "2eda2533-bd53-4961-af38-ca8b1c5c7509": {
+            "id": "2eda2533-bd53-4961-af38-ca8b1c5c7509",
+            "name": "Over (13)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "323d38e2-7440-496b-a7ed-fa659fd54ae8"
+        },
+        "2fec1a55-2554-4e86-a200-ece3fd822d2a": {
+            "id": "2fec1a55-2554-4e86-a200-ece3fd822d2a",
+            "name": "Miami Marlins",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "ae2218d7-096d-44a5-aa71-fff6468eb6a6"
+        },
+        "307f4a32-bf6b-4621-af86-35e65af975ad": {
+            "id": "307f4a32-bf6b-4621-af86-35e65af975ad",
+            "name": "Under (3.5)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "793acbbe-8110-4653-8e3c-ea4d41573aab"
+        },
+        "3436dbe8-2fcf-45ce-9636-7c989d587dab": {
+            "id": "3436dbe8-2fcf-45ce-9636-7c989d587dab",
+            "name": "Over (7.5)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "e9012f55-4102-4666-afc1-0678a558808a"
+        },
+        "34916c9e-6acd-49a1-9a7b-eaac1542b5a3": {
+            "id": "34916c9e-6acd-49a1-9a7b-eaac1542b5a3",
+            "name": "Under (6.5)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "39553661-51f6-41f9-b7b5-b29f2b30d9c1"
+        },
+        "34ee5653-0cef-4da0-adfa-50f517c97ed6": {
+            "id": "34ee5653-0cef-4da0-adfa-50f517c97ed6",
+            "name": "Over (6.5)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "5a9f6de2-58b1-41fc-93ef-f90b3b8fc80b"
+        },
+        "35f4133f-53bd-49ba-a3b4-f62ad2b340df": {
+            "id": "35f4133f-53bd-49ba-a3b4-f62ad2b340df",
+            "name": "Over (14.5)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "09b91b99-5c41-40af-9406-954af16dd2c9"
+        },
+        "421ade2c-0ab7-44ff-a322-f5e5bfa52d6a": {
+            "id": "421ade2c-0ab7-44ff-a322-f5e5bfa52d6a",
+            "name": "Over (9.5)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "50b99a80-d97f-47d6-9457-dafefe9f97f7"
+        },
+        "442369b3-9923-4630-84bc-396da2eb6d0b": {
+            "id": "442369b3-9923-4630-84bc-396da2eb6d0b",
+            "name": "Over (6.5)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "647b91b0-f84e-4dc4-8590-9f0944b9f385"
+        },
+        "455159f5-ed29-4540-bd2d-cf84b5326a46": {
+            "id": "455159f5-ed29-4540-bd2d-cf84b5326a46",
+            "name": "Over (6)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "fe6ddcd0-1673-447b-b678-39b88f1e35d3"
+        },
+        "475c87f5-ba5e-448f-98c5-ef83d8958212": {
+            "id": "475c87f5-ba5e-448f-98c5-ef83d8958212",
+            "name": "Over (4.5)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "2ea8d297-b689-4e5b-988a-85f743babc3b"
+        },
+        "4914eea5-68c0-446e-94fb-42756dedbb37": {
+            "id": "4914eea5-68c0-446e-94fb-42756dedbb37",
+            "name": "No",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "6766f83a-a5e1-4349-bc23-844a4c2e416a"
+        },
+        "4b6ad15d-a15d-4f67-8a9e-172209f0ad0e": {
+            "id": "4b6ad15d-a15d-4f67-8a9e-172209f0ad0e",
+            "name": "Under (4.5)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "2b441095-b1e5-4a40-b5c8-3364e5e54e75"
+        },
+        "4d743ddf-6c1d-4065-ade5-3a821e93269b": {
+            "id": "4d743ddf-6c1d-4065-ade5-3a821e93269b",
+            "name": "Under (7.5)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "e8f89060-b1a2-4d24-87d6-6261cce973e9"
+        },
+        "4df3d9d2-6f6f-4963-8e2a-ddc0e40ed65a": {
+            "id": "4df3d9d2-6f6f-4963-8e2a-ddc0e40ed65a",
+            "name": "Under (6)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "37c817fa-8150-4202-b012-8cd558703fff"
+        },
+        "4eab15a4-571a-438f-b965-88bd950c745b": {
+            "id": "4eab15a4-571a-438f-b965-88bd950c745b",
+            "name": "No",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "1fa28c89-7c4b-4ffd-bf8b-d4d23085c303"
+        },
+        "50fbf59c-20b9-45ea-ae09-627b038a5254": {
+            "id": "50fbf59c-20b9-45ea-ae09-627b038a5254",
+            "name": "Under (8)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "22f916d7-0741-41fe-9ee1-574f82321782"
+        },
+        "53fd9a34-c2df-4af7-99fb-b2b9c89ecfa9": {
+            "id": "53fd9a34-c2df-4af7-99fb-b2b9c89ecfa9",
+            "name": "Arizona Diamondbacks",
             "home_away": "HOME",
             "visible": true,
             "sort_order": 10,
-            "market_id": "e8c68e4b-9bb5-4cfe-ab71-70fb87b46bf8"
+            "market_id": "ae2218d7-096d-44a5-aa71-fff6468eb6a6"
         },
-        "928321ba-fec1-4524-a3b8-89c5b05e5ad5": {
-            "id": "928321ba-fec1-4524-a3b8-89c5b05e5ad5",
-            "name": "Minnesota Twins (+1.5)",
+        "55ab515b-51eb-4cba-b022-c255e5afef73": {
+            "id": "55ab515b-51eb-4cba-b022-c255e5afef73",
+            "name": "Miami Marlins By 3 Runs",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 70,
+            "market_id": "5824d0b7-cad8-45c6-8e87-ccceddfa6dff"
+        },
+        "575b238f-9840-47ef-a867-e3f0afe1f192": {
+            "id": "575b238f-9840-47ef-a867-e3f0afe1f192",
+            "name": "Yes",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "e6ab7718-454b-47b3-852e-38130acb6716"
+        },
+        "59070139-33d7-40fe-998f-3525189c66f8": {
+            "id": "59070139-33d7-40fe-998f-3525189c66f8",
+            "name": "Under (2.5)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "6e2e14b4-c497-4355-9b40-7836cb2b6368"
+        },
+        "599c399f-7372-430e-a90f-7702c371af00": {
+            "id": "599c399f-7372-430e-a90f-7702c371af00",
+            "name": "Under (6.5)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "eb61814f-39b0-417e-9b16-6232f8239fc0"
+        },
+        "59c399d1-8a2a-40b4-8ffe-a950797cc566": {
+            "id": "59c399d1-8a2a-40b4-8ffe-a950797cc566",
+            "name": "Over (7)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "02ab1abe-623b-496a-ae69-66ad70e46e23"
+        },
+        "5ba3d9d2-c2b4-40a5-af34-f8d27a22e526": {
+            "id": "5ba3d9d2-c2b4-40a5-af34-f8d27a22e526",
+            "name": "Over (7.5)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "133a4118-657d-4982-a890-5dc108d81923"
+        },
+        "5c0167e0-4a65-4f77-a421-2a341fa5c0d5": {
+            "id": "5c0167e0-4a65-4f77-a421-2a341fa5c0d5",
+            "name": "Yes",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "fcfcab8b-b3f0-48b1-a58a-3a1edb3af2cf"
+        },
+        "5d21bbb6-86c1-44f7-8512-011ab5d694f5": {
+            "id": "5d21bbb6-86c1-44f7-8512-011ab5d694f5",
+            "name": "Under (14.5)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "09b91b99-5c41-40af-9406-954af16dd2c9"
+        },
+        "5f8d9539-a16c-4239-9d13-ed12163955ee": {
+            "id": "5f8d9539-a16c-4239-9d13-ed12163955ee",
+            "name": "Under (5)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "540c8d58-611d-40a3-a718-e6f7ab5b8807"
+        },
+        "60bd97f2-741e-4f93-9cef-d37916e69b89": {
+            "id": "60bd97f2-741e-4f93-9cef-d37916e69b89",
+            "name": "Under (4)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "c8c95f21-b731-432a-8b49-5eaef732fda7"
+        },
+        "617cad5a-93ea-4068-a4c2-036e09cb5771": {
+            "id": "617cad5a-93ea-4068-a4c2-036e09cb5771",
+            "name": "Arizona Diamondbacks (-2.5)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "e194b56a-5c3e-4146-ba7a-10b35498d659"
+        },
+        "64d6d9c9-b7cc-4368-8a7d-aa1d16a036de": {
+            "id": "64d6d9c9-b7cc-4368-8a7d-aa1d16a036de",
+            "name": "Over (3.5)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "793acbbe-8110-4653-8e3c-ea4d41573aab"
+        },
+        "65928df6-f4e1-4311-85f9-ba9a20b7b851": {
+            "id": "65928df6-f4e1-4311-85f9-ba9a20b7b851",
+            "name": "Over (5.5)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "91f3314b-c45e-4a24-b81a-e3cbfdf7f8de"
+        },
+        "6635c7fb-ef27-4ecc-b85e-f8aded5cda2f": {
+            "id": "6635c7fb-ef27-4ecc-b85e-f8aded5cda2f",
+            "name": "Under (3.5)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "30637b41-c18b-4cee-bc6d-418c84072cd7"
+        },
+        "684e449a-a4b8-4d39-9866-ae9e1df327ef": {
+            "id": "684e449a-a4b8-4d39-9866-ae9e1df327ef",
+            "name": "Miami Marlins (+2.5)",
             "home_away": "AWAY",
             "visible": true,
             "sort_order": 20,
-            "market_id": "add0a552-50a6-4461-92e1-bd4cc36a82e4"
+            "market_id": "0f36f0d1-fb43-44f9-af99-061da85bb016"
         },
-        "c08eb3d4-1853-437b-93ea-5ef42e177986": {
-            "id": "c08eb3d4-1853-437b-93ea-5ef42e177986",
+        "6a4849ee-42c2-4040-a198-b26d64c15d66": {
+            "id": "6a4849ee-42c2-4040-a198-b26d64c15d66",
+            "name": "Arizona Diamondbacks (+1.5)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "28a358ec-6241-42e6-9ea0-51fa7c6e9d29"
+        },
+        "6bbe3924-df28-4272-9e98-c650912391e4": {
+            "id": "6bbe3924-df28-4272-9e98-c650912391e4",
+            "name": "Under (7.5)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "e9012f55-4102-4666-afc1-0678a558808a"
+        },
+        "6c0b3701-ca6d-43c4-86d4-4cbcef0d8a1a": {
+            "id": "6c0b3701-ca6d-43c4-86d4-4cbcef0d8a1a",
+            "name": "Arizona Diamondbacks",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "e1aa804e-e695-49fb-bc37-fd6eda0a420a"
+        },
+        "6f8c1127-643e-490e-a489-864bdb12793d": {
+            "id": "6f8c1127-643e-490e-a489-864bdb12793d",
+            "name": "Yes",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "a01164bb-5d36-45aa-b976-24baaa1331cf"
+        },
+        "7168b185-4111-4c2f-a3ea-c8ceaa0c70d2": {
+            "id": "7168b185-4111-4c2f-a3ea-c8ceaa0c70d2",
+            "name": "Over (6)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "37c817fa-8150-4202-b012-8cd558703fff"
+        },
+        "72a943b1-024f-4661-9532-f914793d404b": {
+            "id": "72a943b1-024f-4661-9532-f914793d404b",
+            "name": "Over (3.5)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "98ac1fcb-0d53-4d66-ac70-1dd660c539c6"
+        },
+        "72ca2480-f093-453e-bcde-a70f9298ad8b": {
+            "id": "72ca2480-f093-453e-bcde-a70f9298ad8b",
+            "name": "Over (5)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "617f509f-dbb7-4ab4-8991-f0c41e3b22fd"
+        },
+        "73a7aab8-b22b-4055-8906-224fc6b6c7dd": {
+            "id": "73a7aab8-b22b-4055-8906-224fc6b6c7dd",
+            "name": "Under (12.5)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "29e91731-cab1-4c51-8c67-0708c53d1c60"
+        },
+        "75c01154-ed3c-4c6e-b0a9-3e433d35c668": {
+            "id": "75c01154-ed3c-4c6e-b0a9-3e433d35c668",
+            "name": "Under (9.5)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "3cf940ed-5dc7-4c54-b6f4-9af27babb4d1"
+        },
+        "76e69fb8-e4aa-447c-b20c-86065105b2fd": {
+            "id": "76e69fb8-e4aa-447c-b20c-86065105b2fd",
+            "name": "Arizona Diamondbacks By 3 Runs",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 30,
+            "market_id": "5824d0b7-cad8-45c6-8e87-ccceddfa6dff"
+        },
+        "7953a60f-fe8b-4feb-a192-44681cba120c": {
+            "id": "7953a60f-fe8b-4feb-a192-44681cba120c",
+            "name": "Arizona Diamondbacks (+2.5)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "db141a99-9adf-435a-b973-f96c83d14344"
+        },
+        "7a25bacc-b618-4271-8625-074c2edd3d53": {
+            "id": "7a25bacc-b618-4271-8625-074c2edd3d53",
+            "name": "Over (9.5)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "5728a34f-7b3a-4898-a27e-7381e87899b5"
+        },
+        "7e3f77e0-7369-4c77-88e7-57f7063a04b9": {
+            "id": "7e3f77e0-7369-4c77-88e7-57f7063a04b9",
+            "name": "Over (9)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "b53a5093-feb2-4f64-9aeb-04f16657dcba"
+        },
+        "7ea81aa3-1286-4368-a6dc-bf2f11c32458": {
+            "id": "7ea81aa3-1286-4368-a6dc-bf2f11c32458",
+            "name": "Arizona Diamondbacks (-1.5)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "692bffdc-507b-42a5-b922-444c54fc1ac1"
+        },
+        "7f4dded6-5415-46df-a0d3-ac790da6da95": {
+            "id": "7f4dded6-5415-46df-a0d3-ac790da6da95",
             "name": "Over (8.5)",
             "visible": true,
             "sort_order": 10,
-            "market_id": "ea4167fa-af9f-49b0-9b8c-f10aa3238fdf"
+            "market_id": "f56cfe55-919c-45fe-8d91-12cad98865f0"
         },
-        "f7cc1e0c-2b8e-41e0-9bc3-75fc98cce056": {
-            "id": "f7cc1e0c-2b8e-41e0-9bc3-75fc98cce056",
-            "name": "Minnesota Twins",
+        "7f7a9d0e-392f-424b-b7fd-0c5e892983bc": {
+            "id": "7f7a9d0e-392f-424b-b7fd-0c5e892983bc",
+            "name": "Under (9)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "b53a5093-feb2-4f64-9aeb-04f16657dcba"
+        },
+        "820b08a0-73f4-4080-9818-744c58812dcf": {
+            "id": "820b08a0-73f4-4080-9818-744c58812dcf",
+            "name": "Under (5.5)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "62c58194-c4b3-4f9a-91dd-d6762a8d04d2"
+        },
+        "83614619-64d3-498c-9438-ebc84b0c3974": {
+            "id": "83614619-64d3-498c-9438-ebc84b0c3974",
+            "name": "Draw",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "d9f845f7-6274-491d-a017-ec91548c8200"
+        },
+        "8543288c-a0cf-4189-b0c7-55e534ca5f9a": {
+            "id": "8543288c-a0cf-4189-b0c7-55e534ca5f9a",
+            "name": "Under (6.5)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "5a9f6de2-58b1-41fc-93ef-f90b3b8fc80b"
+        },
+        "8628f3ce-dbf2-4976-a404-76dfb35b578c": {
+            "id": "8628f3ce-dbf2-4976-a404-76dfb35b578c",
+            "name": "Under (5.5)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "91f3314b-c45e-4a24-b81a-e3cbfdf7f8de"
+        },
+        "87f7dfa5-4560-4b1f-86b0-029d00a382a6": {
+            "id": "87f7dfa5-4560-4b1f-86b0-029d00a382a6",
+            "name": "Yes",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "e45da7e6-5b42-4a06-a993-aedbaa57a028"
+        },
+        "8815b35e-59ea-4dad-89d5-40f5837c6f0f": {
+            "id": "8815b35e-59ea-4dad-89d5-40f5837c6f0f",
+            "name": "Arizona Diamondbacks",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "d9f845f7-6274-491d-a017-ec91548c8200"
+        },
+        "888237cf-c6c8-465a-af59-7257dd5a267f": {
+            "id": "888237cf-c6c8-465a-af59-7257dd5a267f",
+            "name": "Arizona Diamondbacks By 4 Runs Or More",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 40,
+            "market_id": "5824d0b7-cad8-45c6-8e87-ccceddfa6dff"
+        },
+        "89a036cc-a737-4419-8a46-8524a29e368d": {
+            "id": "89a036cc-a737-4419-8a46-8524a29e368d",
+            "name": "No",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "c98b98db-1b77-4ad3-8b9a-2281b1221b98"
+        },
+        "8a255fe4-961b-43ba-8a4b-0e44a03324a5": {
+            "id": "8a255fe4-961b-43ba-8a4b-0e44a03324a5",
+            "name": "No",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "fcfcab8b-b3f0-48b1-a58a-3a1edb3af2cf"
+        },
+        "8b4d392b-d0cd-46ee-95cc-104021917192": {
+            "id": "8b4d392b-d0cd-46ee-95cc-104021917192",
+            "name": "Under (13)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "323d38e2-7440-496b-a7ed-fa659fd54ae8"
+        },
+        "8d72875c-491e-4307-8fd3-63f10c7fbc31": {
+            "id": "8d72875c-491e-4307-8fd3-63f10c7fbc31",
+            "name": "Over (1.5)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "917e6ba7-2d6e-4244-86f2-c0788a258a2b"
+        },
+        "8e8b086c-eeb5-43ee-bbaf-544f29e9cf4e": {
+            "id": "8e8b086c-eeb5-43ee-bbaf-544f29e9cf4e",
+            "name": "Arizona Diamondbacks (-1.5)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "0fc0dfe3-54a9-4fd0-8538-4c37d88667e7"
+        },
+        "907a7959-3119-40f6-a0c1-88965a2f9486": {
+            "id": "907a7959-3119-40f6-a0c1-88965a2f9486",
+            "name": "No",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "d899db87-216b-4685-a67e-349e11a655f3"
+        },
+        "91254694-c9fb-4f68-a2f8-f256adf80120": {
+            "id": "91254694-c9fb-4f68-a2f8-f256adf80120",
+            "name": "Over (2.5)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "e43cdc57-eaae-48cb-ab6d-e7de8e606e8a"
+        },
+        "91cfe386-0242-4d54-b94c-15bb48164f2e": {
+            "id": "91cfe386-0242-4d54-b94c-15bb48164f2e",
+            "name": "Over (4)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "c8c95f21-b731-432a-8b49-5eaef732fda7"
+        },
+        "93bf8eea-ef7a-4155-8fbb-8f42cf49d267": {
+            "id": "93bf8eea-ef7a-4155-8fbb-8f42cf49d267",
+            "name": "Over (8.5)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "1f490d26-901f-407e-ae3c-368d62cbf98a"
+        },
+        "97634f0a-c9ef-42af-8632-85fca16e4e5b": {
+            "id": "97634f0a-c9ef-42af-8632-85fca16e4e5b",
+            "name": "No",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "7e11c1ed-1a0a-4ca8-8ef0-2517aaa35b07"
+        },
+        "9778955b-2671-41d8-a9eb-3af35221482d": {
+            "id": "9778955b-2671-41d8-a9eb-3af35221482d",
+            "name": "Under (4.5)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "f8cfadfe-f81f-45ca-aaa0-fb157178716e"
+        },
+        "977ede41-85a9-489b-8c4c-7b29f784c9e1": {
+            "id": "977ede41-85a9-489b-8c4c-7b29f784c9e1",
+            "name": "Yes",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "a122c2d1-4861-4098-bed9-d94a458ee827"
+        },
+        "9e5241c4-7f4f-47f6-80b1-336dc03658c3": {
+            "id": "9e5241c4-7f4f-47f6-80b1-336dc03658c3",
+            "name": "Miami Marlins (-0.5)",
             "home_away": "AWAY",
             "visible": true,
             "sort_order": 20,
-            "market_id": "e8c68e4b-9bb5-4cfe-ab71-70fb87b46bf8"
+            "market_id": "a8b031be-06ee-4658-8a7a-4dd08b211636"
+        },
+        "9f7329bb-769e-46f9-8dbb-bd27edf08254": {
+            "id": "9f7329bb-769e-46f9-8dbb-bd27edf08254",
+            "name": "No",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "a122c2d1-4861-4098-bed9-d94a458ee827"
+        },
+        "a17b1f91-dbee-4296-a29e-91f9b5e54dfa": {
+            "id": "a17b1f91-dbee-4296-a29e-91f9b5e54dfa",
+            "name": "Yes",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "d0f67d55-23ab-456d-aa45-754beb20810a"
+        },
+        "a2a9f16d-f0ab-46ae-9bfa-114b721b3246": {
+            "id": "a2a9f16d-f0ab-46ae-9bfa-114b721b3246",
+            "name": "Yes",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "df46cccc-5100-45ca-895a-e7f3a04d11ee"
+        },
+        "a523cf4b-4ece-4e31-8fef-5b0aeebeb956": {
+            "id": "a523cf4b-4ece-4e31-8fef-5b0aeebeb956",
+            "name": "Over (4.5)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "0cb0f571-dbbf-4212-a7ac-4ecbe07a66ee"
+        },
+        "a57587c7-21a3-41cd-83a7-2206f82b8ae8": {
+            "id": "a57587c7-21a3-41cd-83a7-2206f82b8ae8",
+            "name": "Over (11.5)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "40008358-aece-4758-8e52-bb715e7720cf"
+        },
+        "a6d7da3e-c9d6-4f9e-ab00-a91506bd7f20": {
+            "id": "a6d7da3e-c9d6-4f9e-ab00-a91506bd7f20",
+            "name": "Yes",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "d899db87-216b-4685-a67e-349e11a655f3"
+        },
+        "a6f67af6-ed8c-4584-9fef-e173ddd4a440": {
+            "id": "a6f67af6-ed8c-4584-9fef-e173ddd4a440",
+            "name": "Miami Marlins By 1 Run",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 50,
+            "market_id": "5824d0b7-cad8-45c6-8e87-ccceddfa6dff"
+        },
+        "aa07ed6f-2679-4ff4-80d1-4b810e45e50b": {
+            "id": "aa07ed6f-2679-4ff4-80d1-4b810e45e50b",
+            "name": "Miami Marlins",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 30,
+            "market_id": "d9f845f7-6274-491d-a017-ec91548c8200"
+        },
+        "aa2242c0-eae6-450b-97d8-7732d6664606": {
+            "id": "aa2242c0-eae6-450b-97d8-7732d6664606",
+            "name": "Yes",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "42ddc0de-e916-4d28-b575-97992ee024ea"
+        },
+        "ad00bd9e-f0b6-4cf7-82a7-231527c79297": {
+            "id": "ad00bd9e-f0b6-4cf7-82a7-231527c79297",
+            "name": "Over (5.5)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "d53cb440-ee16-4751-9797-31860705f5c4"
+        },
+        "af2ef8b4-a4d5-4f63-8e8f-365e4bcdd797": {
+            "id": "af2ef8b4-a4d5-4f63-8e8f-365e4bcdd797",
+            "name": "Over (5.5)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "c3fd4b01-4474-40e4-af73-2ecf3d62e735"
+        },
+        "b23f80b9-5564-4885-a69c-6760059196ca": {
+            "id": "b23f80b9-5564-4885-a69c-6760059196ca",
+            "name": "Under (3)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "d0641555-2997-4928-b361-48966c3fb144"
+        },
+        "b3fa4a7b-b157-4a68-b6b3-36dcf806304a": {
+            "id": "b3fa4a7b-b157-4a68-b6b3-36dcf806304a",
+            "name": "Miami Marlins",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 30,
+            "market_id": "5872bb20-247a-4292-b417-af23c282cbaf"
+        },
+        "b55ecc49-bdce-44d7-b02c-9c69684ea556": {
+            "id": "b55ecc49-bdce-44d7-b02c-9c69684ea556",
+            "name": "Yes",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "1fa28c89-7c4b-4ffd-bf8b-d4d23085c303"
+        },
+        "b683982f-7f93-48ed-8694-2f05d949d07f": {
+            "id": "b683982f-7f93-48ed-8694-2f05d949d07f",
+            "name": "Under (8.5)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "1f490d26-901f-407e-ae3c-368d62cbf98a"
+        },
+        "b6e9481e-c3e0-42e1-8253-9b6885fd7c27": {
+            "id": "b6e9481e-c3e0-42e1-8253-9b6885fd7c27",
+            "name": "Over (3)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "d0641555-2997-4928-b361-48966c3fb144"
+        },
+        "b7303e36-3777-4527-8df4-4ad88bf02a02": {
+            "id": "b7303e36-3777-4527-8df4-4ad88bf02a02",
+            "name": "Under (2.5)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "e43cdc57-eaae-48cb-ab6d-e7de8e606e8a"
+        },
+        "b99ac1c1-83b3-4ab2-a592-17b4e1385174": {
+            "id": "b99ac1c1-83b3-4ab2-a592-17b4e1385174",
+            "name": "Over (8.5)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "f3f0a0ea-2fac-45a5-bc20-f2f8916fbb9f"
+        },
+        "badd8645-e010-4bc0-bb66-2cadd176fa44": {
+            "id": "badd8645-e010-4bc0-bb66-2cadd176fa44",
+            "name": "Under (2)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "9ff79be3-312e-44cd-bcf7-98c2f63b955b"
+        },
+        "bb292f84-2730-4d49-bb38-dea664a315d9": {
+            "id": "bb292f84-2730-4d49-bb38-dea664a315d9",
+            "name": "Miami Marlins (-2.5)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "db141a99-9adf-435a-b973-f96c83d14344"
+        },
+        "bb8ab5f8-0621-41a4-a750-08a164ab7968": {
+            "id": "bb8ab5f8-0621-41a4-a750-08a164ab7968",
+            "name": "Under (4.5)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "0cb0f571-dbbf-4212-a7ac-4ecbe07a66ee"
+        },
+        "bbd04f41-8d88-44ed-9c21-c30342c5f459": {
+            "id": "bbd04f41-8d88-44ed-9c21-c30342c5f459",
+            "name": "Over (5)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "540c8d58-611d-40a3-a718-e6f7ab5b8807"
+        },
+        "bc106723-165d-46e2-8883-95b7bf379521": {
+            "id": "bc106723-165d-46e2-8883-95b7bf379521",
+            "name": "Over (3.5)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "30637b41-c18b-4cee-bc6d-418c84072cd7"
+        },
+        "bdb378f1-6b3e-47bb-9981-d1a8ab6fae1e": {
+            "id": "bdb378f1-6b3e-47bb-9981-d1a8ab6fae1e",
+            "name": "Over (12)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "82f0efc8-8241-4ddd-a25f-5abc14703546"
+        },
+        "bdcf85f0-501d-40da-b87d-6f0fa7d68589": {
+            "id": "bdcf85f0-501d-40da-b87d-6f0fa7d68589",
+            "name": "Miami Marlins By 4 Runs Or More",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 80,
+            "market_id": "5824d0b7-cad8-45c6-8e87-ccceddfa6dff"
+        },
+        "be630b41-8f46-44d2-901e-2aa135d707df": {
+            "id": "be630b41-8f46-44d2-901e-2aa135d707df",
+            "name": "No",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "a01164bb-5d36-45aa-b976-24baaa1331cf"
+        },
+        "c0c3a4b9-4b74-4bc1-b418-5fc054905e1d": {
+            "id": "c0c3a4b9-4b74-4bc1-b418-5fc054905e1d",
+            "name": "No",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "b3f4ae2c-68e8-4b3b-aa93-cca79e326511"
+        },
+        "c29c306d-7865-4d0f-88a6-24f316bce51b": {
+            "id": "c29c306d-7865-4d0f-88a6-24f316bce51b",
+            "name": "Miami Marlins (+2.5)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "e194b56a-5c3e-4146-ba7a-10b35498d659"
+        },
+        "c527636d-eaa8-491f-9c65-17f79a374497": {
+            "id": "c527636d-eaa8-491f-9c65-17f79a374497",
+            "name": "Under (7)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "02ab1abe-623b-496a-ae69-66ad70e46e23"
+        },
+        "ca06bbb6-1717-4160-9d88-f18659192143": {
+            "id": "ca06bbb6-1717-4160-9d88-f18659192143",
+            "name": "Miami Marlins (+0.5)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "2079f253-ac23-40f3-b98c-79514af4c8aa"
+        },
+        "ca652e4a-c000-4d25-8598-7e36d102ef41": {
+            "id": "ca652e4a-c000-4d25-8598-7e36d102ef41",
+            "name": "Yes",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "5bf11bd7-8703-4e25-9aa5-a2fdaa2b6b29"
+        },
+        "caa00138-409e-48b7-8a9a-527e10a5962c": {
+            "id": "caa00138-409e-48b7-8a9a-527e10a5962c",
+            "name": "No",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "60590e6f-7edc-410b-ad5a-8c58545f3208"
+        },
+        "cb25f056-ca04-4a66-9c6d-5f50b8cc873a": {
+            "id": "cb25f056-ca04-4a66-9c6d-5f50b8cc873a",
+            "name": "Under (12)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "82f0efc8-8241-4ddd-a25f-5abc14703546"
+        },
+        "cb4ffc7c-95d8-453d-91e1-f8013e6d7d87": {
+            "id": "cb4ffc7c-95d8-453d-91e1-f8013e6d7d87",
+            "name": "Under (10.5)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "e8367c3f-cc44-4a9a-8fbc-fd311a60585a"
+        },
+        "cce52895-c4b3-4c0b-b8e0-65321fece2e4": {
+            "id": "cce52895-c4b3-4c0b-b8e0-65321fece2e4",
+            "name": "Under (14)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "8e19ccda-70ec-4155-97cf-bb93148819c0"
+        },
+        "cd58474f-4d11-47cb-898c-fdc308309480": {
+            "id": "cd58474f-4d11-47cb-898c-fdc308309480",
+            "name": "Arizona Diamondbacks",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "5872bb20-247a-4292-b417-af23c282cbaf"
+        },
+        "cdcf0d5a-1554-417c-9154-8c5b2332b748": {
+            "id": "cdcf0d5a-1554-417c-9154-8c5b2332b748",
+            "name": "No",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "406b23bb-34cc-45c4-9168-6e19b33eb116"
+        },
+        "ce0a6107-5f9f-437b-af69-c7eee9bc1a30": {
+            "id": "ce0a6107-5f9f-437b-af69-c7eee9bc1a30",
+            "name": "Miami Marlins (-1.5)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "28a358ec-6241-42e6-9ea0-51fa7c6e9d29"
+        },
+        "ce109cc4-f457-433a-bbfa-04905d12d1fe": {
+            "id": "ce109cc4-f457-433a-bbfa-04905d12d1fe",
+            "name": "Arizona Diamondbacks (+2.5)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "94f61ae0-4bd9-4016-86da-45c375f927bb"
+        },
+        "ce759631-ccef-4d9c-908d-47791cc37432": {
+            "id": "ce759631-ccef-4d9c-908d-47791cc37432",
+            "name": "Under (8.5)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "f3f0a0ea-2fac-45a5-bc20-f2f8916fbb9f"
+        },
+        "cf4001c6-4485-410d-9995-27c3b93a1643": {
+            "id": "cf4001c6-4485-410d-9995-27c3b93a1643",
+            "name": "Yes",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "93bf86b5-a27e-4ef0-ac44-93edf5df1c25"
+        },
+        "cfc9ff5f-6cc9-49b0-9361-135dfa3fe849": {
+            "id": "cfc9ff5f-6cc9-49b0-9361-135dfa3fe849",
+            "name": "Yes",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "b3f4ae2c-68e8-4b3b-aa93-cca79e326511"
+        },
+        "d0268413-e02d-425a-b7e7-954f2f0333df": {
+            "id": "d0268413-e02d-425a-b7e7-954f2f0333df",
+            "name": "Miami Marlins",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "283de48d-5bfb-45dc-82dd-09cc86a3f9b1"
+        },
+        "d1a07023-6c99-42b1-b2a7-da99c4f4edfe": {
+            "id": "d1a07023-6c99-42b1-b2a7-da99c4f4edfe",
+            "name": "Yes",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "c98b98db-1b77-4ad3-8b9a-2281b1221b98"
+        },
+        "d5059295-f90f-4187-b8d7-7e2afe7fdb6c": {
+            "id": "d5059295-f90f-4187-b8d7-7e2afe7fdb6c",
+            "name": "No",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "5bf11bd7-8703-4e25-9aa5-a2fdaa2b6b29"
+        },
+        "d553cdad-6ebd-437d-bdfc-56ad2b6f15d7": {
+            "id": "d553cdad-6ebd-437d-bdfc-56ad2b6f15d7",
+            "name": "Over (4.5)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "f8cfadfe-f81f-45ca-aaa0-fb157178716e"
+        },
+        "d5f1829b-41cd-423c-91a6-92cc5a1eebac": {
+            "id": "d5f1829b-41cd-423c-91a6-92cc5a1eebac",
+            "name": "Under (3.5)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "d8fba019-210e-4d23-b244-e02909ce8ef8"
+        },
+        "dbe5990b-0367-4b19-9935-c09e4474a939": {
+            "id": "dbe5990b-0367-4b19-9935-c09e4474a939",
+            "name": "Yes",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "60590e6f-7edc-410b-ad5a-8c58545f3208"
+        },
+        "dcda95c0-fe59-46b1-9bf8-1e2cadff8c00": {
+            "id": "dcda95c0-fe59-46b1-9bf8-1e2cadff8c00",
+            "name": "No",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "e7946129-dcaa-4a25-a0ac-5a76135e65c9"
+        },
+        "dd4e86cf-1fa9-4a0d-8dbd-741e1cf9da02": {
+            "id": "dd4e86cf-1fa9-4a0d-8dbd-741e1cf9da02",
+            "name": "Miami Marlins (+1.5)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "0fc0dfe3-54a9-4fd0-8538-4c37d88667e7"
+        },
+        "ddc41b14-0ecb-4be8-b639-f11b3708d84b": {
+            "id": "ddc41b14-0ecb-4be8-b639-f11b3708d84b",
+            "name": "Yes",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "7b58990e-4205-4c24-96ac-ed96bd4f5ad5"
+        },
+        "debdc184-720a-4de8-9d2a-fe365bbebe37": {
+            "id": "debdc184-720a-4de8-9d2a-fe365bbebe37",
+            "name": "Miami Marlins (+1.5)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "692bffdc-507b-42a5-b922-444c54fc1ac1"
+        },
+        "df35d213-ac6f-44be-8e67-da66f49937e5": {
+            "id": "df35d213-ac6f-44be-8e67-da66f49937e5",
+            "name": "Over (2.5)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "6e2e14b4-c497-4355-9b40-7836cb2b6368"
+        },
+        "df6ffae2-c443-46ef-a5ad-a61f43c2fd4a": {
+            "id": "df6ffae2-c443-46ef-a5ad-a61f43c2fd4a",
+            "name": "Miami Marlins (-1.5)",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "930b2a8e-5e04-4e07-ab81-a0496e3f375a"
+        },
+        "dfa72cc0-8c83-45b6-9212-32436c450c79": {
+            "id": "dfa72cc0-8c83-45b6-9212-32436c450c79",
+            "name": "Over (2.5)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "51acc63c-8e94-4996-9fde-a4330a053a1e"
+        },
+        "dfa86d42-9203-4686-9669-a3859a61bfa5": {
+            "id": "dfa86d42-9203-4686-9669-a3859a61bfa5",
+            "name": "No",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "42ddc0de-e916-4d28-b575-97992ee024ea"
+        },
+        "e0ff3bc5-62e3-45c0-b741-dab9302585f6": {
+            "id": "e0ff3bc5-62e3-45c0-b741-dab9302585f6",
+            "name": "Arizona Diamondbacks By 2 Runs",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "5824d0b7-cad8-45c6-8e87-ccceddfa6dff"
+        },
+        "e1063c7d-f360-4d36-bce4-63347b415349": {
+            "id": "e1063c7d-f360-4d36-bce4-63347b415349",
+            "name": "Over (8)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "22f916d7-0741-41fe-9ee1-574f82321782"
+        },
+        "e26f6d6a-faa4-4c61-92bd-b8043252aafc": {
+            "id": "e26f6d6a-faa4-4c61-92bd-b8043252aafc",
+            "name": "Under (6.5)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "647b91b0-f84e-4dc4-8590-9f0944b9f385"
+        },
+        "e31424ae-d024-4f5e-913d-383392f4f5e3": {
+            "id": "e31424ae-d024-4f5e-913d-383392f4f5e3",
+            "name": "Over (5.5)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "62c58194-c4b3-4f9a-91dd-d6762a8d04d2"
+        },
+        "e41af835-e20f-4167-9cf6-1bbcf93ecba2": {
+            "id": "e41af835-e20f-4167-9cf6-1bbcf93ecba2",
+            "name": "No",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "e45da7e6-5b42-4a06-a993-aedbaa57a028"
+        },
+        "e635c8af-791a-4c5b-af64-826724069b49": {
+            "id": "e635c8af-791a-4c5b-af64-826724069b49",
+            "name": "Under (11.5)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "40008358-aece-4758-8e52-bb715e7720cf"
+        },
+        "ea4097a7-4801-4d59-abdf-3c8859fc4d48": {
+            "id": "ea4097a7-4801-4d59-abdf-3c8859fc4d48",
+            "name": "Under (2.5)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "51acc63c-8e94-4996-9fde-a4330a053a1e"
+        },
+        "eb6cee80-04bc-4edc-a7a9-dd6bac0d7bd0": {
+            "id": "eb6cee80-04bc-4edc-a7a9-dd6bac0d7bd0",
+            "name": "Over (4)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "90bb0471-9053-4376-acd4-d50dc7b2a0d1"
+        },
+        "f50a8064-46ea-4540-bece-e78d30552b2b": {
+            "id": "f50a8064-46ea-4540-bece-e78d30552b2b",
+            "name": "Arizona Diamondbacks (+0.5)",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "a8b031be-06ee-4658-8a7a-4dd08b211636"
+        },
+        "f595beca-565c-4c96-b961-08fbc1701110": {
+            "id": "f595beca-565c-4c96-b961-08fbc1701110",
+            "name": "Yes",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "7e11c1ed-1a0a-4ca8-8ef0-2517aaa35b07"
+        },
+        "f81d92f4-9457-409d-92f6-d3a9157933e5": {
+            "id": "f81d92f4-9457-409d-92f6-d3a9157933e5",
+            "name": "Over (12.5)",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "29e91731-cab1-4c51-8c67-0708c53d1c60"
+        },
+        "f8746a36-538b-4974-a306-4ad1d039043c": {
+            "id": "f8746a36-538b-4974-a306-4ad1d039043c",
+            "name": "Under (5.5)",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "d53cb440-ee16-4751-9797-31860705f5c4"
+        },
+        "fa49f8c6-6209-4c10-ba29-f422680ae260": {
+            "id": "fa49f8c6-6209-4c10-ba29-f422680ae260",
+            "name": "Miami Marlins",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "e1aa804e-e695-49fb-bc37-fd6eda0a420a"
+        },
+        "fb03eb64-209f-44f2-a8ad-8109636e1b46": {
+            "id": "fb03eb64-209f-44f2-a8ad-8109636e1b46",
+            "name": "Miami Marlins By 2 Runs",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 60,
+            "market_id": "5824d0b7-cad8-45c6-8e87-ccceddfa6dff"
+        },
+        "fc940a80-e83d-4e74-bb72-730389f2c376": {
+            "id": "fc940a80-e83d-4e74-bb72-730389f2c376",
+            "name": "No",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "7b58990e-4205-4c24-96ac-ed96bd4f5ad5"
         }
     },
     "event_participants": {
-        "06446131-2cce-4b60-9d20-f0e05e8b14a7": {
-            "id": "06446131-2cce-4b60-9d20-f0e05e8b14a7",
-            "event_id": "4580a560-1039-40fa-9565-ba2ce1e4fe7c",
-            "name": "Minnesota Twins",
-            "home_away": "AWAY"
-        },
-        "93473f65-0fe3-4e9d-892f-537feadf3ffa": {
-            "id": "93473f65-0fe3-4e9d-892f-537feadf3ffa",
-            "event_id": "4580a560-1039-40fa-9565-ba2ce1e4fe7c",
-            "name": "Detroit Tigers",
+        "30d14cba-3263-47bc-b0bc-96eba3a49031": {
+            "id": "30d14cba-3263-47bc-b0bc-96eba3a49031",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "name": "Arizona Diamondbacks",
             "home_away": "HOME"
+        },
+        "3d383838-f4a5-43da-a1f8-d8169a4905a0": {
+            "id": "3d383838-f4a5-43da-a1f8-d8169a4905a0",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "name": "Miami Marlins",
+            "home_away": "AWAY"
         }
     },
     "events": {
-        "4580a560-1039-40fa-9565-ba2ce1e4fe7c": {
-            "id": "4580a560-1039-40fa-9565-ba2ce1e4fe7c",
-            "name": "Detroit Tigers vs Minnesota Twins",
+        "2bc84ce6-b445-4c30-a638-90e249ef2020": {
+            "id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "name": "Arizona Diamondbacks vs Miami Marlins",
             "event_type": {
                 "id": "6bfa0efc-05df-4ae1-9b1e-152365290cfd",
                 "name": "Match"
             },
             "match_status": "BettingOpen",
-            "advertised_start": "2025-06-28T17:10:00Z",
-            "actual_start": "2025-06-28T17:10:00Z",
+            "advertised_start": "2025-06-28T20:10:00Z",
+            "actual_start": "2025-06-28T20:10:00Z",
             "visible": true,
-            "slug": "detroit-tigers-vs-minnesota-twins",
+            "slug": "arizona-diamondbacks-vs-miami-marlins",
             "competition": {
                 "id": "a5618779-2cb3-4c0a-b8cc-ce2517fbc8d4",
                 "name": "MLB",
@@ -83,46 +1349,266 @@
             "competition_id": "a5618779-2cb3-4c0a-b8cc-ce2517fbc8d4",
             "market_type_group_ids": [
                 "95f7457f-bd84-4e9e-b714-c257b90c1031",
-                "f7331bb9-8791-4c1a-9b7b-cf2298c98757"
+                "6029ad1a-ac00-4ecc-8f33-9a801da611e0",
+                "f7331bb9-8791-4c1a-9b7b-cf2298c98757",
+                "59ce1f2b-e8d4-4ed5-96e5-e26d9e1cfd18",
+                "21e8201a-e43d-4b27-b077-39bf62193571",
+                "ccecaf3f-9404-4609-8c72-7beca9088024"
             ],
             "market_type_group_markets": [
                 {
                     "market_type_group_id": "95f7457f-bd84-4e9e-b714-c257b90c1031",
                     "market_ids": [
-                        "e8c68e4b-9bb5-4cfe-ab71-70fb87b46bf8",
-                        "add0a552-50a6-4461-92e1-bd4cc36a82e4",
-                        "ea4167fa-af9f-49b0-9b8c-f10aa3238fdf"
+                        "e1aa804e-e695-49fb-bc37-fd6eda0a420a",
+                        "0fc0dfe3-54a9-4fd0-8538-4c37d88667e7",
+                        "f3f0a0ea-2fac-45a5-bc20-f2f8916fbb9f",
+                        "5824d0b7-cad8-45c6-8e87-ccceddfa6dff",
+                        "93bf86b5-a27e-4ef0-ac44-93edf5df1c25"
+                    ]
+                },
+                {
+                    "market_type_group_id": "6029ad1a-ac00-4ecc-8f33-9a801da611e0",
+                    "market_ids": [
+                        "283de48d-5bfb-45dc-82dd-09cc86a3f9b1",
+                        "e45da7e6-5b42-4a06-a993-aedbaa57a028",
+                        "5872bb20-247a-4292-b417-af23c282cbaf"
                     ]
                 },
                 {
                     "market_type_group_id": "f7331bb9-8791-4c1a-9b7b-cf2298c98757",
                     "market_ids": [
-                        "ea4167fa-af9f-49b0-9b8c-f10aa3238fdf"
+                        "f3f0a0ea-2fac-45a5-bc20-f2f8916fbb9f",
+                        "2ea8d297-b689-4e5b-988a-85f743babc3b",
+                        "30637b41-c18b-4cee-bc6d-418c84072cd7",
+                        "e7946129-dcaa-4a25-a0ac-5a76135e65c9",
+                        "7b58990e-4205-4c24-96ac-ed96bd4f5ad5",
+                        "406b23bb-34cc-45c4-9168-6e19b33eb116",
+                        "d0f67d55-23ab-456d-aa45-754beb20810a",
+                        "42ddc0de-e916-4d28-b575-97992ee024ea",
+                        "1fa28c89-7c4b-4ffd-bf8b-d4d23085c303",
+                        "df46cccc-5100-45ca-895a-e7f3a04d11ee",
+                        "c98b98db-1b77-4ad3-8b9a-2281b1221b98",
+                        "a01164bb-5d36-45aa-b976-24baaa1331cf",
+                        "d899db87-216b-4685-a67e-349e11a655f3",
+                        "e6ab7718-454b-47b3-852e-38130acb6716",
+                        "9ad47c48-db4a-41d2-b678-c27b954536ae",
+                        "7e11c1ed-1a0a-4ca8-8ef0-2517aaa35b07",
+                        "6766f83a-a5e1-4349-bc23-844a4c2e416a",
+                        "a122c2d1-4861-4098-bed9-d94a458ee827",
+                        "5bf11bd7-8703-4e25-9aa5-a2fdaa2b6b29",
+                        "b3f4ae2c-68e8-4b3b-aa93-cca79e326511",
+                        "60590e6f-7edc-410b-ad5a-8c58545f3208",
+                        "fcfcab8b-b3f0-48b1-a58a-3a1edb3af2cf"
+                    ]
+                },
+                {
+                    "market_type_group_id": "59ce1f2b-e8d4-4ed5-96e5-e26d9e1cfd18",
+                    "market_ids": [
+                        "d9f845f7-6274-491d-a017-ec91548c8200",
+                        "ae2218d7-096d-44a5-aa71-fff6468eb6a6",
+                        "2079f253-ac23-40f3-b98c-79514af4c8aa",
+                        "a8b031be-06ee-4658-8a7a-4dd08b211636",
+                        "28a358ec-6241-42e6-9ea0-51fa7c6e9d29",
+                        "94f61ae0-4bd9-4016-86da-45c375f927bb",
+                        "692bffdc-507b-42a5-b922-444c54fc1ac1",
+                        "0f36f0d1-fb43-44f9-af99-061da85bb016",
+                        "0cb0f571-dbbf-4212-a7ac-4ecbe07a66ee",
+                        "540c8d58-611d-40a3-a718-e6f7ab5b8807",
+                        "917e6ba7-2d6e-4244-86f2-c0788a258a2b",
+                        "9ff79be3-312e-44cd-bcf7-98c2f63b955b",
+                        "51acc63c-8e94-4996-9fde-a4330a053a1e",
+                        "d0641555-2997-4928-b361-48966c3fb144",
+                        "98ac1fcb-0d53-4d66-ac70-1dd660c539c6",
+                        "c8c95f21-b731-432a-8b49-5eaef732fda7",
+                        "62c58194-c4b3-4f9a-91dd-d6762a8d04d2",
+                        "fe6ddcd0-1673-447b-b678-39b88f1e35d3",
+                        "39553661-51f6-41f9-b7b5-b29f2b30d9c1"
+                    ]
+                },
+                {
+                    "market_type_group_id": "21e8201a-e43d-4b27-b077-39bf62193571",
+                    "market_ids": [
+                        "930b2a8e-5e04-4e07-ab81-a0496e3f375a",
+                        "db141a99-9adf-435a-b973-f96c83d14344",
+                        "e194b56a-5c3e-4146-ba7a-10b35498d659"
+                    ]
+                },
+                {
+                    "market_type_group_id": "ccecaf3f-9404-4609-8c72-7beca9088024",
+                    "market_ids": [
+                        "5a069504-17ae-41c5-bd0c-856c212f71ea",
+                        "e8367c3f-cc44-4a9a-8fbc-fd311a60585a",
+                        "37fc0abe-591e-4338-a3a0-a6a8d4a7cfd6",
+                        "40008358-aece-4758-8e52-bb715e7720cf",
+                        "82f0efc8-8241-4ddd-a25f-5abc14703546",
+                        "29e91731-cab1-4c51-8c67-0708c53d1c60",
+                        "323d38e2-7440-496b-a7ed-fa659fd54ae8",
+                        "0f7e8c6b-cec4-41c4-a05f-d15a5bcc8c03",
+                        "8e19ccda-70ec-4155-97cf-bb93148819c0",
+                        "09b91b99-5c41-40af-9406-954af16dd2c9",
+                        "d8fba019-210e-4d23-b244-e02909ce8ef8",
+                        "90bb0471-9053-4376-acd4-d50dc7b2a0d1",
+                        "2b441095-b1e5-4a40-b5c8-3364e5e54e75",
+                        "617f509f-dbb7-4ab4-8991-f0c41e3b22fd",
+                        "c3fd4b01-4474-40e4-af73-2ecf3d62e735",
+                        "37c817fa-8150-4202-b012-8cd558703fff",
+                        "647b91b0-f84e-4dc4-8590-9f0944b9f385",
+                        "02ab1abe-623b-496a-ae69-66ad70e46e23",
+                        "e8f89060-b1a2-4d24-87d6-6261cce973e9",
+                        "22f916d7-0741-41fe-9ee1-574f82321782",
+                        "b53a5093-feb2-4f64-9aeb-04f16657dcba",
+                        "50b99a80-d97f-47d6-9457-dafefe9f97f7",
+                        "6e2e14b4-c497-4355-9b40-7836cb2b6368",
+                        "f8cfadfe-f81f-45ca-aaa0-fb157178716e",
+                        "91f3314b-c45e-4a24-b81a-e3cbfdf7f8de",
+                        "eb61814f-39b0-417e-9b16-6232f8239fc0",
+                        "e9012f55-4102-4666-afc1-0678a558808a",
+                        "1f490d26-901f-407e-ae3c-368d62cbf98a",
+                        "3cf940ed-5dc7-4c54-b6f4-9af27babb4d1",
+                        "e43cdc57-eaae-48cb-ab6d-e7de8e606e8a",
+                        "793acbbe-8110-4653-8e3c-ea4d41573aab",
+                        "d53cb440-ee16-4751-9797-31860705f5c4",
+                        "5a9f6de2-58b1-41fc-93ef-f90b3b8fc80b",
+                        "133a4118-657d-4982-a890-5dc108d81923",
+                        "f56cfe55-919c-45fe-8d91-12cad98865f0",
+                        "5728a34f-7b3a-4898-a27e-7381e87899b5"
                     ]
                 }
             ],
-            "market_count": 3,
+            "market_count": 87,
             "main_markets": [
-                "e8c68e4b-9bb5-4cfe-ab71-70fb87b46bf8"
+                "e1aa804e-e695-49fb-bc37-fd6eda0a420a"
             ],
             "market_ids": [
-                "e8c68e4b-9bb5-4cfe-ab71-70fb87b46bf8",
-                "add0a552-50a6-4461-92e1-bd4cc36a82e4",
-                "ea4167fa-af9f-49b0-9b8c-f10aa3238fdf"
+                "e1aa804e-e695-49fb-bc37-fd6eda0a420a",
+                "0fc0dfe3-54a9-4fd0-8538-4c37d88667e7",
+                "f3f0a0ea-2fac-45a5-bc20-f2f8916fbb9f",
+                "5824d0b7-cad8-45c6-8e87-ccceddfa6dff",
+                "93bf86b5-a27e-4ef0-ac44-93edf5df1c25",
+                "283de48d-5bfb-45dc-82dd-09cc86a3f9b1",
+                "e45da7e6-5b42-4a06-a993-aedbaa57a028",
+                "5872bb20-247a-4292-b417-af23c282cbaf",
+                "2ea8d297-b689-4e5b-988a-85f743babc3b",
+                "30637b41-c18b-4cee-bc6d-418c84072cd7",
+                "e7946129-dcaa-4a25-a0ac-5a76135e65c9",
+                "7b58990e-4205-4c24-96ac-ed96bd4f5ad5",
+                "406b23bb-34cc-45c4-9168-6e19b33eb116",
+                "d0f67d55-23ab-456d-aa45-754beb20810a",
+                "42ddc0de-e916-4d28-b575-97992ee024ea",
+                "1fa28c89-7c4b-4ffd-bf8b-d4d23085c303",
+                "df46cccc-5100-45ca-895a-e7f3a04d11ee",
+                "c98b98db-1b77-4ad3-8b9a-2281b1221b98",
+                "a01164bb-5d36-45aa-b976-24baaa1331cf",
+                "d899db87-216b-4685-a67e-349e11a655f3",
+                "e6ab7718-454b-47b3-852e-38130acb6716",
+                "9ad47c48-db4a-41d2-b678-c27b954536ae",
+                "7e11c1ed-1a0a-4ca8-8ef0-2517aaa35b07",
+                "6766f83a-a5e1-4349-bc23-844a4c2e416a",
+                "a122c2d1-4861-4098-bed9-d94a458ee827",
+                "5bf11bd7-8703-4e25-9aa5-a2fdaa2b6b29",
+                "b3f4ae2c-68e8-4b3b-aa93-cca79e326511",
+                "60590e6f-7edc-410b-ad5a-8c58545f3208",
+                "fcfcab8b-b3f0-48b1-a58a-3a1edb3af2cf",
+                "d9f845f7-6274-491d-a017-ec91548c8200",
+                "ae2218d7-096d-44a5-aa71-fff6468eb6a6",
+                "2079f253-ac23-40f3-b98c-79514af4c8aa",
+                "a8b031be-06ee-4658-8a7a-4dd08b211636",
+                "28a358ec-6241-42e6-9ea0-51fa7c6e9d29",
+                "94f61ae0-4bd9-4016-86da-45c375f927bb",
+                "692bffdc-507b-42a5-b922-444c54fc1ac1",
+                "0f36f0d1-fb43-44f9-af99-061da85bb016",
+                "0cb0f571-dbbf-4212-a7ac-4ecbe07a66ee",
+                "540c8d58-611d-40a3-a718-e6f7ab5b8807",
+                "917e6ba7-2d6e-4244-86f2-c0788a258a2b",
+                "9ff79be3-312e-44cd-bcf7-98c2f63b955b",
+                "51acc63c-8e94-4996-9fde-a4330a053a1e",
+                "d0641555-2997-4928-b361-48966c3fb144",
+                "98ac1fcb-0d53-4d66-ac70-1dd660c539c6",
+                "c8c95f21-b731-432a-8b49-5eaef732fda7",
+                "62c58194-c4b3-4f9a-91dd-d6762a8d04d2",
+                "fe6ddcd0-1673-447b-b678-39b88f1e35d3",
+                "39553661-51f6-41f9-b7b5-b29f2b30d9c1",
+                "930b2a8e-5e04-4e07-ab81-a0496e3f375a",
+                "db141a99-9adf-435a-b973-f96c83d14344",
+                "e194b56a-5c3e-4146-ba7a-10b35498d659",
+                "5a069504-17ae-41c5-bd0c-856c212f71ea",
+                "e8367c3f-cc44-4a9a-8fbc-fd311a60585a",
+                "37fc0abe-591e-4338-a3a0-a6a8d4a7cfd6",
+                "40008358-aece-4758-8e52-bb715e7720cf",
+                "82f0efc8-8241-4ddd-a25f-5abc14703546",
+                "29e91731-cab1-4c51-8c67-0708c53d1c60",
+                "323d38e2-7440-496b-a7ed-fa659fd54ae8",
+                "0f7e8c6b-cec4-41c4-a05f-d15a5bcc8c03",
+                "8e19ccda-70ec-4155-97cf-bb93148819c0",
+                "09b91b99-5c41-40af-9406-954af16dd2c9",
+                "d8fba019-210e-4d23-b244-e02909ce8ef8",
+                "90bb0471-9053-4376-acd4-d50dc7b2a0d1",
+                "2b441095-b1e5-4a40-b5c8-3364e5e54e75",
+                "617f509f-dbb7-4ab4-8991-f0c41e3b22fd",
+                "c3fd4b01-4474-40e4-af73-2ecf3d62e735",
+                "37c817fa-8150-4202-b012-8cd558703fff",
+                "647b91b0-f84e-4dc4-8590-9f0944b9f385",
+                "02ab1abe-623b-496a-ae69-66ad70e46e23",
+                "e8f89060-b1a2-4d24-87d6-6261cce973e9",
+                "22f916d7-0741-41fe-9ee1-574f82321782",
+                "b53a5093-feb2-4f64-9aeb-04f16657dcba",
+                "50b99a80-d97f-47d6-9457-dafefe9f97f7",
+                "6e2e14b4-c497-4355-9b40-7836cb2b6368",
+                "f8cfadfe-f81f-45ca-aaa0-fb157178716e",
+                "91f3314b-c45e-4a24-b81a-e3cbfdf7f8de",
+                "eb61814f-39b0-417e-9b16-6232f8239fc0",
+                "e9012f55-4102-4666-afc1-0678a558808a",
+                "1f490d26-901f-407e-ae3c-368d62cbf98a",
+                "3cf940ed-5dc7-4c54-b6f4-9af27babb4d1",
+                "e43cdc57-eaae-48cb-ab6d-e7de8e606e8a",
+                "793acbbe-8110-4653-8e3c-ea4d41573aab",
+                "d53cb440-ee16-4751-9797-31860705f5c4",
+                "5a9f6de2-58b1-41fc-93ef-f90b3b8fc80b",
+                "133a4118-657d-4982-a890-5dc108d81923",
+                "f56cfe55-919c-45fe-8d91-12cad98865f0",
+                "5728a34f-7b3a-4898-a27e-7381e87899b5"
             ],
             "category_id": "02721435-4671-4cd0-98f7-15d41ee4103e",
             "participant_ids": [
-                "06446131-2cce-4b60-9d20-f0e05e8b14a7",
-                "93473f65-0fe3-4e9d-892f-537feadf3ffa"
+                "30d14cba-3263-47bc-b0bc-96eba3a49031",
+                "3d383838-f4a5-43da-a1f8-d8169a4905a0"
             ]
         }
     },
     "market_type_groups": {
+        "21e8201a-e43d-4b27-b077-39bf62193571": {
+            "id": "21e8201a-e43d-4b27-b077-39bf62193571",
+            "category_id": "02721435-4671-4cd0-98f7-15d41ee4103e",
+            "name": "Alternate Lines",
+            "priority": 60,
+            "type": "MARKET_TYPE_GROUP_TYPE_EVENT"
+        },
+        "59ce1f2b-e8d4-4ed5-96e5-e26d9e1cfd18": {
+            "id": "59ce1f2b-e8d4-4ed5-96e5-e26d9e1cfd18",
+            "category_id": "02721435-4671-4cd0-98f7-15d41ee4103e",
+            "name": "First Five Innings Markets",
+            "priority": 160,
+            "type": "MARKET_TYPE_GROUP_TYPE_EVENT"
+        },
+        "6029ad1a-ac00-4ecc-8f33-9a801da611e0": {
+            "id": "6029ad1a-ac00-4ecc-8f33-9a801da611e0",
+            "category_id": "02721435-4671-4cd0-98f7-15d41ee4103e",
+            "name": "Match Markets",
+            "priority": 250,
+            "type": "MARKET_TYPE_GROUP_TYPE_EVENT"
+        },
         "95f7457f-bd84-4e9e-b714-c257b90c1031": {
             "id": "95f7457f-bd84-4e9e-b714-c257b90c1031",
             "category_id": "02721435-4671-4cd0-98f7-15d41ee4103e",
             "name": "Top Markets",
             "priority": 254,
+            "type": "MARKET_TYPE_GROUP_TYPE_EVENT"
+        },
+        "ccecaf3f-9404-4609-8c72-7beca9088024": {
+            "id": "ccecaf3f-9404-4609-8c72-7beca9088024",
+            "category_id": "02721435-4671-4cd0-98f7-15d41ee4103e",
+            "name": "Alternate Totals",
+            "priority": 50,
             "type": "MARKET_TYPE_GROUP_TYPE_EVENT"
         },
         "f7331bb9-8791-4c1a-9b7b-cf2298c98757": {
@@ -134,108 +1620,2897 @@
         }
     },
     "markets": {
-        "add0a552-50a6-4461-92e1-bd4cc36a82e4": {
-            "id": "add0a552-50a6-4461-92e1-bd4cc36a82e4",
-            "event_id": "4580a560-1039-40fa-9565-ba2ce1e4fe7c",
-            "market_type_id": "fefd3091-33c3-4df4-a213-848fdb1f0826",
+        "02ab1abe-623b-496a-ae69-66ad70e46e23": {
+            "id": "02ab1abe-623b-496a-ae69-66ad70e46e23",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "54ae1430-3116-47b3-9254-33bcbb7cc52d",
             "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
-            "name": "Line (-1.5)",
+            "name": "Total (7)",
             "advertised_start": {
-                "seconds": 1751130600
+                "seconds": 1751141400
             },
             "actual_start": {
-                "seconds": 1751130600
+                "seconds": 1751141400
+            },
+            "visible": true,
+            "entrant_ids": [
+                "59c399d1-8a2a-40b4-8ffe-a950797cc566",
+                "c527636d-eaa8-491f-9c65-17f79a374497"
+            ],
+            "num_winners": 1
+        },
+        "09b91b99-5c41-40af-9406-954af16dd2c9": {
+            "id": "09b91b99-5c41-40af-9406-954af16dd2c9",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "54ae1430-3116-47b3-9254-33bcbb7cc52d",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Total (14.5)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
             },
             "same_game_multi_available": true,
             "visible": true,
             "entrant_ids": [
-                "3abca840-2dd5-4836-b2de-f631d4696341",
-                "928321ba-fec1-4524-a3b8-89c5b05e5ad5"
+                "35f4133f-53bd-49ba-a3b4-f62ad2b340df",
+                "5d21bbb6-86c1-44f7-8512-011ab5d694f5"
             ],
             "num_winners": 1
         },
-        "e8c68e4b-9bb5-4cfe-ab71-70fb87b46bf8": {
-            "id": "e8c68e4b-9bb5-4cfe-ab71-70fb87b46bf8",
-            "event_id": "4580a560-1039-40fa-9565-ba2ce1e4fe7c",
+        "0cb0f571-dbbf-4212-a7ac-4ecbe07a66ee": {
+            "id": "0cb0f571-dbbf-4212-a7ac-4ecbe07a66ee",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "4c8754ff-bee0-4304-a2bb-5b760c2e275c",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "1st 5 Innings Total (4.5)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "a523cf4b-4ece-4e31-8fef-5b0aeebeb956",
+                "bb8ab5f8-0621-41a4-a750-08a164ab7968"
+            ],
+            "num_winners": 1
+        },
+        "0f36f0d1-fb43-44f9-af99-061da85bb016": {
+            "id": "0f36f0d1-fb43-44f9-af99-061da85bb016",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "4504b112-d725-4b01-8f11-301ad80be53d",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "1st 5 Innings Line (-2.5)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "0449b0b6-8a93-47c5-aff3-d0c7114fdb89",
+                "684e449a-a4b8-4d39-9866-ae9e1df327ef"
+            ],
+            "num_winners": 1
+        },
+        "0f7e8c6b-cec4-41c4-a05f-d15a5bcc8c03": {
+            "id": "0f7e8c6b-cec4-41c4-a05f-d15a5bcc8c03",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "54ae1430-3116-47b3-9254-33bcbb7cc52d",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Total (13.5)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "250aad2d-b5ad-4cf1-9803-462fe76a4db7",
+                "0aa9204b-84f5-4c56-bdca-4d2900a2e5aa"
+            ],
+            "num_winners": 1
+        },
+        "0fc0dfe3-54a9-4fd0-8538-4c37d88667e7": {
+            "id": "0fc0dfe3-54a9-4fd0-8538-4c37d88667e7",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "fefd3091-33c3-4df4-a213-848fdb1f0826",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Line (-1.5)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "8e8b086c-eeb5-43ee-bbaf-544f29e9cf4e",
+                "dd4e86cf-1fa9-4a0d-8dbd-741e1cf9da02"
+            ],
+            "num_winners": 1
+        },
+        "133a4118-657d-4982-a890-5dc108d81923": {
+            "id": "133a4118-657d-4982-a890-5dc108d81923",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "8c72d3ef-029d-4918-8cf7-6e5a58cd7f54",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Arizona Diamondbacks Total (7.5)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "5ba3d9d2-c2b4-40a5-af34-f8d27a22e526",
+                "2e4dd256-4219-4333-a017-350745d8d30d"
+            ],
+            "num_winners": 1
+        },
+        "1f490d26-901f-407e-ae3c-368d62cbf98a": {
+            "id": "1f490d26-901f-407e-ae3c-368d62cbf98a",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "60fe4b19-b7ae-46f3-8479-b1026a47cd69",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Miami Marlins Total (8.5)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "93bf8eea-ef7a-4155-8fbb-8f42cf49d267",
+                "b683982f-7f93-48ed-8694-2f05d949d07f"
+            ],
+            "num_winners": 1
+        },
+        "1fa28c89-7c4b-4ffd-bf8b-d4d23085c303": {
+            "id": "1fa28c89-7c4b-4ffd-bf8b-d4d23085c303",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "a6b12eba-22d1-4055-8233-91c1ce725885",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Will Both Teams Score 2 Or More Runs in 1st 5 Innings?",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "visible": true,
+            "entrant_ids": [
+                "4eab15a4-571a-438f-b965-88bd950c745b",
+                "b55ecc49-bdce-44d7-b02c-9c69684ea556"
+            ],
+            "num_winners": 1
+        },
+        "2079f253-ac23-40f3-b98c-79514af4c8aa": {
+            "id": "2079f253-ac23-40f3-b98c-79514af4c8aa",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "c5f6fb2b-5155-455f-9969-7fdfa40098e7",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "1st 5 Innings Line (-0.5)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "0b790aa7-bdd0-4c6f-88fa-c90133681cb2",
+                "ca06bbb6-1717-4160-9d88-f18659192143"
+            ],
+            "num_winners": 1
+        },
+        "22f916d7-0741-41fe-9ee1-574f82321782": {
+            "id": "22f916d7-0741-41fe-9ee1-574f82321782",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "54ae1430-3116-47b3-9254-33bcbb7cc52d",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Total (8)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "visible": true,
+            "entrant_ids": [
+                "e1063c7d-f360-4d36-bce4-63347b415349",
+                "50fbf59c-20b9-45ea-ae09-627b038a5254"
+            ],
+            "num_winners": 1
+        },
+        "283de48d-5bfb-45dc-82dd-09cc86a3f9b1": {
+            "id": "283de48d-5bfb-45dc-82dd-09cc86a3f9b1",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "2771bc99-e659-4b02-92bf-77e89109813c",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Team To Score First",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "visible": true,
+            "entrant_ids": [
+                "253c0625-4fb2-4e63-845f-9a3b7b8ba8db",
+                "d0268413-e02d-425a-b7e7-954f2f0333df"
+            ],
+            "num_winners": 1
+        },
+        "28a358ec-6241-42e6-9ea0-51fa7c6e9d29": {
+            "id": "28a358ec-6241-42e6-9ea0-51fa7c6e9d29",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "4504b112-d725-4b01-8f11-301ad80be53d",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "1st 5 Innings Line (+1.5)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "6a4849ee-42c2-4040-a198-b26d64c15d66",
+                "ce0a6107-5f9f-437b-af69-c7eee9bc1a30"
+            ],
+            "num_winners": 1
+        },
+        "29e91731-cab1-4c51-8c67-0708c53d1c60": {
+            "id": "29e91731-cab1-4c51-8c67-0708c53d1c60",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "54ae1430-3116-47b3-9254-33bcbb7cc52d",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Total (12.5)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "f81d92f4-9457-409d-92f6-d3a9157933e5",
+                "73a7aab8-b22b-4055-8906-224fc6b6c7dd"
+            ],
+            "num_winners": 1
+        },
+        "2b441095-b1e5-4a40-b5c8-3364e5e54e75": {
+            "id": "2b441095-b1e5-4a40-b5c8-3364e5e54e75",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "54ae1430-3116-47b3-9254-33bcbb7cc52d",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Total (4.5)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "12c2490c-f35b-4812-97c1-a6f42973509e",
+                "4b6ad15d-a15d-4f67-8a9e-172209f0ad0e"
+            ],
+            "num_winners": 1
+        },
+        "2ea8d297-b689-4e5b-988a-85f743babc3b": {
+            "id": "2ea8d297-b689-4e5b-988a-85f743babc3b",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "2ffc3b66-3b7a-4466-a160-9c51d1adea04",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Arizona Diamondbacks Total (4.5)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "475c87f5-ba5e-448f-98c5-ef83d8958212",
+                "00321840-a3d6-417a-82c3-fe54a4126933"
+            ],
+            "num_winners": 1
+        },
+        "30637b41-c18b-4cee-bc6d-418c84072cd7": {
+            "id": "30637b41-c18b-4cee-bc6d-418c84072cd7",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "38b55e68-de4e-47ff-b181-f8e170d8f286",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Miami Marlins Total (3.5)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "bc106723-165d-46e2-8883-95b7bf379521",
+                "6635c7fb-ef27-4ecc-b85e-f8aded5cda2f"
+            ],
+            "num_winners": 1
+        },
+        "323d38e2-7440-496b-a7ed-fa659fd54ae8": {
+            "id": "323d38e2-7440-496b-a7ed-fa659fd54ae8",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "54ae1430-3116-47b3-9254-33bcbb7cc52d",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Total (13)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "visible": true,
+            "entrant_ids": [
+                "2eda2533-bd53-4961-af38-ca8b1c5c7509",
+                "8b4d392b-d0cd-46ee-95cc-104021917192"
+            ],
+            "num_winners": 1
+        },
+        "37c817fa-8150-4202-b012-8cd558703fff": {
+            "id": "37c817fa-8150-4202-b012-8cd558703fff",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "54ae1430-3116-47b3-9254-33bcbb7cc52d",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Total (6)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "visible": true,
+            "entrant_ids": [
+                "7168b185-4111-4c2f-a3ea-c8ceaa0c70d2",
+                "4df3d9d2-6f6f-4963-8e2a-ddc0e40ed65a"
+            ],
+            "num_winners": 1
+        },
+        "37fc0abe-591e-4338-a3a0-a6a8d4a7cfd6": {
+            "id": "37fc0abe-591e-4338-a3a0-a6a8d4a7cfd6",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "54ae1430-3116-47b3-9254-33bcbb7cc52d",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Total (11)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "visible": true,
+            "entrant_ids": [
+                "241466cd-9329-4da4-b470-f89c4bb0303d",
+                "0c29a47d-b316-4733-9cdb-0eb6ece6e24b"
+            ],
+            "num_winners": 1
+        },
+        "39553661-51f6-41f9-b7b5-b29f2b30d9c1": {
+            "id": "39553661-51f6-41f9-b7b5-b29f2b30d9c1",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "9964fbd7-83e3-4ac0-bfbc-b97e43bcd7ca",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "1st 5 Innings Total (6.5)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "1827eb5c-c3c9-4d46-8f16-ea26fde9dbef",
+                "34916c9e-6acd-49a1-9a7b-eaac1542b5a3"
+            ],
+            "num_winners": 1
+        },
+        "3cf940ed-5dc7-4c54-b6f4-9af27babb4d1": {
+            "id": "3cf940ed-5dc7-4c54-b6f4-9af27babb4d1",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "60fe4b19-b7ae-46f3-8479-b1026a47cd69",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Miami Marlins Total (9.5)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "12d6f3a3-e00c-4800-a7f5-a66788df4248",
+                "75c01154-ed3c-4c6e-b0a9-3e433d35c668"
+            ],
+            "num_winners": 1
+        },
+        "40008358-aece-4758-8e52-bb715e7720cf": {
+            "id": "40008358-aece-4758-8e52-bb715e7720cf",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "54ae1430-3116-47b3-9254-33bcbb7cc52d",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Total (11.5)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "a57587c7-21a3-41cd-83a7-2206f82b8ae8",
+                "e635c8af-791a-4c5b-af64-826724069b49"
+            ],
+            "num_winners": 1
+        },
+        "406b23bb-34cc-45c4-9168-6e19b33eb116": {
+            "id": "406b23bb-34cc-45c4-9168-6e19b33eb116",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "a6b12eba-22d1-4055-8233-91c1ce725885",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Will Both Teams Score 1 Or More Runs in 1st 7 Innings?",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "visible": true,
+            "entrant_ids": [
+                "043b340c-0098-4cad-8c03-6cfd3a261994",
+                "cdcf0d5a-1554-417c-9154-8c5b2332b748"
+            ],
+            "num_winners": 1
+        },
+        "42ddc0de-e916-4d28-b575-97992ee024ea": {
+            "id": "42ddc0de-e916-4d28-b575-97992ee024ea",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "a6b12eba-22d1-4055-8233-91c1ce725885",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Will Both Teams Score 2 Or More Runs in 1st 3 Innings?",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "visible": true,
+            "entrant_ids": [
+                "dfa86d42-9203-4686-9669-a3859a61bfa5",
+                "aa2242c0-eae6-450b-97d8-7732d6664606"
+            ],
+            "num_winners": 1
+        },
+        "50b99a80-d97f-47d6-9457-dafefe9f97f7": {
+            "id": "50b99a80-d97f-47d6-9457-dafefe9f97f7",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "54ae1430-3116-47b3-9254-33bcbb7cc52d",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Total (9.5)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "421ade2c-0ab7-44ff-a322-f5e5bfa52d6a",
+                "1d0be144-ea4c-47ba-9a08-0fb842e6dd9f"
+            ],
+            "num_winners": 1
+        },
+        "51acc63c-8e94-4996-9fde-a4330a053a1e": {
+            "id": "51acc63c-8e94-4996-9fde-a4330a053a1e",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "9964fbd7-83e3-4ac0-bfbc-b97e43bcd7ca",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "1st 5 Innings Total (2.5)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "dfa72cc0-8c83-45b6-9212-32436c450c79",
+                "ea4097a7-4801-4d59-abdf-3c8859fc4d48"
+            ],
+            "num_winners": 1
+        },
+        "540c8d58-611d-40a3-a718-e6f7ab5b8807": {
+            "id": "540c8d58-611d-40a3-a718-e6f7ab5b8807",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "9964fbd7-83e3-4ac0-bfbc-b97e43bcd7ca",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "1st 5 Innings Total",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "visible": true,
+            "entrant_ids": [
+                "bbd04f41-8d88-44ed-9c21-c30342c5f459",
+                "5f8d9539-a16c-4239-9d13-ed12163955ee"
+            ],
+            "num_winners": 1
+        },
+        "5728a34f-7b3a-4898-a27e-7381e87899b5": {
+            "id": "5728a34f-7b3a-4898-a27e-7381e87899b5",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "8c72d3ef-029d-4918-8cf7-6e5a58cd7f54",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Arizona Diamondbacks Total (9.5)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "7a25bacc-b618-4271-8625-074c2edd3d53",
+                "054428aa-62a2-484f-848b-0dd388ca555d"
+            ],
+            "num_winners": 1
+        },
+        "5824d0b7-cad8-45c6-8e87-ccceddfa6dff": {
+            "id": "5824d0b7-cad8-45c6-8e87-ccceddfa6dff",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "429f5e8a-b675-4824-8d11-defe3303f3a8",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Winning Margin",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "2420a995-e1a9-4a98-aa74-8bc121824932",
+                "e0ff3bc5-62e3-45c0-b741-dab9302585f6",
+                "76e69fb8-e4aa-447c-b20c-86065105b2fd",
+                "888237cf-c6c8-465a-af59-7257dd5a267f",
+                "a6f67af6-ed8c-4584-9fef-e173ddd4a440",
+                "fb03eb64-209f-44f2-a8ad-8109636e1b46",
+                "55ab515b-51eb-4cba-b022-c255e5afef73",
+                "bdcf85f0-501d-40da-b87d-6f0fa7d68589"
+            ],
+            "num_winners": 1
+        },
+        "5872bb20-247a-4292-b417-af23c282cbaf": {
+            "id": "5872bb20-247a-4292-b417-af23c282cbaf",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "44012dc1-7a7a-4534-9d97-b39bee4e788c",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Team To Score Second",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "visible": true,
+            "entrant_ids": [
+                "cd58474f-4d11-47cb-898c-fdc308309480",
+                "2a8a3a85-e4a2-4f4a-9a4c-a270a4cff4a9",
+                "b3fa4a7b-b157-4a68-b6b3-36dcf806304a"
+            ],
+            "num_winners": 1
+        },
+        "5a069504-17ae-41c5-bd0c-856c212f71ea": {
+            "id": "5a069504-17ae-41c5-bd0c-856c212f71ea",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "54ae1430-3116-47b3-9254-33bcbb7cc52d",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Total (10)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "visible": true,
+            "entrant_ids": [
+                "0dbaac1c-9f31-43f0-aa44-332e1c006501",
+                "2177a861-35a6-45ac-ac8e-3950387de74a"
+            ],
+            "num_winners": 1
+        },
+        "5a9f6de2-58b1-41fc-93ef-f90b3b8fc80b": {
+            "id": "5a9f6de2-58b1-41fc-93ef-f90b3b8fc80b",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "8c72d3ef-029d-4918-8cf7-6e5a58cd7f54",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Arizona Diamondbacks Total (6.5)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "34ee5653-0cef-4da0-adfa-50f517c97ed6",
+                "8543288c-a0cf-4189-b0c7-55e534ca5f9a"
+            ],
+            "num_winners": 1
+        },
+        "5bf11bd7-8703-4e25-9aa5-a2fdaa2b6b29": {
+            "id": "5bf11bd7-8703-4e25-9aa5-a2fdaa2b6b29",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "a6b12eba-22d1-4055-8233-91c1ce725885",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Will Both Teams Score 5 Or More Runs in 1st 7 Innings?",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "visible": true,
+            "entrant_ids": [
+                "d5059295-f90f-4187-b8d7-7e2afe7fdb6c",
+                "ca652e4a-c000-4d25-8598-7e36d102ef41"
+            ],
+            "num_winners": 1
+        },
+        "60590e6f-7edc-410b-ad5a-8c58545f3208": {
+            "id": "60590e6f-7edc-410b-ad5a-8c58545f3208",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "a6b12eba-22d1-4055-8233-91c1ce725885",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Will Both Teams Score 6 Or More Runs?",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "visible": true,
+            "entrant_ids": [
+                "caa00138-409e-48b7-8a9a-527e10a5962c",
+                "dbe5990b-0367-4b19-9935-c09e4474a939"
+            ],
+            "num_winners": 1
+        },
+        "617f509f-dbb7-4ab4-8991-f0c41e3b22fd": {
+            "id": "617f509f-dbb7-4ab4-8991-f0c41e3b22fd",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "54ae1430-3116-47b3-9254-33bcbb7cc52d",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Total (5)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "visible": true,
+            "entrant_ids": [
+                "72ca2480-f093-453e-bcde-a70f9298ad8b",
+                "049cf0a8-e157-4e1c-91dd-312d9c2cb702"
+            ],
+            "num_winners": 1
+        },
+        "62c58194-c4b3-4f9a-91dd-d6762a8d04d2": {
+            "id": "62c58194-c4b3-4f9a-91dd-d6762a8d04d2",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "9964fbd7-83e3-4ac0-bfbc-b97e43bcd7ca",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "1st 5 Innings Total (5.5)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "e31424ae-d024-4f5e-913d-383392f4f5e3",
+                "820b08a0-73f4-4080-9818-744c58812dcf"
+            ],
+            "num_winners": 1
+        },
+        "647b91b0-f84e-4dc4-8590-9f0944b9f385": {
+            "id": "647b91b0-f84e-4dc4-8590-9f0944b9f385",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "54ae1430-3116-47b3-9254-33bcbb7cc52d",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Total (6.5)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "442369b3-9923-4630-84bc-396da2eb6d0b",
+                "e26f6d6a-faa4-4c61-92bd-b8043252aafc"
+            ],
+            "num_winners": 1
+        },
+        "6766f83a-a5e1-4349-bc23-844a4c2e416a": {
+            "id": "6766f83a-a5e1-4349-bc23-844a4c2e416a",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "a6b12eba-22d1-4055-8233-91c1ce725885",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Will Both Teams Score 4 Or More Runs in 1st 7 Innings?",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "visible": true,
+            "entrant_ids": [
+                "4914eea5-68c0-446e-94fb-42756dedbb37",
+                "0401e7d9-a1d0-4b3f-8787-9ebd57334999"
+            ],
+            "num_winners": 1
+        },
+        "692bffdc-507b-42a5-b922-444c54fc1ac1": {
+            "id": "692bffdc-507b-42a5-b922-444c54fc1ac1",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "4504b112-d725-4b01-8f11-301ad80be53d",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "1st 5 Innings Line (-1.5)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "7ea81aa3-1286-4368-a6dc-bf2f11c32458",
+                "debdc184-720a-4de8-9d2a-fe365bbebe37"
+            ],
+            "num_winners": 1
+        },
+        "6e2e14b4-c497-4355-9b40-7836cb2b6368": {
+            "id": "6e2e14b4-c497-4355-9b40-7836cb2b6368",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "60fe4b19-b7ae-46f3-8479-b1026a47cd69",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Miami Marlins Total (2.5)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "df35d213-ac6f-44be-8e67-da66f49937e5",
+                "59070139-33d7-40fe-998f-3525189c66f8"
+            ],
+            "num_winners": 1
+        },
+        "793acbbe-8110-4653-8e3c-ea4d41573aab": {
+            "id": "793acbbe-8110-4653-8e3c-ea4d41573aab",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "8c72d3ef-029d-4918-8cf7-6e5a58cd7f54",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Arizona Diamondbacks Total (3.5)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "64d6d9c9-b7cc-4368-8a7d-aa1d16a036de",
+                "307f4a32-bf6b-4621-af86-35e65af975ad"
+            ],
+            "num_winners": 1
+        },
+        "7b58990e-4205-4c24-96ac-ed96bd4f5ad5": {
+            "id": "7b58990e-4205-4c24-96ac-ed96bd4f5ad5",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "a6b12eba-22d1-4055-8233-91c1ce725885",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Will Both Teams Score 1 Or More Runs in 1st 5 Innings?",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "visible": true,
+            "entrant_ids": [
+                "ddc41b14-0ecb-4be8-b639-f11b3708d84b",
+                "fc940a80-e83d-4e74-bb72-730389f2c376"
+            ],
+            "num_winners": 1
+        },
+        "7e11c1ed-1a0a-4ca8-8ef0-2517aaa35b07": {
+            "id": "7e11c1ed-1a0a-4ca8-8ef0-2517aaa35b07",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "a6b12eba-22d1-4055-8233-91c1ce725885",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Will Both Teams Score 4 Or More Runs in 1st 5 Innings?",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "visible": true,
+            "entrant_ids": [
+                "97634f0a-c9ef-42af-8632-85fca16e4e5b",
+                "f595beca-565c-4c96-b961-08fbc1701110"
+            ],
+            "num_winners": 1
+        },
+        "82f0efc8-8241-4ddd-a25f-5abc14703546": {
+            "id": "82f0efc8-8241-4ddd-a25f-5abc14703546",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "54ae1430-3116-47b3-9254-33bcbb7cc52d",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Total (12)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "visible": true,
+            "entrant_ids": [
+                "bdb378f1-6b3e-47bb-9981-d1a8ab6fae1e",
+                "cb25f056-ca04-4a66-9c6d-5f50b8cc873a"
+            ],
+            "num_winners": 1
+        },
+        "8e19ccda-70ec-4155-97cf-bb93148819c0": {
+            "id": "8e19ccda-70ec-4155-97cf-bb93148819c0",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "54ae1430-3116-47b3-9254-33bcbb7cc52d",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Total (14)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "visible": true,
+            "entrant_ids": [
+                "235e405a-b7f2-4e75-bf80-7cc93fa99ce8",
+                "cce52895-c4b3-4c0b-b8e0-65321fece2e4"
+            ],
+            "num_winners": 1
+        },
+        "90bb0471-9053-4376-acd4-d50dc7b2a0d1": {
+            "id": "90bb0471-9053-4376-acd4-d50dc7b2a0d1",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "54ae1430-3116-47b3-9254-33bcbb7cc52d",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Total (4)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "visible": true,
+            "entrant_ids": [
+                "eb6cee80-04bc-4edc-a7a9-dd6bac0d7bd0",
+                "1dc0cb0c-875d-4261-b1a4-d075c34a9bd2"
+            ],
+            "num_winners": 1
+        },
+        "917e6ba7-2d6e-4244-86f2-c0788a258a2b": {
+            "id": "917e6ba7-2d6e-4244-86f2-c0788a258a2b",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "9964fbd7-83e3-4ac0-bfbc-b97e43bcd7ca",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "1st 5 Innings Total (1.5)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "8d72875c-491e-4307-8fd3-63f10c7fbc31",
+                "0a848d04-1314-4ea2-a43e-9b9325f8e784"
+            ],
+            "num_winners": 1
+        },
+        "91f3314b-c45e-4a24-b81a-e3cbfdf7f8de": {
+            "id": "91f3314b-c45e-4a24-b81a-e3cbfdf7f8de",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "60fe4b19-b7ae-46f3-8479-b1026a47cd69",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Miami Marlins Total (5.5)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "65928df6-f4e1-4311-85f9-ba9a20b7b851",
+                "8628f3ce-dbf2-4976-a404-76dfb35b578c"
+            ],
+            "num_winners": 1
+        },
+        "930b2a8e-5e04-4e07-ab81-a0496e3f375a": {
+            "id": "930b2a8e-5e04-4e07-ab81-a0496e3f375a",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "fb78b1b9-d111-4547-9f87-ab038b90474e",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Line (+1.5)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "2539e219-e896-4a6b-a33d-4253c3aa620f",
+                "df6ffae2-c443-46ef-a5ad-a61f43c2fd4a"
+            ],
+            "num_winners": 1
+        },
+        "93bf86b5-a27e-4ef0-ac44-93edf5df1c25": {
+            "id": "93bf86b5-a27e-4ef0-ac44-93edf5df1c25",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "7ef7c503-de91-42ef-b3f9-57f7ab9e86f8",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Will There Be Extra Innings?",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "visible": true,
+            "entrant_ids": [
+                "1ed08e90-3656-4731-bf04-7256e0072123",
+                "cf4001c6-4485-410d-9995-27c3b93a1643"
+            ],
+            "num_winners": 1
+        },
+        "94f61ae0-4bd9-4016-86da-45c375f927bb": {
+            "id": "94f61ae0-4bd9-4016-86da-45c375f927bb",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "4504b112-d725-4b01-8f11-301ad80be53d",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "1st 5 Innings Line (+2.5)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "ce109cc4-f457-433a-bbfa-04905d12d1fe",
+                "2652aaed-d66b-4565-b61a-aec08eb5ddaf"
+            ],
+            "num_winners": 1
+        },
+        "98ac1fcb-0d53-4d66-ac70-1dd660c539c6": {
+            "id": "98ac1fcb-0d53-4d66-ac70-1dd660c539c6",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "9964fbd7-83e3-4ac0-bfbc-b97e43bcd7ca",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "1st 5 Innings Total (3.5)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "72a943b1-024f-4661-9532-f914793d404b",
+                "00e8320d-40ef-4f57-a3b5-c42893fd2785"
+            ],
+            "num_winners": 1
+        },
+        "9ad47c48-db4a-41d2-b678-c27b954536ae": {
+            "id": "9ad47c48-db4a-41d2-b678-c27b954536ae",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "a6b12eba-22d1-4055-8233-91c1ce725885",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Will Both Teams Score 3 Or More Runs?",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "visible": true,
+            "entrant_ids": [
+                "044fff6e-6b2a-4f5c-bb59-92b4d223a807",
+                "1cc84f1b-69eb-4c26-abcc-b8db6650ce3d"
+            ],
+            "num_winners": 1
+        },
+        "9ff79be3-312e-44cd-bcf7-98c2f63b955b": {
+            "id": "9ff79be3-312e-44cd-bcf7-98c2f63b955b",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "9964fbd7-83e3-4ac0-bfbc-b97e43bcd7ca",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "1st 5 Innings Total (2)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "visible": true,
+            "entrant_ids": [
+                "02814001-4e0d-4e82-8c33-2baafc5416de",
+                "badd8645-e010-4bc0-bb66-2cadd176fa44"
+            ],
+            "num_winners": 1
+        },
+        "a01164bb-5d36-45aa-b976-24baaa1331cf": {
+            "id": "a01164bb-5d36-45aa-b976-24baaa1331cf",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "a6b12eba-22d1-4055-8233-91c1ce725885",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Will Both Teams Score 3 Or More Runs in 1st 3 Innings?",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "visible": true,
+            "entrant_ids": [
+                "be630b41-8f46-44d2-901e-2aa135d707df",
+                "6f8c1127-643e-490e-a489-864bdb12793d"
+            ],
+            "num_winners": 1
+        },
+        "a122c2d1-4861-4098-bed9-d94a458ee827": {
+            "id": "a122c2d1-4861-4098-bed9-d94a458ee827",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "a6b12eba-22d1-4055-8233-91c1ce725885",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Will Both Teams Score 4 Or More Runs?",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "visible": true,
+            "entrant_ids": [
+                "9f7329bb-769e-46f9-8dbb-bd27edf08254",
+                "977ede41-85a9-489b-8c4c-7b29f784c9e1"
+            ],
+            "num_winners": 1
+        },
+        "a8b031be-06ee-4658-8a7a-4dd08b211636": {
+            "id": "a8b031be-06ee-4658-8a7a-4dd08b211636",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "4504b112-d725-4b01-8f11-301ad80be53d",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "1st 5 Innings Line (+0.5)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "f50a8064-46ea-4540-bece-e78d30552b2b",
+                "9e5241c4-7f4f-47f6-80b1-336dc03658c3"
+            ],
+            "num_winners": 1
+        },
+        "ae2218d7-096d-44a5-aa71-fff6468eb6a6": {
+            "id": "ae2218d7-096d-44a5-aa71-fff6468eb6a6",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "b4cd72c0-00d9-4d64-935b-5017007695db",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "1st 5 Innings Head To Head",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "53fd9a34-c2df-4af7-99fb-b2b9c89ecfa9",
+                "2fec1a55-2554-4e86-a200-ece3fd822d2a"
+            ],
+            "num_winners": 1
+        },
+        "b3f4ae2c-68e8-4b3b-aa93-cca79e326511": {
+            "id": "b3f4ae2c-68e8-4b3b-aa93-cca79e326511",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "a6b12eba-22d1-4055-8233-91c1ce725885",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Will Both Teams Score 5 Or More Runs?",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "visible": true,
+            "entrant_ids": [
+                "c0c3a4b9-4b74-4bc1-b418-5fc054905e1d",
+                "cfc9ff5f-6cc9-49b0-9361-135dfa3fe849"
+            ],
+            "num_winners": 1
+        },
+        "b53a5093-feb2-4f64-9aeb-04f16657dcba": {
+            "id": "b53a5093-feb2-4f64-9aeb-04f16657dcba",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "54ae1430-3116-47b3-9254-33bcbb7cc52d",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Total (9)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "visible": true,
+            "entrant_ids": [
+                "7e3f77e0-7369-4c77-88e7-57f7063a04b9",
+                "7f7a9d0e-392f-424b-b7fd-0c5e892983bc"
+            ],
+            "num_winners": 1
+        },
+        "c3fd4b01-4474-40e4-af73-2ecf3d62e735": {
+            "id": "c3fd4b01-4474-40e4-af73-2ecf3d62e735",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "54ae1430-3116-47b3-9254-33bcbb7cc52d",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Total (5.5)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "af2ef8b4-a4d5-4f63-8e8f-365e4bcdd797",
+                "095e89aa-3342-4584-b6d0-c98fad2607e9"
+            ],
+            "num_winners": 1
+        },
+        "c8c95f21-b731-432a-8b49-5eaef732fda7": {
+            "id": "c8c95f21-b731-432a-8b49-5eaef732fda7",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "9964fbd7-83e3-4ac0-bfbc-b97e43bcd7ca",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "1st 5 Innings Total (4)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "visible": true,
+            "entrant_ids": [
+                "91cfe386-0242-4d54-b94c-15bb48164f2e",
+                "60bd97f2-741e-4f93-9cef-d37916e69b89"
+            ],
+            "num_winners": 1
+        },
+        "c98b98db-1b77-4ad3-8b9a-2281b1221b98": {
+            "id": "c98b98db-1b77-4ad3-8b9a-2281b1221b98",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "a6b12eba-22d1-4055-8233-91c1ce725885",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Will Both Teams Score 2 Or More Runs?",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "visible": true,
+            "entrant_ids": [
+                "d1a07023-6c99-42b1-b2a7-da99c4f4edfe",
+                "89a036cc-a737-4419-8a46-8524a29e368d"
+            ],
+            "num_winners": 1
+        },
+        "d0641555-2997-4928-b361-48966c3fb144": {
+            "id": "d0641555-2997-4928-b361-48966c3fb144",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "9964fbd7-83e3-4ac0-bfbc-b97e43bcd7ca",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "1st 5 Innings Total (3)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "visible": true,
+            "entrant_ids": [
+                "b6e9481e-c3e0-42e1-8253-9b6885fd7c27",
+                "b23f80b9-5564-4885-a69c-6760059196ca"
+            ],
+            "num_winners": 1
+        },
+        "d0f67d55-23ab-456d-aa45-754beb20810a": {
+            "id": "d0f67d55-23ab-456d-aa45-754beb20810a",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "a6b12eba-22d1-4055-8233-91c1ce725885",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Will Both Teams Score 1 Or More Runs?",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "visible": true,
+            "entrant_ids": [
+                "a17b1f91-dbee-4296-a29e-91f9b5e54dfa",
+                "258305c8-4a5f-431b-b6f3-54729a14af89"
+            ],
+            "num_winners": 1
+        },
+        "d53cb440-ee16-4751-9797-31860705f5c4": {
+            "id": "d53cb440-ee16-4751-9797-31860705f5c4",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "8c72d3ef-029d-4918-8cf7-6e5a58cd7f54",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Arizona Diamondbacks Total (5.5)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "ad00bd9e-f0b6-4cf7-82a7-231527c79297",
+                "f8746a36-538b-4974-a306-4ad1d039043c"
+            ],
+            "num_winners": 1
+        },
+        "d899db87-216b-4685-a67e-349e11a655f3": {
+            "id": "d899db87-216b-4685-a67e-349e11a655f3",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "a6b12eba-22d1-4055-8233-91c1ce725885",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Will Both Teams Score 3 Or More Runs in 1st 5 Innings?",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "visible": true,
+            "entrant_ids": [
+                "907a7959-3119-40f6-a0c1-88965a2f9486",
+                "a6d7da3e-c9d6-4f9e-ab00-a91506bd7f20"
+            ],
+            "num_winners": 1
+        },
+        "d8fba019-210e-4d23-b244-e02909ce8ef8": {
+            "id": "d8fba019-210e-4d23-b244-e02909ce8ef8",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "54ae1430-3116-47b3-9254-33bcbb7cc52d",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Total (3.5)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "0128da0d-9d7c-400f-b948-ba316d3e703a",
+                "d5f1829b-41cd-423c-91a6-92cc5a1eebac"
+            ],
+            "num_winners": 1
+        },
+        "d9f845f7-6274-491d-a017-ec91548c8200": {
+            "id": "d9f845f7-6274-491d-a017-ec91548c8200",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "e9a966fa-6b1e-45a2-9be3-753c22d22afa",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "1st 5 Innings Three Way Money Line",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "8815b35e-59ea-4dad-89d5-40f5837c6f0f",
+                "83614619-64d3-498c-9438-ebc84b0c3974",
+                "aa07ed6f-2679-4ff4-80d1-4b810e45e50b"
+            ],
+            "num_winners": 1
+        },
+        "db141a99-9adf-435a-b973-f96c83d14344": {
+            "id": "db141a99-9adf-435a-b973-f96c83d14344",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "fb78b1b9-d111-4547-9f87-ab038b90474e",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Line (+2.5)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "7953a60f-fe8b-4feb-a192-44681cba120c",
+                "bb292f84-2730-4d49-bb38-dea664a315d9"
+            ],
+            "num_winners": 1
+        },
+        "df46cccc-5100-45ca-895a-e7f3a04d11ee": {
+            "id": "df46cccc-5100-45ca-895a-e7f3a04d11ee",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "a6b12eba-22d1-4055-8233-91c1ce725885",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Will Both Teams Score 2 Or More Runs in 1st 7 Innings?",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "visible": true,
+            "entrant_ids": [
+                "a2a9f16d-f0ab-46ae-9bfa-114b721b3246",
+                "209dffff-44ee-44ad-ae0a-970e7cc3e5d3"
+            ],
+            "num_winners": 1
+        },
+        "e194b56a-5c3e-4146-ba7a-10b35498d659": {
+            "id": "e194b56a-5c3e-4146-ba7a-10b35498d659",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "fb78b1b9-d111-4547-9f87-ab038b90474e",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Line (-2.5)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "617cad5a-93ea-4068-a4c2-036e09cb5771",
+                "c29c306d-7865-4d0f-88a6-24f316bce51b"
+            ],
+            "num_winners": 1
+        },
+        "e1aa804e-e695-49fb-bc37-fd6eda0a420a": {
+            "id": "e1aa804e-e695-49fb-bc37-fd6eda0a420a",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
             "market_type_id": "7b77007b-7ec9-4cf6-a911-7cd1c9d30e74",
             "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
             "name": "Head To Head",
             "advertised_start": {
-                "seconds": 1751130600
+                "seconds": 1751141400
             },
             "actual_start": {
-                "seconds": 1751130600
+                "seconds": 1751141400
             },
             "is_primary": true,
             "same_game_multi_available": true,
             "visible": true,
             "entrant_ids": [
-                "453dc421-eeff-412b-8b24-0bc2dd29213f",
-                "f7cc1e0c-2b8e-41e0-9bc3-75fc98cce056"
+                "6c0b3701-ca6d-43c4-86d4-4cbcef0d8a1a",
+                "fa49f8c6-6209-4c10-ba29-f422680ae260"
             ],
             "num_winners": 1
         },
-        "ea4167fa-af9f-49b0-9b8c-f10aa3238fdf": {
-            "id": "ea4167fa-af9f-49b0-9b8c-f10aa3238fdf",
-            "event_id": "4580a560-1039-40fa-9565-ba2ce1e4fe7c",
-            "market_type_id": "35fdd584-4bb9-47f7-a589-6291693d4d45",
+        "e43cdc57-eaae-48cb-ab6d-e7de8e606e8a": {
+            "id": "e43cdc57-eaae-48cb-ab6d-e7de8e606e8a",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "8c72d3ef-029d-4918-8cf7-6e5a58cd7f54",
             "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
-            "name": "Total (8.5)",
+            "name": "Arizona Diamondbacks Total (2.5)",
             "advertised_start": {
-                "seconds": 1751130600
+                "seconds": 1751141400
             },
             "actual_start": {
-                "seconds": 1751130600
+                "seconds": 1751141400
             },
             "same_game_multi_available": true,
             "visible": true,
             "entrant_ids": [
-                "c08eb3d4-1853-437b-93ea-5ef42e177986",
-                "3bcbb435-818e-4b37-8615-c886ddba98d5"
+                "91254694-c9fb-4f68-a2f8-f256adf80120",
+                "b7303e36-3777-4527-8df4-4ad88bf02a02"
+            ],
+            "num_winners": 1
+        },
+        "e45da7e6-5b42-4a06-a993-aedbaa57a028": {
+            "id": "e45da7e6-5b42-4a06-a993-aedbaa57a028",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "2771bc99-e659-4b02-92bf-77e89109813c",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Team To Score First Wins Game?",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "visible": true,
+            "entrant_ids": [
+                "87f7dfa5-4560-4b1f-86b0-029d00a382a6",
+                "e41af835-e20f-4167-9cf6-1bbcf93ecba2"
+            ],
+            "num_winners": 1
+        },
+        "e6ab7718-454b-47b3-852e-38130acb6716": {
+            "id": "e6ab7718-454b-47b3-852e-38130acb6716",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "a6b12eba-22d1-4055-8233-91c1ce725885",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Will Both Teams Score 3 Or More Runs in 1st 7 Innings?",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "visible": true,
+            "entrant_ids": [
+                "09b32254-12b5-4b70-afd8-2e9abbd7e495",
+                "575b238f-9840-47ef-a867-e3f0afe1f192"
+            ],
+            "num_winners": 1
+        },
+        "e7946129-dcaa-4a25-a0ac-5a76135e65c9": {
+            "id": "e7946129-dcaa-4a25-a0ac-5a76135e65c9",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "a6b12eba-22d1-4055-8233-91c1ce725885",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Will Both Teams Score 1 Or More Runs in 1st 3 Innings?",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "visible": true,
+            "entrant_ids": [
+                "dcda95c0-fe59-46b1-9bf8-1e2cadff8c00",
+                "22857b90-1961-4c16-b8c6-4ce9c94c86e8"
+            ],
+            "num_winners": 1
+        },
+        "e8367c3f-cc44-4a9a-8fbc-fd311a60585a": {
+            "id": "e8367c3f-cc44-4a9a-8fbc-fd311a60585a",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "54ae1430-3116-47b3-9254-33bcbb7cc52d",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Total (10.5)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "2b51cac0-d3ba-4dec-b514-644167f53046",
+                "cb4ffc7c-95d8-453d-91e1-f8013e6d7d87"
+            ],
+            "num_winners": 1
+        },
+        "e8f89060-b1a2-4d24-87d6-6261cce973e9": {
+            "id": "e8f89060-b1a2-4d24-87d6-6261cce973e9",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "54ae1430-3116-47b3-9254-33bcbb7cc52d",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Total (7.5)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "1c5be24a-a219-4ed5-9eab-7564030b6f3f",
+                "4d743ddf-6c1d-4065-ade5-3a821e93269b"
+            ],
+            "num_winners": 1
+        },
+        "e9012f55-4102-4666-afc1-0678a558808a": {
+            "id": "e9012f55-4102-4666-afc1-0678a558808a",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "60fe4b19-b7ae-46f3-8479-b1026a47cd69",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Miami Marlins Total (7.5)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "3436dbe8-2fcf-45ce-9636-7c989d587dab",
+                "6bbe3924-df28-4272-9e98-c650912391e4"
+            ],
+            "num_winners": 1
+        },
+        "eb61814f-39b0-417e-9b16-6232f8239fc0": {
+            "id": "eb61814f-39b0-417e-9b16-6232f8239fc0",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "60fe4b19-b7ae-46f3-8479-b1026a47cd69",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Miami Marlins Total (6.5)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "110e7c92-bb27-4b84-b85d-75036041769e",
+                "599c399f-7372-430e-a90f-7702c371af00"
+            ],
+            "num_winners": 1
+        },
+        "f3f0a0ea-2fac-45a5-bc20-f2f8916fbb9f": {
+            "id": "f3f0a0ea-2fac-45a5-bc20-f2f8916fbb9f",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "35fdd584-4bb9-47f7-a589-6291693d4d45",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Total (8.5)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "b99ac1c1-83b3-4ab2-a592-17b4e1385174",
+                "ce759631-ccef-4d9c-908d-47791cc37432"
+            ],
+            "num_winners": 1
+        },
+        "f56cfe55-919c-45fe-8d91-12cad98865f0": {
+            "id": "f56cfe55-919c-45fe-8d91-12cad98865f0",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "8c72d3ef-029d-4918-8cf7-6e5a58cd7f54",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Arizona Diamondbacks Total (8.5)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "7f4dded6-5415-46df-a0d3-ac790da6da95",
+                "262f9597-370c-4f75-927e-6be261f597cc"
+            ],
+            "num_winners": 1
+        },
+        "f8cfadfe-f81f-45ca-aaa0-fb157178716e": {
+            "id": "f8cfadfe-f81f-45ca-aaa0-fb157178716e",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "60fe4b19-b7ae-46f3-8479-b1026a47cd69",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Miami Marlins Total (4.5)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "d553cdad-6ebd-437d-bdfc-56ad2b6f15d7",
+                "9778955b-2671-41d8-a9eb-3af35221482d"
+            ],
+            "num_winners": 1
+        },
+        "fcfcab8b-b3f0-48b1-a58a-3a1edb3af2cf": {
+            "id": "fcfcab8b-b3f0-48b1-a58a-3a1edb3af2cf",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "a6b12eba-22d1-4055-8233-91c1ce725885",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Will Both Teams Score 7 Or More Runs?",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "visible": true,
+            "entrant_ids": [
+                "8a255fe4-961b-43ba-8a4b-0e44a03324a5",
+                "5c0167e0-4a65-4f77-a421-2a341fa5c0d5"
+            ],
+            "num_winners": 1
+        },
+        "fe6ddcd0-1673-447b-b678-39b88f1e35d3": {
+            "id": "fe6ddcd0-1673-447b-b678-39b88f1e35d3",
+            "event_id": "2bc84ce6-b445-4c30-a638-90e249ef2020",
+            "market_type_id": "9964fbd7-83e3-4ac0-bfbc-b97e43bcd7ca",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "1st 5 Innings Total (6)",
+            "advertised_start": {
+                "seconds": 1751141400
+            },
+            "actual_start": {
+                "seconds": 1751141400
+            },
+            "visible": true,
+            "entrant_ids": [
+                "455159f5-ed29-4540-bd2d-cf84b5326a46",
+                "1ac078f1-3d91-44f7-b94f-7a1f6bfd0c19"
             ],
             "num_winners": 1
         }
     },
     "markets_allow_cashout": {
-        "add0a552-50a6-4461-92e1-bd4cc36a82e4": false,
-        "e8c68e4b-9bb5-4cfe-ab71-70fb87b46bf8": true,
-        "ea4167fa-af9f-49b0-9b8c-f10aa3238fdf": false
+        "02ab1abe-623b-496a-ae69-66ad70e46e23": false,
+        "09b91b99-5c41-40af-9406-954af16dd2c9": false,
+        "0cb0f571-dbbf-4212-a7ac-4ecbe07a66ee": false,
+        "0f36f0d1-fb43-44f9-af99-061da85bb016": false,
+        "0f7e8c6b-cec4-41c4-a05f-d15a5bcc8c03": false,
+        "0fc0dfe3-54a9-4fd0-8538-4c37d88667e7": false,
+        "133a4118-657d-4982-a890-5dc108d81923": false,
+        "1f490d26-901f-407e-ae3c-368d62cbf98a": false,
+        "1fa28c89-7c4b-4ffd-bf8b-d4d23085c303": true,
+        "2079f253-ac23-40f3-b98c-79514af4c8aa": false,
+        "22f916d7-0741-41fe-9ee1-574f82321782": false,
+        "283de48d-5bfb-45dc-82dd-09cc86a3f9b1": true,
+        "28a358ec-6241-42e6-9ea0-51fa7c6e9d29": false,
+        "29e91731-cab1-4c51-8c67-0708c53d1c60": false,
+        "2b441095-b1e5-4a40-b5c8-3364e5e54e75": false,
+        "2ea8d297-b689-4e5b-988a-85f743babc3b": false,
+        "30637b41-c18b-4cee-bc6d-418c84072cd7": false,
+        "323d38e2-7440-496b-a7ed-fa659fd54ae8": false,
+        "37c817fa-8150-4202-b012-8cd558703fff": false,
+        "37fc0abe-591e-4338-a3a0-a6a8d4a7cfd6": false,
+        "39553661-51f6-41f9-b7b5-b29f2b30d9c1": false,
+        "3cf940ed-5dc7-4c54-b6f4-9af27babb4d1": false,
+        "40008358-aece-4758-8e52-bb715e7720cf": false,
+        "406b23bb-34cc-45c4-9168-6e19b33eb116": true,
+        "42ddc0de-e916-4d28-b575-97992ee024ea": true,
+        "50b99a80-d97f-47d6-9457-dafefe9f97f7": false,
+        "51acc63c-8e94-4996-9fde-a4330a053a1e": false,
+        "540c8d58-611d-40a3-a718-e6f7ab5b8807": false,
+        "5728a34f-7b3a-4898-a27e-7381e87899b5": false,
+        "5824d0b7-cad8-45c6-8e87-ccceddfa6dff": true,
+        "5872bb20-247a-4292-b417-af23c282cbaf": true,
+        "5a069504-17ae-41c5-bd0c-856c212f71ea": false,
+        "5a9f6de2-58b1-41fc-93ef-f90b3b8fc80b": false,
+        "5bf11bd7-8703-4e25-9aa5-a2fdaa2b6b29": true,
+        "60590e6f-7edc-410b-ad5a-8c58545f3208": true,
+        "617f509f-dbb7-4ab4-8991-f0c41e3b22fd": false,
+        "62c58194-c4b3-4f9a-91dd-d6762a8d04d2": false,
+        "647b91b0-f84e-4dc4-8590-9f0944b9f385": false,
+        "6766f83a-a5e1-4349-bc23-844a4c2e416a": true,
+        "692bffdc-507b-42a5-b922-444c54fc1ac1": false,
+        "6e2e14b4-c497-4355-9b40-7836cb2b6368": false,
+        "793acbbe-8110-4653-8e3c-ea4d41573aab": false,
+        "7b58990e-4205-4c24-96ac-ed96bd4f5ad5": true,
+        "7e11c1ed-1a0a-4ca8-8ef0-2517aaa35b07": true,
+        "82f0efc8-8241-4ddd-a25f-5abc14703546": false,
+        "8e19ccda-70ec-4155-97cf-bb93148819c0": false,
+        "90bb0471-9053-4376-acd4-d50dc7b2a0d1": false,
+        "917e6ba7-2d6e-4244-86f2-c0788a258a2b": false,
+        "91f3314b-c45e-4a24-b81a-e3cbfdf7f8de": false,
+        "930b2a8e-5e04-4e07-ab81-a0496e3f375a": false,
+        "93bf86b5-a27e-4ef0-ac44-93edf5df1c25": true,
+        "94f61ae0-4bd9-4016-86da-45c375f927bb": false,
+        "98ac1fcb-0d53-4d66-ac70-1dd660c539c6": false,
+        "9ad47c48-db4a-41d2-b678-c27b954536ae": true,
+        "9ff79be3-312e-44cd-bcf7-98c2f63b955b": false,
+        "a01164bb-5d36-45aa-b976-24baaa1331cf": true,
+        "a122c2d1-4861-4098-bed9-d94a458ee827": true,
+        "a8b031be-06ee-4658-8a7a-4dd08b211636": false,
+        "ae2218d7-096d-44a5-aa71-fff6468eb6a6": true,
+        "b3f4ae2c-68e8-4b3b-aa93-cca79e326511": true,
+        "b53a5093-feb2-4f64-9aeb-04f16657dcba": false,
+        "c3fd4b01-4474-40e4-af73-2ecf3d62e735": false,
+        "c8c95f21-b731-432a-8b49-5eaef732fda7": false,
+        "c98b98db-1b77-4ad3-8b9a-2281b1221b98": true,
+        "d0641555-2997-4928-b361-48966c3fb144": false,
+        "d0f67d55-23ab-456d-aa45-754beb20810a": true,
+        "d53cb440-ee16-4751-9797-31860705f5c4": false,
+        "d899db87-216b-4685-a67e-349e11a655f3": true,
+        "d8fba019-210e-4d23-b244-e02909ce8ef8": false,
+        "d9f845f7-6274-491d-a017-ec91548c8200": true,
+        "db141a99-9adf-435a-b973-f96c83d14344": false,
+        "df46cccc-5100-45ca-895a-e7f3a04d11ee": true,
+        "e194b56a-5c3e-4146-ba7a-10b35498d659": false,
+        "e1aa804e-e695-49fb-bc37-fd6eda0a420a": true,
+        "e43cdc57-eaae-48cb-ab6d-e7de8e606e8a": false,
+        "e45da7e6-5b42-4a06-a993-aedbaa57a028": true,
+        "e6ab7718-454b-47b3-852e-38130acb6716": true,
+        "e7946129-dcaa-4a25-a0ac-5a76135e65c9": true,
+        "e8367c3f-cc44-4a9a-8fbc-fd311a60585a": false,
+        "e8f89060-b1a2-4d24-87d6-6261cce973e9": false,
+        "e9012f55-4102-4666-afc1-0678a558808a": false,
+        "eb61814f-39b0-417e-9b16-6232f8239fc0": false,
+        "f3f0a0ea-2fac-45a5-bc20-f2f8916fbb9f": false,
+        "f56cfe55-919c-45fe-8d91-12cad98865f0": false,
+        "f8cfadfe-f81f-45ca-aaa0-fb157178716e": false,
+        "fcfcab8b-b3f0-48b1-a58a-3a1edb3af2cf": true,
+        "fe6ddcd0-1673-447b-b678-39b88f1e35d3": false
     },
     "prices": {
-        "3abca840-2dd5-4836-b2de-f631d4696341:940b8704-e497-4a76-b390-00918ff7d282:": {
+        "00321840-a3d6-417a-82c3-fe54a4126933:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 7,
-                "denominator": 5
+                "numerator": 41,
+                "denominator": 50
             }
         },
-        "3bcbb435-818e-4b37-8615-c886ddba98d5:940b8704-e497-4a76-b390-00918ff7d282:": {
+        "00e8320d-40ef-4f57-a3b5-c42893fd2785:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 9,
-                "denominator": 10
-            }
-        },
-        "453dc421-eeff-412b-8b24-0bc2dd29213f:940b8704-e497-4a76-b390-00918ff7d282:": {
-            "odds": {
-                "numerator": 13,
+                "numerator": 29,
                 "denominator": 20
             }
         },
-        "928321ba-fec1-4524-a3b8-89c5b05e5ad5:940b8704-e497-4a76-b390-00918ff7d282:": {
+        "0128da0d-9d7c-400f-b948-ba316d3e703a:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 1,
+                "denominator": 20
+            }
+        },
+        "02814001-4e0d-4e82-8c33-2baafc5416de:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 9,
+                "denominator": 100
+            }
+        },
+        "0401e7d9-a1d0-4b3f-8787-9ebd57334999:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 17,
+                "denominator": 5
+            }
+        },
+        "043b340c-0098-4cad-8c03-6cfd3a261994:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 9,
+                "denominator": 50
+            }
+        },
+        "0449b0b6-8a93-47c5-aff3-d0c7114fdb89:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 3,
+                "denominator": 1
+            }
+        },
+        "044fff6e-6b2a-4f5c-bb59-92b4d223a807:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 3,
+                "denominator": 4
+            }
+        },
+        "049cf0a8-e157-4e1c-91dd-312d9c2cb702:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 21,
+                "denominator": 4
+            }
+        },
+        "054428aa-62a2-484f-848b-0dd388ca555d:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 1,
+                "denominator": 50
+            }
+        },
+        "095e89aa-3342-4584-b6d0-c98fad2607e9:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 13,
+                "denominator": 4
+            }
+        },
+        "09b32254-12b5-4b70-afd8-2e9abbd7e495:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 9,
+                "denominator": 20
+            }
+        },
+        "0a848d04-1314-4ea2-a43e-9b9325f8e784:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 25,
+                "denominator": 4
+            }
+        },
+        "0aa9204b-84f5-4c56-bdca-4d2900a2e5aa:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 7,
+                "denominator": 50
+            }
+        },
+        "0b790aa7-bdd0-4c6f-88fa-c90133681cb2:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 19,
+                "denominator": 20
+            }
+        },
+        "0c29a47d-b316-4733-9cdb-0eb6ece6e24b:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 7,
+                "denominator": 20
+            }
+        },
+        "0dbaac1c-9f31-43f0-aa44-332e1c006501:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 31,
+                "denominator": 20
+            }
+        },
+        "110e7c92-bb27-4b84-b85d-75036041769e:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 29,
+                "denominator": 10
+            }
+        },
+        "12c2490c-f35b-4812-97c1-a6f42973509e:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 1,
+                "denominator": 10
+            }
+        },
+        "12d6f3a3-e00c-4800-a7f5-a66788df4248:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 11,
+                "denominator": 1
+            }
+        },
+        "1827eb5c-c3c9-4d46-8f16-ea26fde9dbef:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 23,
+                "denominator": 10
+            }
+        },
+        "1ac078f1-3d91-44f7-b94f-7a1f6bfd0c19:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 8,
+                "denominator": 25
+            }
+        },
+        "1c5be24a-a219-4ed5-9eab-7564030b6f3f:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
                 "numerator": 57,
                 "denominator": 100
             }
         },
-        "c08eb3d4-1853-437b-93ea-5ef42e177986:940b8704-e497-4a76-b390-00918ff7d282:": {
+        "1cc84f1b-69eb-4c26-abcc-b8db6650ce3d:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 19,
+                "denominator": 20
+            }
+        },
+        "1d0be144-ea4c-47ba-9a08-0fb842e6dd9f:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 16,
+                "denominator": 25
+            }
+        },
+        "1dc0cb0c-875d-4261-b1a4-d075c34a9bd2:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 35,
+                "denominator": 4
+            }
+        },
+        "1ed08e90-3656-4731-bf04-7256e0072123:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 1,
+                "denominator": 50
+            }
+        },
+        "209dffff-44ee-44ad-ae0a-970e7cc3e5d3:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 21,
+                "denominator": 20
+            }
+        },
+        "2177a861-35a6-45ac-ac8e-3950387de74a:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 1,
+                "denominator": 2
+            }
+        },
+        "22857b90-1961-4c16-b8c6-4ce9c94c86e8:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 3,
+                "denominator": 2
+            }
+        },
+        "235e405a-b7f2-4e75-bf80-7cc93fa99ce8:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 28,
+                "denominator": 5
+            }
+        },
+        "241466cd-9329-4da4-b470-f89c4bb0303d:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 43,
+                "denominator": 20
+            }
+        },
+        "2420a995-e1a9-4a98-aa74-8bc121824932:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 7,
+                "denominator": 2
+            }
+        },
+        "250aad2d-b5ad-4cf1-9803-462fe76a4db7:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
                 "numerator": 9,
+                "denominator": 2
+            }
+        },
+        "2539e219-e896-4a6b-a33d-4253c3aa620f:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 21,
+                "denominator": 50
+            }
+        },
+        "253c0625-4fb2-4e63-845f-9a3b7b8ba8db:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 21,
+                "denominator": 20
+            }
+        },
+        "258305c8-4a5f-431b-b6f3-54729a14af89:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 7,
+                "denominator": 1
+            }
+        },
+        "262f9597-370c-4f75-927e-6be261f597cc:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 7,
+                "denominator": 100
+            }
+        },
+        "2652aaed-d66b-4565-b61a-aec08eb5ddaf:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 23,
+                "denominator": 5
+            }
+        },
+        "2a8a3a85-e4a2-4f4a-9a4c-a270a4cff4a9:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 80,
+                "denominator": 1
+            }
+        },
+        "2b51cac0-d3ba-4dec-b514-644167f53046:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 7,
+                "denominator": 4
+            }
+        },
+        "2e4dd256-4219-4333-a017-350745d8d30d:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 3,
+                "denominator": 20
+            }
+        },
+        "2eda2533-bd53-4961-af38-ca8b1c5c7509:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 17,
+                "denominator": 4
+            }
+        },
+        "2fec1a55-2554-4e86-a200-ece3fd822d2a:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 11,
                 "denominator": 10
             }
         },
-        "f7cc1e0c-2b8e-41e0-9bc3-75fc98cce056:940b8704-e497-4a76-b390-00918ff7d282:": {
+        "307f4a32-bf6b-4621-af86-35e65af975ad:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 29,
+                "denominator": 20
+            }
+        },
+        "3436dbe8-2fcf-45ce-9636-7c989d587dab:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 19,
+                "denominator": 4
+            }
+        },
+        "34916c9e-6acd-49a1-9a7b-eaac1542b5a3:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 7,
+                "denominator": 25
+            }
+        },
+        "34ee5653-0cef-4da0-adfa-50f517c97ed6:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 12,
+                "denominator": 5
+            }
+        },
+        "35f4133f-53bd-49ba-a3b4-f62ad2b340df:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 6,
+                "denominator": 1
+            }
+        },
+        "421ade2c-0ab7-44ff-a322-f5e5bfa52d6a:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
                 "numerator": 5,
                 "denominator": 4
+            }
+        },
+        "442369b3-9923-4630-84bc-396da2eb6d0b:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 8,
+                "denominator": 25
+            }
+        },
+        "455159f5-ed29-4540-bd2d-cf84b5326a46:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 21,
+                "denominator": 10
+            }
+        },
+        "475c87f5-ba5e-448f-98c5-ef83d8958212:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 22,
+                "denominator": 25
+            }
+        },
+        "4914eea5-68c0-446e-94fb-42756dedbb37:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 17,
+                "denominator": 100
+            }
+        },
+        "4b6ad15d-a15d-4f67-8a9e-172209f0ad0e:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 6,
+                "denominator": 1
+            }
+        },
+        "4d743ddf-6c1d-4065-ade5-3a821e93269b:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 7,
+                "denominator": 5
+            }
+        },
+        "4df3d9d2-6f6f-4963-8e2a-ddc0e40ed65a:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 3,
+                "denominator": 1
+            }
+        },
+        "4eab15a4-571a-438f-b965-88bd950c745b:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 21,
+                "denominator": 50
+            }
+        },
+        "50fbf59c-20b9-45ea-ae09-627b038a5254:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 6,
+                "denominator": 5
+            }
+        },
+        "53fd9a34-c2df-4af7-99fb-b2b9c89ecfa9:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 17,
+                "denominator": 25
+            }
+        },
+        "55ab515b-51eb-4cba-b022-c255e5afef73:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 11,
+                "denominator": 1
+            }
+        },
+        "575b238f-9840-47ef-a867-e3f0afe1f192:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 8,
+                "denominator": 5
+            }
+        },
+        "59070139-33d7-40fe-998f-3525189c66f8:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 2,
+                "denominator": 1
+            }
+        },
+        "599c399f-7372-430e-a90f-7702c371af00:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 1,
+                "denominator": 5
+            }
+        },
+        "59c399d1-8a2a-40b4-8ffe-a950797cc566:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 19,
+                "denominator": 50
+            }
+        },
+        "5ba3d9d2-c2b4-40a5-af34-f8d27a22e526:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 19,
+                "denominator": 5
+            }
+        },
+        "5c0167e0-4a65-4f77-a421-2a341fa5c0d5:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 23,
+                "denominator": 2
+            }
+        },
+        "5d21bbb6-86c1-44f7-8512-011ab5d694f5:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 1,
+                "denominator": 10
+            }
+        },
+        "5f8d9539-a16c-4239-9d13-ed12163955ee:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 3,
+                "denominator": 5
+            }
+        },
+        "60bd97f2-741e-4f93-9cef-d37916e69b89:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 23,
+                "denominator": 20
+            }
+        },
+        "617cad5a-93ea-4068-a4c2-036e09cb5771:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 43,
+                "denominator": 20
+            }
+        },
+        "64d6d9c9-b7cc-4368-8a7d-aa1d16a036de:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 1,
+                "denominator": 2
+            }
+        },
+        "65928df6-f4e1-4311-85f9-ba9a20b7b851:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 19,
+                "denominator": 10
+            }
+        },
+        "6635c7fb-ef27-4ecc-b85e-f8aded5cda2f:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 21,
+                "denominator": 20
+            }
+        },
+        "684e449a-a4b8-4d39-9866-ae9e1df327ef:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 1,
+                "denominator": 5
+            }
+        },
+        "6a4849ee-42c2-4040-a198-b26d64c15d66:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 6,
+                "denominator": 25
+            }
+        },
+        "6bbe3924-df28-4272-9e98-c650912391e4:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 11,
+                "denominator": 100
+            }
+        },
+        "6c0b3701-ca6d-43c4-86d4-4cbcef0d8a1a:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 13,
+                "denominator": 20
+            }
+        },
+        "6f8c1127-643e-490e-a489-864bdb12793d:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 13,
+                "denominator": 1
+            }
+        },
+        "7168b185-4111-4c2f-a3ea-c8ceaa0c70d2:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 6,
+                "denominator": 25
+            }
+        },
+        "72a943b1-024f-4661-9532-f914793d404b:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 12,
+                "denominator": 25
+            }
+        },
+        "72ca2480-f093-453e-bcde-a70f9298ad8b:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 3,
+                "denominator": 25
+            }
+        },
+        "73a7aab8-b22b-4055-8906-224fc6b6c7dd:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 11,
+                "denominator": 50
+            }
+        },
+        "75c01154-ed3c-4c6e-b0a9-3e433d35c668:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 1,
+                "denominator": 100
+            }
+        },
+        "76e69fb8-e4aa-447c-b20c-86065105b2fd:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 19,
+                "denominator": 2
+            }
+        },
+        "7953a60f-fe8b-4feb-a192-44681cba120c:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 13,
+                "denominator": 50
+            }
+        },
+        "7a25bacc-b618-4271-8625-074c2edd3d53:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 19,
+                "denominator": 2
+            }
+        },
+        "7e3f77e0-7369-4c77-88e7-57f7063a04b9:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 1,
+                "denominator": 1
+            }
+        },
+        "7ea81aa3-1286-4368-a6dc-bf2f11c32458:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 17,
+                "denominator": 10
+            }
+        },
+        "7f4dded6-5415-46df-a0d3-ac790da6da95:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 23,
+                "denominator": 4
+            }
+        },
+        "7f7a9d0e-392f-424b-b7fd-0c5e892983bc:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 4,
+                "denominator": 5
+            }
+        },
+        "820b08a0-73f4-4080-9818-744c58812dcf:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 12,
+                "denominator": 25
+            }
+        },
+        "83614619-64d3-498c-9438-ebc84b0c3974:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 5,
+                "denominator": 1
+            }
+        },
+        "8543288c-a0cf-4189-b0c7-55e534ca5f9a:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 7,
+                "denominator": 25
+            }
+        },
+        "8628f3ce-dbf2-4976-a404-76dfb35b578c:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 9,
+                "denominator": 25
+            }
+        },
+        "87f7dfa5-4560-4b1f-86b0-029d00a382a6:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 7,
+                "denominator": 20
+            }
+        },
+        "8815b35e-59ea-4dad-89d5-40f5837c6f0f:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 91,
+                "denominator": 100
+            }
+        },
+        "888237cf-c6c8-465a-af59-7257dd5a267f:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 13,
+                "denominator": 4
+            }
+        },
+        "89a036cc-a737-4419-8a46-8524a29e368d:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 11,
+                "denominator": 5
+            }
+        },
+        "8a255fe4-961b-43ba-8a4b-0e44a03324a5:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 1,
+                "denominator": 100
+            }
+        },
+        "8b4d392b-d0cd-46ee-95cc-104021917192:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 4,
+                "denominator": 25
+            }
+        },
+        "8d72875c-491e-4307-8fd3-63f10c7fbc31:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 3,
+                "denominator": 50
+            }
+        },
+        "8e8b086c-eeb5-43ee-bbaf-544f29e9cf4e:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 7,
+                "denominator": 5
+            }
+        },
+        "907a7959-3119-40f6-a0c1-88965a2f9486:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 7,
+                "denominator": 50
+            }
+        },
+        "91254694-c9fb-4f68-a2f8-f256adf80120:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 1,
+                "denominator": 4
+            }
+        },
+        "91cfe386-0242-4d54-b94c-15bb48164f2e:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 16,
+                "denominator": 25
+            }
+        },
+        "93bf8eea-ef7a-4155-8fbb-8f42cf49d267:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 7,
+                "denominator": 1
+            }
+        },
+        "97634f0a-c9ef-42af-8632-85fca16e4e5b:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 1,
+                "denominator": 50
+            }
+        },
+        "9778955b-2671-41d8-a9eb-3af35221482d:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 31,
+                "denominator": 50
+            }
+        },
+        "977ede41-85a9-489b-8c4c-7b29f784c9e1:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 33,
+                "denominator": 20
+            }
+        },
+        "9e5241c4-7f4f-47f6-80b1-336dc03658c3:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 31,
+                "denominator": 20
+            }
+        },
+        "9f7329bb-769e-46f9-8dbb-bd27edf08254:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 21,
+                "denominator": 50
+            }
+        },
+        "a17b1f91-dbee-4296-a29e-91f9b5e54dfa:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 1,
+                "denominator": 20
+            }
+        },
+        "a2a9f16d-f0ab-46ae-9bfa-114b721b3246:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 67,
+                "denominator": 100
+            }
+        },
+        "a523cf4b-4ece-4e31-8fef-5b0aeebeb956:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 22,
+                "denominator": 25
+            }
+        },
+        "a57587c7-21a3-41cd-83a7-2206f82b8ae8:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 49,
+                "denominator": 20
+            }
+        },
+        "a6d7da3e-c9d6-4f9e-ab00-a91506bd7f20:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 4,
+                "denominator": 1
+            }
+        },
+        "a6f67af6-ed8c-4584-9fef-e173ddd4a440:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 13,
+                "denominator": 2
+            }
+        },
+        "aa07ed6f-2679-4ff4-80d1-4b810e45e50b:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 29,
+                "denominator": 20
+            }
+        },
+        "aa2242c0-eae6-450b-97d8-7732d6664606:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 19,
+                "denominator": 4
+            }
+        },
+        "ad00bd9e-f0b6-4cf7-82a7-231527c79297:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 3,
+                "denominator": 2
+            }
+        },
+        "af2ef8b4-a4d5-4f63-8e8f-365e4bcdd797:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 11,
+                "denominator": 50
+            }
+        },
+        "b23f80b9-5564-4885-a69c-6760059196ca:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 11,
+                "denominator": 5
+            }
+        },
+        "b3fa4a7b-b157-4a68-b6b3-36dcf806304a:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 23,
+                "denominator": 25
+            }
+        },
+        "b55ecc49-bdce-44d7-b02c-9c69684ea556:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 33,
+                "denominator": 20
+            }
+        },
+        "b683982f-7f93-48ed-8694-2f05d949d07f:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 1,
+                "denominator": 20
+            }
+        },
+        "b6e9481e-c3e0-42e1-8253-9b6885fd7c27:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 3,
+                "denominator": 10
+            }
+        },
+        "b7303e36-3777-4527-8df4-4ad88bf02a02:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 13,
+                "denominator": 5
+            }
+        },
+        "b99ac1c1-83b3-4ab2-a592-17b4e1385174:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 41,
+                "denominator": 50
+            }
+        },
+        "badd8645-e010-4bc0-bb66-2cadd176fa44:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 21,
+                "denominator": 4
+            }
+        },
+        "bb292f84-2730-4d49-bb38-dea664a315d9:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 14,
+                "denominator": 5
+            }
+        },
+        "bb8ab5f8-0621-41a4-a750-08a164ab7968:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 41,
+                "denominator": 50
+            }
+        },
+        "bbd04f41-8d88-44ed-9c21-c30342c5f459:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 6,
+                "denominator": 5
+            }
+        },
+        "bc106723-165d-46e2-8883-95b7bf379521:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 17,
+                "denominator": 25
+            }
+        },
+        "bdb378f1-6b3e-47bb-9981-d1a8ab6fae1e:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 3,
+                "denominator": 1
+            }
+        },
+        "bdcf85f0-501d-40da-b87d-6f0fa7d68589:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 22,
+                "denominator": 5
+            }
+        },
+        "be630b41-8f46-44d2-901e-2aa135d707df:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 1,
+                "denominator": 100
+            }
+        },
+        "c0c3a4b9-4b74-4bc1-b418-5fc054905e1d:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 19,
+                "denominator": 100
+            }
+        },
+        "c29c306d-7865-4d0f-88a6-24f316bce51b:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 7,
+                "denominator": 20
+            }
+        },
+        "c527636d-eaa8-491f-9c65-17f79a374497:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 2,
+                "denominator": 1
+            }
+        },
+        "ca06bbb6-1717-4160-9d88-f18659192143:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 77,
+                "denominator": 100
+            }
+        },
+        "ca652e4a-c000-4d25-8598-7e36d102ef41:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 7,
+                "denominator": 1
+            }
+        },
+        "caa00138-409e-48b7-8a9a-527e10a5962c:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 7,
+                "denominator": 100
+            }
+        },
+        "cb25f056-ca04-4a66-9c6d-5f50b8cc873a:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 6,
+                "denominator": 25
+            }
+        },
+        "cb4ffc7c-95d8-453d-91e1-f8013e6d7d87:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 9,
+                "denominator": 20
+            }
+        },
+        "cce52895-c4b3-4c0b-b8e0-65321fece2e4:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 11,
+                "denominator": 100
+            }
+        },
+        "cd58474f-4d11-47cb-898c-fdc308309480:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 83,
+                "denominator": 100
+            }
+        },
+        "cdcf0d5a-1554-417c-9154-8c5b2332b748:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 13,
+                "denominator": 4
+            }
+        },
+        "ce0a6107-5f9f-437b-af69-c7eee9bc1a30:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 27,
+                "denominator": 10
+            }
+        },
+        "ce109cc4-f457-433a-bbfa-04905d12d1fe:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 11,
+                "denominator": 100
+            }
+        },
+        "ce759631-ccef-4d9c-908d-47791cc37432:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 49,
+                "denominator": 50
+            }
+        },
+        "cf4001c6-4485-410d-9995-27c3b93a1643:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 19,
+                "denominator": 2
+            }
+        },
+        "cfc9ff5f-6cc9-49b0-9361-135dfa3fe849:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 16,
+                "denominator": 5
+            }
+        },
+        "d0268413-e02d-425a-b7e7-954f2f0333df:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 17,
+                "denominator": 25
+            }
+        },
+        "d1a07023-6c99-42b1-b2a7-da99c4f4edfe:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 3,
+                "denominator": 10
+            }
+        },
+        "d5059295-f90f-4187-b8d7-7e2afe7fdb6c:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 1,
+                "denominator": 20
+            }
+        },
+        "d553cdad-6ebd-437d-bdfc-56ad2b6f15d7:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 23,
+                "denominator": 20
+            }
+        },
+        "d5f1829b-41cd-423c-91a6-92cc5a1eebac:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 9,
+                "denominator": 1
+            }
+        },
+        "dbe5990b-0367-4b19-9935-c09e4474a939:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 29,
+                "denominator": 5
+            }
+        },
+        "dcda95c0-fe59-46b1-9bf8-1e2cadff8c00:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 12,
+                "denominator": 25
+            }
+        },
+        "dd4e86cf-1fa9-4a0d-8dbd-741e1cf9da02:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 57,
+                "denominator": 100
+            }
+        },
+        "ddc41b14-0ecb-4be8-b639-f11b3708d84b:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 53,
+                "denominator": 100
+            }
+        },
+        "debdc184-720a-4de8-9d2a-fe365bbebe37:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 21,
+                "denominator": 50
+            }
+        },
+        "df35d213-ac6f-44be-8e67-da66f49937e5:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 7,
+                "denominator": 20
+            }
+        },
+        "df6ffae2-c443-46ef-a5ad-a61f43c2fd4a:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 37,
+                "denominator": 20
+            }
+        },
+        "dfa72cc0-8c83-45b6-9212-32436c450c79:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 6,
+                "denominator": 25
+            }
+        },
+        "dfa86d42-9203-4686-9669-a3859a61bfa5:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 11,
+                "denominator": 100
+            }
+        },
+        "e0ff3bc5-62e3-45c0-b741-dab9302585f6:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 27,
+                "denominator": 4
+            }
+        },
+        "e1063c7d-f360-4d36-bce4-63347b415349:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 67,
+                "denominator": 100
+            }
+        },
+        "e26f6d6a-faa4-4c61-92bd-b8043252aafc:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 47,
+                "denominator": 20
+            }
+        },
+        "e31424ae-d024-4f5e-913d-383392f4f5e3:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 29,
+                "denominator": 20
+            }
+        },
+        "e41af835-e20f-4167-9cf6-1bbcf93ecba2:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 39,
+                "denominator": 20
+            }
+        },
+        "e635c8af-791a-4c5b-af64-826724069b49:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 3,
+                "denominator": 10
+            }
+        },
+        "ea4097a7-4801-4d59-abdf-3c8859fc4d48:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 27,
+                "denominator": 10
+            }
+        },
+        "eb6cee80-04bc-4edc-a7a9-dd6bac0d7bd0:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 1,
+                "denominator": 20
+            }
+        },
+        "f50a8064-46ea-4540-bece-e78d30552b2b:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 23,
+                "denominator": 50
+            }
+        },
+        "f595beca-565c-4c96-b961-08fbc1701110:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 9,
+                "denominator": 1
+            }
+        },
+        "f81d92f4-9457-409d-92f6-d3a9157933e5:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 16,
+                "denominator": 5
+            }
+        },
+        "f8746a36-538b-4974-a306-4ad1d039043c:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 12,
+                "denominator": 25
+            }
+        },
+        "fa49f8c6-6209-4c10-ba29-f422680ae260:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 5,
+                "denominator": 4
+            }
+        },
+        "fb03eb64-209f-44f2-a8ad-8109636e1b46:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 31,
+                "denominator": 4
+            }
+        },
+        "fc940a80-e83d-4e74-bb72-730389f2c376:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 27,
+                "denominator": 20
             }
         }
     }
