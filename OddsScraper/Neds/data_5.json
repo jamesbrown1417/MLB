@@ -1,0 +1,128 @@
+{
+    "entrants": {
+        "9ad52ea3-8f7c-489c-8c2c-33ed04f836e6": {
+            "id": "9ad52ea3-8f7c-489c-8c2c-33ed04f836e6",
+            "name": "New York Yankees",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "5e8c1a31-ace7-479d-8fa3-b93aabe76aa4"
+        },
+        "ef3cb18c-f05a-4e5e-bec3-6c5b82704f0c": {
+            "id": "ef3cb18c-f05a-4e5e-bec3-6c5b82704f0c",
+            "name": "Atlanta Braves",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "5e8c1a31-ace7-479d-8fa3-b93aabe76aa4"
+        }
+    },
+    "event_participants": {
+        "81f5af1f-68e4-46da-9585-d24490303e41": {
+            "id": "81f5af1f-68e4-46da-9585-d24490303e41",
+            "event_id": "370b4ad7-78c4-4532-80f1-d70f6ed6bbf9",
+            "name": "New York Yankees",
+            "home_away": "AWAY"
+        },
+        "ef8de419-b7ed-47f9-a79f-99da3fed295c": {
+            "id": "ef8de419-b7ed-47f9-a79f-99da3fed295c",
+            "event_id": "370b4ad7-78c4-4532-80f1-d70f6ed6bbf9",
+            "name": "Atlanta Braves",
+            "home_away": "HOME"
+        }
+    },
+    "events": {
+        "370b4ad7-78c4-4532-80f1-d70f6ed6bbf9": {
+            "id": "370b4ad7-78c4-4532-80f1-d70f6ed6bbf9",
+            "name": "Atlanta Braves vs New York Yankees",
+            "event_type": {
+                "id": "6bfa0efc-05df-4ae1-9b1e-152365290cfd",
+                "name": "Match"
+            },
+            "match_status": "BettingOpen",
+            "advertised_start": "2025-07-18T23:15:00Z",
+            "actual_start": "2025-07-18T23:15:00Z",
+            "visible": true,
+            "slug": "atlanta-braves-vs-new-york-yankees",
+            "competition": {
+                "id": "a5618779-2cb3-4c0a-b8cc-ce2517fbc8d4",
+                "name": "MLB",
+                "sort_order": 2,
+                "region": "USA"
+            },
+            "competition_id": "a5618779-2cb3-4c0a-b8cc-ce2517fbc8d4",
+            "market_type_group_ids": [
+                "95f7457f-bd84-4e9e-b714-c257b90c1031"
+            ],
+            "market_type_group_markets": [
+                {
+                    "market_type_group_id": "95f7457f-bd84-4e9e-b714-c257b90c1031",
+                    "market_ids": [
+                        "5e8c1a31-ace7-479d-8fa3-b93aabe76aa4"
+                    ]
+                }
+            ],
+            "market_count": 1,
+            "main_markets": [
+                "5e8c1a31-ace7-479d-8fa3-b93aabe76aa4"
+            ],
+            "market_ids": [
+                "5e8c1a31-ace7-479d-8fa3-b93aabe76aa4"
+            ],
+            "category_id": "02721435-4671-4cd0-98f7-15d41ee4103e",
+            "participant_ids": [
+                "81f5af1f-68e4-46da-9585-d24490303e41",
+                "ef8de419-b7ed-47f9-a79f-99da3fed295c"
+            ]
+        }
+    },
+    "market_type_groups": {
+        "95f7457f-bd84-4e9e-b714-c257b90c1031": {
+            "id": "95f7457f-bd84-4e9e-b714-c257b90c1031",
+            "category_id": "02721435-4671-4cd0-98f7-15d41ee4103e",
+            "name": "Top Markets",
+            "priority": 254,
+            "type": "MARKET_TYPE_GROUP_TYPE_EVENT"
+        }
+    },
+    "markets": {
+        "5e8c1a31-ace7-479d-8fa3-b93aabe76aa4": {
+            "id": "5e8c1a31-ace7-479d-8fa3-b93aabe76aa4",
+            "event_id": "370b4ad7-78c4-4532-80f1-d70f6ed6bbf9",
+            "market_type_id": "7b77007b-7ec9-4cf6-a911-7cd1c9d30e74",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Head To Head",
+            "advertised_start": {
+                "seconds": 1752880500
+            },
+            "actual_start": {
+                "seconds": 1752880500
+            },
+            "is_primary": true,
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "ef3cb18c-f05a-4e5e-bec3-6c5b82704f0c",
+                "9ad52ea3-8f7c-489c-8c2c-33ed04f836e6"
+            ],
+            "num_winners": 1
+        }
+    },
+    "markets_allow_cashout": {
+        "5e8c1a31-ace7-479d-8fa3-b93aabe76aa4": true
+    },
+    "prices": {
+        "9ad52ea3-8f7c-489c-8c2c-33ed04f836e6:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 41,
+                "denominator": 50
+            }
+        },
+        "ef3cb18c-f05a-4e5e-bec3-6c5b82704f0c:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 1,
+                "denominator": 1
+            }
+        }
+    }
+}

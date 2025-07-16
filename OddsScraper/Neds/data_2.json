@@ -1,0 +1,128 @@
+{
+    "entrants": {
+        "24313566-abaa-4190-8f55-e44236810172": {
+            "id": "24313566-abaa-4190-8f55-e44236810172",
+            "name": "Kansas City Royals",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "9dc308ab-fda1-4deb-b64b-b55be77edab8"
+        },
+        "c9e1c620-fa62-4c9e-875e-255e52b4eb01": {
+            "id": "c9e1c620-fa62-4c9e-875e-255e52b4eb01",
+            "name": "Miami Marlins",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "9dc308ab-fda1-4deb-b64b-b55be77edab8"
+        }
+    },
+    "event_participants": {
+        "1871173f-9d88-4154-9f08-4e96fcbaf051": {
+            "id": "1871173f-9d88-4154-9f08-4e96fcbaf051",
+            "event_id": "0b8015db-757e-47de-a51f-f71184a2f6f3",
+            "name": "Kansas City Royals",
+            "home_away": "AWAY"
+        },
+        "540012cc-fc71-4683-8dfe-abe1581dc210": {
+            "id": "540012cc-fc71-4683-8dfe-abe1581dc210",
+            "event_id": "0b8015db-757e-47de-a51f-f71184a2f6f3",
+            "name": "Miami Marlins",
+            "home_away": "HOME"
+        }
+    },
+    "events": {
+        "0b8015db-757e-47de-a51f-f71184a2f6f3": {
+            "id": "0b8015db-757e-47de-a51f-f71184a2f6f3",
+            "name": "Miami Marlins vs Kansas City Royals",
+            "event_type": {
+                "id": "6bfa0efc-05df-4ae1-9b1e-152365290cfd",
+                "name": "Match"
+            },
+            "match_status": "BettingOpen",
+            "advertised_start": "2025-07-18T23:10:00Z",
+            "actual_start": "2025-07-18T23:10:00Z",
+            "visible": true,
+            "slug": "miami-marlins-vs-kansas-city-royals",
+            "competition": {
+                "id": "a5618779-2cb3-4c0a-b8cc-ce2517fbc8d4",
+                "name": "MLB",
+                "sort_order": 2,
+                "region": "USA"
+            },
+            "competition_id": "a5618779-2cb3-4c0a-b8cc-ce2517fbc8d4",
+            "market_type_group_ids": [
+                "95f7457f-bd84-4e9e-b714-c257b90c1031"
+            ],
+            "market_type_group_markets": [
+                {
+                    "market_type_group_id": "95f7457f-bd84-4e9e-b714-c257b90c1031",
+                    "market_ids": [
+                        "9dc308ab-fda1-4deb-b64b-b55be77edab8"
+                    ]
+                }
+            ],
+            "market_count": 1,
+            "main_markets": [
+                "9dc308ab-fda1-4deb-b64b-b55be77edab8"
+            ],
+            "market_ids": [
+                "9dc308ab-fda1-4deb-b64b-b55be77edab8"
+            ],
+            "category_id": "02721435-4671-4cd0-98f7-15d41ee4103e",
+            "participant_ids": [
+                "1871173f-9d88-4154-9f08-4e96fcbaf051",
+                "540012cc-fc71-4683-8dfe-abe1581dc210"
+            ]
+        }
+    },
+    "market_type_groups": {
+        "95f7457f-bd84-4e9e-b714-c257b90c1031": {
+            "id": "95f7457f-bd84-4e9e-b714-c257b90c1031",
+            "category_id": "02721435-4671-4cd0-98f7-15d41ee4103e",
+            "name": "Top Markets",
+            "priority": 254,
+            "type": "MARKET_TYPE_GROUP_TYPE_EVENT"
+        }
+    },
+    "markets": {
+        "9dc308ab-fda1-4deb-b64b-b55be77edab8": {
+            "id": "9dc308ab-fda1-4deb-b64b-b55be77edab8",
+            "event_id": "0b8015db-757e-47de-a51f-f71184a2f6f3",
+            "market_type_id": "7b77007b-7ec9-4cf6-a911-7cd1c9d30e74",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Head To Head",
+            "advertised_start": {
+                "seconds": 1752880200
+            },
+            "actual_start": {
+                "seconds": 1752880200
+            },
+            "is_primary": true,
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "c9e1c620-fa62-4c9e-875e-255e52b4eb01",
+                "24313566-abaa-4190-8f55-e44236810172"
+            ],
+            "num_winners": 1
+        }
+    },
+    "markets_allow_cashout": {
+        "9dc308ab-fda1-4deb-b64b-b55be77edab8": true
+    },
+    "prices": {
+        "24313566-abaa-4190-8f55-e44236810172:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 39,
+                "denominator": 50
+            }
+        },
+        "c9e1c620-fa62-4c9e-875e-255e52b4eb01:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 21,
+                "denominator": 20
+            }
+        }
+    }
+}

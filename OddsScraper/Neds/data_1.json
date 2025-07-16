@@ -1,0 +1,128 @@
+{
+    "entrants": {
+        "4553334d-7089-4aaf-a201-a468c893f787": {
+            "id": "4553334d-7089-4aaf-a201-a468c893f787",
+            "name": "Toronto Blue Jays",
+            "home_away": "HOME",
+            "visible": true,
+            "sort_order": 10,
+            "market_id": "9cbe37fb-d541-4c69-ae44-b5ab9b9d6f84"
+        },
+        "9e711448-0d00-4053-a423-6ad5f4e93c43": {
+            "id": "9e711448-0d00-4053-a423-6ad5f4e93c43",
+            "name": "San Francisco Giants",
+            "home_away": "AWAY",
+            "visible": true,
+            "sort_order": 20,
+            "market_id": "9cbe37fb-d541-4c69-ae44-b5ab9b9d6f84"
+        }
+    },
+    "event_participants": {
+        "bc92b986-e166-4b55-b7a2-e05100ac53c5": {
+            "id": "bc92b986-e166-4b55-b7a2-e05100ac53c5",
+            "event_id": "0098ff81-71d1-4e49-a832-5cc66bb81735",
+            "name": "San Francisco Giants",
+            "home_away": "AWAY"
+        },
+        "e39dcfbc-72de-4fb8-807e-3107b01435ec": {
+            "id": "e39dcfbc-72de-4fb8-807e-3107b01435ec",
+            "event_id": "0098ff81-71d1-4e49-a832-5cc66bb81735",
+            "name": "Toronto Blue Jays",
+            "home_away": "HOME"
+        }
+    },
+    "events": {
+        "0098ff81-71d1-4e49-a832-5cc66bb81735": {
+            "id": "0098ff81-71d1-4e49-a832-5cc66bb81735",
+            "name": "Toronto Blue Jays vs San Francisco Giants",
+            "event_type": {
+                "id": "6bfa0efc-05df-4ae1-9b1e-152365290cfd",
+                "name": "Match"
+            },
+            "match_status": "BettingOpen",
+            "advertised_start": "2025-07-18T23:07:00Z",
+            "actual_start": "2025-07-18T23:07:00Z",
+            "visible": true,
+            "slug": "toronto-blue-jays-vs-san-francisco-giants",
+            "competition": {
+                "id": "a5618779-2cb3-4c0a-b8cc-ce2517fbc8d4",
+                "name": "MLB",
+                "sort_order": 2,
+                "region": "USA"
+            },
+            "competition_id": "a5618779-2cb3-4c0a-b8cc-ce2517fbc8d4",
+            "market_type_group_ids": [
+                "95f7457f-bd84-4e9e-b714-c257b90c1031"
+            ],
+            "market_type_group_markets": [
+                {
+                    "market_type_group_id": "95f7457f-bd84-4e9e-b714-c257b90c1031",
+                    "market_ids": [
+                        "9cbe37fb-d541-4c69-ae44-b5ab9b9d6f84"
+                    ]
+                }
+            ],
+            "market_count": 1,
+            "main_markets": [
+                "9cbe37fb-d541-4c69-ae44-b5ab9b9d6f84"
+            ],
+            "market_ids": [
+                "9cbe37fb-d541-4c69-ae44-b5ab9b9d6f84"
+            ],
+            "category_id": "02721435-4671-4cd0-98f7-15d41ee4103e",
+            "participant_ids": [
+                "bc92b986-e166-4b55-b7a2-e05100ac53c5",
+                "e39dcfbc-72de-4fb8-807e-3107b01435ec"
+            ]
+        }
+    },
+    "market_type_groups": {
+        "95f7457f-bd84-4e9e-b714-c257b90c1031": {
+            "id": "95f7457f-bd84-4e9e-b714-c257b90c1031",
+            "category_id": "02721435-4671-4cd0-98f7-15d41ee4103e",
+            "name": "Top Markets",
+            "priority": 254,
+            "type": "MARKET_TYPE_GROUP_TYPE_EVENT"
+        }
+    },
+    "markets": {
+        "9cbe37fb-d541-4c69-ae44-b5ab9b9d6f84": {
+            "id": "9cbe37fb-d541-4c69-ae44-b5ab9b9d6f84",
+            "event_id": "0098ff81-71d1-4e49-a832-5cc66bb81735",
+            "market_type_id": "7b77007b-7ec9-4cf6-a911-7cd1c9d30e74",
+            "market_status_id": "4bc8fe96-296b-4b4c-aea4-85c94f63b9c6",
+            "name": "Head To Head",
+            "advertised_start": {
+                "seconds": 1752880020
+            },
+            "actual_start": {
+                "seconds": 1752880020
+            },
+            "is_primary": true,
+            "same_game_multi_available": true,
+            "visible": true,
+            "entrant_ids": [
+                "4553334d-7089-4aaf-a201-a468c893f787",
+                "9e711448-0d00-4053-a423-6ad5f4e93c43"
+            ],
+            "num_winners": 1
+        }
+    },
+    "markets_allow_cashout": {
+        "9cbe37fb-d541-4c69-ae44-b5ab9b9d6f84": true
+    },
+    "prices": {
+        "4553334d-7089-4aaf-a201-a468c893f787:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 17,
+                "denominator": 25
+            }
+        },
+        "9e711448-0d00-4053-a423-6ad5f4e93c43:940b8704-e497-4a76-b390-00918ff7d282:": {
+            "odds": {
+                "numerator": 6,
+                "denominator": 5
+            }
+        }
+    }
+}
