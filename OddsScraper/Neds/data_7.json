@@ -22,13 +22,15 @@
             "id": "95975d7f-bf03-4078-8e4e-b30046ec8253",
             "event_id": "5fec1569-c1b4-424a-9bae-68f0bf37fc90",
             "name": "Chicago Cubs",
-            "home_away": "HOME"
+            "home_away": "HOME",
+            "colour": "#0e3386"
         },
         "cd51cf19-a122-4f37-8cbb-f7a9c75c66cd": {
             "id": "cd51cf19-a122-4f37-8cbb-f7a9c75c66cd",
             "event_id": "5fec1569-c1b4-424a-9bae-68f0bf37fc90",
             "name": "Boston Red Sox",
-            "home_away": "AWAY"
+            "home_away": "AWAY",
+            "colour": "#FF5B5B"
         }
     },
     "events": {
@@ -114,14 +116,14 @@
     "prices": {
         "726c288a-d7e5-4c57-b13d-ca839c53dfca:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 41,
-                "denominator": 50
+                "numerator": 77,
+                "denominator": 100
             }
         },
         "fb5a5e27-d7b2-4b64-adf7-bb1721874c89:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 1,
-                "denominator": 1
+                "numerator": 21,
+                "denominator": 20
             }
         }
     }

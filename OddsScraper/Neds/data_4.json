@@ -22,13 +22,15 @@
             "id": "57bc2c86-ea68-4f18-8a24-08f82ce895ae",
             "event_id": "2feed3c8-3e01-4afa-a784-cc36c176f075",
             "name": "Tampa Bay Rays",
-            "home_away": "HOME"
+            "home_away": "HOME",
+            "colour": "#092c5c"
         },
         "b868a1bc-f4f5-4bdb-a1eb-125c7c5cf02e": {
             "id": "b868a1bc-f4f5-4bdb-a1eb-125c7c5cf02e",
             "event_id": "2feed3c8-3e01-4afa-a784-cc36c176f075",
             "name": "Baltimore Orioles",
-            "home_away": "AWAY"
+            "home_away": "AWAY",
+            "colour": "#df4601"
         }
     },
     "events": {
@@ -114,14 +116,14 @@
     "prices": {
         "3fa1fe37-95e7-4485-b3c8-375c104b28d2:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 11,
-                "denominator": 10
+                "numerator": 21,
+                "denominator": 20
             }
         },
         "dbc46a76-d2f4-4018-bc72-89e9908988b7:940b8704-e497-4a76-b390-00918ff7d282:": {
             "odds": {
-                "numerator": 3,
-                "denominator": 4
+                "numerator": 39,
+                "denominator": 50
             }
         }
     }
