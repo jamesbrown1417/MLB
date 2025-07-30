@@ -1,91 +1,327 @@
 id,name,rot_num,line_id,price,handicap,selection,player_name,home_team,away_team
-1612297865,Over,43910,5128584681,4.12,0.5,Addison Barger Total Home Runs,Addison Barger Total Home Runs,Baltimore Orioles,Toronto Blue Jays
-1612297866,Under,43911,5128584690,1.208,0.5,Addison Barger Total Home Runs,Addison Barger Total Home Runs,Baltimore Orioles,Toronto Blue Jays
-1612297871,Over,43914,5128584699,5.5,0.5,Adley Rutschman Total Home Runs,Adley Rutschman Total Home Runs,Baltimore Orioles,Toronto Blue Jays
-1612297872,Under,43915,5128584705,1.126,0.5,Adley Rutschman Total Home Runs,Adley Rutschman Total Home Runs,Baltimore Orioles,Toronto Blue Jays
-1612297877,Over,43918,5128584700,6.0,0.5,Bo Bichette Total Home Runs,Bo Bichette Total Home Runs,Baltimore Orioles,Toronto Blue Jays
-1612297878,Under,43919,5128584710,1.107,0.5,Bo Bichette Total Home Runs,Bo Bichette Total Home Runs,Baltimore Orioles,Toronto Blue Jays
-1612297883,Over,43922,5128584729,4.7,0.5,Cedric Mullins Total Home Runs,Cedric Mullins Total Home Runs,Baltimore Orioles,Toronto Blue Jays
-1612297884,Under,43923,5128584739,1.166,0.5,Cedric Mullins Total Home Runs,Cedric Mullins Total Home Runs,Baltimore Orioles,Toronto Blue Jays
-1612297889,Over,43926,5128584698,5.3,0.5,Colton Cowser Total Home Runs,Colton Cowser Total Home Runs,Baltimore Orioles,Toronto Blue Jays
-1612297890,Under,43927,5128584714,1.134,0.5,Colton Cowser Total Home Runs,Colton Cowser Total Home Runs,Baltimore Orioles,Toronto Blue Jays
-1612297907,Over,43938,5128584712,9.0,0.5,Ernie Clement Total Home Runs,Ernie Clement Total Home Runs,Baltimore Orioles,Toronto Blue Jays
-1612297908,Under,43939,5128584754,1.043,0.5,Ernie Clement Total Home Runs,Ernie Clement Total Home Runs,Baltimore Orioles,Toronto Blue Jays
-1612297913,Over,43942,5128584721,4.0,0.5,Gunnar Henderson Total Home Runs,Gunnar Henderson Total Home Runs,Baltimore Orioles,Toronto Blue Jays
-1612297914,Under,43943,5128584755,1.219,0.5,Gunnar Henderson Total Home Runs,Gunnar Henderson Total Home Runs,Baltimore Orioles,Toronto Blue Jays
-1612297920,Under,43947,5128584758,1.126,0.5,Jackson Holliday Total Home Runs,Jackson Holliday Total Home Runs,Baltimore Orioles,Toronto Blue Jays
-1612297919,Over,43946,5128584733,5.5,0.5,Jackson Holliday Total Home Runs,Jackson Holliday Total Home Runs,Baltimore Orioles,Toronto Blue Jays
-1612297925,Over,43950,5128584716,5.0,0.5,Jordan Westburg Total Home Runs,Jordan Westburg Total Home Runs,Baltimore Orioles,Toronto Blue Jays
-1612297926,Under,43951,5128584728,1.149,0.5,Jordan Westburg Total Home Runs,Jordan Westburg Total Home Runs,Baltimore Orioles,Toronto Blue Jays
-1612297943,Over,43962,5128584908,5.7,0.5,Nathan Lukes Total Home Runs,Nathan Lukes Total Home Runs,Baltimore Orioles,Toronto Blue Jays
-1612297944,Under,43963,5128584914,1.118,0.5,Nathan Lukes Total Home Runs,Nathan Lukes Total Home Runs,Baltimore Orioles,Toronto Blue Jays
-1612297961,Over,43974,5128584918,8.5,0.5,Tyler Heineman Total Home Runs,Tyler Heineman Total Home Runs,Baltimore Orioles,Toronto Blue Jays
-1612297962,Under,43975,5128584923,1.05,0.5,Tyler Heineman Total Home Runs,Tyler Heineman Total Home Runs,Baltimore Orioles,Toronto Blue Jays
-1612297967,Over,43978,5128584909,4.0,0.5,Tyler O'Neill Total Home Runs,Tyler O'Neill Total Home Runs,Baltimore Orioles,Toronto Blue Jays
-1612297968,Under,43979,5128584915,1.219,0.5,Tyler O'Neill Total Home Runs,Tyler O'Neill Total Home Runs,Baltimore Orioles,Toronto Blue Jays
-1612297955,Over,43970,5128584917,5.3,0.5,Ryan O'Hearn Total Home Runs,Ryan O'Hearn Total Home Runs,Baltimore Orioles,Toronto Blue Jays
-1612297956,Under,43971,5128584922,1.134,0.5,Ryan O'Hearn Total Home Runs,Ryan O'Hearn Total Home Runs,Baltimore Orioles,Toronto Blue Jays
-1612297982,Over,43988,5128528902,1.757,2.5,Dean Kremer Total Earned Runs,Dean Kremer Total Earned Runs,Baltimore Orioles,Toronto Blue Jays
-1612297983,Under,43989,5128528903,2.15,2.5,Dean Kremer Total Earned Runs,Dean Kremer Total Earned Runs,Baltimore Orioles,Toronto Blue Jays
-1612297973,Over,43982,5128584911,4.0,0.5,Vladimir Guerrero Jr. Total Home Runs,Vladimir Guerrero Jr. Total Home Runs,Baltimore Orioles,Toronto Blue Jays
-1612297974,Under,43983,5128584919,1.219,0.5,Vladimir Guerrero Jr. Total Home Runs,Vladimir Guerrero Jr. Total Home Runs,Baltimore Orioles,Toronto Blue Jays
-1612297991,Over,43994,5128584916,3.9,0.5,George Springer Total Home Runs,George Springer Total Home Runs,Baltimore Orioles,Toronto Blue Jays
-1612297992,Under,43995,5128584921,1.229,0.5,George Springer Total Home Runs,George Springer Total Home Runs,Baltimore Orioles,Toronto Blue Jays
-1612298000,Over,44000,5128530928,2.22,3.5,Jose Berrios Total Earned Runs,Jose Berrios Total Earned Runs,Baltimore Orioles,Toronto Blue Jays
-1612298001,Under,44001,5128530929,1.719,3.5,Jose Berrios Total Earned Runs,Jose Berrios Total Earned Runs,Baltimore Orioles,Toronto Blue Jays
+1612297865,Over,43910,5128823224,4.12,0.5,Addison Barger Total Home Runs,Addison Barger Total Home Runs,Baltimore Orioles,Toronto Blue Jays
+1612297866,Under,43911,5128823236,1.208,0.5,Addison Barger Total Home Runs,Addison Barger Total Home Runs,Baltimore Orioles,Toronto Blue Jays
+1612297871,Over,43914,5128823226,5.49,0.5,Adley Rutschman Total Home Runs,Adley Rutschman Total Home Runs,Baltimore Orioles,Toronto Blue Jays
+1612297872,Under,43915,5128823239,1.155,0.5,Adley Rutschman Total Home Runs,Adley Rutschman Total Home Runs,Baltimore Orioles,Toronto Blue Jays
+1612297877,Over,43918,5128823233,6.0,0.5,Bo Bichette Total Home Runs,Bo Bichette Total Home Runs,Baltimore Orioles,Toronto Blue Jays
+1612297878,Under,43919,5128823250,1.107,0.5,Bo Bichette Total Home Runs,Bo Bichette Total Home Runs,Baltimore Orioles,Toronto Blue Jays
+1612297883,Over,43922,5129008258,4.76,0.5,Cedric Mullins Total Home Runs,Cedric Mullins Total Home Runs,Baltimore Orioles,Toronto Blue Jays
+1612297884,Under,43923,5129008259,1.193,0.5,Cedric Mullins Total Home Runs,Cedric Mullins Total Home Runs,Baltimore Orioles,Toronto Blue Jays
+1612297889,Over,43926,5128942930,5.3,0.5,Colton Cowser Total Home Runs,Colton Cowser Total Home Runs,Baltimore Orioles,Toronto Blue Jays
+1612297890,Under,43927,5128942931,1.164,0.5,Colton Cowser Total Home Runs,Colton Cowser Total Home Runs,Baltimore Orioles,Toronto Blue Jays
+1612297907,Over,43938,5128823248,9.0,0.5,Ernie Clement Total Home Runs,Ernie Clement Total Home Runs,Baltimore Orioles,Toronto Blue Jays
+1612297908,Under,43939,5128823281,1.043,0.5,Ernie Clement Total Home Runs,Ernie Clement Total Home Runs,Baltimore Orioles,Toronto Blue Jays
+1612297913,Over,43942,5128980741,4.09,0.5,Gunnar Henderson Total Home Runs,Gunnar Henderson Total Home Runs,Baltimore Orioles,Toronto Blue Jays
+1612297914,Under,43943,5128980742,1.245,0.5,Gunnar Henderson Total Home Runs,Gunnar Henderson Total Home Runs,Baltimore Orioles,Toronto Blue Jays
+1612297919,Over,43946,5128823252,5.5,0.5,Jackson Holliday Total Home Runs,Jackson Holliday Total Home Runs,Baltimore Orioles,Toronto Blue Jays
+1612297920,Under,43947,5128823274,1.126,0.5,Jackson Holliday Total Home Runs,Jackson Holliday Total Home Runs,Baltimore Orioles,Toronto Blue Jays
+1612297925,Over,43950,5128940534,5.0,0.5,Jordan Westburg Total Home Runs,Jordan Westburg Total Home Runs,Baltimore Orioles,Toronto Blue Jays
+1612297926,Under,43951,5128940535,1.179,0.5,Jordan Westburg Total Home Runs,Jordan Westburg Total Home Runs,Baltimore Orioles,Toronto Blue Jays
+1612297943,Over,43962,5128823264,5.7,0.5,Nathan Lukes Total Home Runs,Nathan Lukes Total Home Runs,Baltimore Orioles,Toronto Blue Jays
+1612297944,Under,43963,5128823273,1.118,0.5,Nathan Lukes Total Home Runs,Nathan Lukes Total Home Runs,Baltimore Orioles,Toronto Blue Jays
+1612297961,Over,43974,5128823407,8.5,0.5,Tyler Heineman Total Home Runs,Tyler Heineman Total Home Runs,Baltimore Orioles,Toronto Blue Jays
+1612297962,Under,43975,5128823421,1.05,0.5,Tyler Heineman Total Home Runs,Tyler Heineman Total Home Runs,Baltimore Orioles,Toronto Blue Jays
+1612297967,Over,43978,5128823398,4.0,0.5,Tyler O'Neill Total Home Runs,Tyler O'Neill Total Home Runs,Baltimore Orioles,Toronto Blue Jays
+1612297968,Under,43979,5128823400,1.219,0.5,Tyler O'Neill Total Home Runs,Tyler O'Neill Total Home Runs,Baltimore Orioles,Toronto Blue Jays
+1612297955,Over,43970,5128989372,5.46,0.5,Ryan O'Hearn Total Home Runs,Ryan O'Hearn Total Home Runs,Baltimore Orioles,Toronto Blue Jays
+1612297956,Under,43971,5128989373,1.156,0.5,Ryan O'Hearn Total Home Runs,Ryan O'Hearn Total Home Runs,Baltimore Orioles,Toronto Blue Jays
+1612297982,Over,43988,5129011006,1.775,2.5,Dean Kremer Total Earned Runs,Dean Kremer Total Earned Runs,Baltimore Orioles,Toronto Blue Jays
+1612297983,Under,43989,5129011007,2.13,2.5,Dean Kremer Total Earned Runs,Dean Kremer Total Earned Runs,Baltimore Orioles,Toronto Blue Jays
+1612297973,Over,43982,5128823292,4.0,0.5,Vladimir Guerrero Jr. Total Home Runs,Vladimir Guerrero Jr. Total Home Runs,Baltimore Orioles,Toronto Blue Jays
+1612297974,Under,43983,5128823298,1.219,0.5,Vladimir Guerrero Jr. Total Home Runs,Vladimir Guerrero Jr. Total Home Runs,Baltimore Orioles,Toronto Blue Jays
+1612297991,Over,43994,5128823367,3.9,0.5,George Springer Total Home Runs,George Springer Total Home Runs,Baltimore Orioles,Toronto Blue Jays
+1612297992,Under,43995,5128823373,1.229,0.5,George Springer Total Home Runs,George Springer Total Home Runs,Baltimore Orioles,Toronto Blue Jays
+1612298000,Over,44000,5128928728,2.34,3.5,Jose Berrios Total Earned Runs,Jose Berrios Total Earned Runs,Baltimore Orioles,Toronto Blue Jays
+1612298001,Under,44001,5128928729,1.645,3.5,Jose Berrios Total Earned Runs,Jose Berrios Total Earned Runs,Baltimore Orioles,Toronto Blue Jays
 1612298586,Over,44008,5128585349,5.5,0.5,Alex Bregman Total Home Runs,Alex Bregman Total Home Runs,Minnesota Twins,Boston Red Sox
 1612298587,Under,44009,5128585363,1.126,0.5,Alex Bregman Total Home Runs,Alex Bregman Total Home Runs,Minnesota Twins,Boston Red Sox
-1612298578,Over,44004,5128585312,9.0,0.5,Abraham Toro Total Home Runs,Abraham Toro Total Home Runs,Minnesota Twins,Boston Red Sox
-1612298579,Under,44005,5128585319,1.043,0.5,Abraham Toro Total Home Runs,Abraham Toro Total Home Runs,Minnesota Twins,Boston Red Sox
-1612298618,Over,44028,5128585233,8.5,0.5,Ceddanne Rafaela Total Home Runs,Ceddanne Rafaela Total Home Runs,Minnesota Twins,Boston Red Sox
-1612298619,Under,44029,5128585234,1.05,0.5,Ceddanne Rafaela Total Home Runs,Ceddanne Rafaela Total Home Runs,Minnesota Twins,Boston Red Sox
+1612298578,Over,44004,5128751140,7.75,0.5,Abraham Toro Total Home Runs,Abraham Toro Total Home Runs,Minnesota Twins,Boston Red Sox
+1612298579,Under,44005,5128751147,1.062,0.5,Abraham Toro Total Home Runs,Abraham Toro Total Home Runs,Minnesota Twins,Boston Red Sox
+1612298618,Over,44028,5129090527,8.5,0.5,Ceddanne Rafaela Total Home Runs,Ceddanne Rafaela Total Home Runs,Minnesota Twins,Boston Red Sox
+1612298619,Under,44029,5129090528,1.075,0.5,Ceddanne Rafaela Total Home Runs,Ceddanne Rafaela Total Home Runs,Minnesota Twins,Boston Red Sox
 1612298612,Over,44024,5128585229,7.02,0.5,Carlos Narvaez Total Home Runs,Carlos Narvaez Total Home Runs,Minnesota Twins,Boston Red Sox
 1612298613,Under,44025,5128585230,1.104,0.5,Carlos Narvaez Total Home Runs,Carlos Narvaez Total Home Runs,Minnesota Twins,Boston Red Sox
-1612298638,Over,44040,5128585245,9.02,0.5,Harrison Bader Total Home Runs,Harrison Bader Total Home Runs,Minnesota Twins,Boston Red Sox
-1612298639,Under,44041,5128585246,1.067,0.5,Harrison Bader Total Home Runs,Harrison Bader Total Home Runs,Minnesota Twins,Boston Red Sox
-1612298644,Over,44044,5128585249,5.0,0.5,Jarren Duran Total Home Runs,Jarren Duran Total Home Runs,Minnesota Twins,Boston Red Sox
-1612298645,Under,44045,5128585250,1.162,0.5,Jarren Duran Total Home Runs,Jarren Duran Total Home Runs,Minnesota Twins,Boston Red Sox
-1612298650,Over,44048,5128585253,5.6,0.5,Kody Clemens Total Home Runs,Kody Clemens Total Home Runs,Minnesota Twins,Boston Red Sox
-1612298651,Under,44049,5128585254,1.122,0.5,Kody Clemens Total Home Runs,Kody Clemens Total Home Runs,Minnesota Twins,Boston Red Sox
-1612298656,Over,44052,5128585257,7.8,0.5,Masataka Yoshida Total Home Runs,Masataka Yoshida Total Home Runs,Minnesota Twins,Boston Red Sox
-1612298657,Under,44053,5128585258,1.062,0.5,Masataka Yoshida Total Home Runs,Masataka Yoshida Total Home Runs,Minnesota Twins,Boston Red Sox
-1612298662,Over,44056,5128585272,5.2,0.5,Matt Wallner Total Home Runs,Matt Wallner Total Home Runs,Minnesota Twins,Boston Red Sox
-1612298663,Under,44057,5128585273,1.139,0.5,Matt Wallner Total Home Runs,Matt Wallner Total Home Runs,Minnesota Twins,Boston Red Sox
-1612298668,Over,44060,5128585283,6.6,0.5,Roman Anthony Total Home Runs,Roman Anthony Total Home Runs,Minnesota Twins,Boston Red Sox
-1612298669,Under,44061,5128585292,1.089,0.5,Roman Anthony Total Home Runs,Roman Anthony Total Home Runs,Minnesota Twins,Boston Red Sox
-1612298686,Over,44072,5128585285,6.5,0.5,Trevor Larnach Total Home Runs,Trevor Larnach Total Home Runs,Minnesota Twins,Boston Red Sox
-1612298687,Under,44073,5128585294,1.091,0.5,Trevor Larnach Total Home Runs,Trevor Larnach Total Home Runs,Minnesota Twins,Boston Red Sox
-1612298674,Over,44064,5128585284,6.5,0.5,Royce Lewis Total Home Runs,Royce Lewis Total Home Runs,Minnesota Twins,Boston Red Sox
-1612298675,Under,44065,5128585293,1.091,0.5,Royce Lewis Total Home Runs,Royce Lewis Total Home Runs,Minnesota Twins,Boston Red Sox
-1612298710,Over,44088,5128585299,4.7,0.5,Wilyer Abreu Total Home Runs,Wilyer Abreu Total Home Runs,Minnesota Twins,Boston Red Sox
-1612298711,Under,44089,5128585327,1.166,0.5,Wilyer Abreu Total Home Runs,Wilyer Abreu Total Home Runs,Minnesota Twins,Boston Red Sox
+1612298638,Over,44040,5128751415,9.02,0.5,Harrison Bader Total Home Runs,Harrison Bader Total Home Runs,Minnesota Twins,Boston Red Sox
+1612298639,Under,44041,5128751423,1.067,0.5,Harrison Bader Total Home Runs,Harrison Bader Total Home Runs,Minnesota Twins,Boston Red Sox
+1612298644,Over,44044,5128751171,5.0,0.5,Jarren Duran Total Home Runs,Jarren Duran Total Home Runs,Minnesota Twins,Boston Red Sox
+1612298645,Under,44045,5128751190,1.162,0.5,Jarren Duran Total Home Runs,Jarren Duran Total Home Runs,Minnesota Twins,Boston Red Sox
+1612298650,Over,44048,5128751420,4.75,0.5,Kody Clemens Total Home Runs,Kody Clemens Total Home Runs,Minnesota Twins,Boston Red Sox
+1612298651,Under,44049,5128751427,1.163,0.5,Kody Clemens Total Home Runs,Kody Clemens Total Home Runs,Minnesota Twins,Boston Red Sox
+1612298656,Over,44052,5128751409,7.8,0.5,Masataka Yoshida Total Home Runs,Masataka Yoshida Total Home Runs,Minnesota Twins,Boston Red Sox
+1612298657,Under,44053,5128751418,1.062,0.5,Masataka Yoshida Total Home Runs,Masataka Yoshida Total Home Runs,Minnesota Twins,Boston Red Sox
+1612298662,Over,44056,5128751408,5.2,0.5,Matt Wallner Total Home Runs,Matt Wallner Total Home Runs,Minnesota Twins,Boston Red Sox
+1612298663,Under,44057,5128751416,1.139,0.5,Matt Wallner Total Home Runs,Matt Wallner Total Home Runs,Minnesota Twins,Boston Red Sox
+1612298668,Over,44060,5129090149,6.0,0.5,Roman Anthony Total Home Runs,Roman Anthony Total Home Runs,Minnesota Twins,Boston Red Sox
+1612298669,Under,44061,5129090150,1.135,0.5,Roman Anthony Total Home Runs,Roman Anthony Total Home Runs,Minnesota Twins,Boston Red Sox
+1612298686,Over,44072,5128751414,6.5,0.5,Trevor Larnach Total Home Runs,Trevor Larnach Total Home Runs,Minnesota Twins,Boston Red Sox
+1612298687,Under,44073,5128751429,1.091,0.5,Trevor Larnach Total Home Runs,Trevor Larnach Total Home Runs,Minnesota Twins,Boston Red Sox
+1612298674,Over,44064,5128751426,6.5,0.5,Royce Lewis Total Home Runs,Royce Lewis Total Home Runs,Minnesota Twins,Boston Red Sox
+1612298675,Under,44065,5128751433,1.091,0.5,Royce Lewis Total Home Runs,Royce Lewis Total Home Runs,Minnesota Twins,Boston Red Sox
+1612298710,Over,44088,5128751421,4.7,0.5,Wilyer Abreu Total Home Runs,Wilyer Abreu Total Home Runs,Minnesota Twins,Boston Red Sox
+1612298711,Under,44089,5128751428,1.166,0.5,Wilyer Abreu Total Home Runs,Wilyer Abreu Total Home Runs,Minnesota Twins,Boston Red Sox
 1612298698,Over,44080,5128585309,11.0,0.5,Ty France Total Home Runs,Ty France Total Home Runs,Minnesota Twins,Boston Red Sox
 1612298699,Under,44081,5128585318,1.024,0.5,Ty France Total Home Runs,Ty France Total Home Runs,Minnesota Twins,Boston Red Sox
-1612298704,Over,44084,5128585288,8.5,0.5,Willi Castro Total Home Runs,Willi Castro Total Home Runs,Minnesota Twins,Boston Red Sox
-1612298705,Under,44085,5128585323,1.05,0.5,Willi Castro Total Home Runs,Willi Castro Total Home Runs,Minnesota Twins,Boston Red Sox
-1612298692,Over,44076,5128585310,6.6,0.5,Trevor Story Total Home Runs,Trevor Story Total Home Runs,Minnesota Twins,Boston Red Sox
-1612298693,Under,44077,5128585317,1.089,0.5,Trevor Story Total Home Runs,Trevor Story Total Home Runs,Minnesota Twins,Boston Red Sox
-1612298680,Over,44068,5128585274,7.8,0.5,Ryan Jeffers Total Home Runs,Ryan Jeffers Total Home Runs,Minnesota Twins,Boston Red Sox
-1612298681,Under,44069,5128585275,1.062,0.5,Ryan Jeffers Total Home Runs,Ryan Jeffers Total Home Runs,Minnesota Twins,Boston Red Sox
+1612298704,Over,44084,5128751434,8.5,0.5,Willi Castro Total Home Runs,Willi Castro Total Home Runs,Minnesota Twins,Boston Red Sox
+1612298705,Under,44085,5128751435,1.05,0.5,Willi Castro Total Home Runs,Willi Castro Total Home Runs,Minnesota Twins,Boston Red Sox
+1612298692,Over,44076,5128751412,6.6,0.5,Trevor Story Total Home Runs,Trevor Story Total Home Runs,Minnesota Twins,Boston Red Sox
+1612298693,Under,44077,5128751422,1.089,0.5,Trevor Story Total Home Runs,Trevor Story Total Home Runs,Minnesota Twins,Boston Red Sox
+1612298680,Over,44068,5128973915,8.1,0.5,Ryan Jeffers Total Home Runs,Ryan Jeffers Total Home Runs,Minnesota Twins,Boston Red Sox
+1612298681,Under,44069,5128973916,1.098,0.5,Ryan Jeffers Total Home Runs,Ryan Jeffers Total Home Runs,Minnesota Twins,Boston Red Sox
 1612298606,Over,44020,5128585225,7.8,0.5,Carlos Correa Total Home Runs,Carlos Correa Total Home Runs,Minnesota Twins,Boston Red Sox
 1612298607,Under,44021,5128585226,1.062,0.5,Carlos Correa Total Home Runs,Carlos Correa Total Home Runs,Minnesota Twins,Boston Red Sox
 1612298722,Over,44096,5128573434,2.07,2.5,Brayan Bello Total Earned Runs,Brayan Bello Total Earned Runs,Minnesota Twins,Boston Red Sox
 1612298723,Under,44097,5128573435,1.819,2.5,Brayan Bello Total Earned Runs,Brayan Bello Total Earned Runs,Minnesota Twins,Boston Red Sox
-1612302924,Over,44106,5128603920,6.0,0.5,Brett Baty Total Home Runs,Brett Baty Total Home Runs,San Diego Padres,New York Mets
-1612302925,Under,44107,5128603921,1.107,0.5,Brett Baty Total Home Runs,Brett Baty Total Home Runs,San Diego Padres,New York Mets
-1612302930,Over,44110,5128604571,5.3,0.5,Fernando Tatis Jr. Total Home Runs,Fernando Tatis Jr. Total Home Runs,San Diego Padres,New York Mets
-1612302931,Under,44111,5128604572,1.134,0.5,Fernando Tatis Jr. Total Home Runs,Fernando Tatis Jr. Total Home Runs,San Diego Padres,New York Mets
-1612302918,Over,44102,5128603795,5.2,0.5,Brandon Nimmo Total Home Runs,Brandon Nimmo Total Home Runs,San Diego Padres,New York Mets
-1612302919,Under,44103,5128603796,1.139,0.5,Brandon Nimmo Total Home Runs,Brandon Nimmo Total Home Runs,San Diego Padres,New York Mets
-1612302936,Over,44114,5128605004,5.6,0.5,Francisco Alvarez Total Home Runs,Francisco Alvarez Total Home Runs,San Diego Padres,New York Mets
-1612302937,Under,44115,5128605005,1.122,0.5,Francisco Alvarez Total Home Runs,Francisco Alvarez Total Home Runs,San Diego Padres,New York Mets
-1612302954,Over,44126,5128606799,7.0,0.5,Jackson Merrill Total Home Runs,Jackson Merrill Total Home Runs,San Diego Padres,New York Mets
-1612302955,Under,44127,5128606800,1.078,0.5,Jackson Merrill Total Home Runs,Jackson Merrill Total Home Runs,San Diego Padres,New York Mets
-1612302942,Over,44118,5128606419,4.6,0.5,Francisco Lindor Total Home Runs,Francisco Lindor Total Home Runs,San Diego Padres,New York Mets
-1612302943,Under,44119,5128606420,1.173,0.5,Francisco Lindor Total Home Runs,Francisco Lindor Total Home Runs,San Diego Padres,New York Mets
-1612302948,Over,44122,5128606618,7.8,0.5,Gavin Sheets Total Home Runs,Gavin Sheets Total Home Runs,San Diego Padres,New York Mets
-1612302949,Under,44123,5128606619,1.062,0.5,Gavin Sheets Total Home Runs,Gavin Sheets Total Home Runs,San Diego Padres,New York Mets
-1612302960,Over,44130,5128608901,8.0,0.5,Jake Cronenworth Total Home Runs,Jake Cronenworth Total Home Runs,San Diego Padres,New York Mets
-1612302961,Under,44131,5128608902,1.058,0.5,Jake Cronenworth Total Home Runs,Jake Cronenworth Total Home Runs,San Diego Padres,New York Mets
-1612302966,Over,44134,5128609632,7.0,0.5,Jeff McNeil Total Home Runs,Jeff McNeil Total Home Runs,San Diego Padres,New York Mets
-1612302967,Under,44135,5128609633,1.078,0.5,Jeff McNeil Total Home Runs,Jeff McNeil Total Home Runs,San Diego Padres,New York Mets
+1612302924,Over,44106,5129177428,6.0,0.5,Brett Baty Total Home Runs,Brett Baty Total Home Runs,San Diego Padres,New York Mets
+1612302925,Under,44107,5129177431,1.107,0.5,Brett Baty Total Home Runs,Brett Baty Total Home Runs,San Diego Padres,New York Mets
+1612302930,Over,44110,5129177413,5.3,0.5,Fernando Tatis Jr. Total Home Runs,Fernando Tatis Jr. Total Home Runs,San Diego Padres,New York Mets
+1612302931,Under,44111,5129177414,1.134,0.5,Fernando Tatis Jr. Total Home Runs,Fernando Tatis Jr. Total Home Runs,San Diego Padres,New York Mets
+1612302918,Over,44102,5129344287,5.2,0.5,Brandon Nimmo Total Home Runs,Brandon Nimmo Total Home Runs,San Diego Padres,New York Mets
+1612302919,Under,44103,5129344288,1.169,0.5,Brandon Nimmo Total Home Runs,Brandon Nimmo Total Home Runs,San Diego Padres,New York Mets
+1612302936,Over,44114,5129177417,6.65,0.5,Francisco Alvarez Total Home Runs,Francisco Alvarez Total Home Runs,San Diego Padres,New York Mets
+1612302937,Under,44115,5129177418,1.114,0.5,Francisco Alvarez Total Home Runs,Francisco Alvarez Total Home Runs,San Diego Padres,New York Mets
+1612302954,Over,44126,5129177421,7.0,0.5,Jackson Merrill Total Home Runs,Jackson Merrill Total Home Runs,San Diego Padres,New York Mets
+1612302955,Under,44127,5129177422,1.078,0.5,Jackson Merrill Total Home Runs,Jackson Merrill Total Home Runs,San Diego Padres,New York Mets
+1612302942,Over,44118,5129177423,4.6,0.5,Francisco Lindor Total Home Runs,Francisco Lindor Total Home Runs,San Diego Padres,New York Mets
+1612302943,Under,44119,5129177424,1.173,0.5,Francisco Lindor Total Home Runs,Francisco Lindor Total Home Runs,San Diego Padres,New York Mets
+1612302948,Over,44122,5129643908,7.8,0.5,Gavin Sheets Total Home Runs,Gavin Sheets Total Home Runs,San Diego Padres,New York Mets
+1612302949,Under,44123,5129643911,1.087,0.5,Gavin Sheets Total Home Runs,Gavin Sheets Total Home Runs,San Diego Padres,New York Mets
+1612302960,Over,44130,5129644722,7.99,0.5,Jake Cronenworth Total Home Runs,Jake Cronenworth Total Home Runs,San Diego Padres,New York Mets
+1612302961,Under,44131,5129644723,1.083,0.5,Jake Cronenworth Total Home Runs,Jake Cronenworth Total Home Runs,San Diego Padres,New York Mets
+1612302966,Over,44134,5129177441,7.0,0.5,Jeff McNeil Total Home Runs,Jeff McNeil Total Home Runs,San Diego Padres,New York Mets
+1612302967,Under,44135,5129177442,1.078,0.5,Jeff McNeil Total Home Runs,Jeff McNeil Total Home Runs,San Diego Padres,New York Mets
+1612302996,Over,44154,5129177455,5.8,0.5,Mark Vientos Total Home Runs,Mark Vientos Total Home Runs,San Diego Padres,New York Mets
+1612302997,Under,44155,5129177463,1.114,0.5,Mark Vientos Total Home Runs,Mark Vientos Total Home Runs,San Diego Padres,New York Mets
+1612302990,Over,44150,5129177457,5.2,0.5,Manny Machado Total Home Runs,Manny Machado Total Home Runs,San Diego Padres,New York Mets
+1612302991,Under,44151,5129177467,1.169,0.5,Manny Machado Total Home Runs,Manny Machado Total Home Runs,San Diego Padres,New York Mets
+1612302984,Over,44146,5129177454,12.0,0.5,Luis Arraez Total Home Runs,Luis Arraez Total Home Runs,San Diego Padres,New York Mets
+1612302985,Under,44147,5129177462,1.038,0.5,Luis Arraez Total Home Runs,Luis Arraez Total Home Runs,San Diego Padres,New York Mets
+1612303002,Over,44158,5129177458,10.5,0.5,Martin Maldonado Total Home Runs,Martin Maldonado Total Home Runs,San Diego Padres,New York Mets
+1612303003,Under,44159,5129177468,1.026,0.5,Martin Maldonado Total Home Runs,Martin Maldonado Total Home Runs,San Diego Padres,New York Mets
+1612303008,Over,44162,5129177469,4.0,0.5,Pete Alonso Total Home Runs,Pete Alonso Total Home Runs,San Diego Padres,New York Mets
+1612303009,Under,44163,5129177479,1.219,0.5,Pete Alonso Total Home Runs,Pete Alonso Total Home Runs,San Diego Padres,New York Mets
+1612303014,Over,44166,5129177617,6.0,0.5,Ronny Mauricio Total Home Runs,Ronny Mauricio Total Home Runs,San Diego Padres,New York Mets
+1612303015,Under,44167,5129177625,1.107,0.5,Ronny Mauricio Total Home Runs,Ronny Mauricio Total Home Runs,San Diego Padres,New York Mets
+1612303044,Over,44186,5129549860,2.14,2.5,Yu Darvish Total Earned Runs,Yu Darvish Total Earned Runs,San Diego Padres,New York Mets
+1612303045,Under,44187,5129549861,1.763,2.5,Yu Darvish Total Earned Runs,Yu Darvish Total Earned Runs,San Diego Padres,New York Mets
+1612303032,Over,44178,5129177464,9.3,0.5,Xander Bogaerts Total Home Runs,Xander Bogaerts Total Home Runs,San Diego Padres,New York Mets
+1612303033,Under,44179,5129177475,1.039,0.5,Xander Bogaerts Total Home Runs,Xander Bogaerts Total Home Runs,San Diego Padres,New York Mets
+1612303058,Over,44194,5128623571,2.08,2.5,Clay Holmes Total Earned Runs,Clay Holmes Total Earned Runs,San Diego Padres,New York Mets
+1612303059,Under,44195,5128623572,1.813,2.5,Clay Holmes Total Earned Runs,Clay Holmes Total Earned Runs,San Diego Padres,New York Mets
+1612309467,Over,972,5129032829,4.63,0.5,Ketel Marte (Home Runs)(must start),Ketel Marte (Home Runs)(must start),Detroit Tigers,Arizona Diamondbacks
+1612309468,Under,973,5129032830,1.17,0.5,Ketel Marte (Home Runs)(must start),Ketel Marte (Home Runs)(must start),Detroit Tigers,Arizona Diamondbacks
+1612309525,Over,972,5128676496,3.8,0.5,Corbin Carroll (Home Runs)(must start),Corbin Carroll (Home Runs)(must start),Detroit Tigers,Arizona Diamondbacks
+1612309526,Under,973,5128676497,1.239,0.5,Corbin Carroll (Home Runs)(must start),Corbin Carroll (Home Runs)(must start),Detroit Tigers,Arizona Diamondbacks
+1612309518,Over,972,5129032864,5.66,0.5,Riley Greene (Home Runs)(must start),Riley Greene (Home Runs)(must start),Detroit Tigers,Arizona Diamondbacks
+1612309519,Under,973,5129032865,1.119,0.5,Riley Greene (Home Runs)(must start),Riley Greene (Home Runs)(must start),Detroit Tigers,Arizona Diamondbacks
+1612309511,Over,972,5128693461,5.16,0.5,Kerry Carpenter (Home Runs)(must start),Kerry Carpenter (Home Runs)(must start),Detroit Tigers,Arizona Diamondbacks
+1612309512,Under,973,5128693462,1.141,0.5,Kerry Carpenter (Home Runs)(must start),Kerry Carpenter (Home Runs)(must start),Detroit Tigers,Arizona Diamondbacks
+1612310457,Over,972,5129035311,1.925,2.5,Ryne Nelson (Earned Runs)(must start),Ryne Nelson (Earned Runs)(must start),Detroit Tigers,Arizona Diamondbacks
+1612310458,Under,973,5129035312,1.819,2.5,Ryne Nelson (Earned Runs)(must start),Ryne Nelson (Earned Runs)(must start),Detroit Tigers,Arizona Diamondbacks
+1612309502,Over,972,5129032858,5.64,0.5,Spencer Torkelson (Home Runs)(must start),Spencer Torkelson (Home Runs)(must start),Detroit Tigers,Arizona Diamondbacks
+1612309503,Under,973,5129032859,1.12,0.5,Spencer Torkelson (Home Runs)(must start),Spencer Torkelson (Home Runs)(must start),Detroit Tigers,Arizona Diamondbacks
+1612309493,Over,972,5129031399,1.847,2.5,Chris Paddack (Earned Runs)(must start),Chris Paddack (Earned Runs)(must start),Detroit Tigers,Arizona Diamondbacks
+1612309494,Under,973,5129031400,1.892,2.5,Chris Paddack (Earned Runs)(must start),Chris Paddack (Earned Runs)(must start),Detroit Tigers,Arizona Diamondbacks
+1612309458,Over,972,5129032337,4.19,0.5,Eugenio Suárez (Home Runs)(must start),Eugenio Suárez (Home Runs)(must start),Detroit Tigers,Arizona Diamondbacks
+1612309459,Under,973,5129032338,1.203,0.5,Eugenio Suárez (Home Runs)(must start),Eugenio Suárez (Home Runs)(must start),Detroit Tigers,Arizona Diamondbacks
+1612311757,Over,976,5128953700,5.52,0.5,Austin Riley (Home Runs)(must start),Austin Riley (Home Runs)(must start),Kansas City Royals,Atlanta Braves
+1612311758,Under,977,5128953701,1.125,0.5,Austin Riley (Home Runs)(must start),Austin Riley (Home Runs)(must start),Kansas City Royals,Atlanta Braves
+1612311740,Over,976,5129028829,5.04,0.5,Matt Olson (Home Runs)(must start),Matt Olson (Home Runs)(must start),Kansas City Royals,Atlanta Braves
+1612311741,Under,977,5129028830,1.147,0.5,Matt Olson (Home Runs)(must start),Matt Olson (Home Runs)(must start),Kansas City Royals,Atlanta Braves
+1612311796,Over,976,5129028872,5.27,0.5,Bobby Witt Jr. (Home Runs)(must start),Bobby Witt Jr. (Home Runs)(must start),Kansas City Royals,Atlanta Braves
+1612311797,Under,977,5129028873,1.136,0.5,Bobby Witt Jr. (Home Runs)(must start),Bobby Witt Jr. (Home Runs)(must start),Kansas City Royals,Atlanta Braves
+1612311726,Over,976,5129028825,5.14,0.5,Randal Grichuk (Home Runs)(must start),Randal Grichuk (Home Runs)(must start),Kansas City Royals,Atlanta Braves
+1612311727,Under,977,5129028826,1.142,0.5,Randal Grichuk (Home Runs)(must start),Randal Grichuk (Home Runs)(must start),Kansas City Royals,Atlanta Braves
+1612311717,Over,976,5129028823,5.34,0.5,Salvador Perez (Home Runs)(must start),Salvador Perez (Home Runs)(must start),Kansas City Royals,Atlanta Braves
+1612311718,Under,977,5129028824,1.133,0.5,Salvador Perez (Home Runs)(must start),Salvador Perez (Home Runs)(must start),Kansas City Royals,Atlanta Braves
+1612312210,Over,980,5129813673,5.3,0.5,Hunter Goodman (Home Runs)(must start),Hunter Goodman (Home Runs)(must start),Cleveland Guardians,Colorado Rockies
+1612312211,Under,981,5129813674,1.134,0.5,Hunter Goodman (Home Runs)(must start),Hunter Goodman (Home Runs)(must start),Cleveland Guardians,Colorado Rockies
+1612312201,Over,980,5129813637,5.45,0.5,José Ramírez (Home Runs)(must start),José Ramírez (Home Runs)(must start),Cleveland Guardians,Colorado Rockies
+1612312202,Under,981,5129813638,1.128,0.5,José Ramírez (Home Runs)(must start),José Ramírez (Home Runs)(must start),Cleveland Guardians,Colorado Rockies
+1612312037,Over,980,5129813576,1.775,2.5,Kyle Freeland (Earned Runs)(must start),Kyle Freeland (Earned Runs)(must start),Cleveland Guardians,Colorado Rockies
+1612312038,Under,981,5129813579,1.98,2.5,Kyle Freeland (Earned Runs)(must start),Kyle Freeland (Earned Runs)(must start),Cleveland Guardians,Colorado Rockies
+1612312478,Over,958,5129751665,4.66,0.5,Will Benson (Home Runs)(must start),Will Benson (Home Runs)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312479,Under,959,5129751666,1.169,0.5,Will Benson (Home Runs)(must start),Will Benson (Home Runs)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312352,Over,966,5129812583,5.41,0.5,Jasson Domínguez (Home Runs)(must start),Jasson Domínguez (Home Runs)(must start),New York Yankees,Tampa Bay Rays
+1612312353,Under,967,5129812584,1.13,0.5,Jasson Domínguez (Home Runs)(must start),Jasson Domínguez (Home Runs)(must start),New York Yankees,Tampa Bay Rays
+1612312469,Over,958,5129791976,6.46,0.5,Noelvi Marte (Home Runs)(must start),Noelvi Marte (Home Runs)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312470,Under,959,5129791977,1.093,0.5,Noelvi Marte (Home Runs)(must start),Noelvi Marte (Home Runs)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312343,Over,966,5129812577,4.58,0.5,Austin Wells (Home Runs)(must start),Austin Wells (Home Runs)(must start),New York Yankees,Tampa Bay Rays
+1612312344,Under,967,5129812578,1.174,0.5,Austin Wells (Home Runs)(must start),Austin Wells (Home Runs)(must start),New York Yankees,Tampa Bay Rays
+1612312457,Over,958,5129791944,6.02,0.5,Matt McLain (Home Runs)(must start),Matt McLain (Home Runs)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312458,Under,959,5129791945,1.106,0.5,Matt McLain (Home Runs)(must start),Matt McLain (Home Runs)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312334,Over,966,5129812565,4.58,0.5,Jonathan Aranda (Home Runs)(must start),Jonathan Aranda (Home Runs)(must start),New York Yankees,Tampa Bay Rays
+1612312335,Under,967,5129812566,1.174,0.5,Jonathan Aranda (Home Runs)(must start),Jonathan Aranda (Home Runs)(must start),New York Yankees,Tampa Bay Rays
+1612312463,Over,958,5129791972,5.55,0.5,Andy Pages (Home Runs)(must start),Andy Pages (Home Runs)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312464,Under,959,5129791973,1.124,0.5,Andy Pages (Home Runs)(must start),Andy Pages (Home Runs)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312451,Over,958,5129791934,4.77,0.5,Will Smith (Home Runs)(must start),Will Smith (Home Runs)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312452,Under,959,5129791935,1.162,0.5,Will Smith (Home Runs)(must start),Will Smith (Home Runs)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312328,Over,966,5129812563,3.94,0.5,Jazz Chisholm Jr. (Home Runs)(must start),Jazz Chisholm Jr. (Home Runs)(must start),New York Yankees,Tampa Bay Rays
+1612312329,Under,967,5129812564,1.225,0.5,Jazz Chisholm Jr. (Home Runs)(must start),Jazz Chisholm Jr. (Home Runs)(must start),New York Yankees,Tampa Bay Rays
+1612312376,Over,966,5129812597,2.03,2.5,Will Warren (Earned Runs)(must start),Will Warren (Earned Runs)(must start),New York Yankees,Tampa Bay Rays
+1612312377,Under,967,5129812598,1.735,2.5,Will Warren (Earned Runs)(must start),Will Warren (Earned Runs)(must start),New York Yankees,Tampa Bay Rays
+1612312364,Over,966,5129812591,3.74,0.5,Ben Rice (Home Runs)(must start),Ben Rice (Home Runs)(must start),New York Yankees,Tampa Bay Rays
+1612312365,Under,967,5129812592,1.245,0.5,Ben Rice (Home Runs)(must start),Ben Rice (Home Runs)(must start),New York Yankees,Tampa Bay Rays
+1612312481,Over,958,5129791940,5.72,0.5,Austin Hays (Home Runs)(must start),Austin Hays (Home Runs)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312482,Under,959,5129791941,1.117,0.5,Austin Hays (Home Runs)(must start),Austin Hays (Home Runs)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312358,Over,966,5129818326,4.77,0.5,Junior Caminero (Home Runs)(must start),Junior Caminero (Home Runs)(must start),New York Yankees,Tampa Bay Rays
+1612312359,Under,967,5129818327,1.162,0.5,Junior Caminero (Home Runs)(must start),Junior Caminero (Home Runs)(must start),New York Yankees,Tampa Bay Rays
+1612312487,Over,958,5129791978,4.71,0.5,Elly De La Cruz (Home Runs)(must start),Elly De La Cruz (Home Runs)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312488,Under,959,5129791979,1.166,0.5,Elly De La Cruz (Home Runs)(must start),Elly De La Cruz (Home Runs)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312412,Over,958,5129761168,2.15,3.5,Nick Martinez (Earned Runs)(must start),Nick Martinez (Earned Runs)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312413,Under,959,5129761169,1.653,3.5,Nick Martinez (Earned Runs)(must start),Nick Martinez (Earned Runs)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312283,Over,966,5129812533,4.43,0.5,Cody Bellinger (Home Runs)(must start),Cody Bellinger (Home Runs)(must start),New York Yankees,Tampa Bay Rays
+1612312284,Under,967,5129812534,1.184,0.5,Cody Bellinger (Home Runs)(must start),Cody Bellinger (Home Runs)(must start),New York Yankees,Tampa Bay Rays
+1612312277,Over,966,5129812529,3.52,0.5,Giancarlo Stanton (Home Runs)(must start),Giancarlo Stanton (Home Runs)(must start),New York Yankees,Tampa Bay Rays
+1612312278,Under,967,5129812530,1.273,0.5,Giancarlo Stanton (Home Runs)(must start),Giancarlo Stanton (Home Runs)(must start),New York Yankees,Tampa Bay Rays
+1612312394,Over,958,5129751546,5.49,0.5,Mookie Betts (Home Runs)(must start),Mookie Betts (Home Runs)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312395,Under,959,5129751547,1.126,0.5,Mookie Betts (Home Runs)(must start),Mookie Betts (Home Runs)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312400,Over,958,5129751550,4.86,0.5,Teoscar Hernández (Home Runs)(must start),Teoscar Hernández (Home Runs)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312401,Under,959,5129751551,1.157,0.5,Teoscar Hernández (Home Runs)(must start),Teoscar Hernández (Home Runs)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312388,Over,958,5129772515,5.85,0.5,Freddie Freeman (Home Runs)(must start),Freddie Freeman (Home Runs)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312389,Under,959,5129772516,1.112,0.5,Freddie Freeman (Home Runs)(must start),Freddie Freeman (Home Runs)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312320,Under,967,5129812554,1.238,0.5,Trent Grisham (Home Runs)(must start),Trent Grisham (Home Runs)(must start),New York Yankees,Tampa Bay Rays
+1612312319,Over,966,5129812553,3.81,0.5,Trent Grisham (Home Runs)(must start),Trent Grisham (Home Runs)(must start),New York Yankees,Tampa Bay Rays
+1612312436,Over,958,5129791922,6.26,0.5,Tyler Stephenson (Home Runs)(must start),Tyler Stephenson (Home Runs)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312437,Under,959,5129791923,1.099,0.5,Tyler Stephenson (Home Runs)(must start),Tyler Stephenson (Home Runs)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312307,Over,966,5129812549,6.06,0.5,Yandy Díaz (Home Runs)(must start),Yandy Díaz (Home Runs)(must start),New York Yankees,Tampa Bay Rays
+1612312308,Under,967,5129812550,1.105,0.5,Yandy Díaz (Home Runs)(must start),Yandy Díaz (Home Runs)(must start),New York Yankees,Tampa Bay Rays
+1612312430,Over,958,5129751592,2.26,0.5,Shohei Ohtani (Home Runs)(must start),Shohei Ohtani (Home Runs)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312431,Under,959,5129751593,1.591,0.5,Shohei Ohtani (Home Runs)(must start),Shohei Ohtani (Home Runs)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312301,Over,966,5129812545,4.39,0.5,Ryan McMahon (Home Runs)(must start),Ryan McMahon (Home Runs)(must start),New York Yankees,Tampa Bay Rays
+1612312302,Under,967,5129812546,1.187,0.5,Ryan McMahon (Home Runs)(must start),Ryan McMahon (Home Runs)(must start),New York Yankees,Tampa Bay Rays
+1612312418,Over,958,5129751566,4.74,0.5,Michael Conforto (Home Runs)(must start),Michael Conforto (Home Runs)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312419,Under,959,5129751567,1.164,0.5,Michael Conforto (Home Runs)(must start),Michael Conforto (Home Runs)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312295,Over,966,5129812541,2.2,3.5,Zack Littell (Earned Runs)(must start),Zack Littell (Earned Runs)(must start),New York Yankees,Tampa Bay Rays
+1612312296,Under,967,5129812542,1.625,3.5,Zack Littell (Earned Runs)(must start),Zack Littell (Earned Runs)(must start),New York Yankees,Tampa Bay Rays
+1612312504,Over,958,5129804706,2.32,1.5,Shohei Ohtani (Earned Runs)(must start),Shohei Ohtani (Earned Runs)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312505,Under,959,5129804707,1.564,1.5,Shohei Ohtani (Earned Runs)(must start),Shohei Ohtani (Earned Runs)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612313440,Under,981,5129813641,1.813,1.5,Kolby Allard (Earned Runs)(must start),Kolby Allard (Earned Runs)(must start),Cleveland Guardians,Colorado Rockies
+1612313439,Over,980,5129813639,1.934,1.5,Kolby Allard (Earned Runs)(must start),Kolby Allard (Earned Runs)(must start),Cleveland Guardians,Colorado Rockies
+1612313523,Over,978,5129346011,3.07,0.5,Kyle Schwarber (Home Runs)(must start),Kyle Schwarber (Home Runs)(must start),Chicago White Sox,Philadelphia Phillies
+1612313524,Under,979,5129346025,1.343,0.5,Kyle Schwarber (Home Runs)(must start),Kyle Schwarber (Home Runs)(must start),Chicago White Sox,Philadelphia Phillies
+1612313493,Over,978,5129345965,5.58,0.5,Miguel Vargas (Home Runs)(must start),Miguel Vargas (Home Runs)(must start),Chicago White Sox,Philadelphia Phillies
+1612313494,Under,979,5129345966,1.122,0.5,Miguel Vargas (Home Runs)(must start),Miguel Vargas (Home Runs)(must start),Chicago White Sox,Philadelphia Phillies
+1612313520,Over,978,5129346010,5.48,0.5,Mike Tauchman (Home Runs)(must start),Mike Tauchman (Home Runs)(must start),Chicago White Sox,Philadelphia Phillies
+1612313521,Under,979,5129346024,1.126,0.5,Mike Tauchman (Home Runs)(must start),Mike Tauchman (Home Runs)(must start),Chicago White Sox,Philadelphia Phillies
+1612313508,Over,978,5129345980,2.05,2.5,Taijuan Walker (Earned Runs)(must start),Taijuan Walker (Earned Runs)(must start),Chicago White Sox,Philadelphia Phillies
+1612313509,Under,979,5129345995,1.719,2.5,Taijuan Walker (Earned Runs)(must start),Taijuan Walker (Earned Runs)(must start),Chicago White Sox,Philadelphia Phillies
+1612313511,Over,978,5129346215,5.65,0.5,Max Kepler (Home Runs)(must start),Max Kepler (Home Runs)(must start),Chicago White Sox,Philadelphia Phillies
+1612313512,Under,979,5129346221,1.12,0.5,Max Kepler (Home Runs)(must start),Max Kepler (Home Runs)(must start),Chicago White Sox,Philadelphia Phillies
+1612314796,Over,952,5129041039,1.588,1.5,Freddy Peralta (Earned Runs)(must start),Freddy Peralta (Earned Runs)(must start),Milwaukee Brewers,Chicago Cubs
+1612314797,Under,953,5129041040,2.27,1.5,Freddy Peralta (Earned Runs)(must start),Freddy Peralta (Earned Runs)(must start),Milwaukee Brewers,Chicago Cubs
+1612316698,Over,952,5129041057,4.79,0.5,Andrew Vaughn (Home Runs)(must start),Andrew Vaughn (Home Runs)(must start),Milwaukee Brewers,Chicago Cubs
+1612316699,Under,953,5129041058,1.161,0.5,Andrew Vaughn (Home Runs)(must start),Andrew Vaughn (Home Runs)(must start),Milwaukee Brewers,Chicago Cubs
+1612316704,Over,952,5129041061,5.67,0.5,Michael Busch (Home Runs)(must start),Michael Busch (Home Runs)(must start),Milwaukee Brewers,Chicago Cubs
+1612316705,Under,953,5129041062,1.119,0.5,Michael Busch (Home Runs)(must start),Michael Busch (Home Runs)(must start),Milwaukee Brewers,Chicago Cubs
+1612316689,Over,952,5129041047,5.13,0.5,Kyle Tucker (Home Runs)(must start),Kyle Tucker (Home Runs)(must start),Milwaukee Brewers,Chicago Cubs
+1612316690,Under,953,5129041048,1.143,0.5,Kyle Tucker (Home Runs)(must start),Kyle Tucker (Home Runs)(must start),Milwaukee Brewers,Chicago Cubs
+1612316695,Over,952,5129041053,5.02,0.5,Seiya Suzuki (Home Runs)(must start),Seiya Suzuki (Home Runs)(must start),Milwaukee Brewers,Chicago Cubs
+1612316696,Under,953,5129041054,1.148,0.5,Seiya Suzuki (Home Runs)(must start),Seiya Suzuki (Home Runs)(must start),Milwaukee Brewers,Chicago Cubs
+1612316677,Over,952,5129041041,5.74,0.5,William Contreras (Home Runs)(must start),William Contreras (Home Runs)(must start),Milwaukee Brewers,Chicago Cubs
+1612316678,Under,953,5129041042,1.116,0.5,William Contreras (Home Runs)(must start),William Contreras (Home Runs)(must start),Milwaukee Brewers,Chicago Cubs
+1612316722,Over,952,5129041075,5.6,0.5,Pete Crow-Armstrong (Home Runs)(must start),Pete Crow-Armstrong (Home Runs)(must start),Milwaukee Brewers,Chicago Cubs
+1612316723,Under,953,5129041076,1.121,0.5,Pete Crow-Armstrong (Home Runs)(must start),Pete Crow-Armstrong (Home Runs)(must start),Milwaukee Brewers,Chicago Cubs
+1612316713,Over,952,5129095396,2.3,2.5,Shota Imanaga (Earned Runs)(must start),Shota Imanaga (Earned Runs)(must start),Milwaukee Brewers,Chicago Cubs
+1612316714,Under,953,5129095397,1.571,2.5,Shota Imanaga (Earned Runs)(must start),Shota Imanaga (Earned Runs)(must start),Milwaukee Brewers,Chicago Cubs
+1612316738,Over,952,5129041027,6.49,0.5,Christian Yelich (Home Runs)(must start),Christian Yelich (Home Runs)(must start),Milwaukee Brewers,Chicago Cubs
+1612316739,Under,953,5129041028,1.091,0.5,Christian Yelich (Home Runs)(must start),Christian Yelich (Home Runs)(must start),Milwaukee Brewers,Chicago Cubs
+1612316764,Over,976,5129028851,1.99,2.5,Joey Wentz (Earned Runs)(must start),Joey Wentz (Earned Runs)(must start),Kansas City Royals,Atlanta Braves
+1612316765,Under,977,5129028852,1.763,2.5,Joey Wentz (Earned Runs)(must start),Joey Wentz (Earned Runs)(must start),Kansas City Royals,Atlanta Braves
+1612297895,Over,43930,5128823244,6.2,0.5,Davis Schneider Total Home Runs,Davis Schneider Total Home Runs,Baltimore Orioles,Toronto Blue Jays
+1612297896,Under,43931,5128823270,1.1,0.5,Davis Schneider Total Home Runs,Davis Schneider Total Home Runs,Baltimore Orioles,Toronto Blue Jays
+1612316882,Over,974,5128969621,2.16,2.5,MacKenzie Gore (Earned Runs)(must start),MacKenzie Gore (Earned Runs)(must start),Houston Astros,Washington Nationals
+1612316883,Under,975,5128969622,1.649,2.5,MacKenzie Gore (Earned Runs)(must start),MacKenzie Gore (Earned Runs)(must start),Houston Astros,Washington Nationals
+1612316891,Over,978,5129345960,5.55,0.5,Andrew Benintendi (Home Runs)(must start),Andrew Benintendi (Home Runs)(must start),Chicago White Sox,Philadelphia Phillies
+1612316892,Under,979,5129345962,1.124,0.5,Andrew Benintendi (Home Runs)(must start),Andrew Benintendi (Home Runs)(must start),Chicago White Sox,Philadelphia Phillies
+1612316894,Over,978,5129345955,5.54,0.5,Luis Robert Jr. (Home Runs)(must start),Luis Robert Jr. (Home Runs)(must start),Chicago White Sox,Philadelphia Phillies
+1612316895,Under,979,5129345956,1.124,0.5,Luis Robert Jr. (Home Runs)(must start),Luis Robert Jr. (Home Runs)(must start),Chicago White Sox,Philadelphia Phillies
+1612318126,Over,978,5129345997,4.03,0.5,Bryce Harper (Home Runs)(must start),Bryce Harper (Home Runs)(must start),Chicago White Sox,Philadelphia Phillies
+1612318127,Under,979,5129346015,1.216,0.5,Bryce Harper (Home Runs)(must start),Bryce Harper (Home Runs)(must start),Chicago White Sox,Philadelphia Phillies
+1612321504,Over,960,5129791858,5.04,0.5,Kyle Stowers (Home Runs)(must start),Kyle Stowers (Home Runs)(must start),St. Louis Cardinals,Miami Marlins
+1612321505,Under,961,5129791859,1.147,0.5,Kyle Stowers (Home Runs)(must start),Kyle Stowers (Home Runs)(must start),St. Louis Cardinals,Miami Marlins
+1612321491,Over,960,5129791832,1.952,2.5,Cal Quantrill (Earned Runs)(must start),Cal Quantrill (Earned Runs)(must start),St. Louis Cardinals,Miami Marlins
+1612321492,Under,961,5129791833,1.793,2.5,Cal Quantrill (Earned Runs)(must start),Cal Quantrill (Earned Runs)(must start),St. Louis Cardinals,Miami Marlins
+1612321494,Over,960,5129791846,6.32,0.5,Jesús Sánchez (Home Runs)(must start),Jesús Sánchez (Home Runs)(must start),St. Louis Cardinals,Miami Marlins
+1612321495,Under,961,5129791847,1.097,0.5,Jesús Sánchez (Home Runs)(must start),Jesús Sánchez (Home Runs)(must start),St. Louis Cardinals,Miami Marlins
+1612321474,Over,960,5129791812,6.12,0.5,Willson Contreras (Home Runs)(must start),Willson Contreras (Home Runs)(must start),St. Louis Cardinals,Miami Marlins
+1612321475,Under,961,5129791813,1.103,0.5,Willson Contreras (Home Runs)(must start),Willson Contreras (Home Runs)(must start),St. Louis Cardinals,Miami Marlins
+1612321529,Over,960,5129791886,5.82,0.5,Agustín Ramírez (Home Runs)(must start),Agustín Ramírez (Home Runs)(must start),St. Louis Cardinals,Miami Marlins
+1612321530,Under,961,5129791887,1.113,0.5,Agustín Ramírez (Home Runs)(must start),Agustín Ramírez (Home Runs)(must start),St. Louis Cardinals,Miami Marlins
+1612322322,Over,968,5129791790,2.29,2.5,Nathan Eovaldi (Earned Runs)(must start),Nathan Eovaldi (Earned Runs)(must start),Los Angeles Angels,Texas Rangers
+1612322323,Under,969,5129791791,1.578,2.5,Nathan Eovaldi (Earned Runs)(must start),Nathan Eovaldi (Earned Runs)(must start),Los Angeles Angels,Texas Rangers
+1612322362,Over,968,5129756538,5.62,0.5,Jo Adell (Home Runs)(must start),Jo Adell (Home Runs)(must start),Los Angeles Angels,Texas Rangers
+1612322363,Under,969,5129756539,1.121,0.5,Jo Adell (Home Runs)(must start),Jo Adell (Home Runs)(must start),Los Angeles Angels,Texas Rangers
+1612322359,Over,968,5129791828,6.34,0.5,Yoán Moncada (Home Runs)(must start),Yoán Moncada (Home Runs)(must start),Los Angeles Angels,Texas Rangers
+1612322360,Under,969,5129791829,1.096,0.5,Yoán Moncada (Home Runs)(must start),Yoán Moncada (Home Runs)(must start),Los Angeles Angels,Texas Rangers
+1612322346,Over,968,5129791814,6.08,0.5,Taylor Ward (Home Runs)(must start),Taylor Ward (Home Runs)(must start),Los Angeles Angels,Texas Rangers
+1612322347,Under,969,5129791815,1.104,0.5,Taylor Ward (Home Runs)(must start),Taylor Ward (Home Runs)(must start),Los Angeles Angels,Texas Rangers
+1612322339,Over,968,5129791806,5.52,0.5,Corey Seager (Home Runs)(must start),Corey Seager (Home Runs)(must start),Los Angeles Angels,Texas Rangers
+1612322340,Under,969,5129791807,1.125,0.5,Corey Seager (Home Runs)(must start),Corey Seager (Home Runs)(must start),Los Angeles Angels,Texas Rangers
+1612323596,Over,974,5128969811,2.14,2.5,Ryan Gusto (Earned Runs)(must start),Ryan Gusto (Earned Runs)(must start),Houston Astros,Washington Nationals
+1612323597,Under,975,5128969814,1.662,2.5,Ryan Gusto (Earned Runs)(must start),Ryan Gusto (Earned Runs)(must start),Houston Astros,Washington Nationals
+1612323599,Over,974,5128969809,5.6,0.5,James Wood (Home Runs)(must start),James Wood (Home Runs)(must start),Houston Astros,Washington Nationals
+1612323600,Under,975,5128969810,1.122,0.5,James Wood (Home Runs)(must start),James Wood (Home Runs)(must start),Houston Astros,Washington Nationals
+1612323716,Over,970,5129784869,3.38,0.5,Nick Kurtz (Home Runs)(must start),Nick Kurtz (Home Runs)(must start),Athletics,Seattle Mariners
+1612323717,Under,971,5129784870,1.291,0.5,Nick Kurtz (Home Runs)(must start),Nick Kurtz (Home Runs)(must start),Athletics,Seattle Mariners
+1612323641,Over,970,5129784837,6.47,0.5,Josh Naylor (Home Runs)(must start),Josh Naylor (Home Runs)(must start),Athletics,Seattle Mariners
+1612323642,Under,971,5129784838,1.092,0.5,Josh Naylor (Home Runs)(must start),Josh Naylor (Home Runs)(must start),Athletics,Seattle Mariners
+1612323635,Over,970,5129773674,6.03,0.5,Mitch Garver (Home Runs)(must start),Mitch Garver (Home Runs)(must start),Athletics,Seattle Mariners
+1612323636,Under,971,5129773675,1.106,0.5,Mitch Garver (Home Runs)(must start),Mitch Garver (Home Runs)(must start),Athletics,Seattle Mariners
+1612323623,Over,970,5129773666,1.719,2.5,Jeffrey Springs (Earned Runs)(must start),Jeffrey Springs (Earned Runs)(must start),Athletics,Seattle Mariners
+1612323624,Under,971,5129773667,2.05,2.5,Jeffrey Springs (Earned Runs)(must start),Jeffrey Springs (Earned Runs)(must start),Athletics,Seattle Mariners
+1612323545,Over,974,5128969819,6.19,0.5,Christian Walker (Home Runs)(must start),Christian Walker (Home Runs)(must start),Houston Astros,Washington Nationals
+1612323546,Under,975,5128969820,1.101,0.5,Christian Walker (Home Runs)(must start),Christian Walker (Home Runs)(must start),Houston Astros,Washington Nationals
+1612323552,Under,975,5128969822,1.116,0.5,Josh Bell (Home Runs)(must start),Josh Bell (Home Runs)(must start),Houston Astros,Washington Nationals
+1612323551,Over,974,5128969821,5.74,0.5,Josh Bell (Home Runs)(must start),Josh Bell (Home Runs)(must start),Houston Astros,Washington Nationals
+1612323677,Over,970,5129784849,4.83,0.5,Shea Langeliers (Home Runs)(must start),Shea Langeliers (Home Runs)(must start),Athletics,Seattle Mariners
+1612323678,Under,971,5129784850,1.158,0.5,Shea Langeliers (Home Runs)(must start),Shea Langeliers (Home Runs)(must start),Athletics,Seattle Mariners
+1612323665,Over,970,5129784845,5.39,0.5,Brent Rooker (Home Runs)(must start),Brent Rooker (Home Runs)(must start),Athletics,Seattle Mariners
+1612323666,Under,971,5129784846,1.13,0.5,Brent Rooker (Home Runs)(must start),Brent Rooker (Home Runs)(must start),Athletics,Seattle Mariners
+1612323671,Over,970,5129784847,4.27,0.5,Randy Arozarena (Home Runs)(must start),Randy Arozarena (Home Runs)(must start),Athletics,Seattle Mariners
+1612323672,Under,971,5129784848,1.196,0.5,Randy Arozarena (Home Runs)(must start),Randy Arozarena (Home Runs)(must start),Athletics,Seattle Mariners
+1612323650,Over,970,5129784841,3.07,0.5,Cal Raleigh (Home Runs)(must start),Cal Raleigh (Home Runs)(must start),Athletics,Seattle Mariners
+1612323651,Under,971,5129784842,1.344,0.5,Cal Raleigh (Home Runs)(must start),Cal Raleigh (Home Runs)(must start),Athletics,Seattle Mariners
+1612323710,Over,970,5129773712,1.826,2.5,Bryan Woo (Earned Runs)(must start),Bryan Woo (Earned Runs)(must start),Athletics,Seattle Mariners
+1612323711,Under,971,5129773713,1.909,2.5,Bryan Woo (Earned Runs)(must start),Bryan Woo (Earned Runs)(must start),Athletics,Seattle Mariners
+1612323698,Over,970,5129773706,5.62,0.5,Tyler Soderstrom (Home Runs)(must start),Tyler Soderstrom (Home Runs)(must start),Athletics,Seattle Mariners
+1612323699,Under,971,5129773707,1.121,0.5,Tyler Soderstrom (Home Runs)(must start),Tyler Soderstrom (Home Runs)(must start),Athletics,Seattle Mariners
+1612323575,Over,974,5128969837,6.23,0.5,Yainer Diaz (Home Runs)(must start),Yainer Diaz (Home Runs)(must start),Houston Astros,Washington Nationals
+1612323576,Under,975,5128969843,1.099,0.5,Yainer Diaz (Home Runs)(must start),Yainer Diaz (Home Runs)(must start),Houston Astros,Washington Nationals
+1612323689,Over,970,5129784853,4.75,0.5,Julio Rodríguez (Home Runs)(must start),Julio Rodríguez (Home Runs)(must start),Athletics,Seattle Mariners
+1612323690,Under,971,5129784854,1.163,0.5,Julio Rodríguez (Home Runs)(must start),Julio Rodríguez (Home Runs)(must start),Athletics,Seattle Mariners
+1612323683,Over,970,5129509508,5.13,0.5,Lawrence Butler (Home Runs)(must start),Lawrence Butler (Home Runs)(must start),Athletics,Seattle Mariners
+1612323684,Under,971,5129509509,1.143,0.5,Lawrence Butler (Home Runs)(must start),Lawrence Butler (Home Runs)(must start),Athletics,Seattle Mariners
+1612323739,Over,954,5129494810,6.23,0.5,Willy Adames (Home Runs)(must start),Willy Adames (Home Runs)(must start),San Francisco Giants,Pittsburgh Pirates
+1612323740,Under,955,5129494811,1.099,0.5,Willy Adames (Home Runs)(must start),Willy Adames (Home Runs)(must start),San Francisco Giants,Pittsburgh Pirates
+1612323796,Over,954,5129551270,2.32,2.5,Mike Burrows (Earned Runs)(must start),Mike Burrows (Earned Runs)(must start),San Francisco Giants,Pittsburgh Pirates
+1612323797,Under,955,5129551271,1.564,2.5,Mike Burrows (Earned Runs)(must start),Mike Burrows (Earned Runs)(must start),San Francisco Giants,Pittsburgh Pirates
+1612323766,Over,954,5129494818,1.806,1.5,Logan Webb (Earned Runs)(must start),Logan Webb (Earned Runs)(must start),San Francisco Giants,Pittsburgh Pirates
+1612323767,Under,955,5129494819,1.934,1.5,Logan Webb (Earned Runs)(must start),Logan Webb (Earned Runs)(must start),San Francisco Giants,Pittsburgh Pirates
+1612323754,Over,954,5129491226,5.84,0.5,Matt Chapman (Home Runs)(must start),Matt Chapman (Home Runs)(must start),San Francisco Giants,Pittsburgh Pirates
+1612323755,Under,955,5129491227,1.112,0.5,Matt Chapman (Home Runs)(must start),Matt Chapman (Home Runs)(must start),San Francisco Giants,Pittsburgh Pirates
+1612323748,Over,954,5129491222,5.29,0.5,Rafael Devers (Home Runs)(must start),Rafael Devers (Home Runs)(must start),San Francisco Giants,Pittsburgh Pirates
+1612323749,Under,955,5129491223,1.135,0.5,Rafael Devers (Home Runs)(must start),Rafael Devers (Home Runs)(must start),San Francisco Giants,Pittsburgh Pirates
+1612325366,Over,974,5129084040,6.69,0.5,Paul DeJong (Home Runs)(must start),Paul DeJong (Home Runs)(must start),Houston Astros,Washington Nationals
+1612325367,Under,975,5129084041,1.086,0.5,Paul DeJong (Home Runs)(must start),Paul DeJong (Home Runs)(must start),Houston Astros,Washington Nationals
+1612329611,Over,968,5129791840,2.06,2.5,José Soriano (Earned Runs)(must start),José Soriano (Earned Runs)(must start),Los Angeles Angels,Texas Rangers
+1612329612,Under,969,5129791841,1.709,2.5,José Soriano (Earned Runs)(must start),José Soriano (Earned Runs)(must start),Los Angeles Angels,Texas Rangers
+1612329620,Over,968,5129791864,6.76,0.5,Zach Neto (Home Runs)(must start),Zach Neto (Home Runs)(must start),Los Angeles Angels,Texas Rangers
+1612329621,Under,969,5129791865,1.084,0.5,Zach Neto (Home Runs)(must start),Zach Neto (Home Runs)(must start),Los Angeles Angels,Texas Rangers
+1612329617,Over,968,5129756554,6.09,0.5,Logan O'Hoppe (Home Runs)(must start),Logan O'Hoppe (Home Runs)(must start),Los Angeles Angels,Texas Rangers
+1612329618,Under,969,5129756555,1.104,0.5,Logan O'Hoppe (Home Runs)(must start),Logan O'Hoppe (Home Runs)(must start),Los Angeles Angels,Texas Rangers
+1612329602,Over,968,5129349193,4.63,0.5,Mike Trout (Home Runs)(must start),Mike Trout (Home Runs)(must start),Los Angeles Angels,Texas Rangers
+1612329603,Under,969,5129349194,1.171,0.5,Mike Trout (Home Runs)(must start),Mike Trout (Home Runs)(must start),Los Angeles Angels,Texas Rangers
+1612329608,Over,968,5129791838,6.24,0.5,Adolis García (Home Runs)(must start),Adolis García (Home Runs)(must start),Los Angeles Angels,Texas Rangers
+1612329609,Under,969,5129791839,1.099,0.5,Adolis García (Home Runs)(must start),Adolis García (Home Runs)(must start),Los Angeles Angels,Texas Rangers
+1612329632,Over,960,5129791804,1.952,2.5,Miles Mikolas (Earned Runs)(must start),Miles Mikolas (Earned Runs)(must start),St. Louis Cardinals,Miami Marlins
+1612329633,Under,961,5129791805,1.793,2.5,Miles Mikolas (Earned Runs)(must start),Miles Mikolas (Earned Runs)(must start),St. Louis Cardinals,Miami Marlins
+1612329629,Over,968,5129756560,6.76,0.5,Wyatt Langford (Home Runs)(must start),Wyatt Langford (Home Runs)(must start),Los Angeles Angels,Texas Rangers
+1612329630,Under,969,5129756561,1.084,0.5,Wyatt Langford (Home Runs)(must start),Wyatt Langford (Home Runs)(must start),Los Angeles Angels,Texas Rangers
+1612329834,Over,960,5129791876,6.68,0.5,Alec Burleson (Home Runs)(must start),Alec Burleson (Home Runs)(must start),St. Louis Cardinals,Miami Marlins
+1612329835,Under,961,5129791877,1.086,0.5,Alec Burleson (Home Runs)(must start),Alec Burleson (Home Runs)(must start),St. Louis Cardinals,Miami Marlins
+1612331308,Over,968,5129791802,6.39,0.5,Joc Pederson (Home Runs)(must start),Joc Pederson (Home Runs)(must start),Los Angeles Angels,Texas Rangers
+1612331309,Under,969,5129791803,1.094,0.5,Joc Pederson (Home Runs)(must start),Joc Pederson (Home Runs)(must start),Los Angeles Angels,Texas Rangers
+1612335977,Over,958,5129751762,6.32,0.5,Alex Freeland (Home Runs)(must start),Alex Freeland (Home Runs)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612335978,Under,959,5129751763,1.096,0.5,Alex Freeland (Home Runs)(must start),Alex Freeland (Home Runs)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612336610,Over,966,5129812559,5.01,0.5,Brandon Lowe (Home Runs)(must start),Brandon Lowe (Home Runs)(must start),New York Yankees,Tampa Bay Rays
+1612336611,Under,967,5129812560,1.149,0.5,Brandon Lowe (Home Runs)(must start),Brandon Lowe (Home Runs)(must start),New York Yankees,Tampa Bay Rays

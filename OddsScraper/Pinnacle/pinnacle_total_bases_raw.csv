@@ -1,85 +1,531 @@
 id,name,rot_num,line_id,price,handicap,selection,player_name,home_team,away_team
-1612297868,Over,43912,5128604537,1.99,1.5,Addison Barger Total Bases,Addison Barger Total Bases,Baltimore Orioles,Toronto Blue Jays
-1612297869,Under,43913,5128604538,1.833,1.5,Addison Barger Total Bases,Addison Barger Total Bases,Baltimore Orioles,Toronto Blue Jays
-1612297874,Over,43916,5128584694,2.23,1.5,Adley Rutschman Total Bases,Adley Rutschman Total Bases,Baltimore Orioles,Toronto Blue Jays
-1612297875,Under,43917,5128584722,1.671,1.5,Adley Rutschman Total Bases,Adley Rutschman Total Bases,Baltimore Orioles,Toronto Blue Jays
-1612297886,Over,43924,5128584709,1.645,0.5,Cedric Mullins Total Bases,Cedric Mullins Total Bases,Baltimore Orioles,Toronto Blue Jays
-1612297887,Under,43925,5128584744,2.16,0.5,Cedric Mullins Total Bases,Cedric Mullins Total Bases,Baltimore Orioles,Toronto Blue Jays
-1612297892,Over,43928,5128584713,1.606,0.5,Colton Cowser Total Bases,Colton Cowser Total Bases,Baltimore Orioles,Toronto Blue Jays
-1612297893,Under,43929,5128584753,2.23,0.5,Colton Cowser Total Bases,Colton Cowser Total Bases,Baltimore Orioles,Toronto Blue Jays
-1612297910,Over,43940,5128584736,2.13,1.5,Ernie Clement Total Bases,Ernie Clement Total Bases,Baltimore Orioles,Toronto Blue Jays
-1612297911,Under,43941,5128584763,1.666,1.5,Ernie Clement Total Bases,Ernie Clement Total Bases,Baltimore Orioles,Toronto Blue Jays
-1612297880,Over,43920,5128595763,1.877,1.5,Bo Bichette Total Bases,Bo Bichette Total Bases,Baltimore Orioles,Toronto Blue Jays
-1612297881,Under,43921,5128595764,1.943,1.5,Bo Bichette Total Bases,Bo Bichette Total Bases,Baltimore Orioles,Toronto Blue Jays
-1612297946,Over,43964,5128584824,2.12,1.5,Nathan Lukes Total Bases,Nathan Lukes Total Bases,Baltimore Orioles,Toronto Blue Jays
-1612297947,Under,43965,5128584841,1.666,1.5,Nathan Lukes Total Bases,Nathan Lukes Total Bases,Baltimore Orioles,Toronto Blue Jays
-1612297916,Over,43944,5128584711,1.909,1.5,Gunnar Henderson Total Bases,Gunnar Henderson Total Bases,Baltimore Orioles,Toronto Blue Jays
-1612297917,Under,43945,5128584738,1.833,1.5,Gunnar Henderson Total Bases,Gunnar Henderson Total Bases,Baltimore Orioles,Toronto Blue Jays
-1612297922,Over,43948,5128584757,2.09,1.5,Jackson Holliday Total Bases,Jackson Holliday Total Bases,Baltimore Orioles,Toronto Blue Jays
-1612297923,Under,43949,5128584770,1.689,1.5,Jackson Holliday Total Bases,Jackson Holliday Total Bases,Baltimore Orioles,Toronto Blue Jays
-1612297928,Over,43952,5128584725,1.909,1.5,Jordan Westburg Total Bases,Jordan Westburg Total Bases,Baltimore Orioles,Toronto Blue Jays
-1612297929,Under,43953,5128584751,1.833,1.5,Jordan Westburg Total Bases,Jordan Westburg Total Bases,Baltimore Orioles,Toronto Blue Jays
-1612297964,Over,43976,5128605125,1.606,0.5,Tyler Heineman Total Bases,Tyler Heineman Total Bases,Baltimore Orioles,Toronto Blue Jays
-1612297965,Under,43977,5128605126,2.35,0.5,Tyler Heineman Total Bases,Tyler Heineman Total Bases,Baltimore Orioles,Toronto Blue Jays
-1612297970,Over,43980,5128584811,2.2,1.5,Tyler O'Neill Total Bases,Tyler O'Neill Total Bases,Baltimore Orioles,Toronto Blue Jays
-1612297971,Under,43981,5128584833,1.625,1.5,Tyler O'Neill Total Bases,Tyler O'Neill Total Bases,Baltimore Orioles,Toronto Blue Jays
-1612297958,Over,43972,5128584816,2.2,1.5,Ryan O'Hearn Total Bases,Ryan O'Hearn Total Bases,Baltimore Orioles,Toronto Blue Jays
-1612297959,Under,43973,5128584825,1.625,1.5,Ryan O'Hearn Total Bases,Ryan O'Hearn Total Bases,Baltimore Orioles,Toronto Blue Jays
-1612297994,Over,43996,5128584854,1.909,1.5,George Springer Total Bases,George Springer Total Bases,Baltimore Orioles,Toronto Blue Jays
-1612297995,Under,43997,5128584857,1.833,1.5,George Springer Total Bases,George Springer Total Bases,Baltimore Orioles,Toronto Blue Jays
-1612297976,Over,43984,5128584820,1.833,1.5,Vladimir Guerrero Jr. Total Bases,Vladimir Guerrero Jr. Total Bases,Baltimore Orioles,Toronto Blue Jays
-1612297977,Under,43985,5128584835,1.99,1.5,Vladimir Guerrero Jr. Total Bases,Vladimir Guerrero Jr. Total Bases,Baltimore Orioles,Toronto Blue Jays
+1612297868,Over,43912,5128823229,1.99,1.5,Addison Barger Total Bases,Addison Barger Total Bases,Baltimore Orioles,Toronto Blue Jays
+1612297869,Under,43913,5128823245,1.833,1.5,Addison Barger Total Bases,Addison Barger Total Bases,Baltimore Orioles,Toronto Blue Jays
+1612297874,Over,43916,5128823235,2.23,1.5,Adley Rutschman Total Bases,Adley Rutschman Total Bases,Baltimore Orioles,Toronto Blue Jays
+1612297875,Under,43917,5128823255,1.671,1.5,Adley Rutschman Total Bases,Adley Rutschman Total Bases,Baltimore Orioles,Toronto Blue Jays
+1612297886,Over,43924,5128823243,1.645,0.5,Cedric Mullins Total Bases,Cedric Mullins Total Bases,Baltimore Orioles,Toronto Blue Jays
+1612297887,Under,43925,5128823269,2.16,0.5,Cedric Mullins Total Bases,Cedric Mullins Total Bases,Baltimore Orioles,Toronto Blue Jays
+1612297892,Over,43928,5128823246,1.606,0.5,Colton Cowser Total Bases,Colton Cowser Total Bases,Baltimore Orioles,Toronto Blue Jays
+1612297893,Under,43929,5128823279,2.23,0.5,Colton Cowser Total Bases,Colton Cowser Total Bases,Baltimore Orioles,Toronto Blue Jays
+1612297910,Over,43940,5128823262,1.99,1.5,Ernie Clement Total Bases,Ernie Clement Total Bases,Baltimore Orioles,Toronto Blue Jays
+1612297911,Under,43941,5128823271,1.769,1.5,Ernie Clement Total Bases,Ernie Clement Total Bases,Baltimore Orioles,Toronto Blue Jays
+1612297880,Over,43920,5128823240,1.877,1.5,Bo Bichette Total Bases,Bo Bichette Total Bases,Baltimore Orioles,Toronto Blue Jays
+1612297881,Under,43921,5128823261,1.943,1.5,Bo Bichette Total Bases,Bo Bichette Total Bases,Baltimore Orioles,Toronto Blue Jays
+1612297946,Over,43964,5128823309,2.12,1.5,Nathan Lukes Total Bases,Nathan Lukes Total Bases,Baltimore Orioles,Toronto Blue Jays
+1612297947,Under,43965,5128823314,1.74,1.5,Nathan Lukes Total Bases,Nathan Lukes Total Bases,Baltimore Orioles,Toronto Blue Jays
+1612297916,Over,43944,5128823265,1.909,1.5,Gunnar Henderson Total Bases,Gunnar Henderson Total Bases,Baltimore Orioles,Toronto Blue Jays
+1612297917,Under,43945,5128823276,1.833,1.5,Gunnar Henderson Total Bases,Gunnar Henderson Total Bases,Baltimore Orioles,Toronto Blue Jays
+1612297922,Over,43948,5128823266,2.09,1.5,Jackson Holliday Total Bases,Jackson Holliday Total Bases,Baltimore Orioles,Toronto Blue Jays
+1612297923,Under,43949,5128823275,1.689,1.5,Jackson Holliday Total Bases,Jackson Holliday Total Bases,Baltimore Orioles,Toronto Blue Jays
+1612297928,Over,43952,5128823267,1.909,1.5,Jordan Westburg Total Bases,Jordan Westburg Total Bases,Baltimore Orioles,Toronto Blue Jays
+1612297929,Under,43953,5128823278,1.833,1.5,Jordan Westburg Total Bases,Jordan Westburg Total Bases,Baltimore Orioles,Toronto Blue Jays
+1612297964,Over,43976,5128823368,1.606,0.5,Tyler Heineman Total Bases,Tyler Heineman Total Bases,Baltimore Orioles,Toronto Blue Jays
+1612297965,Under,43977,5128823374,2.35,0.5,Tyler Heineman Total Bases,Tyler Heineman Total Bases,Baltimore Orioles,Toronto Blue Jays
+1612297970,Over,43980,5128823397,2.2,1.5,Tyler O'Neill Total Bases,Tyler O'Neill Total Bases,Baltimore Orioles,Toronto Blue Jays
+1612297971,Under,43981,5128823399,1.684,1.5,Tyler O'Neill Total Bases,Tyler O'Neill Total Bases,Baltimore Orioles,Toronto Blue Jays
+1612297958,Over,43972,5128823341,2.2,1.5,Ryan O'Hearn Total Bases,Ryan O'Hearn Total Bases,Baltimore Orioles,Toronto Blue Jays
+1612297959,Under,43973,5128823344,1.625,1.5,Ryan O'Hearn Total Bases,Ryan O'Hearn Total Bases,Baltimore Orioles,Toronto Blue Jays
+1612297994,Over,43996,5128823289,1.909,1.5,George Springer Total Bases,George Springer Total Bases,Baltimore Orioles,Toronto Blue Jays
+1612297995,Under,43997,5128823290,1.909,1.5,George Springer Total Bases,George Springer Total Bases,Baltimore Orioles,Toronto Blue Jays
+1612297976,Over,43984,5128968194,1.826,1.5,Vladimir Guerrero Jr. Total Bases,Vladimir Guerrero Jr. Total Bases,Baltimore Orioles,Toronto Blue Jays
+1612297977,Under,43985,5128968195,2.0,1.5,Vladimir Guerrero Jr. Total Bases,Vladimir Guerrero Jr. Total Bases,Baltimore Orioles,Toronto Blue Jays
 1612298592,Under,44011,5128585478,1.666,1.5,Alex Bregman Total Bases,Alex Bregman Total Bases,Minnesota Twins,Boston Red Sox
 1612298591,Over,44010,5128585476,2.23,1.5,Alex Bregman Total Bases,Alex Bregman Total Bases,Minnesota Twins,Boston Red Sox
-1612298581,Over,44006,5128585351,1.645,0.5,Abraham Toro Total Bases,Abraham Toro Total Bases,Minnesota Twins,Boston Red Sox
-1612298582,Under,44007,5128585365,2.16,0.5,Abraham Toro Total Bases,Abraham Toro Total Bases,Minnesota Twins,Boston Red Sox
-1612298621,Over,44030,5128585235,1.555,0.5,Ceddanne Rafaela Total Bases,Ceddanne Rafaela Total Bases,Minnesota Twins,Boston Red Sox
-1612298622,Under,44031,5128585236,2.34,0.5,Ceddanne Rafaela Total Bases,Ceddanne Rafaela Total Bases,Minnesota Twins,Boston Red Sox
+1612298581,Over,44006,5128828666,2.28,1.5,Abraham Toro Total Bases,Abraham Toro Total Bases,Minnesota Twins,Boston Red Sox
+1612298582,Under,44007,5128828667,1.645,1.5,Abraham Toro Total Bases,Abraham Toro Total Bases,Minnesota Twins,Boston Red Sox
+1612298621,Over,44030,5128751188,1.555,0.5,Ceddanne Rafaela Total Bases,Ceddanne Rafaela Total Bases,Minnesota Twins,Boston Red Sox
+1612298622,Under,44031,5128751215,2.34,0.5,Ceddanne Rafaela Total Bases,Ceddanne Rafaela Total Bases,Minnesota Twins,Boston Red Sox
 1612298615,Over,44026,5128585231,1.689,0.5,Carlos Narvaez Total Bases,Carlos Narvaez Total Bases,Minnesota Twins,Boston Red Sox
 1612298616,Under,44027,5128585232,2.2,0.5,Carlos Narvaez Total Bases,Carlos Narvaez Total Bases,Minnesota Twins,Boston Red Sox
-1612298641,Over,44042,5128585247,1.666,0.5,Harrison Bader Total Bases,Harrison Bader Total Bases,Minnesota Twins,Boston Red Sox
-1612298642,Under,44043,5128585248,2.24,0.5,Harrison Bader Total Bases,Harrison Bader Total Bases,Minnesota Twins,Boston Red Sox
-1612298647,Over,44046,5128585251,2.05,1.5,Jarren Duran Total Bases,Jarren Duran Total Bases,Minnesota Twins,Boston Red Sox
-1612298648,Under,44047,5128585252,1.714,1.5,Jarren Duran Total Bases,Jarren Duran Total Bases,Minnesota Twins,Boston Red Sox
-1612298665,Over,44058,5128585259,1.8,0.5,Matt Wallner Total Bases,Matt Wallner Total Bases,Minnesota Twins,Boston Red Sox
-1612298666,Under,44059,5128585260,1.952,0.5,Matt Wallner Total Bases,Matt Wallner Total Bases,Minnesota Twins,Boston Red Sox
-1612298653,Over,44050,5128585255,1.625,0.5,Kody Clemens Total Bases,Kody Clemens Total Bases,Minnesota Twins,Boston Red Sox
-1612298654,Under,44051,5128585256,2.2,0.5,Kody Clemens Total Bases,Kody Clemens Total Bases,Minnesota Twins,Boston Red Sox
-1612298659,Over,44054,5128585270,2.27,1.5,Masataka Yoshida Total Bases,Masataka Yoshida Total Bases,Minnesota Twins,Boston Red Sox
-1612298660,Under,44055,5128585271,1.588,1.5,Masataka Yoshida Total Bases,Masataka Yoshida Total Bases,Minnesota Twins,Boston Red Sox
-1612298671,Over,44062,5128585287,2.3,1.5,Roman Anthony Total Bases,Roman Anthony Total Bases,Minnesota Twins,Boston Red Sox
-1612298672,Under,44063,5128585296,1.571,1.5,Roman Anthony Total Bases,Roman Anthony Total Bases,Minnesota Twins,Boston Red Sox
-1612298689,Over,44074,5128585302,2.34,1.5,Trevor Larnach Total Bases,Trevor Larnach Total Bases,Minnesota Twins,Boston Red Sox
-1612298690,Under,44075,5128585330,1.555,1.5,Trevor Larnach Total Bases,Trevor Larnach Total Bases,Minnesota Twins,Boston Red Sox
-1612298677,Over,44066,5128585304,2.35,1.5,Royce Lewis Total Bases,Royce Lewis Total Bases,Minnesota Twins,Boston Red Sox
-1612298678,Under,44067,5128585333,1.552,1.5,Royce Lewis Total Bases,Royce Lewis Total Bases,Minnesota Twins,Boston Red Sox
-1612298713,Over,44090,5128585308,2.27,1.5,Wilyer Abreu Total Bases,Wilyer Abreu Total Bases,Minnesota Twins,Boston Red Sox
-1612298714,Under,44091,5128585339,1.588,1.5,Wilyer Abreu Total Bases,Wilyer Abreu Total Bases,Minnesota Twins,Boston Red Sox
-1612298707,Over,44086,5128585316,2.44,1.5,Willi Castro Total Bases,Willi Castro Total Bases,Minnesota Twins,Boston Red Sox
-1612298708,Under,44087,5128585343,1.512,1.5,Willi Castro Total Bases,Willi Castro Total Bases,Minnesota Twins,Boston Red Sox
+1612298641,Over,44042,5128751245,1.666,0.5,Harrison Bader Total Bases,Harrison Bader Total Bases,Minnesota Twins,Boston Red Sox
+1612298642,Under,44043,5128751257,2.24,0.5,Harrison Bader Total Bases,Harrison Bader Total Bases,Minnesota Twins,Boston Red Sox
+1612298647,Over,44046,5128999532,2.05,1.5,Jarren Duran Total Bases,Jarren Duran Total Bases,Minnesota Twins,Boston Red Sox
+1612298648,Under,44047,5128999533,1.787,1.5,Jarren Duran Total Bases,Jarren Duran Total Bases,Minnesota Twins,Boston Red Sox
+1612298665,Over,44058,5128751253,1.8,0.5,Matt Wallner Total Bases,Matt Wallner Total Bases,Minnesota Twins,Boston Red Sox
+1612298666,Under,44059,5128751263,1.952,0.5,Matt Wallner Total Bases,Matt Wallner Total Bases,Minnesota Twins,Boston Red Sox
+1612298653,Over,44050,5128751242,1.526,0.5,Kody Clemens Total Bases,Kody Clemens Total Bases,Minnesota Twins,Boston Red Sox
+1612298654,Under,44051,5128751254,2.41,0.5,Kody Clemens Total Bases,Kody Clemens Total Bases,Minnesota Twins,Boston Red Sox
+1612298659,Over,44054,5128751248,2.27,1.5,Masataka Yoshida Total Bases,Masataka Yoshida Total Bases,Minnesota Twins,Boston Red Sox
+1612298660,Under,44055,5128751260,1.588,1.5,Masataka Yoshida Total Bases,Masataka Yoshida Total Bases,Minnesota Twins,Boston Red Sox
+1612298671,Over,44062,5128751240,2.15,1.5,Roman Anthony Total Bases,Roman Anthony Total Bases,Minnesota Twins,Boston Red Sox
+1612298672,Under,44063,5128751250,1.645,1.5,Roman Anthony Total Bases,Roman Anthony Total Bases,Minnesota Twins,Boston Red Sox
+1612298689,Over,44074,5128751251,2.34,1.5,Trevor Larnach Total Bases,Trevor Larnach Total Bases,Minnesota Twins,Boston Red Sox
+1612298690,Under,44075,5128751262,1.555,1.5,Trevor Larnach Total Bases,Trevor Larnach Total Bases,Minnesota Twins,Boston Red Sox
+1612298677,Over,44066,5128751243,2.35,1.5,Royce Lewis Total Bases,Royce Lewis Total Bases,Minnesota Twins,Boston Red Sox
+1612298678,Under,44067,5128751255,1.552,1.5,Royce Lewis Total Bases,Royce Lewis Total Bases,Minnesota Twins,Boston Red Sox
+1612298713,Over,44090,5128751324,2.12,1.5,Wilyer Abreu Total Bases,Wilyer Abreu Total Bases,Minnesota Twins,Boston Red Sox
+1612298714,Under,44091,5128751326,1.666,1.5,Wilyer Abreu Total Bases,Wilyer Abreu Total Bases,Minnesota Twins,Boston Red Sox
+1612298707,Over,44086,5128751334,2.44,1.5,Willi Castro Total Bases,Willi Castro Total Bases,Minnesota Twins,Boston Red Sox
+1612298708,Under,44087,5128751341,1.512,1.5,Willi Castro Total Bases,Willi Castro Total Bases,Minnesota Twins,Boston Red Sox
 1612298701,Over,44082,5128585297,1.555,0.5,Ty France Total Bases,Ty France Total Bases,Minnesota Twins,Boston Red Sox
 1612298702,Under,44083,5128585325,2.34,0.5,Ty France Total Bases,Ty France Total Bases,Minnesota Twins,Boston Red Sox
-1612298695,Over,44078,5128585282,1.555,0.5,Trevor Story Total Bases,Trevor Story Total Bases,Minnesota Twins,Boston Red Sox
-1612298696,Under,44079,5128585291,2.34,0.5,Trevor Story Total Bases,Trevor Story Total Bases,Minnesota Twins,Boston Red Sox
-1612298683,Over,44070,5128585286,2.35,1.5,Ryan Jeffers Total Bases,Ryan Jeffers Total Bases,Minnesota Twins,Boston Red Sox
-1612298684,Under,44071,5128585295,1.552,1.5,Ryan Jeffers Total Bases,Ryan Jeffers Total Bases,Minnesota Twins,Boston Red Sox
+1612298695,Over,44078,5128751339,1.555,0.5,Trevor Story Total Bases,Trevor Story Total Bases,Minnesota Twins,Boston Red Sox
+1612298696,Under,44079,5128751343,2.34,0.5,Trevor Story Total Bases,Trevor Story Total Bases,Minnesota Twins,Boston Red Sox
+1612298683,Over,44070,5128751247,2.35,1.5,Ryan Jeffers Total Bases,Ryan Jeffers Total Bases,Minnesota Twins,Boston Red Sox
+1612298684,Under,44071,5128751259,1.552,1.5,Ryan Jeffers Total Bases,Ryan Jeffers Total Bases,Minnesota Twins,Boston Red Sox
 1612298609,Over,44022,5128585227,2.15,1.5,Carlos Correa Total Bases,Carlos Correa Total Bases,Minnesota Twins,Boston Red Sox
 1612298610,Under,44023,5128585228,1.653,1.5,Carlos Correa Total Bases,Carlos Correa Total Bases,Minnesota Twins,Boston Red Sox
-1612302921,Over,44104,5128603787,2.05,1.5,Brandon Nimmo Total Bases,Brandon Nimmo Total Bases,San Diego Padres,New York Mets
-1612302922,Under,44105,5128603788,1.719,1.5,Brandon Nimmo Total Bases,Brandon Nimmo Total Bases,San Diego Padres,New York Mets
-1612302939,Over,44116,5128605255,1.666,0.5,Francisco Alvarez Total Bases,Francisco Alvarez Total Bases,San Diego Padres,New York Mets
-1612302940,Under,44117,5128605256,2.12,0.5,Francisco Alvarez Total Bases,Francisco Alvarez Total Bases,San Diego Padres,New York Mets
-1612302927,Over,44108,5128604439,1.645,0.5,Brett Baty Total Bases,Brett Baty Total Bases,San Diego Padres,New York Mets
-1612302928,Under,44109,5128604440,2.16,0.5,Brett Baty Total Bases,Brett Baty Total Bases,San Diego Padres,New York Mets
-1612302933,Over,44112,5128604732,2.16,1.5,Fernando Tatis Jr. Total Bases,Fernando Tatis Jr. Total Bases,San Diego Padres,New York Mets
-1612302934,Under,44113,5128604733,1.645,1.5,Fernando Tatis Jr. Total Bases,Fernando Tatis Jr. Total Bases,San Diego Padres,New York Mets
-1612302957,Over,44128,5128607492,2.1,1.5,Jackson Merrill Total Bases,Jackson Merrill Total Bases,San Diego Padres,New York Mets
-1612302958,Under,44129,5128607493,1.684,1.5,Jackson Merrill Total Bases,Jackson Merrill Total Bases,San Diego Padres,New York Mets
-1612302945,Over,44120,5128606415,2.05,1.5,Francisco Lindor Total Bases,Francisco Lindor Total Bases,San Diego Padres,New York Mets
-1612302946,Under,44121,5128606416,1.714,1.5,Francisco Lindor Total Bases,Francisco Lindor Total Bases,San Diego Padres,New York Mets
-1612302951,Over,44124,5128606795,1.555,0.5,Gavin Sheets Total Bases,Gavin Sheets Total Bases,San Diego Padres,New York Mets
-1612302952,Under,44125,5128606796,2.34,0.5,Gavin Sheets Total Bases,Gavin Sheets Total Bases,San Diego Padres,New York Mets
-1612302969,Over,44136,5128609938,2.37,1.5,Jeff McNeil Total Bases,Jeff McNeil Total Bases,San Diego Padres,New York Mets
-1612302970,Under,44137,5128609939,1.54,1.5,Jeff McNeil Total Bases,Jeff McNeil Total Bases,San Diego Padres,New York Mets
-1612302963,Over,44132,5128609479,1.666,0.5,Jake Cronenworth Total Bases,Jake Cronenworth Total Bases,San Diego Padres,New York Mets
-1612302964,Under,44133,5128609480,2.12,0.5,Jake Cronenworth Total Bases,Jake Cronenworth Total Bases,San Diego Padres,New York Mets
+1612302921,Over,44104,5129177415,2.09,1.5,Brandon Nimmo Total Bases,Brandon Nimmo Total Bases,San Diego Padres,New York Mets
+1612302922,Under,44105,5129177416,1.689,1.5,Brandon Nimmo Total Bases,Brandon Nimmo Total Bases,San Diego Padres,New York Mets
+1612302939,Over,44116,5129177432,1.666,0.5,Francisco Alvarez Total Bases,Francisco Alvarez Total Bases,San Diego Padres,New York Mets
+1612302940,Under,44117,5129177436,2.12,0.5,Francisco Alvarez Total Bases,Francisco Alvarez Total Bases,San Diego Padres,New York Mets
+1612302927,Over,44108,5129177419,1.645,0.5,Brett Baty Total Bases,Brett Baty Total Bases,San Diego Padres,New York Mets
+1612302928,Under,44109,5129177420,2.16,0.5,Brett Baty Total Bases,Brett Baty Total Bases,San Diego Padres,New York Mets
+1612302933,Over,44112,5129177425,2.16,1.5,Fernando Tatis Jr. Total Bases,Fernando Tatis Jr. Total Bases,San Diego Padres,New York Mets
+1612302934,Under,44113,5129177426,1.645,1.5,Fernando Tatis Jr. Total Bases,Fernando Tatis Jr. Total Bases,San Diego Padres,New York Mets
+1612302957,Over,44128,5129177433,2.1,1.5,Jackson Merrill Total Bases,Jackson Merrill Total Bases,San Diego Padres,New York Mets
+1612302958,Under,44129,5129177437,1.684,1.5,Jackson Merrill Total Bases,Jackson Merrill Total Bases,San Diego Padres,New York Mets
+1612302945,Over,44120,5129177427,2.05,1.5,Francisco Lindor Total Bases,Francisco Lindor Total Bases,San Diego Padres,New York Mets
+1612302946,Under,44121,5129177429,1.787,1.5,Francisco Lindor Total Bases,Francisco Lindor Total Bases,San Diego Padres,New York Mets
+1612302951,Over,44124,5129177435,1.625,0.5,Gavin Sheets Total Bases,Gavin Sheets Total Bases,San Diego Padres,New York Mets
+1612302952,Under,44125,5129177438,2.19,0.5,Gavin Sheets Total Bases,Gavin Sheets Total Bases,San Diego Padres,New York Mets
+1612302969,Over,44136,5129177448,2.37,1.5,Jeff McNeil Total Bases,Jeff McNeil Total Bases,San Diego Padres,New York Mets
+1612302970,Under,44137,5129177450,1.54,1.5,Jeff McNeil Total Bases,Jeff McNeil Total Bases,San Diego Padres,New York Mets
+1612302963,Over,44132,5129177443,1.666,0.5,Jake Cronenworth Total Bases,Jake Cronenworth Total Bases,San Diego Padres,New York Mets
+1612302964,Under,44133,5129177444,2.12,0.5,Jake Cronenworth Total Bases,Jake Cronenworth Total Bases,San Diego Padres,New York Mets
+1612302993,Over,44152,5129177459,2.2,1.5,Manny Machado Total Bases,Manny Machado Total Bases,San Diego Padres,New York Mets
+1612302994,Under,44153,5129177470,1.625,1.5,Manny Machado Total Bases,Manny Machado Total Bases,San Diego Padres,New York Mets
+1612302999,Over,44156,5129177466,1.526,0.5,Mark Vientos Total Bases,Mark Vientos Total Bases,San Diego Padres,New York Mets
+1612303000,Under,44157,5129177478,2.4,0.5,Mark Vientos Total Bases,Mark Vientos Total Bases,San Diego Padres,New York Mets
+1612302987,Over,44148,5129177460,2.2,1.5,Luis Arraez Total Bases,Luis Arraez Total Bases,San Diego Padres,New York Mets
+1612302988,Under,44149,5129177471,1.625,1.5,Luis Arraez Total Bases,Luis Arraez Total Bases,San Diego Padres,New York Mets
+1612303005,Over,44160,5129207426,2.55,0.5,Martin Maldonado Total Bases,Martin Maldonado Total Bases,San Diego Padres,New York Mets
+1612303006,Under,44161,5129207427,1.526,0.5,Martin Maldonado Total Bases,Martin Maldonado Total Bases,San Diego Padres,New York Mets
+1612303011,Over,44164,5129177474,2.09,1.5,Pete Alonso Total Bases,Pete Alonso Total Bases,San Diego Padres,New York Mets
+1612303012,Under,44165,5129177483,1.689,1.5,Pete Alonso Total Bases,Pete Alonso Total Bases,San Diego Padres,New York Mets
+1612303017,Over,44168,5129177480,1.588,0.5,Ronny Mauricio Total Bases,Ronny Mauricio Total Bases,San Diego Padres,New York Mets
+1612303018,Under,44169,5129177489,2.27,0.5,Ronny Mauricio Total Bases,Ronny Mauricio Total Bases,San Diego Padres,New York Mets
+1612303035,Over,44180,5129177488,2.4,1.5,Xander Bogaerts Total Bases,Xander Bogaerts Total Bases,San Diego Padres,New York Mets
+1612303036,Under,44181,5129177498,1.531,1.5,Xander Bogaerts Total Bases,Xander Bogaerts Total Bases,San Diego Padres,New York Mets
+1612309529,Over,972,5128986775,1.675,1.5,Corbin Carroll (Total Bases)(must start),Corbin Carroll (Total Bases)(must start),Detroit Tigers,Arizona Diamondbacks
+1612309530,Under,973,5128986776,2.12,1.5,Corbin Carroll (Total Bases)(must start),Corbin Carroll (Total Bases)(must start),Detroit Tigers,Arizona Diamondbacks
+1612309532,Over,972,5129035321,2.26,1.5,Colt Keith (Total Bases)(must start),Colt Keith (Total Bases)(must start),Detroit Tigers,Arizona Diamondbacks
+1612309533,Under,973,5129035322,1.591,1.5,Colt Keith (Total Bases)(must start),Colt Keith (Total Bases)(must start),Detroit Tigers,Arizona Diamondbacks
+1612309470,Over,972,5129032840,1.97,1.5,Ketel Marte (Total Bases)(must start),Ketel Marte (Total Bases)(must start),Detroit Tigers,Arizona Diamondbacks
+1612309471,Under,973,5129032841,1.781,1.5,Ketel Marte (Total Bases)(must start),Ketel Marte (Total Bases)(must start),Detroit Tigers,Arizona Diamondbacks
+1612309522,Over,972,5129035319,2.27,1.5,Riley Greene (Total Bases)(must start),Riley Greene (Total Bases)(must start),Detroit Tigers,Arizona Diamondbacks
+1612309523,Under,973,5129035320,1.591,1.5,Riley Greene (Total Bases)(must start),Riley Greene (Total Bases)(must start),Detroit Tigers,Arizona Diamondbacks
+1612309461,Over,972,5128693272,2.04,1.5,Eugenio Suárez (Total Bases)(must start),Eugenio Suárez (Total Bases)(must start),Detroit Tigers,Arizona Diamondbacks
+1612309462,Under,973,5128693273,1.724,1.5,Eugenio Suárez (Total Bases)(must start),Eugenio Suárez (Total Bases)(must start),Detroit Tigers,Arizona Diamondbacks
+1612309464,Over,972,5129046589,2.6,1.5,Javier Báez (Total Bases)(must start),Javier Báez (Total Bases)(must start),Detroit Tigers,Arizona Diamondbacks
+1612309465,Under,973,5129046590,1.458,1.5,Javier Báez (Total Bases)(must start),Javier Báez (Total Bases)(must start),Detroit Tigers,Arizona Diamondbacks
+1612309515,Over,972,5129032862,2.23,1.5,Kerry Carpenter (Total Bases)(must start),Kerry Carpenter (Total Bases)(must start),Detroit Tigers,Arizona Diamondbacks
+1612309516,Under,973,5129032863,1.609,1.5,Kerry Carpenter (Total Bases)(must start),Kerry Carpenter (Total Bases)(must start),Detroit Tigers,Arizona Diamondbacks
+1612309505,Over,972,5129035317,2.35,1.5,Spencer Torkelson (Total Bases)(must start),Spencer Torkelson (Total Bases)(must start),Detroit Tigers,Arizona Diamondbacks
+1612309506,Under,973,5129035318,1.552,1.5,Spencer Torkelson (Total Bases)(must start),Spencer Torkelson (Total Bases)(must start),Detroit Tigers,Arizona Diamondbacks
+1612309508,Over,972,5129031417,1.552,0.5,Adrian Del Castillo (Total Bases)(must start),Adrian Del Castillo (Total Bases)(must start),Detroit Tigers,Arizona Diamondbacks
+1612309509,Under,973,5129031418,2.35,0.5,Adrian Del Castillo (Total Bases)(must start),Adrian Del Castillo (Total Bases)(must start),Detroit Tigers,Arizona Diamondbacks
+1612309499,Over,972,5129032854,1.518,0.5,Wenceel Pérez (Total Bases)(must start),Wenceel Pérez (Total Bases)(must start),Detroit Tigers,Arizona Diamondbacks
+1612309500,Under,973,5129032855,2.43,0.5,Wenceel Pérez (Total Bases)(must start),Wenceel Pérez (Total Bases)(must start),Detroit Tigers,Arizona Diamondbacks
+1612309696,Over,972,5129032355,1.787,0.5,Jake Rogers (Total Bases)(must start),Jake Rogers (Total Bases)(must start),Detroit Tigers,Arizona Diamondbacks
+1612309697,Under,973,5129032356,1.961,0.5,Jake Rogers (Total Bases)(must start),Jake Rogers (Total Bases)(must start),Detroit Tigers,Arizona Diamondbacks
+1612309481,Over,972,5129035305,1.546,0.5,Zach McKinstry (Total Bases)(must start),Zach McKinstry (Total Bases)(must start),Detroit Tigers,Arizona Diamondbacks
+1612309482,Under,973,5129035306,2.36,0.5,Zach McKinstry (Total Bases)(must start),Zach McKinstry (Total Bases)(must start),Detroit Tigers,Arizona Diamondbacks
+1612309484,Over,972,5129031395,1.497,0.5,Tristin English (Total Bases)(must start),Tristin English (Total Bases)(must start),Detroit Tigers,Arizona Diamondbacks
+1612309485,Under,973,5129031396,2.49,0.5,Tristin English (Total Bases)(must start),Tristin English (Total Bases)(must start),Detroit Tigers,Arizona Diamondbacks
+1612309478,Over,972,5129035303,2.24,1.5,Gleyber Torres (Total Bases)(must start),Gleyber Torres (Total Bases)(must start),Detroit Tigers,Arizona Diamondbacks
+1612309479,Under,973,5129035304,1.606,1.5,Gleyber Torres (Total Bases)(must start),Gleyber Torres (Total Bases)(must start),Detroit Tigers,Arizona Diamondbacks
+1612311769,Over,976,5129027975,1.46,0.5,Freddy Fermin (Total Bases)(must start),Freddy Fermin (Total Bases)(must start),Kansas City Royals,Atlanta Braves
+1612311770,Under,977,5129027976,2.6,0.5,Freddy Fermin (Total Bases)(must start),Freddy Fermin (Total Bases)(must start),Kansas City Royals,Atlanta Braves
+1612311760,Over,976,5129028839,1.97,1.5,Austin Riley (Total Bases)(must start),Austin Riley (Total Bases)(must start),Kansas City Royals,Atlanta Braves
+1612311761,Under,977,5129028840,1.775,1.5,Austin Riley (Total Bases)(must start),Austin Riley (Total Bases)(must start),Kansas City Royals,Atlanta Braves
+1612311749,Over,976,5129028835,1.595,0.5,Eli White (Total Bases)(must start),Eli White (Total Bases)(must start),Kansas City Royals,Atlanta Braves
+1612311750,Under,977,5129028836,2.26,0.5,Eli White (Total Bases)(must start),Eli White (Total Bases)(must start),Kansas City Royals,Atlanta Braves
+1612311752,Over,976,5129028837,2.44,1.5,Ozzie Albies (Total Bases)(must start),Ozzie Albies (Total Bases)(must start),Kansas City Royals,Atlanta Braves
+1612311753,Under,977,5129028838,1.515,1.5,Ozzie Albies (Total Bases)(must start),Ozzie Albies (Total Bases)(must start),Kansas City Royals,Atlanta Braves
+1612311803,Over,976,5129027993,2.3,1.5,Vinnie Pasquantino (Total Bases)(must start),Vinnie Pasquantino (Total Bases)(must start),Kansas City Royals,Atlanta Braves
+1612311804,Under,977,5129027994,1.574,1.5,Vinnie Pasquantino (Total Bases)(must start),Vinnie Pasquantino (Total Bases)(must start),Kansas City Royals,Atlanta Braves
+1612311744,Under,977,5129028832,1.584,1.5,Matt Olson (Total Bases)(must start),Matt Olson (Total Bases)(must start),Kansas City Royals,Atlanta Braves
+1612311743,Over,976,5129028831,2.28,1.5,Matt Olson (Total Bases)(must start),Matt Olson (Total Bases)(must start),Kansas City Royals,Atlanta Braves
+1612311732,Over,976,5129028827,2.01,1.5,Randal Grichuk (Total Bases)(must start),Randal Grichuk (Total Bases)(must start),Kansas City Royals,Atlanta Braves
+1612311733,Under,977,5129028828,1.746,1.5,Randal Grichuk (Total Bases)(must start),Randal Grichuk (Total Bases)(must start),Kansas City Royals,Atlanta Braves
+1612311737,Over,976,5129028353,2.29,1.5,Jurickson Profar (Total Bases)(must start),Jurickson Profar (Total Bases)(must start),Kansas City Royals,Atlanta Braves
+1612311738,Under,977,5129028354,1.578,1.5,Jurickson Profar (Total Bases)(must start),Jurickson Profar (Total Bases)(must start),Kansas City Royals,Atlanta Braves
+1612311799,Over,976,5129028874,1.763,1.5,Bobby Witt Jr. (Total Bases)(must start),Bobby Witt Jr. (Total Bases)(must start),Kansas City Royals,Atlanta Braves
+1612311800,Under,977,5129028875,1.99,1.5,Bobby Witt Jr. (Total Bases)(must start),Bobby Witt Jr. (Total Bases)(must start),Kansas City Royals,Atlanta Braves
+1612311787,Over,976,5129028857,2.05,1.5,Michael Harris II (Total Bases)(must start),Michael Harris II (Total Bases)(must start),Kansas City Royals,Atlanta Braves
+1612311788,Under,977,5129028858,1.714,1.5,Michael Harris II (Total Bases)(must start),Michael Harris II (Total Bases)(must start),Kansas City Royals,Atlanta Braves
+1612311723,Over,976,5129028347,2.48,1.5,Marcell Ozuna (Total Bases)(must start),Marcell Ozuna (Total Bases)(must start),Kansas City Royals,Atlanta Braves
+1612311724,Under,977,5129028348,1.497,1.5,Marcell Ozuna (Total Bases)(must start),Marcell Ozuna (Total Bases)(must start),Kansas City Royals,Atlanta Braves
+1612311790,Over,976,5129028859,2.03,1.5,Maikel Garcia (Total Bases)(must start),Maikel Garcia (Total Bases)(must start),Kansas City Royals,Atlanta Braves
+1612311791,Under,977,5129028860,1.735,1.5,Maikel Garcia (Total Bases)(must start),Maikel Garcia (Total Bases)(must start),Kansas City Royals,Atlanta Braves
+1612311778,Over,976,5129028853,1.54,0.5,Sean Murphy (Total Bases)(must start),Sean Murphy (Total Bases)(must start),Kansas City Royals,Atlanta Braves
+1612311779,Under,977,5129028854,2.38,0.5,Sean Murphy (Total Bases)(must start),Sean Murphy (Total Bases)(must start),Kansas City Royals,Atlanta Braves
+1612311781,Over,976,5129028855,1.704,0.5,Nick Allen (Total Bases)(must start),Nick Allen (Total Bases)(must start),Kansas City Royals,Atlanta Braves
+1612311782,Under,977,5129028856,2.07,0.5,Nick Allen (Total Bases)(must start),Nick Allen (Total Bases)(must start),Kansas City Royals,Atlanta Braves
+1612311720,Over,976,5129028345,2.04,1.5,Salvador Perez (Total Bases)(must start),Salvador Perez (Total Bases)(must start),Kansas City Royals,Atlanta Braves
+1612311721,Under,977,5129028346,1.724,1.5,Salvador Perez (Total Bases)(must start),Salvador Perez (Total Bases)(must start),Kansas City Royals,Atlanta Braves
+1612312089,Over,980,5129813608,2.24,1.5,Hunter Goodman (Total Bases)(must start),Hunter Goodman (Total Bases)(must start),Cleveland Guardians,Colorado Rockies
+1612312090,Under,981,5129813616,1.602,1.5,Hunter Goodman (Total Bases)(must start),Hunter Goodman (Total Bases)(must start),Cleveland Guardians,Colorado Rockies
+1612312083,Over,980,5129813610,1.531,0.5,Brenton Doyle (Total Bases)(must start),Brenton Doyle (Total Bases)(must start),Cleveland Guardians,Colorado Rockies
+1612312084,Under,981,5129813613,2.4,0.5,Brenton Doyle (Total Bases)(must start),Brenton Doyle (Total Bases)(must start),Cleveland Guardians,Colorado Rockies
+1612312086,Over,980,5129813676,2.38,1.5,Jordan Beck (Total Bases)(must start),Jordan Beck (Total Bases)(must start),Cleveland Guardians,Colorado Rockies
+1612312087,Under,981,5129813679,1.54,1.5,Jordan Beck (Total Bases)(must start),Jordan Beck (Total Bases)(must start),Cleveland Guardians,Colorado Rockies
+1612312012,Over,980,5129813584,1.847,0.5,Austin Hedges (Total Bases)(must start),Austin Hedges (Total Bases)(must start),Cleveland Guardians,Colorado Rockies
+1612312013,Under,981,5129813590,1.892,0.5,Austin Hedges (Total Bases)(must start),Austin Hedges (Total Bases)(must start),Cleveland Guardians,Colorado Rockies
+1612312205,Over,980,5129813624,1.505,0.5,Gabriel Arias (Total Bases)(must start),Gabriel Arias (Total Bases)(must start),Cleveland Guardians,Colorado Rockies
+1612312206,Under,981,5129813625,2.47,0.5,Gabriel Arias (Total Bases)(must start),Gabriel Arias (Total Bases)(must start),Cleveland Guardians,Colorado Rockies
+1612312271,Over,980,5129813643,1.609,0.5,Orlando Arcia (Total Bases)(must start),Orlando Arcia (Total Bases)(must start),Cleveland Guardians,Colorado Rockies
+1612312272,Under,981,5129813644,2.23,0.5,Orlando Arcia (Total Bases)(must start),Orlando Arcia (Total Bases)(must start),Cleveland Guardians,Colorado Rockies
+1612312068,Over,980,5129813604,2.3,1.5,Warming Bernabel (Total Bases)(must start),Warming Bernabel (Total Bases)(must start),Cleveland Guardians,Colorado Rockies
+1612312069,Under,981,5129813607,1.574,1.5,Warming Bernabel (Total Bases)(must start),Warming Bernabel (Total Bases)(must start),Cleveland Guardians,Colorado Rockies
+1612312005,Over,980,5129813569,2.38,1.5,Carlos Santana (Total Bases)(must start),Carlos Santana (Total Bases)(must start),Cleveland Guardians,Colorado Rockies
+1612312006,Under,981,5129813570,1.54,1.5,Carlos Santana (Total Bases)(must start),Carlos Santana (Total Bases)(must start),Cleveland Guardians,Colorado Rockies
+1612312071,Over,980,5129813587,2.05,1.5,Angel Martínez (Total Bases)(must start),Angel Martínez (Total Bases)(must start),Cleveland Guardians,Colorado Rockies
+1612312072,Under,981,5129813593,1.714,1.5,Angel Martínez (Total Bases)(must start),Angel Martínez (Total Bases)(must start),Cleveland Guardians,Colorado Rockies
+1612312058,Over,980,5129813677,2.1,1.5,Steven Kwan (Total Bases)(must start),Steven Kwan (Total Bases)(must start),Cleveland Guardians,Colorado Rockies
+1612312059,Under,981,5129813680,1.689,1.5,Steven Kwan (Total Bases)(must start),Steven Kwan (Total Bases)(must start),Cleveland Guardians,Colorado Rockies
+1612312061,Over,980,5129813599,1.534,0.5,David Fry (Total Bases)(must start),David Fry (Total Bases)(must start),Cleveland Guardians,Colorado Rockies
+1612312062,Under,981,5129813603,2.39,0.5,David Fry (Total Bases)(must start),David Fry (Total Bases)(must start),Cleveland Guardians,Colorado Rockies
+1612312052,Over,980,5129813581,1.574,0.5,Brayan Rocchio (Total Bases)(must start),Brayan Rocchio (Total Bases)(must start),Cleveland Guardians,Colorado Rockies
+1612312053,Under,981,5129813586,2.3,0.5,Brayan Rocchio (Total Bases)(must start),Brayan Rocchio (Total Bases)(must start),Cleveland Guardians,Colorado Rockies
+1612312055,Over,980,5129813596,2.23,1.5,Ezequiel Tovar (Total Bases)(must start),Ezequiel Tovar (Total Bases)(must start),Cleveland Guardians,Colorado Rockies
+1612312056,Under,981,5129813601,1.609,1.5,Ezequiel Tovar (Total Bases)(must start),Ezequiel Tovar (Total Bases)(must start),Cleveland Guardians,Colorado Rockies
+1612312044,Over,980,5129813578,2.56,1.5,Thairo Estrada (Total Bases)(must start),Thairo Estrada (Total Bases)(must start),Cleveland Guardians,Colorado Rockies
+1612312045,Under,981,5129813585,1.471,1.5,Thairo Estrada (Total Bases)(must start),Thairo Estrada (Total Bases)(must start),Cleveland Guardians,Colorado Rockies
+1612312047,Over,980,5129813594,2.25,1.5,Tyler Freeman (Total Bases)(must start),Tyler Freeman (Total Bases)(must start),Cleveland Guardians,Colorado Rockies
+1612312048,Under,981,5129813600,1.598,1.5,Tyler Freeman (Total Bases)(must start),Tyler Freeman (Total Bases)(must start),Cleveland Guardians,Colorado Rockies
+1612312040,Over,980,5129813592,1.833,1.5,José Ramírez (Total Bases)(must start),José Ramírez (Total Bases)(must start),Cleveland Guardians,Colorado Rockies
+1612312041,Under,981,5129813598,1.909,1.5,José Ramírez (Total Bases)(must start),José Ramírez (Total Bases)(must start),Cleveland Guardians,Colorado Rockies
+1612312346,Over,966,5129724026,1.598,0.5,Austin Wells (Total Bases)(must start),Austin Wells (Total Bases)(must start),New York Yankees,Tampa Bay Rays
+1612312347,Under,967,5129724027,2.25,0.5,Austin Wells (Total Bases)(must start),Austin Wells (Total Bases)(must start),New York Yankees,Tampa Bay Rays
+1612312475,Over,958,5129791984,2.23,1.5,Elly De La Cruz (Total Bases)(must start),Elly De La Cruz (Total Bases)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312476,Under,959,5129791985,1.609,1.5,Elly De La Cruz (Total Bases)(must start),Elly De La Cruz (Total Bases)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312349,Over,966,5129812581,1.51,0.5,Anthony Volpe (Total Bases)(must start),Anthony Volpe (Total Bases)(must start),New York Yankees,Tampa Bay Rays
+1612312350,Under,967,5129812582,2.45,0.5,Anthony Volpe (Total Bases)(must start),Anthony Volpe (Total Bases)(must start),New York Yankees,Tampa Bay Rays
+1612312466,Over,958,5129791974,1.961,1.5,Andy Pages (Total Bases)(must start),Andy Pages (Total Bases)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312467,Under,959,5129791975,1.781,1.5,Andy Pages (Total Bases)(must start),Andy Pages (Total Bases)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312337,Over,966,5129812567,2.12,1.5,Jonathan Aranda (Total Bases)(must start),Jonathan Aranda (Total Bases)(must start),New York Yankees,Tampa Bay Rays
+1612312338,Under,967,5129812568,1.675,1.5,Jonathan Aranda (Total Bases)(must start),Jonathan Aranda (Total Bases)(must start),New York Yankees,Tampa Bay Rays
+1612312340,Over,966,5129812575,2.47,1.5,Josh Lowe (Total Bases)(must start),Josh Lowe (Total Bases)(must start),New York Yankees,Tampa Bay Rays
+1612312341,Under,967,5129812576,1.505,1.5,Josh Lowe (Total Bases)(must start),Josh Lowe (Total Bases)(must start),New York Yankees,Tampa Bay Rays
+1612312472,Over,958,5129751661,1.515,0.5,Noelvi Marte (Total Bases)(must start),Noelvi Marte (Total Bases)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312473,Under,959,5129751662,2.44,0.5,Noelvi Marte (Total Bases)(must start),Noelvi Marte (Total Bases)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312460,Over,958,5129791970,2.38,1.5,Matt McLain (Total Bases)(must start),Matt McLain (Total Bases)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312461,Under,959,5129791971,1.54,1.5,Matt McLain (Total Bases)(must start),Matt McLain (Total Bases)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312331,Over,966,5129741327,2.26,1.5,Jazz Chisholm Jr. (Total Bases)(must start),Jazz Chisholm Jr. (Total Bases)(must start),New York Yankees,Tampa Bay Rays
+1612312332,Under,967,5129741328,1.595,1.5,Jazz Chisholm Jr. (Total Bases)(must start),Jazz Chisholm Jr. (Total Bases)(must start),New York Yankees,Tampa Bay Rays
+1612312322,Over,966,5129812555,2.13,1.5,Trent Grisham (Total Bases)(must start),Trent Grisham (Total Bases)(must start),New York Yankees,Tampa Bay Rays
+1612312323,Under,967,5129812556,1.666,1.5,Trent Grisham (Total Bases)(must start),Trent Grisham (Total Bases)(must start),New York Yankees,Tampa Bay Rays
+1612312454,Over,958,5129791936,1.97,1.5,Will Smith (Total Bases)(must start),Will Smith (Total Bases)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312455,Under,959,5129791937,1.781,1.5,Will Smith (Total Bases)(must start),Will Smith (Total Bases)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312325,Over,966,5129812557,2.49,1.5,Jake Mangum (Total Bases)(must start),Jake Mangum (Total Bases)(must start),New York Yankees,Tampa Bay Rays
+1612312326,Under,967,5129812558,1.495,1.5,Jake Mangum (Total Bases)(must start),Jake Mangum (Total Bases)(must start),New York Yankees,Tampa Bay Rays
+1612312382,Over,966,5129812601,2.39,1.5,Chandler Simpson (Total Bases)(must start),Chandler Simpson (Total Bases)(must start),New York Yankees,Tampa Bay Rays
+1612312383,Under,967,5129812602,1.534,1.5,Chandler Simpson (Total Bases)(must start),Chandler Simpson (Total Bases)(must start),New York Yankees,Tampa Bay Rays
+1612312361,Over,966,5129812589,2.25,1.5,Junior Caminero (Total Bases)(must start),Junior Caminero (Total Bases)(must start),New York Yankees,Tampa Bay Rays
+1612312362,Under,967,5129812590,1.598,1.5,Junior Caminero (Total Bases)(must start),Junior Caminero (Total Bases)(must start),New York Yankees,Tampa Bay Rays
+1612312367,Over,966,5129812593,1.97,1.5,Ben Rice (Total Bases)(must start),Ben Rice (Total Bases)(must start),New York Yankees,Tampa Bay Rays
+1612312368,Under,967,5129812594,1.775,1.5,Ben Rice (Total Bases)(must start),Ben Rice (Total Bases)(must start),New York Yankees,Tampa Bay Rays
+1612312484,Over,958,5129791942,2.35,1.5,Austin Hays (Total Bases)(must start),Austin Hays (Total Bases)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312485,Under,959,5129791943,1.552,1.5,Austin Hays (Total Bases)(must start),Austin Hays (Total Bases)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312356,Under,967,5129812586,1.632,1.5,Jasson Domínguez (Total Bases)(must start),Jasson Domínguez (Total Bases)(must start),New York Yankees,Tampa Bay Rays
+1612312355,Over,966,5129812585,2.19,1.5,Jasson Domínguez (Total Bases)(must start),Jasson Domínguez (Total Bases)(must start),New York Yankees,Tampa Bay Rays
+1612312286,Over,966,5129812535,1.917,1.5,Cody Bellinger (Total Bases)(must start),Cody Bellinger (Total Bases)(must start),New York Yankees,Tampa Bay Rays
+1612312287,Under,967,5129812536,1.819,1.5,Cody Bellinger (Total Bases)(must start),Cody Bellinger (Total Bases)(must start),New York Yankees,Tampa Bay Rays
+1612312403,Over,958,5129751552,2.01,1.5,Teoscar Hernández (Total Bases)(must start),Teoscar Hernández (Total Bases)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312404,Under,959,5129751553,1.751,1.5,Teoscar Hernández (Total Bases)(must start),Teoscar Hernández (Total Bases)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312280,Over,966,5129812531,2.21,1.5,Giancarlo Stanton (Total Bases)(must start),Giancarlo Stanton (Total Bases)(must start),New York Yankees,Tampa Bay Rays
+1612312281,Under,967,5129812532,1.621,1.5,Giancarlo Stanton (Total Bases)(must start),Giancarlo Stanton (Total Bases)(must start),New York Yankees,Tampa Bay Rays
+1612312397,Over,958,5129791916,1.869,1.5,Mookie Betts (Total Bases)(must start),Mookie Betts (Total Bases)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312398,Under,959,5129791917,1.869,1.5,Mookie Betts (Total Bases)(must start),Mookie Betts (Total Bases)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312385,Over,958,5129751540,1.485,0.5,Miguel Rojas (Total Bases)(must start),Miguel Rojas (Total Bases)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312386,Under,959,5129751541,2.52,0.5,Miguel Rojas (Total Bases)(must start),Miguel Rojas (Total Bases)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312391,Over,958,5129791914,1.934,1.5,Freddie Freeman (Total Bases)(must start),Freddie Freeman (Total Bases)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312392,Under,959,5129791915,1.806,1.5,Freddie Freeman (Total Bases)(must start),Freddie Freeman (Total Bases)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312442,Over,958,5129791928,1.595,0.5,Gavin Lux (Total Bases)(must start),Gavin Lux (Total Bases)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312443,Under,959,5129791929,2.26,0.5,Gavin Lux (Total Bases)(must start),Gavin Lux (Total Bases)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312445,Over,958,5129791930,1.819,0.5,Will Benson (Total Bases)(must start),Will Benson (Total Bases)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312446,Under,959,5129791931,1.917,0.5,Will Benson (Total Bases)(must start),Will Benson (Total Bases)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312448,Over,958,5129791932,1.628,0.5,Spencer Steer (Total Bases)(must start),Spencer Steer (Total Bases)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312449,Under,959,5129791933,2.19,0.5,Spencer Steer (Total Bases)(must start),Spencer Steer (Total Bases)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312433,Over,958,5129791920,1.862,2.5,Shohei Ohtani (Total Bases)(must start),Shohei Ohtani (Total Bases)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312434,Under,959,5129791921,1.877,2.5,Shohei Ohtani (Total Bases)(must start),Shohei Ohtani (Total Bases)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312310,Over,966,5129812551,2.18,1.5,Yandy Díaz (Total Bases)(must start),Yandy Díaz (Total Bases)(must start),New York Yankees,Tampa Bay Rays
+1612312311,Under,967,5129812552,1.636,1.5,Yandy Díaz (Total Bases)(must start),Yandy Díaz (Total Bases)(must start),New York Yankees,Tampa Bay Rays
+1612312439,Over,958,5129791924,1.574,0.5,Tyler Stephenson (Total Bases)(must start),Tyler Stephenson (Total Bases)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312440,Under,959,5129791925,2.3,0.5,Tyler Stephenson (Total Bases)(must start),Tyler Stephenson (Total Bases)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312304,Over,966,5129724002,1.869,0.5,Matt Thaiss (Total Bases)(must start),Matt Thaiss (Total Bases)(must start),New York Yankees,Tampa Bay Rays
+1612312305,Under,967,5129724003,1.869,0.5,Matt Thaiss (Total Bases)(must start),Matt Thaiss (Total Bases)(must start),New York Yankees,Tampa Bay Rays
+1612312421,Over,958,5129751578,1.561,0.5,Michael Conforto (Total Bases)(must start),Michael Conforto (Total Bases)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312422,Under,959,5129751579,2.33,0.5,Michael Conforto (Total Bases)(must start),Michael Conforto (Total Bases)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612312493,Over,972,5129035315,1.49,0.5,Geraldo Perdomo (Total Bases)(must start),Geraldo Perdomo (Total Bases)(must start),Detroit Tigers,Arizona Diamondbacks
+1612312494,Under,973,5129035316,2.51,0.5,Geraldo Perdomo (Total Bases)(must start),Geraldo Perdomo (Total Bases)(must start),Detroit Tigers,Arizona Diamondbacks
+1612312496,Over,972,5129032856,1.505,0.5,Blaze Alexander (Total Bases)(must start),Blaze Alexander (Total Bases)(must start),Detroit Tigers,Arizona Diamondbacks
+1612312497,Under,973,5129032857,2.47,0.5,Blaze Alexander (Total Bases)(must start),Blaze Alexander (Total Bases)(must start),Detroit Tigers,Arizona Diamondbacks
+1612313529,Over,978,5129346058,1.49,0.5,Brandon Marsh (Total Bases)(must start),Brandon Marsh (Total Bases)(must start),Chicago White Sox,Philadelphia Phillies
+1612313530,Under,979,5129346067,2.51,0.5,Brandon Marsh (Total Bases)(must start),Brandon Marsh (Total Bases)(must start),Chicago White Sox,Philadelphia Phillies
+1612313499,Over,978,5129345971,2.14,1.5,Nick Castellanos (Total Bases)(must start),Nick Castellanos (Total Bases)(must start),Chicago White Sox,Philadelphia Phillies
+1612313500,Under,979,5129345976,1.662,1.5,Nick Castellanos (Total Bases)(must start),Nick Castellanos (Total Bases)(must start),Chicago White Sox,Philadelphia Phillies
+1612313536,Under,979,5129346066,1.537,1.5,Miguel Vargas (Total Bases)(must start),Miguel Vargas (Total Bases)(must start),Chicago White Sox,Philadelphia Phillies
+1612313535,Over,978,5129346057,2.38,1.5,Miguel Vargas (Total Bases)(must start),Miguel Vargas (Total Bases)(must start),Chicago White Sox,Philadelphia Phillies
+1612313490,Over,978,5129345963,2.44,1.5,Luis Robert Jr. (Total Bases)(must start),Luis Robert Jr. (Total Bases)(must start),Chicago White Sox,Philadelphia Phillies
+1612313491,Under,979,5129345967,1.515,1.5,Luis Robert Jr. (Total Bases)(must start),Luis Robert Jr. (Total Bases)(must start),Chicago White Sox,Philadelphia Phillies
+1612313526,Over,978,5129346005,2.11,1.5,Kyle Schwarber (Total Bases)(must start),Kyle Schwarber (Total Bases)(must start),Chicago White Sox,Philadelphia Phillies
+1612313527,Under,979,5129346023,1.675,1.5,Kyle Schwarber (Total Bases)(must start),Kyle Schwarber (Total Bases)(must start),Chicago White Sox,Philadelphia Phillies
+1612313514,Over,978,5129345990,1.578,0.5,Max Kepler (Total Bases)(must start),Max Kepler (Total Bases)(must start),Chicago White Sox,Philadelphia Phillies
+1612313515,Under,979,5129346008,2.3,0.5,Max Kepler (Total Bases)(must start),Max Kepler (Total Bases)(must start),Chicago White Sox,Philadelphia Phillies
+1612313484,Over,978,5129345970,2.41,1.5,Andrew Benintendi (Total Bases)(must start),Andrew Benintendi (Total Bases)(must start),Chicago White Sox,Philadelphia Phillies
+1612313485,Under,979,5129345972,1.529,1.5,Andrew Benintendi (Total Bases)(must start),Andrew Benintendi (Total Bases)(must start),Chicago White Sox,Philadelphia Phillies
+1612313547,Over,978,5129346017,1.485,0.5,Otto Kemp (Total Bases)(must start),Otto Kemp (Total Bases)(must start),Chicago White Sox,Philadelphia Phillies
+1612313548,Under,979,5129346019,2.52,0.5,Otto Kemp (Total Bases)(must start),Otto Kemp (Total Bases)(must start),Chicago White Sox,Philadelphia Phillies
+1612313517,Over,978,5129345984,2.0,1.5,Trea Turner (Total Bases)(must start),Trea Turner (Total Bases)(must start),Chicago White Sox,Philadelphia Phillies
+1612313518,Under,979,5129346001,1.751,1.5,Trea Turner (Total Bases)(must start),Trea Turner (Total Bases)(must start),Chicago White Sox,Philadelphia Phillies
+1612313487,Over,978,5129345975,2.16,1.5,Mike Tauchman (Total Bases)(must start),Mike Tauchman (Total Bases)(must start),Chicago White Sox,Philadelphia Phillies
+1612313488,Under,979,5129345979,1.649,1.5,Mike Tauchman (Total Bases)(must start),Mike Tauchman (Total Bases)(must start),Chicago White Sox,Philadelphia Phillies
+1612313538,Over,978,5129346207,1.591,0.5,Bryson Stott (Total Bases)(must start),Bryson Stott (Total Bases)(must start),Chicago White Sox,Philadelphia Phillies
+1612313539,Under,979,5129346210,2.27,0.5,Bryson Stott (Total Bases)(must start),Bryson Stott (Total Bases)(must start),Chicago White Sox,Philadelphia Phillies
+1612313478,Over,978,5129345957,2.12,1.5,Bryce Harper (Total Bases)(must start),Bryce Harper (Total Bases)(must start),Chicago White Sox,Philadelphia Phillies
+1612313479,Under,979,5129345958,1.671,1.5,Bryce Harper (Total Bases)(must start),Bryce Harper (Total Bases)(must start),Chicago White Sox,Philadelphia Phillies
+1612313541,Over,978,5129346056,1.529,0.5,Kyle Teel (Total Bases)(must start),Kyle Teel (Total Bases)(must start),Chicago White Sox,Philadelphia Phillies
+1612313542,Under,979,5129346065,2.41,0.5,Kyle Teel (Total Bases)(must start),Kyle Teel (Total Bases)(must start),Chicago White Sox,Philadelphia Phillies
+1612313544,Over,978,5129345993,1.632,0.5,Colson Montgomery (Total Bases)(must start),Colson Montgomery (Total Bases)(must start),Chicago White Sox,Philadelphia Phillies
+1612313545,Under,979,5129346013,2.19,0.5,Colson Montgomery (Total Bases)(must start),Colson Montgomery (Total Bases)(must start),Chicago White Sox,Philadelphia Phillies
+1612313550,Over,966,5129812547,1.591,0.5,Ryan McMahon (Total Bases)(must start),Ryan McMahon (Total Bases)(must start),New York Yankees,Tampa Bay Rays
+1612313551,Under,967,5129812548,2.26,0.5,Ryan McMahon (Total Bases)(must start),Ryan McMahon (Total Bases)(must start),New York Yankees,Tampa Bay Rays
+1612314814,Over,952,5129041071,1.497,0.5,Sal Frelick (Total Bases)(must start),Sal Frelick (Total Bases)(must start),Milwaukee Brewers,Chicago Cubs
+1612314815,Under,953,5129041072,2.49,0.5,Sal Frelick (Total Bases)(must start),Sal Frelick (Total Bases)(must start),Milwaukee Brewers,Chicago Cubs
+1612314803,Over,952,5129041049,2.3,1.5,Kyle Tucker (Total Bases)(must start),Kyle Tucker (Total Bases)(must start),Milwaukee Brewers,Chicago Cubs
+1612314804,Under,953,5129041050,1.574,1.5,Kyle Tucker (Total Bases)(must start),Kyle Tucker (Total Bases)(must start),Milwaukee Brewers,Chicago Cubs
+1612314806,Over,952,5129043617,1.561,0.5,Seiya Suzuki (Total Bases)(must start),Seiya Suzuki (Total Bases)(must start),Milwaukee Brewers,Chicago Cubs
+1612314807,Under,953,5129043618,2.33,0.5,Seiya Suzuki (Total Bases)(must start),Seiya Suzuki (Total Bases)(must start),Milwaukee Brewers,Chicago Cubs
+1612314826,Over,952,5129041077,1.581,0.5,Caleb Durbin (Total Bases)(must start),Caleb Durbin (Total Bases)(must start),Milwaukee Brewers,Chicago Cubs
+1612314827,Under,953,5129041078,2.29,0.5,Caleb Durbin (Total Bases)(must start),Caleb Durbin (Total Bases)(must start),Milwaukee Brewers,Chicago Cubs
+1612314831,Over,952,5129041079,1.793,0.5,Matt Shaw (Total Bases)(must start),Matt Shaw (Total Bases)(must start),Milwaukee Brewers,Chicago Cubs
+1612314832,Under,953,5129041080,1.952,0.5,Matt Shaw (Total Bases)(must start),Matt Shaw (Total Bases)(must start),Milwaukee Brewers,Chicago Cubs
+1612314785,Over,952,5129041031,1.625,0.5,Carson Kelly (Total Bases)(must start),Carson Kelly (Total Bases)(must start),Milwaukee Brewers,Chicago Cubs
+1612314786,Under,953,5129041032,2.2,0.5,Carson Kelly (Total Bases)(must start),Carson Kelly (Total Bases)(must start),Milwaukee Brewers,Chicago Cubs
+1612314817,Over,952,5128963394,1.775,0.5,Joey Ortiz (Total Bases)(must start),Joey Ortiz (Total Bases)(must start),Milwaukee Brewers,Chicago Cubs
+1612314818,Under,953,5128963395,1.97,0.5,Joey Ortiz (Total Bases)(must start),Joey Ortiz (Total Bases)(must start),Milwaukee Brewers,Chicago Cubs
+1612314823,Over,952,5128963398,1.568,0.5,Pete Crow-Armstrong (Total Bases)(must start),Pete Crow-Armstrong (Total Bases)(must start),Milwaukee Brewers,Chicago Cubs
+1612314824,Under,953,5128963399,2.32,0.5,Pete Crow-Armstrong (Total Bases)(must start),Pete Crow-Armstrong (Total Bases)(must start),Milwaukee Brewers,Chicago Cubs
+1612316701,Over,952,5129041059,2.14,1.5,Andrew Vaughn (Total Bases)(must start),Andrew Vaughn (Total Bases)(must start),Milwaukee Brewers,Chicago Cubs
+1612316702,Under,953,5129041060,1.662,1.5,Andrew Vaughn (Total Bases)(must start),Andrew Vaughn (Total Bases)(must start),Milwaukee Brewers,Chicago Cubs
+1612316692,Over,952,5129041051,1.636,0.5,Brice Turang (Total Bases)(must start),Brice Turang (Total Bases)(must start),Milwaukee Brewers,Chicago Cubs
+1612316693,Under,953,5129041052,2.18,0.5,Brice Turang (Total Bases)(must start),Brice Turang (Total Bases)(must start),Milwaukee Brewers,Chicago Cubs
+1612316683,Over,952,5129043615,1.751,0.5,Blake Perkins (Total Bases)(must start),Blake Perkins (Total Bases)(must start),Milwaukee Brewers,Chicago Cubs
+1612316684,Under,953,5129043616,2.0,0.5,Blake Perkins (Total Bases)(must start),Blake Perkins (Total Bases)(must start),Milwaukee Brewers,Chicago Cubs
+1612316686,Over,952,5129041045,1.465,0.5,Nico Hoerner (Total Bases)(must start),Nico Hoerner (Total Bases)(must start),Milwaukee Brewers,Chicago Cubs
+1612316687,Under,953,5129041046,2.58,0.5,Nico Hoerner (Total Bases)(must start),Nico Hoerner (Total Bases)(must start),Milwaukee Brewers,Chicago Cubs
+1612316674,Over,952,5129041033,1.719,0.5,Dansby Swanson (Total Bases)(must start),Dansby Swanson (Total Bases)(must start),Milwaukee Brewers,Chicago Cubs
+1612316675,Under,953,5129041034,2.05,0.5,Dansby Swanson (Total Bases)(must start),Dansby Swanson (Total Bases)(must start),Milwaukee Brewers,Chicago Cubs
+1612316680,Over,952,5128963352,2.35,1.5,William Contreras (Total Bases)(must start),William Contreras (Total Bases)(must start),Milwaukee Brewers,Chicago Cubs
+1612316681,Under,953,5128963353,1.549,1.5,William Contreras (Total Bases)(must start),William Contreras (Total Bases)(must start),Milwaukee Brewers,Chicago Cubs
+1612316668,Over,972,5129032367,1.591,0.5,Jorge Barrosa (Total Bases)(must start),Jorge Barrosa (Total Bases)(must start),Detroit Tigers,Arizona Diamondbacks
+1612316669,Under,973,5129032368,2.26,0.5,Jorge Barrosa (Total Bases)(must start),Jorge Barrosa (Total Bases)(must start),Detroit Tigers,Arizona Diamondbacks
+1612316672,Under,953,5129041030,1.497,1.5,Christian Yelich (Total Bases)(must start),Christian Yelich (Total Bases)(must start),Milwaukee Brewers,Chicago Cubs
+1612316671,Over,952,5129041029,2.49,1.5,Christian Yelich (Total Bases)(must start),Christian Yelich (Total Bases)(must start),Milwaukee Brewers,Chicago Cubs
+1612316662,Over,972,5129032353,2.17,1.5,Lourdes Gurriel Jr. (Total Bases)(must start),Lourdes Gurriel Jr. (Total Bases)(must start),Detroit Tigers,Arizona Diamondbacks
+1612316663,Under,973,5129032354,1.645,1.5,Lourdes Gurriel Jr. (Total Bases)(must start),Lourdes Gurriel Jr. (Total Bases)(must start),Detroit Tigers,Arizona Diamondbacks
+1612316725,Over,952,5128963400,1.833,0.5,Moisés Ballesteros (Total Bases)(must start),Moisés Ballesteros (Total Bases)(must start),Milwaukee Brewers,Chicago Cubs
+1612316726,Under,953,5128963401,1.909,0.5,Moisés Ballesteros (Total Bases)(must start),Moisés Ballesteros (Total Bases)(must start),Milwaukee Brewers,Chicago Cubs
+1612316719,Over,952,5129041073,1.54,0.5,Isaac Collins (Total Bases)(must start),Isaac Collins (Total Bases)(must start),Milwaukee Brewers,Chicago Cubs
+1612316720,Under,953,5129041074,2.38,0.5,Isaac Collins (Total Bases)(must start),Isaac Collins (Total Bases)(must start),Milwaukee Brewers,Chicago Cubs
+1612316707,Over,952,5129041063,1.591,0.5,Michael Busch (Total Bases)(must start),Michael Busch (Total Bases)(must start),Milwaukee Brewers,Chicago Cubs
+1612316708,Under,953,5129041064,2.27,0.5,Michael Busch (Total Bases)(must start),Michael Busch (Total Bases)(must start),Milwaukee Brewers,Chicago Cubs
+1612316732,Over,976,5129028845,1.757,0.5,Kyle Isbel (Total Bases)(must start),Kyle Isbel (Total Bases)(must start),Kansas City Royals,Atlanta Braves
+1612316733,Under,977,5129028846,2.0,0.5,Kyle Isbel (Total Bases)(must start),Kyle Isbel (Total Bases)(must start),Kansas City Royals,Atlanta Braves
+1612316736,Under,977,5129028834,2.2,0.5,Adam Frazier (Total Bases)(must start),Adam Frazier (Total Bases)(must start),Kansas City Royals,Atlanta Braves
+1612316735,Over,976,5129028833,1.625,0.5,Adam Frazier (Total Bases)(must start),Adam Frazier (Total Bases)(must start),Kansas City Royals,Atlanta Braves
+1612316741,Over,976,5129028876,1.675,0.5,Tyler Tolbert (Total Bases)(must start),Tyler Tolbert (Total Bases)(must start),Kansas City Royals,Atlanta Braves
+1612316742,Under,977,5129028877,2.12,0.5,Tyler Tolbert (Total Bases)(must start),Tyler Tolbert (Total Bases)(must start),Kansas City Royals,Atlanta Braves
+1612316744,Over,966,5129812579,1.763,0.5,Taylor Walls (Total Bases)(must start),Taylor Walls (Total Bases)(must start),New York Yankees,Tampa Bay Rays
+1612316745,Under,967,5129812580,1.99,0.5,Taylor Walls (Total Bases)(must start),Taylor Walls (Total Bases)(must start),New York Yankees,Tampa Bay Rays
+1612297898,Over,43932,5128823254,1.8,0.5,Davis Schneider Total Bases,Davis Schneider Total Bases,Baltimore Orioles,Toronto Blue Jays
+1612297899,Under,43933,5128823283,1.952,0.5,Davis Schneider Total Bases,Davis Schneider Total Bases,Baltimore Orioles,Toronto Blue Jays
+1612316902,Over,978,5129345959,2.45,1.5,Chase Meidroth (Total Bases)(must start),Chase Meidroth (Total Bases)(must start),Chicago White Sox,Philadelphia Phillies
+1612316903,Under,979,5129345961,1.51,1.5,Chase Meidroth (Total Bases)(must start),Chase Meidroth (Total Bases)(must start),Chicago White Sox,Philadelphia Phillies
+1612318115,Over,978,5129346236,1.578,0.5,Edgar Quero (Total Bases)(must start),Edgar Quero (Total Bases)(must start),Chicago White Sox,Philadelphia Phillies
+1612318116,Under,979,5129346240,2.29,0.5,Edgar Quero (Total Bases)(must start),Edgar Quero (Total Bases)(must start),Chicago White Sox,Philadelphia Phillies
+1612318118,Over,978,5129346211,1.775,0.5,Josh Rojas (Total Bases)(must start),Josh Rojas (Total Bases)(must start),Chicago White Sox,Philadelphia Phillies
+1612318119,Under,979,5129346214,1.98,0.5,Josh Rojas (Total Bases)(must start),Josh Rojas (Total Bases)(must start),Chicago White Sox,Philadelphia Phillies
+1612318129,Over,978,5129345991,1.68,0.5,Rafael Marchán (Total Bases)(must start),Rafael Marchán (Total Bases)(must start),Chicago White Sox,Philadelphia Phillies
+1612318130,Under,979,5129346009,2.11,0.5,Rafael Marchán (Total Bases)(must start),Rafael Marchán (Total Bases)(must start),Chicago White Sox,Philadelphia Phillies
+1612321501,Over,960,5129791854,1.529,0.5,Dane Myers (Total Bases)(must start),Dane Myers (Total Bases)(must start),St. Louis Cardinals,Miami Marlins
+1612321502,Under,961,5129791855,2.41,0.5,Dane Myers (Total Bases)(must start),Dane Myers (Total Bases)(must start),St. Louis Cardinals,Miami Marlins
+1612321497,Over,960,5129791848,2.08,1.5,Jesús Sánchez (Total Bases)(must start),Jesús Sánchez (Total Bases)(must start),St. Louis Cardinals,Miami Marlins
+1612321498,Under,961,5129791849,1.694,1.5,Jesús Sánchez (Total Bases)(must start),Jesús Sánchez (Total Bases)(must start),St. Louis Cardinals,Miami Marlins
+1612321551,Over,960,5129791896,1.483,0.5,Jordan Walker (Total Bases)(must start),Jordan Walker (Total Bases)(must start),St. Louis Cardinals,Miami Marlins
+1612321552,Under,961,5129791897,2.53,0.5,Jordan Walker (Total Bases)(must start),Jordan Walker (Total Bases)(must start),St. Louis Cardinals,Miami Marlins
+1612321539,Over,960,5129791890,1.694,0.5,Victor Scott II (Total Bases)(must start),Victor Scott II (Total Bases)(must start),St. Louis Cardinals,Miami Marlins
+1612321540,Under,961,5129791891,2.09,0.5,Victor Scott II (Total Bases)(must start),Victor Scott II (Total Bases)(must start),St. Louis Cardinals,Miami Marlins
+1612321477,Over,960,5129791816,2.17,1.5,Willson Contreras (Total Bases)(must start),Willson Contreras (Total Bases)(must start),St. Louis Cardinals,Miami Marlins
+1612321478,Under,961,5129791817,1.641,1.5,Willson Contreras (Total Bases)(must start),Willson Contreras (Total Bases)(must start),St. Louis Cardinals,Miami Marlins
+1612321542,Over,960,5129791894,1.609,0.5,Graham Pauley (Total Bases)(must start),Graham Pauley (Total Bases)(must start),St. Louis Cardinals,Miami Marlins
+1612321543,Under,961,5129791895,2.23,0.5,Graham Pauley (Total Bases)(must start),Graham Pauley (Total Bases)(must start),St. Louis Cardinals,Miami Marlins
+1612321532,Over,960,5129791888,2.02,1.5,Agustín Ramírez (Total Bases)(must start),Agustín Ramírez (Total Bases)(must start),St. Louis Cardinals,Miami Marlins
+1612321533,Under,961,5129791889,1.74,1.5,Agustín Ramírez (Total Bases)(must start),Agustín Ramírez (Total Bases)(must start),St. Louis Cardinals,Miami Marlins
+1612321465,Over,960,5129791792,2.43,1.5,Nolan Arenado (Total Bases)(must start),Nolan Arenado (Total Bases)(must start),St. Louis Cardinals,Miami Marlins
+1612321466,Under,961,5129791793,1.518,1.5,Nolan Arenado (Total Bases)(must start),Nolan Arenado (Total Bases)(must start),St. Louis Cardinals,Miami Marlins
+1612321516,Over,960,5129791870,2.13,1.5,Iván Herrera (Total Bases)(must start),Iván Herrera (Total Bases)(must start),St. Louis Cardinals,Miami Marlins
+1612321517,Under,961,5129791871,1.662,1.5,Iván Herrera (Total Bases)(must start),Iván Herrera (Total Bases)(must start),St. Louis Cardinals,Miami Marlins
+1612321519,Over,960,5129791880,2.17,1.5,Alec Burleson (Total Bases)(must start),Alec Burleson (Total Bases)(must start),St. Louis Cardinals,Miami Marlins
+1612321520,Under,961,5129791881,1.641,1.5,Alec Burleson (Total Bases)(must start),Alec Burleson (Total Bases)(must start),St. Louis Cardinals,Miami Marlins
+1612321509,Over,960,5129791862,2.14,1.5,Kyle Stowers (Total Bases)(must start),Kyle Stowers (Total Bases)(must start),St. Louis Cardinals,Miami Marlins
+1612321510,Under,961,5129791863,1.662,1.5,Kyle Stowers (Total Bases)(must start),Kyle Stowers (Total Bases)(must start),St. Louis Cardinals,Miami Marlins
+1612321512,Over,960,5129791866,2.1,1.5,Xavier Edwards (Total Bases)(must start),Xavier Edwards (Total Bases)(must start),St. Louis Cardinals,Miami Marlins
+1612321513,Under,961,5129791867,1.68,1.5,Xavier Edwards (Total Bases)(must start),Xavier Edwards (Total Bases)(must start),St. Louis Cardinals,Miami Marlins
+1612322395,Over,968,5129797358,2.61,1.5,Nolan Schanuel (Total Bases)(must start),Nolan Schanuel (Total Bases)(must start),Los Angeles Angels,Texas Rangers
+1612322396,Under,969,5129797359,1.456,1.5,Nolan Schanuel (Total Bases)(must start),Nolan Schanuel (Total Bases)(must start),Los Angeles Angels,Texas Rangers
+1612322330,Over,968,5129791794,2.47,1.5,Marcus Semien (Total Bases)(must start),Marcus Semien (Total Bases)(must start),Los Angeles Angels,Texas Rangers
+1612322331,Under,969,5129791795,1.505,1.5,Marcus Semien (Total Bases)(must start),Marcus Semien (Total Bases)(must start),Los Angeles Angels,Texas Rangers
+1612322336,Over,968,5129756526,1.632,0.5,Joc Pederson (Total Bases)(must start),Joc Pederson (Total Bases)(must start),Los Angeles Angels,Texas Rangers
+1612322337,Under,969,5129756527,2.19,0.5,Joc Pederson (Total Bases)(must start),Joc Pederson (Total Bases)(must start),Los Angeles Angels,Texas Rangers
+1612322333,Over,968,5129791798,2.34,1.5,Mike Trout (Total Bases)(must start),Mike Trout (Total Bases)(must start),Los Angeles Angels,Texas Rangers
+1612322334,Under,969,5129791799,1.555,1.5,Mike Trout (Total Bases)(must start),Mike Trout (Total Bases)(must start),Los Angeles Angels,Texas Rangers
+1612322398,Over,968,5129791882,2.47,1.5,Wyatt Langford (Total Bases)(must start),Wyatt Langford (Total Bases)(must start),Los Angeles Angels,Texas Rangers
+1612322399,Under,969,5129791883,1.505,1.5,Wyatt Langford (Total Bases)(must start),Wyatt Langford (Total Bases)(must start),Los Angeles Angels,Texas Rangers
+1612322388,Over,968,5129791856,1.552,0.5,Josh Jung (Total Bases)(must start),Josh Jung (Total Bases)(must start),Los Angeles Angels,Texas Rangers
+1612322389,Under,969,5129791857,2.35,0.5,Josh Jung (Total Bases)(must start),Josh Jung (Total Bases)(must start),Los Angeles Angels,Texas Rangers
+1612322385,Over,968,5129791852,1.8,0.5,Gustavo Campero (Total Bases)(must start),Gustavo Campero (Total Bases)(must start),Los Angeles Angels,Texas Rangers
+1612322386,Under,969,5129791853,1.943,0.5,Gustavo Campero (Total Bases)(must start),Gustavo Campero (Total Bases)(must start),Los Angeles Angels,Texas Rangers
+1612322391,Over,968,5129791868,2.39,1.5,Zach Neto (Total Bases)(must start),Zach Neto (Total Bases)(must start),Los Angeles Angels,Texas Rangers
+1612322392,Under,969,5129791869,1.534,1.5,Zach Neto (Total Bases)(must start),Zach Neto (Total Bases)(must start),Los Angeles Angels,Texas Rangers
+1612322369,Over,968,5129756542,2.49,1.5,Adolis García (Total Bases)(must start),Adolis García (Total Bases)(must start),Los Angeles Angels,Texas Rangers
+1612322370,Under,969,5129756543,1.497,1.5,Adolis García (Total Bases)(must start),Adolis García (Total Bases)(must start),Los Angeles Angels,Texas Rangers
+1612322365,Over,968,5129791834,1.558,0.5,Jo Adell (Total Bases)(must start),Jo Adell (Total Bases)(must start),Los Angeles Angels,Texas Rangers
+1612322366,Under,969,5129791835,2.33,0.5,Jo Adell (Total Bases)(must start),Jo Adell (Total Bases)(must start),Los Angeles Angels,Texas Rangers
+1612322356,Over,968,5129791824,1.628,0.5,Luis Rengifo (Total Bases)(must start),Luis Rengifo (Total Bases)(must start),Los Angeles Angels,Texas Rangers
+1612322357,Under,969,5129791825,2.19,0.5,Luis Rengifo (Total Bases)(must start),Luis Rengifo (Total Bases)(must start),Los Angeles Angels,Texas Rangers
+1612322353,Over,968,5129791822,1.729,0.5,Jonah Heim (Total Bases)(must start),Jonah Heim (Total Bases)(must start),Los Angeles Angels,Texas Rangers
+1612322354,Under,969,5129791823,2.04,0.5,Jonah Heim (Total Bases)(must start),Jonah Heim (Total Bases)(must start),Los Angeles Angels,Texas Rangers
+1612322349,Over,968,5129791818,1.662,0.5,Taylor Ward (Total Bases)(must start),Taylor Ward (Total Bases)(must start),Los Angeles Angels,Texas Rangers
+1612322350,Under,969,5129791819,2.13,0.5,Taylor Ward (Total Bases)(must start),Taylor Ward (Total Bases)(must start),Los Angeles Angels,Texas Rangers
+1612322342,Over,968,5129791810,2.22,1.5,Corey Seager (Total Bases)(must start),Corey Seager (Total Bases)(must start),Los Angeles Angels,Texas Rangers
+1612322343,Under,969,5129791811,1.613,1.5,Corey Seager (Total Bases)(must start),Corey Seager (Total Bases)(must start),Los Angeles Angels,Texas Rangers
+1612323611,Over,974,5128969827,1.505,0.5,Cam Smith (Total Bases)(must start),Cam Smith (Total Bases)(must start),Houston Astros,Washington Nationals
+1612323612,Under,975,5128969829,2.46,0.5,Cam Smith (Total Bases)(must start),Cam Smith (Total Bases)(must start),Houston Astros,Washington Nationals
+1612323614,Over,970,5129784825,1.5,0.5,Jorge Polanco (Total Bases)(must start),Jorge Polanco (Total Bases)(must start),Athletics,Seattle Mariners
+1612323615,Under,971,5129784826,2.48,0.5,Jorge Polanco (Total Bases)(must start),Jorge Polanco (Total Bases)(must start),Athletics,Seattle Mariners
+1612323602,Over,974,5129071524,1.578,0.5,James Wood (Total Bases)(must start),James Wood (Total Bases)(must start),Houston Astros,Washington Nationals
+1612323603,Under,975,5129071525,2.29,0.5,James Wood (Total Bases)(must start),James Wood (Total Bases)(must start),Houston Astros,Washington Nationals
+1612323608,Over,974,5128969823,1.602,0.5,Jacob Young (Total Bases)(must start),Jacob Young (Total Bases)(must start),Houston Astros,Washington Nationals
+1612323609,Under,975,5128969825,2.25,0.5,Jacob Young (Total Bases)(must start),Jacob Young (Total Bases)(must start),Houston Astros,Washington Nationals
+1612323605,Over,974,5128969817,1.51,0.5,Daylen Lile (Total Bases)(must start),Daylen Lile (Total Bases)(must start),Houston Astros,Washington Nationals
+1612323606,Under,975,5128969818,2.45,0.5,Daylen Lile (Total Bases)(must start),Daylen Lile (Total Bases)(must start),Houston Astros,Washington Nationals
+1612323722,Over,970,5129784873,1.5,0.5,Ben Williamson (Total Bases)(must start),Ben Williamson (Total Bases)(must start),Athletics,Seattle Mariners
+1612323723,Under,971,5129784874,2.48,0.5,Ben Williamson (Total Bases)(must start),Ben Williamson (Total Bases)(must start),Athletics,Seattle Mariners
+1612323587,Over,974,5129083925,1.621,0.5,Drew Millas (Total Bases)(must start),Drew Millas (Total Bases)(must start),Houston Astros,Washington Nationals
+1612323588,Under,975,5129083926,2.21,0.5,Drew Millas (Total Bases)(must start),Drew Millas (Total Bases)(must start),Houston Astros,Washington Nationals
+1612323719,Over,970,5129784871,1.781,1.5,Nick Kurtz (Total Bases)(must start),Nick Kurtz (Total Bases)(must start),Athletics,Seattle Mariners
+1612323720,Under,971,5129784872,1.97,1.5,Nick Kurtz (Total Bases)(must start),Nick Kurtz (Total Bases)(must start),Athletics,Seattle Mariners
+1612323644,Over,970,5129784839,2.23,1.5,Josh Naylor (Total Bases)(must start),Josh Naylor (Total Bases)(must start),Athletics,Seattle Mariners
+1612323645,Under,971,5129784840,1.609,1.5,Josh Naylor (Total Bases)(must start),Josh Naylor (Total Bases)(must start),Athletics,Seattle Mariners
+1612323638,Over,970,5129784835,1.645,0.5,Mitch Garver (Total Bases)(must start),Mitch Garver (Total Bases)(must start),Athletics,Seattle Mariners
+1612323639,Under,971,5129784836,2.16,0.5,Mitch Garver (Total Bases)(must start),Mitch Garver (Total Bases)(must start),Athletics,Seattle Mariners
+1612323632,Over,970,5129773672,2.4,1.5,J.P. Crawford (Total Bases)(must start),J.P. Crawford (Total Bases)(must start),Athletics,Seattle Mariners
+1612323633,Under,971,5129773673,1.531,1.5,J.P. Crawford (Total Bases)(must start),J.P. Crawford (Total Bases)(must start),Athletics,Seattle Mariners
+1612323629,Over,970,5129784833,1.45,0.5,Miguel Andujar (Total Bases)(must start),Miguel Andujar (Total Bases)(must start),Athletics,Seattle Mariners
+1612323630,Under,971,5129784834,2.63,0.5,Miguel Andujar (Total Bases)(must start),Miguel Andujar (Total Bases)(must start),Athletics,Seattle Mariners
+1612323548,Over,974,5129083917,2.44,1.5,Christian Walker (Total Bases)(must start),Christian Walker (Total Bases)(must start),Houston Astros,Washington Nationals
+1612323549,Under,975,5129083918,1.515,1.5,Christian Walker (Total Bases)(must start),Christian Walker (Total Bases)(must start),Houston Astros,Washington Nationals
+1612323674,Over,970,5129773692,2.04,1.5,Randy Arozarena (Total Bases)(must start),Randy Arozarena (Total Bases)(must start),Athletics,Seattle Mariners
+1612323675,Under,971,5129773693,1.724,1.5,Randy Arozarena (Total Bases)(must start),Randy Arozarena (Total Bases)(must start),Athletics,Seattle Mariners
+1612323680,Over,970,5129773696,2.25,1.5,Shea Langeliers (Total Bases)(must start),Shea Langeliers (Total Bases)(must start),Athletics,Seattle Mariners
+1612323681,Under,971,5129773697,1.598,1.5,Shea Langeliers (Total Bases)(must start),Shea Langeliers (Total Bases)(must start),Athletics,Seattle Mariners
+1612323668,Over,970,5129773688,2.28,1.5,Brent Rooker (Total Bases)(must start),Brent Rooker (Total Bases)(must start),Athletics,Seattle Mariners
+1612323669,Under,971,5129773689,1.584,1.5,Brent Rooker (Total Bases)(must start),Brent Rooker (Total Bases)(must start),Athletics,Seattle Mariners
+1612323542,Over,974,5129083564,2.29,1.5,Jose Altuve (Total Bases)(must start),Jose Altuve (Total Bases)(must start),Houston Astros,Washington Nationals
+1612323543,Under,975,5129083565,1.578,1.5,Jose Altuve (Total Bases)(must start),Jose Altuve (Total Bases)(must start),Houston Astros,Washington Nationals
+1612323662,Over,970,5129773686,1.606,0.5,Carlos Cortes (Total Bases)(must start),Carlos Cortes (Total Bases)(must start),Athletics,Seattle Mariners
+1612323663,Under,971,5129773687,2.24,0.5,Carlos Cortes (Total Bases)(must start),Carlos Cortes (Total Bases)(must start),Athletics,Seattle Mariners
+1612323653,Over,970,5129784843,1.943,1.5,Cal Raleigh (Total Bases)(must start),Cal Raleigh (Total Bases)(must start),Athletics,Seattle Mariners
+1612323654,Under,971,5129784844,1.8,1.5,Cal Raleigh (Total Bases)(must start),Cal Raleigh (Total Bases)(must start),Athletics,Seattle Mariners
+1612323578,Over,974,5128969845,2.04,1.5,Yainer Diaz (Total Bases)(must start),Yainer Diaz (Total Bases)(must start),Houston Astros,Washington Nationals
+1612323579,Under,975,5128969849,1.724,1.5,Yainer Diaz (Total Bases)(must start),Yainer Diaz (Total Bases)(must start),Houston Astros,Washington Nationals
+1612323584,Over,974,5128969851,2.19,1.5,CJ Abrams (Total Bases)(must start),CJ Abrams (Total Bases)(must start),Houston Astros,Washington Nationals
+1612323585,Under,975,5128969852,1.628,1.5,CJ Abrams (Total Bases)(must start),CJ Abrams (Total Bases)(must start),Houston Astros,Washington Nationals
+1612323581,Over,974,5129083923,1.854,0.5,Chas McCormick (Total Bases)(must start),Chas McCormick (Total Bases)(must start),Houston Astros,Washington Nationals
+1612323582,Under,975,5129083924,1.884,0.5,Chas McCormick (Total Bases)(must start),Chas McCormick (Total Bases)(must start),Houston Astros,Washington Nationals
+1612323572,Over,974,5128969842,2.17,1.5,Luis García Jr. (Total Bases)(must start),Luis García Jr. (Total Bases)(must start),Houston Astros,Washington Nationals
+1612323573,Under,975,5128969847,1.641,1.5,Luis García Jr. (Total Bases)(must start),Luis García Jr. (Total Bases)(must start),Houston Astros,Washington Nationals
+1612323569,Over,974,5128969834,2.18,0.5,Zack Short (Total Bases)(must start),Zack Short (Total Bases)(must start),Houston Astros,Washington Nationals
+1612323570,Under,975,5128969846,1.636,0.5,Zack Short (Total Bases)(must start),Zack Short (Total Bases)(must start),Houston Astros,Washington Nationals
+1612323701,Over,970,5129784861,2.33,1.5,Tyler Soderstrom (Total Bases)(must start),Tyler Soderstrom (Total Bases)(must start),Athletics,Seattle Mariners
+1612323702,Under,971,5129784862,1.561,1.5,Tyler Soderstrom (Total Bases)(must start),Tyler Soderstrom (Total Bases)(must start),Athletics,Seattle Mariners
+1612323563,Over,974,5128969836,1.568,0.5,Nathaniel Lowe (Total Bases)(must start),Nathaniel Lowe (Total Bases)(must start),Houston Astros,Washington Nationals
+1612323564,Under,975,5128969840,2.32,0.5,Nathaniel Lowe (Total Bases)(must start),Nathaniel Lowe (Total Bases)(must start),Houston Astros,Washington Nationals
+1612323692,Over,970,5129784855,1.833,1.5,Julio Rodríguez (Total Bases)(must start),Julio Rodríguez (Total Bases)(must start),Athletics,Seattle Mariners
+1612323693,Under,971,5129784856,1.909,1.5,Julio Rodríguez (Total Bases)(must start),Julio Rodríguez (Total Bases)(must start),Athletics,Seattle Mariners
+1612323695,Over,970,5129784857,1.724,0.5,Max Schuemann (Total Bases)(must start),Max Schuemann (Total Bases)(must start),Athletics,Seattle Mariners
+1612323696,Under,971,5129784858,2.04,0.5,Max Schuemann (Total Bases)(must start),Max Schuemann (Total Bases)(must start),Athletics,Seattle Mariners
+1612323566,Over,974,5129083574,1.813,0.5,Cooper Hummel (Total Bases)(must start),Cooper Hummel (Total Bases)(must start),Houston Astros,Washington Nationals
+1612323567,Under,975,5129083575,1.925,0.5,Cooper Hummel (Total Bases)(must start),Cooper Hummel (Total Bases)(must start),Houston Astros,Washington Nationals
+1612323554,Over,974,5128969832,2.32,1.5,Josh Bell (Total Bases)(must start),Josh Bell (Total Bases)(must start),Houston Astros,Washington Nationals
+1612323555,Under,975,5128969839,1.564,1.5,Josh Bell (Total Bases)(must start),Josh Bell (Total Bases)(must start),Houston Astros,Washington Nationals
+1612323560,Over,974,5129083570,1.465,0.5,Mauricio Dubón (Total Bases)(must start),Mauricio Dubón (Total Bases)(must start),Houston Astros,Washington Nationals
+1612323561,Under,975,5129083571,2.58,0.5,Mauricio Dubón (Total Bases)(must start),Mauricio Dubón (Total Bases)(must start),Houston Astros,Washington Nationals
+1612323557,Over,974,5129083568,1.523,0.5,Victor Caratini (Total Bases)(must start),Victor Caratini (Total Bases)(must start),Houston Astros,Washington Nationals
+1612323558,Under,975,5129083569,2.42,0.5,Victor Caratini (Total Bases)(must start),Victor Caratini (Total Bases)(must start),Houston Astros,Washington Nationals
+1612323686,Over,970,5129784851,2.35,1.5,Lawrence Butler (Total Bases)(must start),Lawrence Butler (Total Bases)(must start),Athletics,Seattle Mariners
+1612323687,Under,971,5129784852,1.552,1.5,Lawrence Butler (Total Bases)(must start),Lawrence Butler (Total Bases)(must start),Athletics,Seattle Mariners
+1612323802,Over,954,5129494837,2.56,1.5,Spencer Horwitz (Total Bases)(must start),Spencer Horwitz (Total Bases)(must start),San Francisco Giants,Pittsburgh Pirates
+1612323803,Under,955,5129494838,1.471,1.5,Spencer Horwitz (Total Bases)(must start),Spencer Horwitz (Total Bases)(must start),San Francisco Giants,Pittsburgh Pirates
+1612323808,Over,954,5129491254,2.46,1.5,Nick Gonzales (Total Bases)(must start),Nick Gonzales (Total Bases)(must start),San Francisco Giants,Pittsburgh Pirates
+1612323809,Under,955,5129491255,1.507,1.5,Nick Gonzales (Total Bases)(must start),Nick Gonzales (Total Bases)(must start),San Francisco Giants,Pittsburgh Pirates
+1612323742,Over,954,5129491220,2.2,1.5,Willy Adames (Total Bases)(must start),Willy Adames (Total Bases)(must start),San Francisco Giants,Pittsburgh Pirates
+1612323743,Under,955,5129491221,1.628,1.5,Willy Adames (Total Bases)(must start),Willy Adames (Total Bases)(must start),San Francisco Giants,Pittsburgh Pirates
+1612323736,Over,954,5129491218,1.684,0.5,Dominic Smith (Total Bases)(must start),Dominic Smith (Total Bases)(must start),San Francisco Giants,Pittsburgh Pirates
+1612323737,Under,955,5129491219,2.1,0.5,Dominic Smith (Total Bases)(must start),Dominic Smith (Total Bases)(must start),San Francisco Giants,Pittsburgh Pirates
+1612323733,Over,954,5129489213,1.854,0.5,Mike Yastrzemski (Total Bases)(must start),Mike Yastrzemski (Total Bases)(must start),San Francisco Giants,Pittsburgh Pirates
+1612323734,Under,955,5129489214,1.884,0.5,Mike Yastrzemski (Total Bases)(must start),Mike Yastrzemski (Total Bases)(must start),San Francisco Giants,Pittsburgh Pirates
+1612323787,Over,954,5129494831,1.8,0.5,Henry Davis (Total Bases)(must start),Henry Davis (Total Bases)(must start),San Francisco Giants,Pittsburgh Pirates
+1612323788,Under,955,5129494832,1.943,0.5,Henry Davis (Total Bases)(must start),Henry Davis (Total Bases)(must start),San Francisco Giants,Pittsburgh Pirates
+1612323727,Over,954,5129500803,1.456,0.5,Andrew McCutchen (Total Bases)(must start),Andrew McCutchen (Total Bases)(must start),San Francisco Giants,Pittsburgh Pirates
+1612323728,Under,955,5129500804,2.61,0.5,Andrew McCutchen (Total Bases)(must start),Andrew McCutchen (Total Bases)(must start),San Francisco Giants,Pittsburgh Pirates
+1612323784,Over,954,5129491244,2.27,1.5,Heliot Ramos (Total Bases)(must start),Heliot Ramos (Total Bases)(must start),San Francisco Giants,Pittsburgh Pirates
+1612323785,Under,955,5129491245,1.591,1.5,Heliot Ramos (Total Bases)(must start),Heliot Ramos (Total Bases)(must start),San Francisco Giants,Pittsburgh Pirates
+1612323781,Over,954,5129494824,2.47,1.5,Bryan Reynolds (Total Bases)(must start),Bryan Reynolds (Total Bases)(must start),San Francisco Giants,Pittsburgh Pirates
+1612323782,Under,955,5129494825,1.502,1.5,Bryan Reynolds (Total Bases)(must start),Bryan Reynolds (Total Bases)(must start),San Francisco Giants,Pittsburgh Pirates
+1612323776,Under,955,5129500806,2.45,0.5,Oneil Cruz (Total Bases)(must start),Oneil Cruz (Total Bases)(must start),San Francisco Giants,Pittsburgh Pirates
+1612323775,Over,954,5129500805,1.512,0.5,Oneil Cruz (Total Bases)(must start),Oneil Cruz (Total Bases)(must start),San Francisco Giants,Pittsburgh Pirates
+1612323757,Over,954,5129397739,2.35,1.5,Matt Chapman (Total Bases)(must start),Matt Chapman (Total Bases)(must start),San Francisco Giants,Pittsburgh Pirates
+1612323758,Under,955,5129397740,1.552,1.5,Matt Chapman (Total Bases)(must start),Matt Chapman (Total Bases)(must start),San Francisco Giants,Pittsburgh Pirates
+1612323811,Over,954,5129506855,1.469,0.5,Jung Hoo Lee (Total Bases)(must start),Jung Hoo Lee (Total Bases)(must start),San Francisco Giants,Pittsburgh Pirates
+1612323812,Under,955,5129506856,2.57,0.5,Jung Hoo Lee (Total Bases)(must start),Jung Hoo Lee (Total Bases)(must start),San Francisco Giants,Pittsburgh Pirates
+1612323745,Over,954,5129494812,1.515,0.5,Isiah Kiner-Falefa (Total Bases)(must start),Isiah Kiner-Falefa (Total Bases)(must start),San Francisco Giants,Pittsburgh Pirates
+1612323746,Under,955,5129494813,2.44,0.5,Isiah Kiner-Falefa (Total Bases)(must start),Isiah Kiner-Falefa (Total Bases)(must start),San Francisco Giants,Pittsburgh Pirates
+1612323751,Over,954,5129491224,2.33,1.5,Rafael Devers (Total Bases)(must start),Rafael Devers (Total Bases)(must start),San Francisco Giants,Pittsburgh Pirates
+1612323752,Under,955,5129491225,1.561,1.5,Rafael Devers (Total Bases)(must start),Rafael Devers (Total Bases)(must start),San Francisco Giants,Pittsburgh Pirates
+1612325369,Over,974,5129084042,1.781,0.5,Paul DeJong (Total Bases)(must start),Paul DeJong (Total Bases)(must start),Houston Astros,Washington Nationals
+1612325370,Under,975,5129084043,1.961,0.5,Paul DeJong (Total Bases)(must start),Paul DeJong (Total Bases)(must start),Houston Astros,Washington Nationals
+1612325372,Over,954,5129494826,1.709,0.5,Liover Peguero (Total Bases)(must start),Liover Peguero (Total Bases)(must start),San Francisco Giants,Pittsburgh Pirates
+1612325373,Under,955,5129494827,2.06,0.5,Liover Peguero (Total Bases)(must start),Liover Peguero (Total Bases)(must start),San Francisco Giants,Pittsburgh Pirates
+1612325423,Over,954,5129491246,1.775,0.5,Patrick Bailey (Total Bases)(must start),Patrick Bailey (Total Bases)(must start),San Francisco Giants,Pittsburgh Pirates
+1612325424,Under,955,5129491247,1.98,0.5,Patrick Bailey (Total Bases)(must start),Patrick Bailey (Total Bases)(must start),San Francisco Giants,Pittsburgh Pirates
+1612325522,Over,954,5129491242,1.564,0.5,Casey Schmitt (Total Bases)(must start),Casey Schmitt (Total Bases)(must start),San Francisco Giants,Pittsburgh Pirates
+1612325523,Under,955,5129491243,2.32,0.5,Casey Schmitt (Total Bases)(must start),Casey Schmitt (Total Bases)(must start),San Francisco Giants,Pittsburgh Pirates
+1612327525,Over,980,5129813580,1.671,0.5,Austin Nola (Total Bases)(must start),Austin Nola (Total Bases)(must start),Cleveland Guardians,Colorado Rockies
+1612327526,Under,981,5129813582,2.12,0.5,Austin Nola (Total Bases)(must start),Austin Nola (Total Bases)(must start),Cleveland Guardians,Colorado Rockies
+1612329626,Over,968,5129791860,1.54,0.5,Logan O'Hoppe (Total Bases)(must start),Logan O'Hoppe (Total Bases)(must start),Los Angeles Angels,Texas Rangers
+1612329627,Under,969,5129791861,2.38,0.5,Logan O'Hoppe (Total Bases)(must start),Logan O'Hoppe (Total Bases)(must start),Los Angeles Angels,Texas Rangers
+1612329614,Over,968,5129797360,2.63,1.5,Josh Smith (Total Bases)(must start),Josh Smith (Total Bases)(must start),Los Angeles Angels,Texas Rangers
+1612329615,Under,969,5129797361,1.45,1.5,Josh Smith (Total Bases)(must start),Josh Smith (Total Bases)(must start),Los Angeles Angels,Texas Rangers
+1612329623,Over,968,5129791878,1.714,0.5,Evan Carter (Total Bases)(must start),Evan Carter (Total Bases)(must start),Los Angeles Angels,Texas Rangers
+1612329624,Under,969,5129791879,2.05,0.5,Evan Carter (Total Bases)(must start),Evan Carter (Total Bases)(must start),Los Angeles Angels,Texas Rangers
+1612329605,Over,968,5129791830,1.617,0.5,Yoán Moncada (Total Bases)(must start),Yoán Moncada (Total Bases)(must start),Los Angeles Angels,Texas Rangers
+1612329606,Under,969,5129791831,2.22,0.5,Yoán Moncada (Total Bases)(must start),Yoán Moncada (Total Bases)(must start),Los Angeles Angels,Texas Rangers
+1612329635,Over,960,5129791884,2.19,1.5,Brendan Donovan (Total Bases)(must start),Brendan Donovan (Total Bases)(must start),St. Louis Cardinals,Miami Marlins
+1612329636,Under,961,5129791885,1.632,1.5,Brendan Donovan (Total Bases)(must start),Brendan Donovan (Total Bases)(must start),St. Louis Cardinals,Miami Marlins
+1612329638,Over,960,5129791872,2.17,1.5,Otto Lopez (Total Bases)(must start),Otto Lopez (Total Bases)(must start),St. Louis Cardinals,Miami Marlins
+1612329639,Under,961,5129791873,1.641,1.5,Otto Lopez (Total Bases)(must start),Otto Lopez (Total Bases)(must start),St. Louis Cardinals,Miami Marlins
+1612331833,Over,954,5129491240,1.892,0.5,Jack Suwinski (Total Bases)(must start),Jack Suwinski (Total Bases)(must start),San Francisco Giants,Pittsburgh Pirates
+1612331834,Under,955,5129491241,1.847,0.5,Jack Suwinski (Total Bases)(must start),Jack Suwinski (Total Bases)(must start),San Francisco Giants,Pittsburgh Pirates
+1612335814,Over,958,5129791938,1.591,0.5,Santiago Espinal (Total Bases)(must start),Santiago Espinal (Total Bases)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612335815,Under,959,5129791939,2.26,0.5,Santiago Espinal (Total Bases)(must start),Santiago Espinal (Total Bases)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612335822,Over,980,5129813669,1.512,0.5,Nolan Jones (Total Bases)(must start),Nolan Jones (Total Bases)(must start),Cleveland Guardians,Colorado Rockies
+1612335823,Under,981,5129813670,2.45,0.5,Nolan Jones (Total Bases)(must start),Nolan Jones (Total Bases)(must start),Cleveland Guardians,Colorado Rockies
+1612335980,Over,958,5129791986,1.529,0.5,Alex Freeland (Total Bases)(must start),Alex Freeland (Total Bases)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612335981,Under,959,5129791987,2.4,0.5,Alex Freeland (Total Bases)(must start),Alex Freeland (Total Bases)(must start),Cincinnati Reds,Los Angeles Dodgers
+1612336489,Over,960,5129791898,1.476,0.5,Thomas Saggese (Total Bases)(must start),Thomas Saggese (Total Bases)(must start),St. Louis Cardinals,Miami Marlins
+1612336490,Under,961,5129791899,2.55,0.5,Thomas Saggese (Total Bases)(must start),Thomas Saggese (Total Bases)(must start),St. Louis Cardinals,Miami Marlins
+1612336486,Over,960,5129791842,2.36,1.5,Yohel Pozo (Total Bases)(must start),Yohel Pozo (Total Bases)(must start),St. Louis Cardinals,Miami Marlins
+1612336487,Under,961,5129791843,1.546,1.5,Yohel Pozo (Total Bases)(must start),Yohel Pozo (Total Bases)(must start),St. Louis Cardinals,Miami Marlins
+1612336608,Under,961,5129724686,2.52,0.5,Heriberto Hernandez (Total Bases)(must start),Heriberto Hernandez (Total Bases)(must start),St. Louis Cardinals,Miami Marlins
+1612336607,Over,960,5129724685,1.485,0.5,Heriberto Hernandez (Total Bases)(must start),Heriberto Hernandez (Total Bases)(must start),St. Louis Cardinals,Miami Marlins
+1612336613,Over,966,5129812561,2.25,1.5,Brandon Lowe (Total Bases)(must start),Brandon Lowe (Total Bases)(must start),New York Yankees,Tampa Bay Rays
+1612336614,Under,967,5129812562,1.598,1.5,Brandon Lowe (Total Bases)(must start),Brandon Lowe (Total Bases)(must start),New York Yankees,Tampa Bay Rays
+1612336620,Over,960,5129791892,2.42,1.5,Troy Johnston (Total Bases)(must start),Troy Johnston (Total Bases)(must start),St. Louis Cardinals,Miami Marlins
+1612336621,Under,961,5129791893,1.523,1.5,Troy Johnston (Total Bases)(must start),Troy Johnston (Total Bases)(must start),St. Louis Cardinals,Miami Marlins
+1612338523,Over,970,5129784859,1.662,0.5,Darell Hernaiz (Total Bases)(must start),Darell Hernaiz (Total Bases)(must start),Athletics,Seattle Mariners
+1612338524,Under,971,5129784860,2.13,0.5,Darell Hernaiz (Total Bases)(must start),Darell Hernaiz (Total Bases)(must start),Athletics,Seattle Mariners
